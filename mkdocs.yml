@@ -1,0 +1,32 @@
+site_name: archivioctt
+repo_url: https://github.com/octospacc/archivioctt
+edit_uri: edit/mkdocs/docs/
+theme:
+  name: material
+  language: it
+  features:
+    - content.action.view
+    - content.code.copy
+  palette:
+    primary: purple
+plugins:
+  - blog:
+      blog_dir: microblog
+  - offline
+  - search
+  - tags
+markdown_extensions:
+  - nl2br
+  - wikilinks:
+      base_url: ../memos/
+      end_url: .html
+  - pymdownx.extra
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
+      use_pygments: true
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+hooks:
+  - hooks/canonical_url.py
