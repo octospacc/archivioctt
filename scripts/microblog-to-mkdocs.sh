@@ -42,10 +42,8 @@ do
 			rm {}.yaml.tmp
 
 			sed -i "s|<p>|<p markdown=\"1\">|g" {}
-			sed -i "s|src=\"https://octospacc.altervista.org/wp-content/uploads/|src=\"/assets/uploads/|g" {}
-			#sed -i "s|<a href=\"https://octospacc.altervista.org/|<a href=\"/microblog/|g" {}
-			#sed -i -E -E "s|<a[^>]*href=\"https://octospacc.altervista.org/([^\"]*)/[^>]*>([^<]*)</a>|<a href=\"../../../\1.html\">\2</a>|g" {} # | sed -E ":a; s/(\[[^]]*\]\([^)]*)\//\1-/; ta" | cat > {}
-			sed -i -E -E "s|<a[^>]*href=\"https://octospacc.altervista.org/([^\"]*)/[^>]*>([^<]*)</a>|[\2](../../../\1.md)|g" {} # | sed -E ":a; s/(\[[^]]*\]\([^)]*)\//\1-/; ta" | cat > {}
+			sed -i "s|src=\"https://octospacc.altervista.org/wp-content/uploads/|src=\"https://octospacc.github.io/microblog-mirror/assets/uploads/|g" {}
+			sed -i -E -E "s|<a[^>]*href=\"https://octospacc.altervista.org/([^\"]*)/[^>]*>([^<]*)</a>|[\2](../../../\1.md)|g" {}
 
 			day="$(echo "${day}" | sed "s|-|/|g")"
 			mkdir -p "./${day}"
