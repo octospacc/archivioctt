@@ -9824,7 +9824,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-16 12:23:04+00:00">16 aprile 2024</time></li>
+          <time datetime="2024-04-26 00:02:11+00:00">26 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9844,55 +9844,25 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="quando-adrode-niente-file"><a class="toclink" href="../../2024/04/16/quando-adrode-niente-file.html">quando adrode niente file</a></h2>
+    <h2 id="doki-doki-pazzia-club"><a class="toclink" href="../../2024/04/26/doki-doki-pazzia-club.html">doki doki pazzia club</a></h2>
 <!-- wp:paragraph -->
-<p>Ieri <em>non ho assolutamente</em> portato a zero la batteria del tablet per tutto il tempo che ci ho messo a provare #app diverse e a vedere cose per risolvere l'ennesimo problema causato dalle nuove versioni di #Android... ok, in tutta onestà la batteria l'ho finita nel bus più tardi, però comunque, una buona parte della carica è sparita solo nel tempo perso prima. 😶‍🌫️️</p>
+<p>[sc name=quote-embed-post]2024/04/25/doki-doki-browser-club/[/sc]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Un altro po' mi sembrava di star usando iOS per non riuscire a fare una cosa così banale come: aprire un file #HTML direttamente nel #browser, ed averlo funzionante, con anche il caricamento di tutte le risorse embeddate, senza ricorrere ad un webserver locale che causa solo rogne in più... <a href="https://t.me/OTIdroid/629851">come ho detto su OTIDroid</a>, questa cosa sembra una cazzata, ma è sorprendente quanto è difficile da Android 11 in su:</p>
+<p>Bene, come dire, oggi con questa storia di #RenPy ho a dir poco <strong><code><em>esagerato</em></code></strong>... perché in realtà, dopo aver detto che me ne sarei lavata le mani, ho comunque cercato di vedere della roba, perché avevo scoperto altri #problemi non proprio ignorabili. È servito? Sni. ☠️</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Firefox Fenix non ha mai supportato i percorsi <code>file:///</code>, #mannaggia a te Mozilla</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://stackoverflow.com/questions/72649676/how-do-i-set-permissions-to-open-a-local-file-in-a-browser-on-an-android-12-phon/76199132#76199132">Firefox legacy funzionerebbe</a>, solo che la versione più recente (v68.11.0) è comunque antica e quindi molte nuove #API web non vanno</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>I #navigatori Chromium, da quando sono aggiornati per targettare le nuove API Android, non riescono più a vedere qualsiasi file su <code>/sdcard/</code>, ma solo quelli multimediali (utilissimo eh?); e si, hackerare il manifest per portare indietro l'API target rompe la app</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>La più recente versione di Chromium precedente a tutte queste novità che ho trovato (~<a href="https://github.com/bromite/chromium/releases/tag/79.0.3945.94">v79.0.3945.94</a>) è comunque molto vecchia, stesso problema di Firefox</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
 <!-- wp:paragraph -->
-<p>Evidentemente nessuno ha voglia di creare un browser che funziona correttamente, (nemmeno io, in quel momento volevo solo fare un po' di <em><s>programmazione</s> HTML</em>), maremma maiala... ma, per fortuna mi torna in mente che una #soluzione ci sarebbe: le app che usano la #WebView di sistema funzionano ancora normalmente (senza codice aggiornato per lo #storage) se hanno un target SDK vecchio ma, proprio perché il motore che usano è quello di sistema aggiornato, la compatibilità con gli standard è massima. 😤️</p>
+<p>La prima cosa è che su mobile la tastiera su schermo non funziona, perché è implementata in modo strano, prima che cambiassero e la facessero effettivamente bene. Quindi, sul mio porting di DDLC non si riuscirebbe neanche ad iniziare il gioco, perché non si può inserire il proprio nome nel momento in cui il programma lo chiede, a meno di collegare una tastiera fisica, che è pazzia. Con <a href="https://www.freecodecamp.org/news/javascript-keycode-list-keypress-event-key-codes/">un po' di ingegno e tanta sperimentazione</a>, però, ho effettivamente risolto il problema: premendo un tasto dedicato nel menu contestuale, faccio apparire un <code>&lt;input&gt;</code> a schermo, dove l'utente può digitare con la propria tastiera virtuale normalmente, e il codice che ci sta dietro legge gli eventi per ricostruirli e inviarli al <code>&lt;canvas&gt;</code> che esegue il gioco. È un po' una #hack ma sostanzialmente funziona bene. 🕳️</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Sorprendentemente, di #browserini così che siano allo stesso tempo non mezzi rotti, abbiano un target vecchio, e il permesso di lettura dell'archiviazione, non ce ne sono molti. L'unico che ho trovato è "<a href="https://f-droid.org/en/packages/org.tint/">Tint Browser</a>", che funzionerebbe già così senza fatica, e stavo per usare quello... ma ha uno strano bug che fa sparire tutte le schede aperte sia alla chiusura della app, che la rotazione dello schermo... e non viene aggiornata da 10 anni, quindi mi sa mi sa che il #problema non sarà risolto. 🕸️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Ho però notato che virtualmente qualunque altra app WebView browser non si rompe se subisce quelle modifiche che ho detto all'<code>AndroidManifest.xml</code>, probabilmente perché sono così semplici che non hanno codice chissà quanto specifico a certe versioni delle API... quindi ne ho semplicemente scelto uno che mi piaceva, ho usato un editor di #APK per portare indietro il valore <code>android:targetSdkVersion</code> del blocco <code>&lt;uses-sdk></code> (mentre il permesso <code>READ_EXTERNAL_STORAGE</code> c'era già quindi non ho dovuto scriverlo io), e in mezzo minuto il problema è risolto. 🌚️<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Tra gli infiniti che si trovano ho preso questo "<a href="https://f-droid.org/packages/com.cookiegames.smartcookie/">SmartCookieWeb</a>" comunque, ha delle funzioni avanzate carine. L'APK già modificato, in caso ne aveste bisogno, l'ho caricato <a href="https://hlb0it.blogspot.com/?path=/Drive/Misc/SmartCookieWeb%20%28com.cookiegames.smartcookie%29%20v16.3%20Manifest%20API%2028%20Mod.apk">qui sul mio server</a>.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>E poi... ho scoperto che in realtà no, le immagini che impiegano una vita a caricare si rifiutano proprio di farlo finché non avviene (oltre al passaggio di abbastanza scene di dialogo, ma va un po' a caso) un evento di re-rendering totale, che ho individuato succedere in due casi: quando si preme il tasto destro per far scomparire l'HUD, oppure quando la finestra viene ridimensionata. Ora, chiamatemi scema, ma ho provato a mettere mano nella parte del codice che triggera un resize, perché quella del render è proprio dentro il codice WASM e quindi non c'è umanamente verso, ma... non sono arrivata a granché, dopo un po' di prove. Ho tentato una strategia diversa, cioè simulare un doppio click col mouse ad ogni click dell'utente, ma farlo troppo veloce non fa ri-renderizzare nulla, e farlo troppo lentamente spacca le interazioni degli utenti... E quindi ho anche provato a sfruttare un iframe di servizio per poter fare ridimensionamenti della finestra ad ogni click (no, non basta lo styling), ma ci sono le stesse problematiche riguardo la velocità (eccetto che qui l'eccesso causa flash dello schermo, aiuto!). 🐞️</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Una cosa strana però: teoricamente è stato Android 11, cioè target 30, ad introdurre lo spacc più totale dei #permessi di accesso all'archiviazione locale, quindi a regola impostare il 29 (Android 10) sarebbe sufficiente a visualizzare il permesso di gestire tutti i file nelle impostazioni al posto di quello per soltanto i media... eppure io ho dovuto scrivere 28 (Android Pie). Sarà un fatto del mio Android 12 forse, boh, anyways the fog is coming fuck you Google. 👁️</p>
+<p>E in tutto questo, nonostante abbiano dimostrato di fare release totalmente rotte una dopo l'altra, i <em>RenPyisti</em> si sono rivelati anche abbastanza efficienti: la mia #issue di prima ha non solo avuto delle risposte, ma qualche ora fa è già stata creata <a href="https://github.com/renpy/renpyweb/pull/39">una pull request</a> per sistemare il problema, incredibilmente. (Ma io ancora mi chiedo, come è possibile che sono stata io a individuarlo?) Però, loro non hanno una CI normale per creare le build, e io a compilare da sorgente sul mio PC non ci sono riuscita (ed ecco perché volevo a tutti i costi ficcare i miei workaround nel codice già compilato anziché provare a fare un fix per bene prima), quindi dovrò per forza aspettare che creino loro la prossima nightly... domani, probabilmente?! Vabbè, per ora tenetevi il giochino sistemato <em>in parte</em>, è già meglio di nulla; ho anche aggiunto un ulteriore tasto al menu contestuale per fare refresh visivo su mobile, dove il right click non si può fare. 🤥️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -9904,107 +9874,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-15 23:55:46+00:00">15 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="trollinux"><a class="toclink" href="../../2024/04/15/trollinux.html">trollinux</a></h2>
-<!-- wp:paragraph -->
-<p>Non so a questo punto se davvero è colpa mia o di #Linux o dei demoni, però... negli ultimi giorni stavo vedendo un utilizzo di RAM sempre più anomalo sul #PC, che sommando il conto di memoria dei singoli processi non tornava, e che dopo ore di uptime si spingeva così oltre da saturare tutta la memoria e quindi far andare il sistema in quello stato di soft-freeze allucinante tipico che costringe all hard-reboot (molto ironico a pensarci). 😩️ Zero voglia di capire il perché di questa cosa, ma in ogni caso credo che era comunque da ripulire il #sistema, perché questo non era l'unico problema strano:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Da qualche mese sono apparsi problemi con alcuni storage rimovibili... gli NTFS non si montavano o si montavano in sola lettura, le FAT invece si montavano in scrittura solo a volte, un disastro... cacca. 💩️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Questo successo proprio ieri, stava quasi per depistare i miei test sull'uso di RAM: in qualche modo, la mia EasyCap (almeno su una specifica delle porte USB) si scollegava e ricollegava di continuo (stando al LED che sfarfallava e ai log di sistema), e dopo qualche quarto d'ora mandava pure in freeze o panic il sistema... wow. Siamo tornati ai tempi di Windows 9x, se un dispositivo hot-swappabile malfunzionante manda in mona il #computer intero, #mannaggia al kernel monolitico dello schifo. 😕️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Quindi, si fa prima a piallare tutto. Volevo mettere Debian, perché su server funziona bene, sicuramente meglio di qualcosa a base Ubuntu... nonostante <a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$RMBF5cERXlLlfHJT0yePg4y4G1rsYhDLO2x5JOoJIac">c'è chi dice che su desktop non è il massimo</a>. Boh, casino per mettere la ISO sulla pennetta con Ventoy a parte (che a quanto pare un giorno si è mezza corrotta e da allora non avvia più la roba compressa in NTFS, quindi ho dovuto copiare il file in un modo preciso per non farlo comprimere...), l'installazione va liscia, e... al boot c'è solo la riga di comando di GRUB. #Ops. 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ora la pazienza è meno di zero, voglio comunque Debian ma a questo punto dico che voglio tenere Linuc Mint, e allora installo LMDE come alternativa che avevo già previsto. (Btw, hanno reso un po' più carino l'installer.) E... stessa rogna con GRUB. Ed è solo a questo punto che mi ricordo che <em>forse</em> devo sistemare nell'UEFI l'ordine di avvio che magari è saltato per aria... e si, dovevo fare solo quello, quindi ho praticamente piallato Debian appena installato per niente. Ma ormai mi tengo la menta edizione debianosa va, che è meglio, è anche tutta settata per il desktop e bellina come la normale menta, ma dovrebbe essere più stabile perché non c'è <a href="https://www.youtube.com/watch?v=rWnnN31QsGM">Uculu</a> di sotto... 💢️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-15 10:00:00+00:00">15 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="mozilbarra"><a class="toclink" href="../../2024/04/15/mozilbarra.html">mozilbarra</a></h2>
-<!-- wp:paragraph -->
-<p>A quanto pare quelli di #Mozilla si sono finalmente svegliati e hanno iniziato quantomeno a lavorare ad una #UI per #Firefox ottimizzata per i #tablet Android, con (<em>molto importante</em>) una <strong>barra delle schede</strong>, una cosa che è stata completamente persa nel passaggio al ridesign #Fenix... quanti anni sono già? 💀</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>#Notizia di un mese scarso fa infatti, "<a href="https://www.androidpolice.com/mozilla-firefox-android-tablet-tab-bar-nightly/">You can now try Firefox's revamped tablet interface on Android</a>". L'articolo include anche un video che mostra la feature in azione. In realtà chissà anche se questa roba uscirà dalla fase di #Nightly del tutto e diventerà #feature per davvero... Vorrei averla già da adesso, peccato che uso la Beta sul tablet, e ho aggiornato all'ultima versione proprio ora, ma di queste nuove #schede manco l'ombra. 🤥</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Di installare la notturna e trasferire a manina tutti i dati non ho la minima voglia, quindi temevo di dover creare una mia estensione per risolvere il #problema in modo estremamente hacky, già da prima di scoprire la notizia... fortunatamente, ho scoperto (proprio da quell'articolo lì lmao, la&nbsp;ricerca del sito di #addon di Mozilla fa schifissimo e non si trova nulla senza sapere il nome) che qualcuno lo ha già fatto, e proprio nell'unico modo possibile orrendo che avevo in mente io: "<a href="https://addons.mozilla.org/en-US/firefox/addon/tablet-ui-for-firefox/">Tablet UI for Firefox</a>"... praticamente visualizza una barra delle schede inserendo HTML nella pagina corrente, lol, con tutte le limitazioni e i punti di spacc del caso... 😖</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Che poi gli sfigati siamo noi su #Android, perché sui tablet Windows o Linux c'è la normale versione desktop della volpe che si adatta bene anche al tocco, e a quanto pare <a href="https://apps.apple.com/it/app/firefox-private-safe-browser/id989804926?platform=ipad">persino la app per iPadOS</a> è stata disegnata meglio... (lasciando da parte il fatto che è la solita inutile skin di WebKit nella pratica.) 😶‍🌫️ (E btw, mi sa che un add-on per esportare ed importare tutti i dati dei siti, quello va fatto davvero, in giro trovo soluzioni solo per cookies e LocalStorage.)</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-14 20:33:34+00:00">14 aprile 2024</time></li>
+          <time datetime="2024-04-25 13:32:05+00:00">25 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10024,45 +9894,29 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="i-casini-dietro-le-liste"><a class="toclink" href="../../2024/04/14/i-casini-dietro-le-liste.html">i casini dietro le liste!!!</a></h2>
+    <h2 id="doki-doki-browser-club"><a class="toclink" href="../../2024/04/25/doki-doki-browser-club.html">doki doki browser club</a></h2>
 <!-- wp:paragraph -->
-<p>[sc name=quote-embed-post]2024/04/14/momento-vera-lista-di-liste/[/sc]</p>
+<p>La mia #sidequest di scovare e archiviare app e #giochi di valore per il #browser, seguendo la filosofia del binario universale e tutti i mazzi annessi, certe volte mi porta si a complicarmi un po' le giornate, ma non credevo di arrivare persino a scontrarmi con bug breaking di motori di #gioco famosi e utilizzatissimi... È la maledizione per cui in mano a me si rompe sempre tutto, anche se in questo caso no, è tutto già rotto da tempo, solo che nessuno lo sapeva bene. 🤢️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Dovevo finire di scriverlo ieri questo, ma, puntualmente, finito un progettino <em>bisogna subito iniziarne un altro</em> (no spoiler), e non c'è tempo per il #blogging. La pagina rilasciata ieri, nonostante comunque non mi abbia rubato così tanto tempo perché è pur sempre una paginetta, mi ha presa un po' alla sprovvista considerando che l'avevo iniziata addirittura questo lunedì. (6 giorni son passati...) 😳</p>
+<p>In pratica, ieri mi è venuta l'idea di caricare alcune VN sulla #SalaMuseoGames, considerando sia che RenPy supporta la creazione di build web da un bel po', e che in genere è molto facile ricompilare e portare giochi fatti con questo #engine. Infatti, ho già provato a portare diversi giochi gratuiti presi da Itch.io, e al netto di #difficoltà inaspettate per alcuni (che magari racconto la prossima volta), in linea di massima non ci sono mai #rogne con i giochi in RenPy 8. 💟️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Il motivo è buffo e per nulla legato alla difficoltà di #programmazione in sé (ho fatto cose peggiori), ma al fatto che puntualmente le altre cose non funzionano mai come dovrebbero, e quindi bisogna fare delle #hack, e poi dopo altro test si vede che da quelle hack si scassano altre cose, e via quindi di altre hack per sistemare i #problemi... E allora io ad una certa mi seccavo, e dunque "aight then, see you tomorrow ☠️"</p>
+<p>Però volevo portare una #visualnovel in particolare, ovviamente: #DokiDokiLiteratureClub! ...e ops, questa è dei tempi di RenPy 6 addirittura, e non c'è verso di farla girare sotto le v8 (basata su Python 3 anziché 2.7, era ora). Sulle versioni 7.x.x per fortuna sembra venir eseguita a modino, ma... la compatibilità web lì è in "beta" (cosa che ho scoperto va letta come "totalmente rotta lmao") e quindi sono subentrati problemi immediatamente. O meglio, ho compilato con la più recente v7 (7.7.1), e sembrava tutto funzionare, finché non ho aperto la pagina su Linux o Android per scoprire che crashava tutto al caricamento per via di uno strano errore del video, e solo su Firefox nella mia VM Windows si riusciva a giocare (quindi binario universale un corno). 🚧</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Per il sitoctt è stato relativamente semplice: mi appoggio <a href="https://sitoctt.octt.eu.org/Search.html">alla pagina di ricerca statica del sito</a>, parsando tutto l'HTML, che per quanto rotta (e per questo evito di far sapere che esiste) racchiude il contenuto di tutte le pagine compilate del sito. Quindi, raccolgo tutti i link ai post da tutte le pagine di categoria. 😺<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Quei link però sono solo-testo, quindi per prendere l'immagine di copertina ho dovuto aggiornare staticoso <em>dopo mesi</em> solo per fargli scrivere gli URL in attributi <code>data</code> dell'HTML. Poi però mettiamoci pure che a volte questi vengono scritti rotti perché la sostituzione delle variabili non funziona in quel punto del #codice (e io non lo sistemerò <em>mai</em>), e anche che quando manca una copertina allora devo per forza prenderla dal contenuto della pagina, ho dovuto comunque complicare di più il #JavaScript... 😡</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Per il fritto misto, bel #casino, innanzitutto perché per stabilità e sicurezza volevo evitare di usare i proxy CORS, e poi per efficienza e velocità volevo minimizzare il più possibile le richieste di rete necessarie (paginazione è cacca)... quindi anche qui mi appoggio alla ricerca (in JSON) <a href="https://octospacc.gitlab.io/microblog-mirror">del mirror statico del sito</a>, anziché direttamente a WordPress; nel file ci sono tutti i post con i metadati necessari. 😸<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Ganzo, se non fosse che ho sprecato chissà quanto tempo solo per le immagini; e totalmente invano, perché poi alla fine ho dovuto rassegnarmi a includere nel JSON tutti i dump #HTML dei post (ciò che volevo evitare, perché fatto così si appesantirà molto velocemente, ops) ed estrarre la prima immagine ricorrente in quelli. Non capisco se il problema ha a che fare con #Jekyll, la sua versione fornita da GitHub Pages, o ancora il parser Liquid di Ruby, perché con un altro parser (LiquidJS) ho verificato che il mio codice per estrarre gli URL dal markup è corretto... solo che poi messo lì non funge. Provato anche il plugin "<a href="https://github.com/nhoizey/jekyll-firstimage">jekyll-firstimage</a>" trovato a casissimo, ma ovviamente non è servito, dava addirittura errore ad installarsi nel processo di build. 👹</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Ho cercato e cercato tra changelog e pagine di aiuto, ma non c'ho capito granché, a parte che hanno cambiato tipo il sistema video ad un certo punto... eppure RenPy 8 funziona senza problemi. Ho verificato che solo fino alla v7.4.11 i giochi (qualsiasi) girano ovunque, invece dalla v7.5 appare la rogna. Alla fine, me ne sono dovuta lavare le mani: mi sono impegnata solo a scrivere bene una #issue sul GitHub, e ora se la vedranno loro a fixare questa immondizia, te saludo!!! <a href="https://github.com/renpy/renpy/issues/5478"><a href="https://github.com/renpy/renpy/issues/5478">https://github.com/renpy/renpy/issues/5478</a></a> (leggete lì se vi interessa il tecnico). Il problema è che quest'altra versione funziona solo su Firefox, e ha un #bug strano per cui la musica di sottofondo non carica quando cambia la traccia, quindi pensavo di dovermi rassegnare e aspettare ora... 🦧</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4500,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/screenshot-from-2024-04-11-00-30-29-19068796621949443507-960x364.jpg" alt="Una parte del codice con fin troppi livelli logicamente e visivamente indentati." class="wp-image-4500"/><figcaption class="wp-element-caption">Solo parzialmente relato: questo era lo stato di una parte del codice una tarda sera in cui ero drogata di sonno ma, come sempre, di andare a dormire proprio no, meglio scrivere le scalette. 😞 (Poi il giorno dopo l'ho reso meno cacca.)</figcaption></figure>
+<!-- wp:image {"id":4869,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-8.png" alt="" class="wp-image-4869"/><figcaption class="wp-element-caption">Però poi, dopo aver ancora letto, ho visto che RenPy &lt; v7.4.7 usa FFmpeg per l'audio, "quindi magari"... e, <em>sicuro abbastanza</em>, con v7.4.6 la musica funge. E, casualità, non c'è manco il bug con i motori WebKit! Però pare ci sia un altro #problema, ossia che le immagini fanno veramente fatica a caricare, a volte impiegano decine di secondi... non è gravissimo, perché alla fine se aspetti si caricano, però magari vedrò se posso sistemarlo comprimendo gli assets per farli stare tutti nel game.zip &lt; 100 MB, anziché farli streammare separatamente. Comunque, forza, potete già fare il #gaming su <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/04/24/doki-doki-literature-club/">https://gamingshitposting.github.io/SalaMuseoGames/2024/04/24/doki-doki-literature-club/</a> 👽️</figcaption></figure>
 <!-- /wp:image -->
     
   </div>
@@ -10074,7 +9928,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-14 00:25:50+00:00">14 aprile 2024</time></li>
+          <time datetime="2024-04-24 16:18:38+00:00">24 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10094,25 +9948,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="momento-vera-lista-di-liste"><a class="toclink" href="../../2024/04/14/momento-vera-lista-di-liste.html">momento vera lista di liste</a></h2>
-<!-- wp:image {"align":"center","id":4479,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-3.png" alt="" class="wp-image-4479"/><figcaption class="wp-element-caption">Altro <em>side project</em> pure stavolta, che anche stavolta per fortuna si è rivelato davvero tale e concluso in un tempo ragionevole... pochi giorni di lavoro molto scarso e diluito. Una paginetta che con #JavaScript lista le mie "<em>collezioni</em>" di post da siti diversi. Visitatela su <a href="https://hub.octt.eu.org/Collections/">https://hub.octt.eu.org/Collections/</a>... 🎀</figcaption></figure>
-<!-- /wp:image -->
-
+    <h2 id="le-voci-che-io-quando-alluniversita-allora-questo-io-non"><a class="toclink" href="../../2024/04/24/le-voci-che-io-quando-alluniversita-allora-questo-io-non.html">le voci che io quando all&#8217;Università allora questo io non</a></h2>
 <!-- wp:paragraph -->
-<p></p>
+<p>Oggi i #pensieri <em>intrusivi</em> hanno proprio voglia di prendere un estremamente abusivo controllo della mia vita ma... sono attualmente così #zzz che persino i penzieri generati dal mio essere mentalmente provata non riescono davvero a farmi agire, perché sarebbe troppa #fatica seguire cosa dicono loro rispetto a cosa il flusso degli #eventi mi pone davanti e io devo solo dire oooh, bello, anzi brutto, questo è e questo si fa. 🛏️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Eh... il fatto della #tassonomia <a href="../../2024/04/11/tassi-nel-sito-misto.html">che ho detto qui l'altro giorno</a>, le #categorie e tutto, l'ho pensata anche nell'ottica di creare una #pagina #web speciale che aggrega e presenta i miei vari #post sia del #microblog, che del #sitoctt, e in futuro anche altre cose (ad esempio, il forum), se e solo se avrò voglia ed effettivamente tempo. 🥱</p>
+<p>Stamattina ho letteralmente visto il mio bus mentre stavo ancora sopra a casa mia... ops. Puntualmente, fa sempre svariati minuti di #ritardo quando io sono ad aspettarlo per tempo, e sempre un tremendo anticipo quando sono io a fare un ritardo di appena 2 minuti letterali. Sono comunque scesa facendo finta di niente, perché in realtà non avevo letto benissimo il titolo e speravo di non averlo perso... ma invece il mio presentimento era giusto. Da un lato però <em>le voci</em> dormivano ancora a quell'ora, dall'altro aveva pure iniziato a piovere in modo strano e non pensavo di potermi comportare diversamente dallo stare lì sotto il portico ad aspettare il prossimo bus, quindi giustamente così ho fatto, e non ho riprogrammato in modo sbagliato la #giornata. 🙃</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Se volete vedere come funziona a livello tecnico leggetevi il sorgente, <em>bruh</em>, ma a livello pratico spero di aver fatto una cosa decente: ci sono bottoni per ogni categoria, cliccandone uno si filtrano i vari elementi, che a schermo per ora ho messo con titolino e miniatura (allargabile). Btw, ancora una volta, <a href="https://chat.openai.com/share/ba5cc836-2091-4c6c-8e11-169af504d935">grazie Chatggipiti per avermi aiutato ad allineare le immagini orizzontalmente a destra e verticalmente al centro con il CSS...</a> 🙏</p>
+<p>Dopo le lezioni della mattina, visto che anche altre persone avevano all'ultimo deciso di fare lo stesso, <em>i pensieri</em> intrusivi mi hanno detto di prendere il bus e tornare a casa, anche se avrei avuto una prova intermedia subito dopo la pausa pranzo... fortunatamente, data la fame, dato il fatto che aveva iniziato a piovere in modo ancora più strano qui, oltre al freddo glaciale ritornato chissà come, in questo momento ero talmente dissociata dal mio corpo che non è stato per nulla difficile semplicemente rimanere lì. Eccetto che non sono semplicemente rimasta lì, ho macinato parecchi passi praticamente per sport andando avanti e indietro senza nessuna migliore task secondaria da fare mentre mangiavo, prima andando alla fermata (!!! a vuoto a vuoto!) e poi alla mensa per salutare delle persone. 😈</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>(Questa #creazione è un'ennesima manifestazione della legge di Murphy, comunque, perché non posso ribadire mai abbastanza quanto ora sarà complicato categorizzare ogni cosa, ma se non lo facessi sarebbe inutile... però è una bella trovata, quella di far convergere in un solo luogo i #dati di #siti incompatibili.)</p>
+<p>E infine, in quest'ultimo caso le vøcį avrebbero avuto ragione, ma come dico sempre il #tempo è tiranno, e tra problemi tecnici e spiegazioni l'esame è nella pratica iniziato mezz'ora più tardi, quindi... non ho potuto fare alcun compromesso per cercare di prendere l'ultimo pullman prima dell'enorme buco orario in cui ora mi ritrovo a scrivere delle mie sofferenze per ammazzare un ennesimo dei tanti, interminabili quarti d'ora. Avrei probabilmente dovuto sfruttare ogni ultimo minuto disponibile per la consegna in ogni caso nella mia situazione, quindi non rosico, però eh, fa comunque molto pensare a quanto bene si alleino professori e SITA per farmi sempre e solo #aspettare. 🙀</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10124,220 +9974,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-13 00:59:00+00:00">13 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../2024/04/13/4444.html"></a></h2>
-<!-- wp:paragraph -->
-<p>Ecco lo #sfizio del #setup più eccessivo e #superfluo per #Minecraft Beta 1.7.3:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Il #gioco è in esecuzione sul mio #tablet #Android, con #Pojav</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Il suo video è collegato al PC tramite <code>scrcpy</code> su USB</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Posso usare la singola tastiera che già tengo collegata al PC per sia muovermi nel gioco, sia scrivere in chat comodamente, ma allo stesso tempo usare l'altra <em>manina</em> sul grosso touchscreen al posto del mouse<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>(A proposito... molti tasti in chat non vanno, non riesco ad esempio a scrivere nemmeno apostrofi, nonché lettere accentate, il problema potrebbe stare letteralmente ovunque quindi boh)</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Non ho il mouse sul PC sempre bloccato nella finestra, quindi posso muovermi sul desktop e fare altro</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Il gioco rimane visibile nella visione periferica quando metto altre finestre in primo piano per fare, ancora, altre cose (come scrivere questo post)</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:video {"id":4443} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/wp-1712961956660.mp4"></video><figcaption class="wp-element-caption">Erano letteralmente mesi (da settembre praticamente!) che non mettevo piede sulla #SpaccCraft, ora mi è capitato perché è tornato un altro player di vecchia data che aveva voglia di #gaming, e allora ho detto si, fammi tornare. Altra gente in generale ancora da meno tempo ci entra... sarebbe da ravvivare 'sto #server, #mannaggia. 🧸</figcaption></figure>
-<!-- /wp:video -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-12 19:09:49+00:00">12 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/appunti.html" class="md-meta__link">Appunti</a>, 
-              <a href="../../category/meta.html" class="md-meta__link">Meta</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              4 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="octtseries"><a class="toclink" href="../../2024/04/12/octtseries.html">octTSeries</a></h2>
-<!-- wp:paragraph -->
-<p>Non l'ho messo <a href="../../2024/04/11/tassi-nel-sito-misto.html">nel post di ieri</a> perché sarebbe venuto un papirone e comunque interessa solo ai <em>wordpressisti</em>, non anche a chi usa altri sistemi, però.... questo è quello che ho dovuto fare per sistemare le #serie, lo scrivo anche per reference. Mezzo casino, ma in genere coi plugin è sempre così, sono tutti diversi... invece, le categorie sono una funzionalità di #WordPress, quindi tutto si integra in automatico. 👌</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Quasi 5 minuti spesi a orientarmi tra i menu di <a href="https://wordpress.org/plugins/organize-series/">PublishPress Series</a>... e ancora adesso non riesco a capire non solo perché ci siano due pagine di gestione "Serie" e "Gestione delle serie" sotto il menu Articoli che potevano essere benissimo una (la seconda è virtualmente una copia della prima, eccetto che manca il form per creare una serie), ma poi neanche perché ci sia un menu Serie separato che ospita solo la pagina Impostazioni (e allora c̛̄a̬r̷͜i̲ss̞i͈͝m̜i͚̒, o evitate il menu Articoli e mettete tutto tutto sotto il vostro, o̔̋͆p̠̫͔̆̓p̶̡̛̙̭̑ͬ̄ͮ͌͜ű͇̪̅ͭ̋r͇̙̼̙͇̥ͦͮͯ̍ͬé̛̞ͨͨ̒̍̑ͅ n̹o͇ͅṋ̶͠ m̴̤̭̾̇ͧͅe̹͈͙͌̄t͎̼͉͕̬̔̇ͤt̡̳̐ē̴̝̦̱ͪ̈́̋ͭ͘t̛̙̩̪̤̄͆̍͌e̞̟̲̥ u̸̬̣̘̹ͤ̏ͩͭn̫̼͔̟ͤ̈́̓͊͜͜͞ a͍̜͊̇ͬl̫̤͊t̵ró̶̩͌ m̡̺̩̳͔̰̬͆̉e̦n͎ͣ̀͛ṵ̡̲̻̳͉̾̚͜ͅ e il singolo tasto per le impostazioni lo mettete... beh, sotto la voce Impostazioni del CMS)... 🤧</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Aggiungendo #post ad una serie, in automatico in cima alla pagina di ognuno di loro viene aggiunto un riquadro che indica di quale fa parte ciò che si sta leggendo, con link sia che rimandano alla pagina della serie, sia agli altri articoli, e puntata precedente e successiva in fondo alla pagina.<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>One small issue: gli articoli senza titolo non prendevano spazio nel riquadro, essendo sia invisibili che incliccabili. E, seppur il #plugin abbia una sezione di templating per personalizzare l'HTML generato, non c'è modo di far apparire il collegamento al post preso singolarmente. Per fortuna, me la sono cavata senza modificare il codice, con una hack accettabile: CSS custom per scrivere del <code>content</code> nella parte <code>:after</code> dei link sfigati. 🤯</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Il box comunque usciva in troppe (2) pagine dove proprio non dovrebbe, nell'anteprima degli #articoli fuori dalla loro effettiva visualizzazione, rubando spazio a schermo e (credo) causando confusione. Anche qui, in realtà, l'unica opzione non rognosa è il CSS, e per fortuna con tutta la munnizza che viene scritta nel corpo di un'intera pagina dal server è facilissimo costruire dei selettori che agiscano solo nei contesti che mi interessano.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>La pagina di ogni serie usava di default il template di #tassonomia del sito, che sarebbe ok... se solo mostrasse la descrizione. Quindi ho dovuto attivare il template lista del plugin, che invece lo fa, ma ecco altre rogne con questo... e inizialmente credevo di potermela risolvere senza modificare il #template PHP, ma alla fine ho dovuto. Per fortuna, anche se ci ho messo 3 minuti tosti a capirlo <a href="https://publishpress.com/knowledge-base/series-overview-template/">dalla documentazione fatta malino</a>, mi è bastato creare una copia del file nella <u>cartella root</u> del mio tema, e modificare quella. 🔥️<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Prima, la completa assenza della sidebar del #sito, quindi anche del link per tornare alla home o del menu di navigazione... ho dovuto modificare il sorgente. Chiamando <code>wp_nav_menu()</code> faccio comparire almeno la navigazione, ma il link normale l'ho messo a parte.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Poi, di nuovo il problema dei collegamenti senza titolo, e anche in questo caso il CSS sarebbe stato sufficiente, ma, visto che ormai c'ero già, ne ho approfittato e modificato proprio l'HTML...</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>E in tutto questo, la pagina indice delle serie usa in ogni caso il suo template e per ora quindi non c'è neanche un rimando alla home. Forse posso modificare il template senza rompere gli aggiornamenti usando lo stesso metodo dell'altro,  però penso non mi sbatterò nemmeno, perché lì onestamente il link è superfluo.<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Btw, il suo permalink default è <code>/series-toc/</code>, e io l'ho cambiato in <code>/series/</code> perché è più logico considerando che le serie (sempre di default) stanno sotto <code>/series/&lt;la-serie-qualunque>/</code>... ma ora che ci ripenso, ho scartato l'occasione per cambiare il percorso di tutto in <code>/t-series/</code> in memoria di un meme che non fa più ridere... dovrei per caso rimediare solo per il funny, o lasciare così? 🕷</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Aggiungere gli articoli vecchi alle serie però, e soprattutto alle categorie, come accennavo, è si <em>semplice</em>, ma non <em>facile</em>... è il lavoro cinese di aprire la dashboard con la lista di tutte le centinaia di post, e scorrere, a volte cercando cose che già ho in mente e altre seguendo il flusso, vedendo se qualcosa attira la mia attenzione. A quel punto a volte mi basta guardare l'anteprima, altre però è troppo corta e devo aprire decine di nuove schede per rendermi conto se il contenuto è quello che penso, per capire cosa selezionare. Almeno, unica cosa buona, selezionando gli elementi su questa schermata posso aggiungerli in blocco al gruppo che mi interessa, altrimenti non immagino la sofferenza di andare uno ad uno... 🙏 (questa cosa btw non è inclusa nemmeno in molti #software di note più personali, stavolta Worpres vince)</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-11 23:59:00+00:00">11 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/meta.html" class="md-meta__link">Meta</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="tassi-nel-sito-misto"><a class="toclink" href="../../2024/04/11/tassi-nel-sito-misto.html">tassi nel sito misto</a></h2>
-<!-- wp:paragraph -->
-<p>Da qualche giorno sto spendendo <em>diversi minuti</em>, quando mi va di perdere tempo, a migliorare la #tassonomia del sito. In effetti, quello che doveva continuare come quartier generale del mio shitposting sta diventando sempre di più una (ennesima) base di #conoscenza personale. Però, se già per me è faticoso ritrovare roba pubblicata dopo tanto tempo avendo a mente solo un leggero #ricordo del contenuto (ma comunque non impossibile, bene o male funziona), non immagino per gli altri... ed è un peccato, perché potrebbe essere utile (I wish). 😥️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Piano piano cerco di mettere tutti i post passati sotto <em>categorie</em>, che hanno un'utilità diversa dai tag: sono da usare per raggruppamenti meno specifici e più omogenei (es. la categoria "cibo" racchiude tutti i #post con tag "fritto misto", "pasta", ecc...; oppure, quella "gaming" ha tutta la roba Nintendo, mobile, sulla PSP, ecc...). In effetti, l'usare parole non estremamente specifiche come hashtag è un abuso che i social media (tra cui il Fediverso con cui voglio tenere il bridge!!!) ci costringono a fare, non è buono.<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Si sta rivelando un bel po' lento, perché voglio evitare di avere ripensamenti e dover stare a rietichettare <em>centinaia</em> di #articoli, quindi devo ponderare bene #categorie sensate. A proposito, se avete qualche consiglio, sia generico che guardando ai miei contenuti, plz, droppate... 😳️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Mi rendo conto che su un #microblog, tra cui il mio, le saghe sono inevitabili: un sacco di post vanno puntualmente a continuare un discorso iniziato giorni o settimane prima. Mesi fa pianificavo di implementare la cosa sfruttando i collegamenti all'interno di ogni articolo, ma mi rendo conto che non è possibile così: linkare a qualcosa non significa per forza includerla in una saga, perché magari la sto solo menzionando...<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Per ora ho installato il #plugin "<a href="https://wordpress.org/plugins/organize-series/">PublishPress Series</a>", fa credo tutto quello che mi serve: posso definire delle "serie", associare dei post, e averli listati in ordine in una pagina dedicata. E in più, posso riordinare a mano gli articoli (mettendoli non per forza cronologici, [cosa che mi è già stata utile](../../../series/octt-v-whatsapp.md)), e avere sulla pagina di ognuno dei controlli di #navigazione... non solo è comodo, ma credo possa anche invogliare alla lettura! 🤑️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>C'è un bel po' di roba ancora che devo fare, per sfiziarmi per bene, ma il cuore dell'operazione è questo. Ho comunque già messo, sulla pagina "<a href="../../../libreria-post.md">Libreria Post 📂️</a>", il widget della prima cosa e <a href="../../../series.md">un link alla pagina dell'altra</a>... non per vantarmi, ma questa volta è proprio epico, ops.</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-10 20:31:02+00:00">10 aprile 2024</time></li>
+          <time datetime="2024-04-23 23:59:21+00:00">23 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10357,32 +9994,36 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="whatsapp-15"><a class="toclink" href="../../2024/04/10/whatsapp-1-5.html">whatsapp 1.5</a></h2>
+    <h2 id="cant-write-only-write"><a class="toclink" href="../../2024/04/23/cant-write-only-write.html">can&#8217;t write only write!!</a></h2>
 <!-- wp:paragraph -->
-<p>[sc name=quote-embed-post]2024/04/10/whatsapp-2/[/sc]</p>
+<p>Sembra che sto di nuovo perdendo l'abitudine di riuscire a scrivere abbastanza qui negli ultimi giorni, e la cosa non mi piace granché, ma questi nuovi progetti un po' mi stanno rapendo quindi non ho per la testa nemmeno la necessaria entropia per scrivere scemenze. Comunque, stasera con la scusa del mio compleanno (il tempo scorre...) ho visto degli amici, quindi non ho potuto fare tantissimo sul mio #pseudoOS, solo robine tra stamattina e oggi pomeriggio (e tra poco vado a mimir, sembra che io stia riuscendo a prendere abitudini migliori):</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Ho fatto avanti e indietro tre volte, tra credere di averlo già pubblicato e pensare che forse in realtà no, ma turns out che, si, in realtà no: qui non avevo mai scritto la "soluzione temporanea" per il fatto di #WhatsApp, prima che anche quella scadesse e ho dovuto trovare la permanente di ieri/prima... 👾️ <s>perché altrimenti l'alternativa sarebbe stata andare ogni 2 settimane in qualche negozio che ha <em>quei particolari fonini</em> in esposizione (e da me non ce ne sono a buona portata) e usarli in prestito direttamente lì, per quei pochi minuti...</s></p>
-<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Ho fatto un nuovo componente <code>Shell</code> con una grossa API <code>contentRunner</code>, praticamente ciò che dovrebbe occuparsi di far partire nuovi processi applicativi, di qualunque tipo, ma che hanno requisiti diversi dietro le quinte. Btw, a causa di questo devo riprogettare il componente <code>Proc</code>, che prima avevo fatto solo per prototipare e ora non va affatto bene (per il momento questa API lo bypassa completamente, ma a lungo termine non andrà bene). 🙄️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
-<!-- wp:paragraph -->
-<p>Inizialmente, per risolvere lo stato di #emergenza, avevo infatti architettato la "procedura iPhone", dopo aver letto su Reddit (sempre lui...) che sul client iOS quel problema di #login non accade. Il caso ha voluto che proprio il giorno dopo mi sarebbe capitato di vedere mio #cugino iphono-munito (e io lo sapevo da qualche giorno, perciò ho memato senza sosta dalla sera prima, e perciò ora lo ricordavo talmente bene da credere di aver postato): la perfetta occasione per provare. 🙏️</p>
-<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Devo fare un po' i salti mortali per far fungere programmi negli <code>iframe</code> che si integrino con il #sistema al massimo, considerando che è un requisito per me fondamentale quello che il sistema funzioni anche senza alcun tipo di server di backend... già far comunicare i programmi nel frame con quelli nella normale finestra è un bel disastro, ma poi ho dovuto inventarmi anche qualche #hack per far caricare ai frame risorse presenti nel file system virtuale, cosa che a quanto pare nessun altro #OS #web implementa correttamente. E non ho nemmeno finito... 😊️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Ho già provato a fare dei test riguardo il theming dell'interfaccia utente, precisamente con <a href="https://khang-nd.github.io/7.css/">7.css</a>, ma... è un altro disastro. Questa libreria usa nomi di classi talmente generici e altri attributi talmente specifici che so già che prima o poi usciranno problemi se volessi usarla così stock... ho anche quasi provato ad implementare qualche hack per sistemare uno dei problemi, però no, gli altri rimarrebbero. E con altri possibili temi sarà la stessa questione! Dato che non posso forkare e mantenere infiniti temi per colpa di minuzie, piuttosto credo che mi inventerò qualcosa per patchare i fogli di stile come serve a me... o aggiungendo un processo di build apposito, o implementando processi di patching al volo (con caching) direttamente nel sistema. ☠️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:gallery {"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":4290,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-2.png" alt="" class="wp-image-4290"/></figure>
+<!-- wp:image {"id":4830,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-7-960x484.png" alt="" class="wp-image-4830"/><figcaption class="wp-element-caption">Ho tra l'altro deciso almeno di crearla una repo Git per il progetto, almeno per ora, perché andare avanti senza conservare la minima history può essere problematico considerando che sto pesantemente prototipando. Man mano che farò aggiornamenti potrete testare #HakujOS su <a href="https://hakujos-octtspacc-4c1a4e1f8925ca11f7fa313fd803b35d8380d2e9f2d40.gitlab.io/">https://hakujos-octtspacc-[...].gitlab.io/</a>... ma ora non c'è proprio nulla da provare lì, al massimo vi può incuriosire leggere il #codice, boh. 💣️</figcaption></figure>
 <!-- /wp:image -->
-
-<!-- wp:image {"id":4289,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-1.png" alt="" class="wp-image-4289"/></figure>
-<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption"><a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$2LDrvpnQtqp2zqcmjsEBNFkk7rh0Phe2MutYbB18YZE">Su spacctorium ho cringiato fin troppo</a> tra quella sera e il primo pomeriggio. In pratica, dissi a mio cuggì che dovevamo provare a fare l'accesso con il mio account sul suo iPhone, quindi dopo pranzo abbiamo installato WhatsApp Business (banalmente per non costringerlo a togliere e rimettere il suo normale ZioZapp), e provato tutti i passaggi, poi disinstallato la app. Purtroppo, il banale login non mi ha causato unban magicamente; però, almeno, ho potuto aprire qualche sessione Web, durata per i famigerati 14 giorni successivi. <strong>Btw, Meta vomito.</strong> 🤢️</figcaption></figure>
-<!-- /wp:gallery -->
     
   </div>
 </article>
@@ -10393,7 +10034,107 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-10 13:18:21+00:00">10 aprile 2024</time></li>
+          <time datetime="2024-04-22 20:41:35+00:00">22 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="pulizia-antinoia"><a class="toclink" href="../../2024/04/22/pulizia-antinoia.html">pulizia antinoia</a></h2>
+<!-- wp:paragraph -->
+<p>In piccoli momenti tra stamattina e oggi pomeriggio, <s>sono stata convinta dalle voci che</s> dovevo perdere un po' di tempo, e ormai ho raggiunto inavvertitamente lo stato di avere così poche distrazioni involontarie sul telefono che sono finita ad aprire la galleria con l'intento di #ripulire un pochino dalla #spazzatura, liberare dello #spazio insomma... e ci voleva, sono fin troppo spesso a corto altrimenti. 👁️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Beh, stavo navigando tra i #video, e tra i tanti arrivo ad uno con miniatura nera, lungo poco più di 3 minuti, e giustamente lo riproduco per capire cosa fosse... eeeee ho subito un rickroll. Il video era <em>Never Gonna Give You Up</em>, per qualche motivo lo avevo sulla microSD. E avevo anche l'audio del telefono acceso, ops. Che tu possa essere stramaledetta, me di quasi esattamente 2 anni fa, per aver piazzato quel file lì probabilmente con lo scopo di indurre in trappola me del presente!!! Ormai non posso <em>letteralmente</em> più fidarmi nemmeno di me stessa. ✝️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comunque, a parte eventuali reperti storici, tra cui una sorprendente quantità di copie di roba di scuola delle categorie più disparate (non solo foto di appunti non miei, ma anche roba "meta", incluso un documento del 2022 con la lista dei percorsi del PCTO lmaooo), foto giustamente non ne ho potuto levare molte, perché saranno più di quattromila in totale: insomma, non si può mai pensare di poter fare una vera #pulizia di quelle, solo ricontrollare ogni tanto per togliere ciò che puzza molto di marcio. Però, con di mezzo anche altre cose, avrò si e no praticamente liberato 6-7 GB! 🧼️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>C'erano un sacco di video vecchi, alcuni addirittura temporanei, cioè che non sarebbero mai dovuti rimanere conservati più di qualche minuto, e invece sono rimasti per #anni... ops. Quelli li ho potuti giustamente #cancellare, poi però ce ne sono altri che invece ho potuto quantomeno comprimere, riducendo la risoluzione quando possibile (non spesso, l'editor integrato della galleria di MIUI non fa scendere oltre il 720p, e forse è un bene perché rimanendo a questa soglia comunque non si apprezza perdita di qualità), cambiando il rapporto d'aspetto per tagliare via parti inutili ai bordi, e qualcuno (tipo solo le cose conservate per reference o demo e nulla di più) anche velocizzandolo, olè. Maggior parte dei filmati sono scesi a 30-40% l'originale, con questa prassi. 🚀️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Poi nel frattempo ho notato che i dati di Termux pesavano più di 6 GB, e la cosa mi puzzava un po'... ok circa 3 GB di <code>bin</code>, però vado a controllare il peso di tutte le cartelle della <code>home</code> e si conta a fatica qualche centinaio di MB... quindi dove stanno questi 3 GB residui? Ah, semplicemente le cartelle nascoste della home, che ci ho messo 5 minuti a scoprire perché <code>du -sh</code> ovviamente non le troverà mai, se non esplicitamente scrivendo <code>du -sh .*</code>.....,.., quanto odio le CLI è assolutamente irreale, sono utili solo se devi scriptare, quando invece sono l'unica via pratica di interazione con un sistema per qualsiasi altro scopo sono sempre tra i piedi e c'è da piangere. Comunque erano cose di SDK e roba di build, ho cancellato tutto, erano servite in specifici momenti e mai più poi. 😩️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-22 00:28:05+00:00">22 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="os-nel-brauser"><a class="toclink" href="../../2024/04/22/os-nel-brauser.html">os nel brauser</a></h2>
+<!-- wp:paragraph -->
+<p>Lo dico chiaro e tondo ora, perché a quanto pare <a href="../../2024/04/21/vortice-js.html">il mio pitch veloce di ieri</a> non è entrato bene in testa a molti: si, il #sistemaoperativo che voglio creare è scritto con tecnologie web vanilla (HTML5, CSS, e #JS) e gira interamente nel #browser. Si, è un po' una #pazzia per la grandezza del mio scopo, ma per favore non stupitevi e non rabbrividite, perché non sono la prima a pensare qualcosa del genere, e anzi, <a href="https://kb.octt.eu.org/#Pseudo-OS">diverse cose sono già state belle che realizzate</a>... 🦷️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non so in realtà se qualcuno di quegli pseudo-OS #web si avvicina più ad un normale #OS nel modo in cui vorrei fare io, magari dovrei prendermi del tempo per sfogliare (ma mai leggere, non abbiamo così tanto tempo!!!) meglio il loro codice... perché da un lato già sentimenti contrastanti su questa cosa. Potrei forse semplicemente forkare uno di quei robi open-source, e avrei così forse da fare un po' meno lavoro con un costo minimo di possibilità perse dal punto di vista dell'utilizzo pratico (che poi spiegherò meglio)... però, avrebbe anche un minor valore come lavoro del mio portfolio rispetto a qualcosa di costruito tutto da zero, e fino ad ora in realtà sembra starsi rivelando un grattacapo gradevole, come non avevo granché fatto prima d'ora. 👽️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In realtà finora non c'è nulla di difficile da #programmare, la vera difficoltà sta nel costruire una buona progettazione senza avere nemmeno un briciolo di conoscenza formale sulla teoria dei sistemi operativi, ma solo andando un po' a sentimento e con le conoscenze collaterali che, da power user di Linux, Windows, Android e tutto quanto da anni, comunque ho indubbiamente accumulato. Perché appunto, non voglio fare uno di quei simulatori che direttamente funzionano con logica di alto livello, ma vorrei tentare di partire da più in basso per... well, creare tutte le astrazioni in modo più ordinato e funzionale, per poter quindi implementare caratteristiche anche più avanzate che altrimenti sarebbero possibili solo con delle hack (ad esempio, come permetti a delle app di mostrare overlay a schermo intero se tutta la tua logica dei processi ruota attorno al dogma che un processo è la sua finestrella nel DOM con il suo tastino in taskbar?). 🧨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4768,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-6-960x503.png" alt="" class="wp-image-4768"/><figcaption class="wp-element-caption">Questo è ciò che ho fatto da stamattina ad ora... ho implementato per iniziare giusto un pizzico di logica di eventi, processi, file system, e poi i primissimi passi per il gestore di finestre, in quello che potrebbe tecnicamente essere considerato un #kernel... si, l'ambiente #desktop è praticamente nel kernel al momento (yikes!), ma dovrò pur andare un passo alla volta. Almeno, sto cercando di strutturare il codice in modo modulare, come strati non direttamente dipendenti tra loro, quindi prima o poi dovrebbe essere facile scambiare componenti core del #sistema come pezzettini! Ganzo comunque avere già qualcosa che a video gira, nonostante la strada per la vera funzionalità è ancora lunga. 🙃️</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-21 01:26:06+00:00">21 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10413,30 +10154,184 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="whatsapp-2"><a class="toclink" href="../../2024/04/10/whatsapp-2.html">whatsapp 2</a></h2>
+    <h2 id="vortice-js"><a class="toclink" href="../../2024/04/21/vortice-js.html">vortice JS</a></h2>
+<!-- wp:image {"id":4748,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/screenshot_2024-04-21-01-09-00-703_us3219597754036554679-960x536.jpg" alt="" class="wp-image-4748"/><figcaption class="wp-element-caption">La #programmazione oggi sottrattami una non ignorabile quantità di tempo. Realmente però, da stamattina fino a oggi pomeriggio sono dovuta impazzire per far funzionare il menu delle opzioni su #SpiderADB come in figura... cioè esattamente come nella #UI di #Android, dove i tastini della barra del titolo vanno a collassarsi in un menu quando non c'è più spazio. Purtroppo la libreria che ho usato per questo stile non è per nulla funzionale di suo, quindi ho dovuto implementare io queste cose. 🥱</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>Stavo girando tra vecchi post, e ritrovo questa bozza, solo questo esatto titolo senza alcun contenuto, non potevo dimenticarmi di aggiornare la questione <a href="../../2024/03/23/whatsapped.html">soft-perma-ban di WhatsApp di svariate settimane fa</a>, che non si è ancora magicamente risolto da solo (lo farà mai?), quindi volente o nolente dovevo trovare una #soluzione definitiva. 👿</p>
+<p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ame aveva suggerito il "metodo Samsung", che lui ha testato ma poi non ha potuto usare, perché avrebbe altrimenti dovuto lasciare il login messo bello lì sul #telefono di un'altra persona... A quanto pare, il #login va a segno senza strani errori se fatto come #account secondario (quindi, ci deve essere già un primario registrato) su un dispositivo Samsung, che si specula faccia parte di una specie di lista di "fidati" di Samsung, al contrario di roba come boh, Xiaomi (pezzi). 🥺</p>
+<p>A parte che non ho in teoria manco finito con quel menu, perché non si chiude ancora cliccando fuori su qualsiasi altra cosa che non sia il bottone di apertura (ma questa è una rogna sottile), ma poi ho dovuto spendere altro tempo per implementare quello che avrei già dovuto fare ma <em>non potevo</em> prima perché sarebbe mancato lo spazio per il bottone di attivazione della funzione, ossia effettivamente la disinstallazione dei pacchetti lì... Ovviamente sono sempre usciti fuori altri problemi strambissimi strada facendo, che sempre ho dovuto risolvere dolorosamente, ma alla fine ecco qua... 🙏</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Era l'unica opzione ora, quindi ho dovuto provare per forza. Ieri ho installato il client ufficiale di WhatsApp sull'altro tablet #Samsung, e ho prima registrato un secondo numero che non ha proprio mai avuto Zapp (meno male che lo ho da parte), tutto apposto. Poi dalle impostazioni ho banalmente aggiunto il mio normale numero come secondario, e... lol, ha funzionato senza storie. Ho aperto poi una sessione dal telefono su #Whatsapp Web To Go, e ora siamo a posto. Meta cacca. 🙏</p>
+<p>Volevo in realtà iniziare <em>un altro #progetto</em> stasera, probabilmente a lungo termine invece, ma ho giustamente deciso di finire prima ciò che avevo iniziato appena poco prima, per una buona volta, altrimenti sappiamo come va a finire. Quindi bene. Però, da domani, e adesso vi droppo una bomba, devo iniziare il mio sistema operativo #web. Sembra una pazzia, e lo è, ma voglio creare qualcosa che sia come quegli pseudo-OS HTML5 a scopi di portfolio, ma che sia per me anche un software di uso quotidiano, andando leggermente oltre le limitazioni di tutti quelli fatti solo come esercizio di stile... visto che non mi va bene nessun OS desktop o mobile, perché non farne uno io per entrambi, eh? 😇</p>
 <!-- /wp:paragraph -->
-
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-20 01:15:20+00:00">20 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="minecrafte-navigato"><a class="toclink" href="../../2024/04/20/minecrafte-navigato.html">minecrafte navigato</a></h2>
 <!-- wp:paragraph -->
-<p>Ho usato btw un tablet diverso dall'altra volta, in cui ho provato a fare login diretto con il numero principale, per paura che ora potesse essere "contaminato" e rovinarmi anche il numero secondario. E ancora proprio per questo motivo, non mi permetto nemmeno di disinstallare la app dal tablet (anche perché ogni 2 settimane le sessioni Web scadono, quindi dovrei stare a togliere e rimettere), né tantomeno sloggare il #numero secondario; se iniziasse a fallire l'accesso pure con quello, sarebbe la fine. 👄</p>
+<p>Poche ore fa ho scoperto per caso una #stregoneria, una cosa che proprio non immaginavo qualcuno avesse potuto portare alla piattaforma #HTML5, e insomma, non credevo ai miei occhi... poi ho visto che ci sono anche i sorgenti e tutto, e allora ho dovuto crederci per forza. Hanno portato ben 4 versioni di #Minecraft #JavaEdition al #browser. Precisamente, ben 2 release, 1 beta, e 1 alpha, a quanto pare. 😭️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4243,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/20240410_003752-960x960.jpg" alt="Testo standard: &quot;Codice WhatsApp: ... Puoi anche toccare il link per verificare il tuo numero: ... Non condividere il tuo codice con ...&quot;; Testo insolito: &quot;Il tuo account WhatsApp è stato registrato su un nuovo dispositivo. Non condividere questo codice con nessuno. Il tuo codice WhatsApp: ...&quot;" class="wp-image-4243"/><figcaption class="wp-element-caption">Una cosa strana che non mi era mai accaduta, per quanto mi ricordi: l'SMS per registrare a Zozzapp il nuovo numero appare con il solito testo, nulla di strano... mentre il messaggio per il numero solito ha una dicitura che non ho mai visto. Che cavolo sta succedendo ancora??? 😶</figcaption></figure>
+<!-- wp:image {"id":4721,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image-5.png" alt="" class="wp-image-4721"/><figcaption class="wp-element-caption">Esatto, non sto parlando tipo delle eventuali ricreazioni sia ufficiali che non di versioni come la classic, ma proprio di quella #Java del #gioco ricompilata con una strana VM verso JS+WASM. Talmente epica come cosa che ho dovuto subito metterla sulla #SalaMuseoGames, avevo immaginato per tanto tempo l'idea di riuscire a far girare queste versioni del gioco come #webapp per alcuni casi d'uso ma zero idee su come anche solo iniziare. Merda è infuocata. <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/04/19/minecraft-java-edition/">https://gamingshitposting.github.io/SalaMuseoGames/2024/04/19/minecraft-java-edition/</a> ❤️‍🔥️</figcaption></figure>
 <!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In tutta onestà, non è che giri granché, se sul mio fisso oscilla tra poche decine di FPS nonostante i dettagli tutti al minimo... e neanche a dirlo, ma sul (mio) telefono è inutilizzabile per quanto è lento, tralasciando il fatto che non ha controlli touch. (Ma vabbè, c'è Pojav lì.) Ma probabilmente è la release 1.8.8 (quella caricata sul mio sito) che è particolarmente pesante, le altre tre non le ho ancora provate e dovrei. Però è spacciato come <a href="https://eaglercraft.com/p/news/#news__eagler13">gioco per Chromebook</a>, e io vorrei davvero sapere come può mai girare in modo soddisfacente lì, allora... 👄️ (però comunque, un minimo giocabile lo è)</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-19 16:23:58+00:00">19 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="adbranio"><a class="toclink" href="../../2024/04/19/adbranio.html">adbranio</a></h2>
+<!-- wp:paragraph -->
+<p>Devo ancora aggiungere un po' di altre funzioni, ma diciamo che questo ennesimo #progetto è comunque già pronto per il pubblico, e allora fuck it: grazie ai poteri del silicio, ho creato #SpiderADB, una collezione di strumentopoli che hanno a che fare con il benedettissimo #AndroidDebugBridge, utilizzabili direttamente dal #browser senza installare un fico secco. 🗽️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4709,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image_editor_output_image-1223146787-17135296584855911593726902847975-960x445.jpg" alt="" class="wp-image-4709"/><figcaption class="wp-element-caption">Si, ne ho voluto proprio approfittare e ho reso il tema della UI tale e quale a quello di #Android #Holo (Ice Cream Sandwich)... bei tempi. Un po' grazie <a href="https://github.com/zmyaro/holo-web">all'esistente Holo Web</a>, un po' con miei aggiustamenti che ho fatto e farò man mano, perché quella libreria è abbastanza incompleta. La #webapp è su <a href="https://hub.octt.eu.org/SpiderADB/">https://hub.octt.eu.org/SpiderADB/</a>! 🕸️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Per ora funge solo su Chromium, perché le scimmie che lavorano ad Apple e Mozilla non hanno ancora, dopo credo ben 7 anni, implementato #WebUSB. In realtà <a href="https://github.com/yume-chan/ya-webadb">Tango, la libreria che ho usato</a> che implementa il porting di ADB, supporterebbe anche la connessione via rete, ma è un casino che richiede comunque #software sull'androide o sul dispositivo host (per via di limitazioni della piattaforma #web), per cui, anche ammesso mi vada di sbattermi, non so quanto possa essere utile. 🍂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comunque l'idea di creare questo <em>piripicchio</em> viene dall'altro giorno, in cui dovevo dare dei comandi shell sul tablet (dove non ho il root) ma l'unico altro dispositivo che avevo in quel momento era il telefono, dove a quanto pare il server #ADB in Termux non riesce a rilevare dispositivi via USB... e non potevo nemmeno usare il TCP/IP, perché ero su VPN e non potevo scollegarmi. Alcune #app native ci sono, ma soltanto abbastanza mediocri, tralasciando il fatto che ad installare un #programma per ogni singola evenienza si finisce subito ad accumulare monnezza. 💔️ </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>...Ovviamente se esiste questa libreria che io ho usato, doveva esistere anche <a href="https://tango-adb.github.io/old-demo/">una (1) app toolkit demo</a>, simile in effetti alla mia di ora, però... da un lato il terminale che c'è lì è buggato su #mobile, e dall'altro ho pensato quasi quasi di approfittarne per implementare #utility più specifiche che lì non c'erano. Ad esempio, di roba in più nella mia #applicazione c'è già un listino di pacchetti installati... che a breve diventerà anche gestore effettivo, con pure funzioni di debloat, eheh. 👽️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-18 12:58:25+00:00">18 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cant-wake-up-in-detroit"><a class="toclink" href="../../2024/04/18/cant-wake-up-in-detroit.html">can&#8217;t wake up in detroit</a></h2>
+<!-- wp:paragraph -->
+<p>Avevo avuto un'idea che <em>sembrava</em> infallibile per riuscirmi ad alzare in #orari più decenti tutti i giorni, e conseguentemente andare anche a #dormire ad orari meno indecenti tutte le sere, ma a quanto pare... eh. In realtà queste ultime volte sto riuscendo a mimirmi già in media una mezz'oretta prima, perché sono già un po' più stanca, anche se come tempo non è abbastanza (ma questo si può sistemare nelle settimane), e soprattutto il mio #metodo è fallibilissimo... e ciò è un #problema, perché per funzionare questa cosa devo stabilire un'abitudine concreta. 😩️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In sostanza, avendo osservato che riesco ad alzarmi ad un orario preciso sempre, anche quando non ho praticamente forza (perché ho dormito così poco magari tutte le sere prima, cosa che capitava quando andavo a scuola), se e solo se ho un qualche cosa da fare che va oltre il mio personalissimo arbitrio, ho pensato: e se ripetessi a me, anche le #mattine in cui posso stare a casa, cose tipo che idk, devo andare all'università, devo andare dal vattelappesca per forza, e così via? 😼️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Peccato che il mio cervello non è così stupido, e quindi non ci crede, quindi finisco per andare alla scrivania, spegnere completamente le #sveglie (sia se ne ho impostata una sola, sia se ne ho multiple, allucinante) e tornare a letto per quei <em>5 minuti</em>, che io vorrei davvero fossero tali... e infatti se non mi addormento questo patto lo rispetto, e però peccato che non importa se muovo gli occhi, se gioco con le mani, o che: qualunque cosa faccio, se non devo davvero andare da nessuna parte, non serve a nulla per non farmi ricadere nel #sonno. 🐼️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ed è #strano perché proprio niente riesce a farmi uscire da lì... lasciamo stare eventuali cose gravose e sgradite che dovrei affrontare alzandomi, ma nemmeno le cose buone riescono a spingermi: né il pensare che così faccio colazione, o bevo l'acqua (che dopo una notte intera ha proprio un buon sapore), o mi metto a leggere, o a giocare, o a programmare, niente di niente. È probabilmente la natura stessa degli #impegni e degli svaghi autoimposti, in un modo o nell'altro posticipabili con facilità, proprio perché sono stati con facilità decisi dalla stessa persona, e non una terza. 💃️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Evidentemente, devo andare un passo oltre e comportarmi davvero come se avessi impegni materiali dall'alto, e soprattutto con un #orario ben fissato, non solo pensare alla cosa così e senza in mente un tempo, quindi... devo prendere l'abitudine di fare colazione, lavarmi, e scendere tutte le mattine per andare alla fermata del bus, come se volessi prendere quello di un preciso orario, e poi tornare indietro. Non prestissimo come quelle poche mattine in cui devo, ma nemmeno troppo tardi... e tecnicamente l'orario posso inventarmelo io, a patto di non cambiarlo da un momento all'altro a convenienza; non è necessario che davvero ci sia un autobus in quel momento, non devo <em>davvero</em> prenderlo, devo solo <em>convincermi</em> di doverlo fare... 💣️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Le prime mattine con questo metodo saranno indubbiamente difficilissime, perché rimarrebbe sempre come #intoppo il dover fare tutta questa #sbatta per una cosa che inconsciamente saprei che è falsa, proprio perché l'ho inventata io e non mi è piovuta addosso... ma la teoria sarebbe che con il tempo questa possa diventare #abitudine e che il mio cervello non se ne accorga più, oltre al fatto che abituandomi ad altri orari questi dovrebbero funzionare e basta. Non ho #idea di se possa funzionare, ma vale la pena provare, perché altrimenti ho in mente solo un'altra soluzione, ma è talmente hi-tech che non è immediata da realizzare, anche se almeno sarebbe economica essendo con elettronica DIY... vabbè, no spoiler, sarà solo un'ultima spiaggia. 🔪️</p>
+<!-- /wp:paragraph -->
     
   </div>
 </article>
@@ -10448,7 +10343,7 @@
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../25/index.html">25</a> <a class="md-pagination__link" href="../26/index.html">26</a> <span class="md-pagination__current">27</span> <a class="md-pagination__link" href="../28/index.html">28</a> <a class="md-pagination__link" href="../29/index.html">29</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../57/index.html">57</a>
+  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../25/index.html">25</a> <a class="md-pagination__link" href="../26/index.html">26</a> <span class="md-pagination__current">27</span> <a class="md-pagination__link" href="../28/index.html">28</a> <a class="md-pagination__link" href="../29/index.html">29</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../58/index.html">58</a>
 </nav>
         
       

@@ -9824,12 +9824,11 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-03-26 19:52:01+00:00">26 marzo 2024</time></li>
+          <time datetime="2024-04-03 18:49:25+00:00">3 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
             
-              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
               <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
         
         
@@ -9845,21 +9844,29 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="pwtorturaaaa"><a class="toclink" href="../../2024/03/26/pwtorturaaaa.html">pwtorturaaaa</a></h2>
+    <h2 id="non-spendo-zoldi"><a class="toclink" href="../../2024/04/03/non-spendo-zoldi.html">non spendo zoldi.</a></h2>
 <!-- wp:paragraph -->
-<p>Credo che fare quello che volevo fare riguardo le #PWA, a maggior ragione ora che mi sto informando un po', è più complicato di quanto credevo... ecco perché ai tempi cercai vie <em>apparentemente</em> più impegnative. <a href="../../2024/03/25/volpepivvuaiutooo.html">Il lavoro di ieri è comunque valido e meglio di nulla</a>, ma ho paura che la mancanza del supporto offline si possa sentire, perché quel metodo non la aggiunge magicamente, e riuscire a farlo appunto non è una passeggiata. 😤️</p>
+<p>Stamattina mi sono accorta, dopo essere già scesa di casa, che non avevo preso la mia borraccia, perché stava da diversi giorni fuori dallo zaino e non me lo ricordavo... ma ormai era tardi per tornare indietro a prenderla, avrei perso il bus, quindi dico #pazienza. 🙀️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per poter "funzionare #offline", un sito web deve <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Offline_Service_workers">registrare un Service Worker che risponde ad un particolare evento <code>fetch</code></a> restituendo risorse precedentemente cachate. Sarebbe abbastanza semplice, se non fosse che, per una scomodissima combinazione di requisiti di sicurezza e mancanza di #API nei browser, non c'è letteralmente alcun modo pratico di registrare uno di 'sti cosi tramite estensioni, figurarsi userscript. Nello specifico, gli script per i ServiceWorker devono essere necessariamente serviti su protocollo <code>https:</code> (quindi niente <code>blob:</code> o <code>data:</code>, cosa che ci taglia via immediatamente gli inject con gli userscript, ma nemmeno <code>file:</code> o <code>http:</code>), per forza dallo stesso dominio della pagina (e quindi non si scappa ospitando per conto proprio solo quel file senza clonare il #sito), e come ho detto non ci sono API per iniettarne da #estensioni. 😨️</p>
+<p>Non avevo #urgenza di #bere, quindi non ho subito comprato una #bottiglietta di plastica, anche perché ero convinta che ai distributori fosse 1€ o poco meno, né tantomeno ho controllato se fosse davvero quello il prezzo. Non avendo sete, ed essendo in quel preciso istante diventata anche particolarmente #tirchia, ho detto vabbè, se proprio devo, vedremo se avrò sete più tardi. 🕓️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ovviamente, andando per la strada di creare un'estensione, <em>in pura teoria</em> non servirebbe nemmeno preoccuparsi di usare questo metodo, perché a quel punto si potrebbe direttamente usare l'estensione per intercettare il traffico, salvandolo quando è nuovo, per poi servirlo da una cache quando non c'è Internet. Le <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">API <code>webRequest</code></a> <em>sembravano</em> proprio adatte, quindi mi sono messa a fare varie prove, per poi scoprire che... non riesco in alcun modo a visualizzare il contenuto restituito per una pagina se non c'è #Internet: la schermata di errore del #browser prende precedenza, e nessuna delle cose che ho provato riesce a sovrastarla. E anche potenziali #workaround, come usare le <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs">API <code>tabs</code></a> per modificare il contenuto della pagina di errore pur rimanendo sull'URL desiderato, col piffero che funzionano! (E no, sembra proprio che io non possa usare le richieste #web dell'estensione per servire una risposta fake ad un path da registrare come worker, l'evento viene triggerato ma il navigatore non si beve il risultato.) 😭️</p>
+<p>Ora di pranzo: passo ai distributori e mi accorgo che l'acqua naturale da 50 cl è appena 35 centesimi... stavo quasi per comprarla, ma poi mi accorgo che devo fare un casino per prendere le monetine dallo zaino, e quindi lascio stare per il momento. Anche perché ancora non avevo molta #sete, ma avevo fame, quindi mi sono seduta lì vicino a mangiare; e in ogni caso, ormai ero #spilorcia, quindi ben 1/3 di euro non lo avrei dato via tanto facilmente... 🔪️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In poche parole: ennesimo #rabbithole #JavaScript che mi sta completamente consumando, e anche molto velocemente, perché più trovo ostacoli alla mia #idea più cerco di andare veloce per superarli, ma più ne incontro sempre di nuovi e più il cervellino ammuffito deve elaborare, ma ci sono aspetti del #webdev che sarebbe meglio non elaborare proprio. A questo punto, tutte le strade che posso prendere per risolvere il #problema sono in ogni caso #hack: ne ho in mente qualcuna rimanendo con un'estensione, che comporterebbe comunque un dietro le quinte estremamente bizantino ma nessun particolare compromesso di sicurezza o usabilità... oppure, ben due soluzioni ancora peggiori (e in parte simili), che spero vivamente di non dover usare; sarebbe anche peggio. Comunque, che cavolo, questa piattaforma di #sviluppo è piena di risorse, una maniera prima o poi si troverà. ☠️</p>
+<p>Passano altre ore, momento di andarsene, penso un'ultima volta a se effettivamente mi servisse l' #acqua oppure no, e ops, a quanto pare ho deciso di no. Sicuramente non stavo morendo di sete, e poi tra poco sarei tornata a casina, quindi spendere tutti quei soldi proprio ora sarebbe stato molto #stupido... perché io sono estremamente, pericolosamente, #TACCAGNA. 😈️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quindi, torno in città e... la libreria è aperta, ci passo prima di tornare a casa, e ritiro i due libri che avevo ordinato, che sono fortunatamente arrivati: 32 #euro in meno in mio possesso. Sarei dovuta passare anche in fumetteria, ma c'era un botto di gente, e allora ho deciso di tornare prima a casa, posare la roba, riposarmi un po', e poi ripassare più tardi. Non so ancora quanti #soldi dovrò spendere lì (mi secca premere i numerini nella calcolatrice), ma vi assicuro, saranno molti di più di 0,35€. 🤗️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Crepi l' #avarizia, non è vero? ...Beh, si, ma solo quando i #soldini sono regalati dallo Stato con il bonus cultura... quando è regolarmente liquido, un centesimo non sperperato oggi è un centesimo in più che si ha domani, invece... (anche se, da un momento all'altro, se i test che sto conducendo ora avranno esito negativo, <a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$q0t_p7bHdi4LNMxv9wCj8L7R-Ycf3i3wv3jTdtit0zs">dovrò spendere della valuta digitale per un aggeggino multimediale cinese dal costo di ~10€</a>... assolutamente non di più, perché sono tirata, ci tengo a ribadire, ma immaginate quante bottigliette d'acqua comprerei con tali #danari?) 🤑️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -9871,12 +9878,436 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-03-25 19:39:17+00:00">25 marzo 2024</time></li>
+          <time datetime="2024-04-03 12:07:35+00:00">3 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/appunti.html" class="md-meta__link">Appunti</a>, 
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="webaps-heist"><a class="toclink" href="../../2024/04/03/webaps-heist.html">webaps heist</a></h2>
+<!-- wp:paragraph -->
+<p>Il #problemino (tra i tanti!) delle #webapp è che saranno anche <em>facili</em> da #archiviare o #clonare spesso, ma non per questo anche <em>semplici</em>... (o per caso non sono neppure facili e la mia #esperienza mi fa sottovalutare la cosa?) 😫</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>🅰️ Per quelle meno complesse, il metodo migliore è senza dubbio un bel <code>wget -kp $URL</code>, cioè scaricare la pagina #HTML con tutte le sue risorse collegate, e convertire i link da assoluti a relativi.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>🅱️ Quel #metodo però non è a conoscenza di tutte le risorse caricate dinamicamente, cioè dichiarate in posti diversi dall'HTML. Per prendere anche quelle (ed è spesso necessario, tutte le app moderne caricano roba così), bisogna aprire la app nel #browser, e guardare le richieste di #rete che macina con il normale uso.<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>1️⃣ A questo punto, si può usare la funzione del browser per esportare le richieste in formato HAR, e poi tool come har-extractor o Har Extractor Online per ricavare i file effettivi da quel blob.<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Ho notato però che Firefox in alcune situazioni genera #HAR corrotti (2 giochi fatti in Phaser avevo provato a scaricare, ed una volta estratti gli script tiravano errori; ho riprovato con Chromium, ed è andato tutto liscio), quindi a prescindere io userei <em>l'altro</em> #navigatore per questa cosa. 🥴</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Poi, non ho ben capito se per via di come il file HAR in sé è generato, se come quegli #strumenti lo interpretano, o un misto delle cose, ma le risorse cross-domain (e credo anche caricate da iframe?) tendono a non venir estratte, quindi si deve andare poi a pescarle prelevando l'URL di ognuna a manina dai DevTools già aperti... 🤧</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>🆎 Si potrebbero usare primo e secondo metodo insieme in linea di principio (copiando i file del primo passaggio su quelli del secondo, sovrascrivendo gli esistenti), ma nella pratica è inutile... se c'erano link assoluti da convertire in relativi nell'HTML, con spaventosa probabilità questi sono presenti anche nel #JavaScript o chissà dove, per cui, dato che bisognerà comunque andare a mano a modificarli da qualche parte, 1 o 2 file in più non cambiano (spesso) nulla.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>2️⃣ Se si è usato il secondo metodo, bisogna a questo punto effettivamente verificare che i link siano tutti corretti, le #risorse effettivamente scaricate, e la app funzionante indipendentemente dal dominio originale... il modo più efficiente che ho trovato è aprire già da subito un webserver locale sui file, navigarci nel browser, e controllare sia che tutto funzioni nel pratico, sia che tutte le #richieste di rete per risorse effettive (ossia, non contano chiamate di telemetria o simili) vadano al mio #server, anziché al dominio originale (attivando la colonna omonima della tabella nei #DevTools lo si vede a colpo d'occhio).<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Quando ci sono richieste che falliscono o che vanno su altri server, bisogna capire da dove nel codice queste partono, e fare le opportune #modifiche per usare URL relativi. Quelle che partono dall'HTML o dal CSS (turns out, non molte, altrimenti avremmo usato direttamente wget) sono appunto una scemenza da sistemare... ma quando partono da #script, c'è poco da fare, con l'aiuto del debugger del browser (di nuovo, meglio Chromium, perché de-mininifica il JavaScript aggiungendo whitespace in automatico) si va a capire da che punto partono, e in base alla situazione si valuta che modifiche fare al #codice. Poi, si testa ancora, e ancora si applicano #fix, finché tutto non funziona. ♻️</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>In genere questo non è un problema, e anche per app più ostiche (come quella che ho ricaricato sulla #SalaMuseoGames ieri, <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/04/02/little-alchemy-2/">Little Alchemy 2</a>) si fa tutto in un quarto d'ora ben ristretto. Tuttavia, bisogna fare attenzione a quei programmi che caricano le risorse man mano che ne hanno bisogno e non tutto subito (in genere, maggior parte dei giochi, oppure parecchie #app React)... lì si può potenzialmente perdere un bel po' di tempo, perché bisogna mettersi ad usare il #software raggiungendo idealmente il 100% del codice; cioè, cliccare tutti i bottoni, usare qualunque azione, giocare tutti i livelli... fino ad ora non ho mai incontrato #ostacoli, ma se succede, l'unica è navigare tra il codice già scaricato per vedere cos'è che manca (da qualche parte ci sono scritti i nomi delle risorse ancora da scaricare, per ovvi motivi). 🗡️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>🔚 Aggiustamenti finali: in base alla situazione, vanno fatte altre modifiche al source per ovviare a #problemi banali ma frequenti. La maggior parte riguardano i domini, che in certi casi sono hardcodati, e quindi o ci sono iframe che comunicano con la Messaging API e gli va cambiato il dominio (come per il gioco di ieri), o c'è del DRM che ostacola il #rehosting (come [il giochino dell'altro ieri](../../../2024/04/02/geometrico-nel-brauser.md)) ecc... con #pazienza si risolve tutto.<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>E alla fine di tutto, una cosa che mi piace fare ma che non sarebbe obbligatoria, è disattivare tutte le componenti potenzialmente dannose dell' #applicazione, ossia commentare via eventuali inclusioni e chiamate a sistemi di analitiche o pubblicità. 🚯</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-02 16:24:48+00:00">2 aprile 2024</time></li>
         
           <li class="md-meta__item">
             in
             
               <a href="../../category/gaming.html" class="md-meta__link">Gaming</a>, 
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="geometrico-nel-brauser"><a class="toclink" href="../../2024/04/02/geometrico-nel-brauser.html">geometrico nel brauser</a></h2>
+<!-- wp:paragraph -->
+<p>Ci sono alcuni #videogiochi mobile (quelli un po' più ricercati, anche se comunque #casual) che è sempre parso non avessero una versione #webapp... uno di questi sarebbe #GeometryDash. Mi ricordo come ai tempi delle medie e persino le elementari lo cercavo per giocarci nel laboratorio di informatica, senza mai trovare nulla, se non qualche #ricreazione in Scratch (in realtà alcune sorprendentemente ben fatte, ma comunque #pezzotte). 😕</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'altro giorno, dopo aver visto sempre quel #gioco in Scratch su alcuni siti, ho pensato "possibile che ancora non c'è il legit?", e ho cercato sul web, e, con mia sorpresa, ho trovato diverse cose. Per evitare di allungare il brodo, in particolare una che ha causato l'esplosione del mio cervello l'ho già messa sulla #SalaMuseoGames: è un #porting quasi perfetto di Geometry Dash Lite, con tutti e 15 i livelli, e ce l'aveva solo questo sito <a href="https://geometrylite.io">geometrylite.io</a>. Com'è possibile, da dove l'hanno preso? 😳</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ho detto che è quasi perfetto perché ci sono alcuni dettagli un po' diversi o meno rifiniti, però comunque tutta roba che inizialmente avrei pensato di attribuire a differenze di versione e magari ottimizzazioni del motore di gioco per il #web, finché non ho provato a giocarci per bene... e rimango dell'idea che sia una trasposizione eccellente, ma ora ho il presentimento che non sia ufficiale; è un gioco #Unity riprogrammato da zero, eccetto per tutti gli assets, che sono evidentemente stati prelevati dalle build ufficiali desktop o mobile. Praticamente lo stesso spirito di <a href="https://bbs.spacc.eu.org/viewtopic.php?t=105">quei porting Android non ufficiali di giochi desktop o console</a>. 👽</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":3890} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/wp-1712067241422.mp4"></video><figcaption class="wp-element-caption">Ho temporaneamente installato la versione #mobile ufficiale per compararla a questa, per assicurarmi di non star impazzendo, e ho avuto così la conferma davanti ai miei occhi che la fisica è un po' programmata peggio. In Stereo Madness, in un punto in cui normalmente si può saltellare senza morire (in video), qui si verifica una collisione. Poi in generale, la navicella-supposta (subito dopo nello stesso livello) subisce la gravità più del normale, una minore accelerazione verso l'alto, e si piega un po' stranamente quando va per atterrare. E ancora, cliccare per saltare manualmente nel momento preciso in cui si sta su una piastrella di lancio fa si che... avvenga il salto basso normale, che prende precedenza su quello potenziato, cosa anormale... e ancora chissà quante altre #minuzie che non ho visto. 🦜</figcaption></figure>
+<!-- /wp:video -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":3887,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image_editor_output_image1975455009-17120655591267239432613722838250-960x554.jpg" alt="" class="wp-image-3887"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":3888,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/image_editor_output_image1865556010-1712065603495675988369348489582-960x1141.jpg" alt="" class="wp-image-3888"/></figure>
+<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">Poi ci sono questi altri microscopici #problemi, tipo che la barra di progresso dei livelli per la modalità pratica è verde anziché azzurra, o che la scia delle navicelle-freccia che si muovono sullo sfondo del menu principale si deforma al cambio di angolo (mentre dovrebbe invece essere un perfetto 90°)... roba da niente di per sé, però da subito a far capire la natura di questa build da ancor prima di impegnarsi a giocare. 🪲</figcaption></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ad ogni modo, è tutto così ganzo... Il gioco #HTML5 non gira malaccio, neanche sui miei dispositivi mobili (ma su Chromium gira un po' meglio e frega meno risorse al sistema rispetto a Firefox), e l'ho aggiunto come PWA senza pensarci due volte, considerando che è solo un'icona e non aggiunge monnezza al sistema Android. Purtroppo ad occhio mi sembra bloccato a 30 FPS, ma se mi gira vedrò come hackerarlo per portarlo a 60 (dovrei esserne capace, parliamo di WASM). Se volete giocarci: <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/04/01/geometry-dash-lite/"><a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/04/01/geometry-dash-lite/">https://gamingshitposting.github.io/SalaMuseoGames/2024/04/01/geometry-dash-lite/</a></a> ⚡</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-04-01 22:21:25+00:00">1 aprile 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2024/04/01/basta-butto-via-tutto-seriamente-non-e-uno-scherzo-assolutamente.html"></a></h2>
+<!-- wp:paragraph -->
+<p>Ho riflettuto un attimo meglio sul fatto del #new3DS, i #problemi di corruzione, la perdita dei dati, e ho capito una cosa importante... ho fino ad ora interpretato nel modo sbagliato il #significato di tutti questi ripetuti #avvenimenti. È chiaro che sono un segnale divino da parte di #Nintendo, che cerca di farmi capire che io nello specifico voglio sempre troppo dalla tecnologia e, in generale, pretendo troppo dal mondo, non riuscendo mai a fermarmi ad apprezzare quello che già ho, ma dovendo sempre costantemente stare ammorbata appresso a qualche oggetto o software da odiare, e di cui sparlare. I fastidiosi crash a casaccio? Non sono un malfunzionamento del sistema, ma è semplicemente il modo in cui questo cerca di dirmi che "<em>esiste un luogo e un tempo per ogni cosa, ma non ora</em>". La corruzione totale di tutti i salvataggi? È un modo per ricordarmi che tutto ha un inizio e una fine, e qualche volta bisogna rifare una cosa da capo per arrivare alla vera fine; magari la prima volta non la si è fatta degnamente. Insomma, non sono da vedere come intoppi nella giornata o punti di stress della settimana, bensì come #momenti di apprendimento e #meditazione. 🙏</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quindi, ormai ho deciso: anziché lasciare quello a prendere polvere e usare tutto il resto, prendo e <strong>butto via tutto</strong> il resto, proprio eccetto per il #3DS, che d'ora in poi dovrà essere l'unico mio dispositivo digitale, e solo così apprezzerò appieno tutti quei suoi enormi pregi che ai miei occhi viziati appaiono ancora come #difetti. Il PC, gli Androidi, le altre #console... tutto in discarica, per sempre (eccetto il router di casa, che in primis senza quello non posso collegare la console ad Internet, e poi in ogni caso, se lo facessi sparire, i miei mi farebbero giustamente un culo tanto). Non la venderò neppure questa robaccia, mi sentirei in colpa a rifilare questi terrificanti #aggeggi ad altre persone ignare, portando anche la loro anima a venir soggiogata; no, deve tutto sparire proprio dalla faccia della Terra. Anche il server verrà levato di mezzo probabilmente, questo nuovo funziona abbastanza bene ma comunque ci sono quelle cose che fanno perdere tempo e pazienza precisamente 1 volta ogni 6 giorni, quindi non ne vale proprio la pena, si stava meglio quando si stava peggio. 😷</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Come vedete dalla foto in oggetto (scattata dal #new3DSxl con cui sto anche scrivendo; si, non posso direttamente inserire emoji, ma le copincollo da altri siti), per la roba piccola come il telefono mi sto portando avanti già proprio ora a buttarla nella #monnizza, mentre a quella grossa penserò magari domani, che oggi è l' #1aprile, io sono stanca, è pure tardi, e insomma, basta, voglio un minimo di pace in questo istante... (Anche se ora che ci penso credo che almeno un telefono base base dovrò tenerlo sotto mano... al massimo userò un dumbphone di quelli vecchi, no Java no web no haram, solo chiamate insomma.) ✋</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3867,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/HNI_0046_MPO.jpg" alt="" class="wp-image-3867"/></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-31 23:59:13+00:00">31 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2024/03/31/3844.html"></a></h2>
+<!-- wp:image {"align":"center","id":3845,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-19.png" alt="" class="wp-image-3845"/><figcaption class="wp-element-caption">Prima che scatti non solo un nuovo giorno ma addirittura il nuovo mese (!), mi sbrigo a scrivere prima che sia troppo tardi per postare il #memino (sarebbe una tragedia)... momento 🅱️uona #Pasqua quindi.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quindi, ora che ho la vostra attenzione: un po' curioso che avvenga in questa giornata, ma mi era venuta una mezza voglia di far <strong>risorgere</strong> <a href="https://gamingshitposting.github.io/SalaMuseoGames/">il sito della #SalaMuseoGames</a>, che per cause di forze maggiori ormai era bello che stagnante. No, in realtà c'è un motivo... collegato alla mia nuovissima micro-fissazione di usare #webapp anche per i giochi su mobile, quando possibile, per tutto quel discorso di non sputtanarmi il telefono pure stavolta. In sostanza:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Sarebbe buona cosa impostare sulle pagine del sito, oltre ai #PWA manifest (relativi sia a tutto il #sito, che a singoli #videogiochi ospitati) che è un attimo implementare, anche il classico Service Worker di cache offline (ora che li ho compresi benissimo), così da rendere tutta l'operazione una roba ancora più godibile su #mobile. Possono essere anche fatti piccoli aggiustamenti, del tipo di: il gioco si apre già a tutto schermo quando installato come PWA (invece di far vedere tutte le cose solite della pagina web). 🤖️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Giravo un po' su <a href="https://appsco.pe/">Appsco.pe</a> per valutare giochini a casaccio, e mi sono accorta che si e no 1/5 di quelli che ho provato ad aprire erano link morti... ecco, per quanto il #web moderno come piattaforma <em>di esecuzione</em> software sia meraviglioso soprattutto per gli utenti, come #piattaforma <em>di distribuzione</em> è veramente fragilissima e, al contrario del classico giochino Windows o Android (o anche Flash...), che (di norma) sai che se ti scarichi il file ce l'hai per sempre, con gli applicativi #HTML5 è un attimo e questi possono sparire nel vuoto (la <em>mia</em> cache offline sul <em>mio</em> singolo telefonino relegata a soltanto il <em>mio</em> #browser ovviamente non conta come #backup). Per qualche motivo (abitudine...) sono finita a caricare solo ROM di vecchie console sul sitarello, anche se il mio intento sarebbe stato quello di mettere potenzialmente qualsiasi cosa, inclusi i #giochi in HTML5; tutto quello che ho messo finora si trova già in millemila romset strapreservati e ben organizzati, quindi con quelli il valore del mio lavoro è giusto il fornirli su una galleria "senza attrito", ma nulla di estremamente utile, mentre invece con questi altri... 😤️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>[democracy id=3]</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-31 03:38:50+00:00">31 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="trolling-di-fine-marzo"><a class="toclink" href="../../2024/03/31/trolling-di-fine-marzo.html">trolling di fine marzo</a></h2>
+<!-- wp:paragraph -->
+<p>Mi stavo facendo i fatti miei, quando a un certo punto ho notato che sono le 3 di notte... eccetto che non erano le 2:59 di notte un attimo prima, era appena l'1:50 o giù di lì! Quindi mi ricordo che è successa la #magagna: l' #oraLegale! O #oraSolare in questo caso? Aiuto non mi ricordo mai!!! ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nel frattempo mi ricordo che è finalmente il 31 marzo, quindi è ora di fare del sano #shitposting. <em>Oggi sarà il 31 marzo e le transfem già si stanno preparando per il cambio di stagione. Ricordate che l'amica che vi ricordate esiste ma non vedete mai in giro soprattutto quella con i poteri del teletrasporto questa sera si leverà di dosso il mantello dell'invisibilità annuale, uscendo dall'armadio infestato in cui ha deciso di non voler più vivere. Il 90% delle mie sorelle stasera deciderà di fare coming out o con quella persona particolare appena conosciuta o con i propri amici d'infanzia (ovviamente supportivi), questo lo fanno dai 15/16 anni. Nel mentre noi segregate in casa che ci leviamo il mantello in fibra ottica giusto per tradizione ma poi il giorno dopo si torna subito come prima, perché altrimenti non regge la scusa "noo è per il meme, pesce d'aprile, still cis tho". Ricordate che se non avete sfruttato i vostri 20 anni nell'armadio per imparare quantomeno a vestirvi con gusto avrete sempre dei rimpianti, una psiche danneggiata, non sarete mai normali. Chi pensa che non sia finita è una povera illusa.</em> Scusate, dovevo farlo, questa ce l'avevo da parte da troppo tempo, anche se non già scritta (domani mattina la rileggerò un'altra volta dopo il risveglio e mi vorrò sotterrare per il #cringe, scommettiamo 🤗?...)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3830,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/screenshot_2024-03-31-03-11-10-579_com593342414882485278-718x1440.jpg" alt="" class="wp-image-3830"/><figcaption class="wp-element-caption">Temevo di non trovare questo #memem sul #TransgenderDayOfVisibility, comunque, ci ho messo 3-4 minuti ma alla fine con pazze query di ricerca Google (gli altri motori non trovano mai i #meme descritti...) <a href="https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/tt0hro/happy_trans_day_of_visibility_d/">è uscito fuori</a>. Notare il #trolling effettuato dai #poteriforti degli #orologi in alto a sinistra. 👽</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-31 01:58:01+00:00">31 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/gaming.html" class="md-meta__link">Gaming</a>, 
+              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="nintenspac"><a class="toclink" href="../../2024/03/31/nintenspac.html">nintenspac</a></h2>
+<!-- wp:paragraph -->
+<p>Ultimamente tante piccole cose vanno storte, ma c'è poco da fare; quantomeno ci sono cose più dritte che bilanciano le situazioni, per così dire... ma non sempre! ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nonostante quegli accorgimenti che provai a mettere in atto con la microSD diversi mesi fa, sembra proprio che i #problemi con il mio #new3DS non siano risolti affatto, e anzi, il mio #incubo peggiore si è ripresentato un'ennesima volta ora, dopo diversi anni... detto in breve, <strong>proprio ieri ho perso</strong> tutti i miei #salvataggi, evviva... 🥱</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questa comunque sarà la terza o la quarta volta che mi succede. Non ho mai perso <em>davvero tutto</em>, perché sono previdente e dei #backup li faccio di tanto in tanto (su Git, persino), ma con il #3DS è veramente problematico, e proprio per questo in alcune situazioni rimango fregata. Devo ogni volta prima esportarli con degli homebrew, perché la #console li memorizza criptati, e non mi piace sapere di andare a fare backup di salvataggi che potranno funzionare solo con la mia specifica console e non anche altre o degli emulatori... vorrebbe dire che se perdessi la portatile perderei anche tutti i salvataggi, quindi non sarebbe una vera copia di #sicurezza. 🦧</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ovviamente il #problema è che questi homebrew sprecano tempo, sia per leggere e copiare i dati, sia perché devi metterti a manina a premere le opzioni (non fanno esportazione automatica, insomma), quindi è una cosa che solo di rado posso fare. Avevo iniziato da qualche giorno <em>Il professor Layton e la maschera dei miracoli</em>, giusto così, mi intrigava, ho fatto fino ad adesso giusto 1 ora e mezza di gameplay effettivo e mi stava piacendo... avendolo aperto tre o quattro volte per piccole sessioni, non mi è manco saltato in mente che avrei dovuto prendermi qualche minuto per fare una prima copia dei #progressi, e quindi ecco il #patatrac: dati di gestione dei titoli installati or smth corrotti, la console li ha ricreati dopo un certo riavvio, e ha fatto quindi sparire tutte le applicazioni installate su scheda SD (ma, stranamente, non si è liberato spazio di #archiviazione, quindi non li ha davvero cancellati), comprese di salvataggi. In realtà prima di impanicarmi ho dato un'occhiata, ma no, nella cartella #Nintendo3DS era sparita la sottocartella dei saves e, sicuro abbastanza, dopo aver reinstallato il giochino ed averlo riaperto (ma, in realtà, anche avendo provato a passare da JKSM prima), niente #dati salvati. E ora quindi sono nella condizione in cui vorrei giocare e continuare il gioco, ma non, non voglio ricominciare da capo... 🚱</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questo comunque è successo dopo che ho riscaricato i due file boot del Luma3DS, sulla microSD che è corrotta (e non è un problema hardware della scheda, ho verificato tante volte in tanti modi). E no, non l'ho fatto perché devo mettere sempre le mani ovunque, ma perché negli ultimi giorni il sistema era diventato estremamente instabile, e mi hanno consigliato di reinstallare il #CFW: <a href="https://t.me/Nlhlehde/180189">il sistema iniziava a crashare di continuo stando in idle nel menu home</a>, specialmente quando era attiva la connessione WiFi, e alcune volte dopo i #crash non si accendeva manco più (crashava nuovamente ma immediatamente all'accensione) prima di 1-2 minuti di tentativi (non ho idea di come sia anche solo possibile ciò). Ovviamente, cambiare i file di Luma in questo modo non comporta il #reset dei dati di gestione di Ninty, quindi è chiaro che la causa è stata diversa, cioè che nel frattempo si è #corrotto qualche altro settore scomodo sulla SDcard, al momento peggiore possibile. ☣️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sono veramente THIS CLOSE 👌 to prendermi una bella PlayStation Portable e dire vaffanculo per sempre a Ninten—wait...,....,.,..,, si comunque, scherzi a parte, la PSP che ho si comporta veramente meglio. Nonostante tutto lo #spacc a livello hardware (ci sono ancora cose che devo sistemare, ma per molti giochi non è un problema), il software è solido e funziona, punto, almeno fin quando resti nel voler effettivamente videogiocare e non fare roba fancy (e pensate che proprio questa microSD che ora ho nel #new3DS, prima la usavo nella PSP, e non ha mai dato #rogne). Nintendo invece... ammetto che in realtà su Switch almeno i salvataggi non si spaccano più, perché sono conservati solo i memoria interna e con una struttura dati separata, però per come hanno implementato la cosa ci sono quindi mille altri problemi, e insomma non si può mai avere merda in Detroit, il punto è questo. 🛏️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-30 13:17:46+00:00">30 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="siamo-rovinat"><a class="toclink" href="../../2024/03/30/3804.html">siamo rovinat</a></h2>
+<!-- wp:paragraph -->
+<p>L' #informatica sta completamente esplodendo nell'ultima settimana... ciò è molto buffo, ma anche #preoccupante. E siamo appena a sabato mattina... c'è tutto il tempo per far andare storto anche qualcos'altro! Siamo messi veramente di cacca. 😬️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Prima è uscito fuori un #bug che colpisce tutte le CPU Apple Silicon, simile a cosa fu Spectre anni fa, quindi ovviamente #hardware, e chissà se sarà o meno patchabile via software in realtà in futuro (ma in tal caso, il vostro bel #computer con la mela girerà 3 volte peggio, soldi buttati). Fanno proprio schifo 'sti #processori #moderni, tutti indistintamente, finiscono sempre per avere una caterva di #falle strane perché implementano #hack bruttissime a livello di progettazione per girare più veloci... dovremmo tornare onestamente al 6502. Il sito ufficiale è <a href="https://gofetch.fail">https://gofetch.fail</a>, e #LowLevelLearning ha ovviamente parlato della cosa: <a href="https://www.youtube.com/watch?v=-D1gf3omRnw">https://youtube.com/watch?v=-D1gf3omRnw</a> 🍎️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Poi una #falla di incremento dei privilegi a livello kernel in #Linux... è complicatissimo, ma un #ProofOfConcept <a href="https://github.com/Notselwyn/CVE-2024-1086">è stato pubblicato qui</a> (assieme al #writeup), e in pratica si può sfruttare un #problemino nello stack di rete per diventare #root... mi chiedo se si potrà magari utilizzare per rootare sistemi embedded ristretti (telefonini <em>coff coff</em>, ma non solo), anche se dice di colpire tra v5.14 e v6.6 quindi non ho molte speranze. Qui un #video se vi interessa comprendere il #glitch in modo umano: <a href="https://www.youtube.com/watch?v=ixn5OygxBY4">https://youtube.com/watch?v=ixn5OygxBY4</a> 💣️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>E infine, #notizia di ieri, cosa estremamente grave perché è stata fatta apposta, è stata inserita una #backdoor nella libreria di compressione #XZ. Lo ha scoperto un certo #AndresFreund, che non è un ricercatore di #sicurezza, ma era semplicemente diventato estremamente salty dopo aver visto che i suoi login ad SSH facevano schizzare alle stelle l'uso di risorse del sistema, oltre ad essere stranamente più lenti. Quindi ha scavato un po', pensando ci fosse qualche #problema benigno, ma in realtà ha scoperto che qualche stronzo ha inserito #malware nel processo di build della libreria, nascondendolo tra le cose relative al testing. Mi sarebbe piaciuto navigare tra #issue e pull request per vedere l'utente che ha mandato 'sta merda al progetto, ma GitHub come al solito si dimostra la piattaforma di condivisione di codice più stupida al mondo, e ha sospeso tutte le repo per "violazione dei Termini di Servizio"... razza di scimmie imbananate che non siete altro, ma credete davvero che i mantenitori di #Tukaani abbiano fatto entrare codice malevolo nelle loro repo consapevolmente? È ovvio che nessuno se n'è accorto, che bisogno c'è di punire chi non ha colpa allora? (Tra l'altro, <a href="https://xz.tukaani.org/">il loro sito</a> era ospitato lì, quindi ora manco quello è più online... almeno <a href="https://git.tukaani.org">hanno un mirror Git</a>, ma è solo source lì). Mi piacerebbe proprio tanto fare <em>una chiacchierata</em> con il vero colpevole, e di persona, sia ben chiaro, non dietro una tastiera dove questo si crederebbe ovviamente Dio... "<em>eh ma io so fare gli exploit io so programmare meglio di te io io</em>" sei un coglione, questo sei se fai queste cose, scommetto che non riusciresti nemmeno a parlare faccia a faccia. Persino io con le mie manie di protagonismo non mi sognerei mai di fare qualcosa per garantirmi una backdoor nei server #SSH di tutto il mondo, e che cazzo... 💀️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3805,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-18-960x676.png" alt="" class="wp-image-3805"/><figcaption class="wp-element-caption">Comunque, mailing list della scoperta su <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">https://www.openwall.com/lists/oss-security/2024/03/29/4</a>, e ancora un altro filmino: <a href="https://www.youtube.com/watch?v=jqjtNDtbDNI">https://www.youtube.com/watch?v=jqjtNDtbDNI</a>. (#Meme rubato da <a href="https://t.me/ignuranza/2002">https://t.me/ignuranza/2002</a>.) Io non ho controllato, ma personalmente direi che non sono vulnerabile sul mio server, perché uso Debian Stable (mi sembra di aver capito che lì non ci sono #rogne), e perché #OpenSSH lo tengo dietro firewall, è accessibile solo dalla mia LAN, col cazzo che arriva un bimbonutella che pensa di entrarci dentro sparando la sua chiave pubblica...</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-29 22:40:54+00:00">29 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
               <a href="../../category/recensioni.html" class="md-meta__link">Recensioni</a>, 
               <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
         
@@ -9893,232 +10324,29 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="libro-picrosso"><a class="toclink" href="../../2024/03/25/libro-picrosso.html">libro picrosso</a></h2>
-<!-- wp:image {"id":3642,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/Untitled-960x960.jpg" alt="" class="wp-image-3642"/><figcaption class="wp-element-caption">Questo è uno dei vari miei #acquisti di qualche giorno fa, un #libro con tipo 200 #puzzle #picross di diverse difficoltà e dimensioni. Qui è mentre cerco di risolverne uno avanzato, durante una soporifera lezione, per evitare di addormentarmi con la testa sul banco tra i miei pensieri. E in più di 1 ora ho fatto pochissimo... con questo ritmo penso che ne avrò per un bel po' di mesi per completare tutto, una buona parte dei #nonogram inclusi sono inaspettatamente complicatissimi. In un certo senso questo è un #pregio dell'avere questo #gioco come #cartaceo; considerata la #logica che serve per risolvere le griglie più ostiche, e i segnetti temporanei che quindi è bene fare per tenere traccia delle azioni, è ovvio che su telefono o PC si viene in genere messi davanti a schemi più semplici. E, onestamente, è anche più comodo in generale, appunto perché segnare le caselle è più flessibile, perché la superficie non ha riflessi, perché non c'è una batteria che si appiattisce, perché non c'è un touchscreen di merda che prende male gli input, ecc... unico problema: ci si fa le manine nere... (dovrei forse usare delle mine meno morbide per la matita?) 😨️ </figcaption></figure>
-<!-- /wp:image -->
-
+    <h2 id="saltaloffia"><a class="toclink" href="../../2024/03/29/saltaloffia.html">saltaloffia</a></h2>
 <!-- wp:paragraph -->
-<p>(Sono passate un bel po' di ore a dire il vero, ma ho pubblicato ora perché prima mi seccavo, ho solo caricato la foto, e non avevo ancora scritto il testo, ma questo è stato sufficiente a farmi dimenticare il tutto fino a un attimo fa... scusate, il webdev sta di nuovo consumando la mia anima...)</p>
+<p>Lo volevo scrivere ieri sera, ma poi mi sono lasciata trasportare dai #pensieri disperati (anche stavolta, la merda accade). Visto che a questo giro in cui ho iniziato un nuovo #manga (e a breve ce ne saranno anche altri, ho alcuni volumi 1 da parte...) mi è venuta voglia, invece che pubblicare una #vignetta per #memare ma totalmente decontestualizzata, ne approfitto per fare #consigli per gli #acquisti. 💸</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Mi sarebbe magari piaciuto vedere delle decorazioni sulle pagine, anziché uno sfondo completamente vuoto da tutte le parti, perché molti videogiochi del genere lo fanno e sono anche per questo estremamente attraenti e #piacevoli... ma, come sempre, suppongo che per appena 8,31 euro mi posso accontentare. C'è però qualche paginetta di spiegazione e #consigli più avanzati, tra cui un metodo di risoluzione che per me è più o meno nuovo, e che è probabilmente obbligatorio sapere per risolvere i #rompicapi più difficili. (E ci sono le immagini delle soluzioni alla fine, lo dico perché a quanto pare non è scontato.) 🧩️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Se vi piacciono questi tipi di #hanjie e avete soldini da spendere, allora realmente compratelo, perché è potenzialmente una #goduria: <a href="https://www.amazon.it/dp/B0CN1PF6RN"><strong><a href="https://www.amazon.it/dp/B0CN1PF6RN">https://www.amazon.it/dp/B0CN1PF6RN</a></strong></a>. (In ogni caso, prima di iniziare a usarlo, ho fatto le scansioni, quindi quando avrò voglia di sistemare il PDF allora lo potrete trovare su <em>libgen</em>; l'articolo su Amazon non ha alcuna anteprima del contenuto, quindi questo sarebbe l'unico modo per sfogliare prima di comprare, visto anche che nei negozi fisici non c'è). 💥️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-25 00:40:11+00:00">25 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="volpepivvuaiutooo"><a class="toclink" href="../../2024/03/25/volpepivvuaiutooo.html">volpepivvuaiutooo</a></h2>
-<!-- wp:paragraph -->
-<p>Bene, #Firefox mi sta facendo più o meno <em>scimunire</em> per bene per quanto riguarda il supporto alle #webapp progressive (su #mobile dico, su desktop non ci pensate nemmeno, Mozilla è <em>capa tosta</em>). Ho perso veramente le ultime ore a capire perché cavolo Chromium accetta di buon grado anche il più scarno dei #manifest, permettendo senza fatica di raggiungere l'obiettivo di una pagina web che ha la sua finestra dedicata che sembra nativa... mentre sulla volpe un sito si installa bene, un altro si installa ma manca l'icona, un altro ancora non si installa e quindi magari ha l'icona perfetta però si apre come scheda del #browser. 🥴️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ovviamente, anche #Mozilla Developer Network manca di #informazioni soddisfacenti a riguardo: certamente potrei in teoria esagerare e implementare tutti i #metadati possibili, ma visto che viviamo nel mondo reale devo chiedermi qual è il minimo sindacale. Dopo qualche #test, non ho alcuna risposta definitiva, ma almeno delle linee guida generali di cosa mettere <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest">nel manifest</a> si:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><code>name</code>, <code>display</code>: in teoria sono obbligatori, ma francamente anche se non lo fossero sarebbero da mettere ugualmente, quindi non ho manco provato senza; il nome della app serve, così come serve specificare se vuoi che vada a schermo intero o lasci almeno la UI del sistema operativo (e/o quella del browser, a cui io dico no grazie)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><code>start_url</code>, <code>scope</code>: non so se per solo uno dei due parametri o entrambi ma, se non si impostano correttamente, magari la #app si installa pure e funziona ugualmente (in loro assenza, da standard il browser dovrebbe usare l'URL corrente per le sue considerazioni), ma ho notato che su Firefox può succedere che l'icona non viene visualizzata; anche questi, quindi, è bene metterli</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><code>icons</code>: questo è un array di oggetti che è ancora più #complicato, ma per farla breve, serve almeno un'icona che sia in formato PNG per far rilevare la pagina come #PWA, e nello specifico ne serve una che sia abbastanza grande (128x128 è il minimo credo? almeno sul mio dispositivo, in realtà non so se su altri cambia, però Chromium fa in ogni caso meno capricci) per avere una scorciatoia di lancio che abbia effettivamente un'icona, e non la prima lettera del nome; i parametri <code>sizes</code> e <code>purpose</code> rendono tutto ancora più incasinato, se si ha 1 sola icona si fa prima a settare entrambi come <code>"any"</code> (però intanto il <code>type</code> sembra si possa omettere)</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Perché mi interessa tutto questo? Perché non solo dovrei sistemare le mie #applicazioni, che appunto non si installano tutte come dovrebbero (e per alcune dovrei anche implementare i Service Workers per farle andare offline, ma quella è un'altra storia), ma perché fin troppe app #web programmate da altri non hanno proprio la decenza di supportare un minimo lo #standard, essendo pensate come #siti vecchio stile, e quindi non le si riesce ad usare in maniera soddisfacente su mobile. Volevo fare un mio browser nativo (wrapper dell'Android System Webview banalmente) <a href="https://gitlab.com/octtspacc/browserocto">ai tempi come soluzione</a>, però non solo credo rimarrà nel limbo per sempre, ma non potrei mai implementare tutte le cose che mi sono utili in navigatori completi come Firefox e di cui giornalmente giovo, quindi è chiaro che la soluzione vera è semplicemente apparare quest'ultimo. ⛏️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Questa #idea mi è venuta circa stamattina senza alcun trigger particolare (ormai le mie migliori sono sempre così), e ho provato a cercare "un modo per forzare qualunque sito come PWA su #Android", cosa che avevo già fatto tempo fa senza arrivare a nulla, e ho quantomeno trovato un #userscript, <a href="https://greasyfork.org/en/scripts/454691-pwa-everything">questo qui</a>. Ha però un sacco di problemi (tra cui quelli che mi sono <em>scimunita</em> per levigare un attimino), quindi tant'è che ho fatto il mio ora con lo stesso meccanismo: <a href="https://greasyfork.org/en/scripts/490784-pwas-anywhere"><strong><a href="https://greasyfork.org/en/scripts/490784-pwas-anywhere">https://greasyfork.org/en/scripts/490784-pwas-anywhere</a></strong></a>. In pratica genera al volo un manifest e lo inietta in qualunque pagina se questa non include già un suo, così da farlo rilevare al browser. Testato su vari siti e, nonostante i punti ancora da sistemare, è meglio avere lui che non avere nulla; però tra tutti quelli su cui ancora non funziona, ci sono i sitarelli di Google, mannaggia (più tanti altri ancora non provati)... dovrò aggiustare, e qualche metodo lo ho già in testa. 😳️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-24 18:25:18+00:00">24 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../2024/03/24/3-euro-truffati-ma-tanta-goduria-guadagnata.html"></a></h2>
-<!-- wp:paragraph -->
-<p>Eccovi una cosa #allucinante: su invito altrui e promessa che, con una #promozione, avrei ricevuto 3 euro di buono Amazon semplicemente aprendo la app ogni giorno, avevo installato #TikTok e fatto la registrazione, qualche giorno fa. Le premesse, essendo queste, erano buone, non era detto da nessuna parte che avrei dovuto effettivamente usare la #app e bruciarmi il cervello, per cui, l'ho fatto... Solo che ricevevo un errore ogni volta che provavo ad inserire il codice di #invito, e ci ho provato per svariati #giorni, finché ieri il campo per farlo è direttamente scomparso del tutto, presumibilmente perché è passato troppo tempo, e la promozione, valida solo per i nuovi utenti, mi è quindi scaduta. 1 minuto al giorno truffato (non di più, perché i video non li guardavo, lmao, poveri stronzi se pensano che butto il mio tempo così), un pochettino mi rode. 😐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ma avevo nel frattempo notato che, non so da quando (sto sulla versione 33.9.4, credo la penultima), hanno finalmente aggiunto un maledetto tasto per salvare in locale i #video creati dalla #fotocamera in-app, senza prima caricarli sul social, quindi ora 'sta roba #cinese è almeno un po' più utile. Quindi, anche se ho fatto logout, non ho disinstallato subito la #applicazione, ma ho voluto perdere un po' di tempo a cercare se ci fosse un qualche modo per aprire direttamente la #videocamera, senza passare per la schermata principale, che richiede login con annessa accettazione dei termini legali. Ricordo che un tempo c'era una voce nel menu popup del launcher di Android per farlo, ma ora non mi appare, quindi la prima cosa che mi è venuta in mente è stata di cercare tra le activity dell'app una che facesse al caso mio... Spoiler: l'ho trovata, ma non serviva; è disponibile direttamente un #widget "TikTok #Camera", che io non avevo visto subito, ops. Ci sono poi altri widget ed activity che, se non al feed principale, riescono quantomeno a far arrivare alla ricerca, e quindi permettono di navigare la #piattaforma in via anonima ma diretta. (Più altre interessanti, dovrei fare un post a parte?) 🪄️</p>
+<p>Dovevo aumentare il prezzo del carrello Amazon e dissi "mmm, vediamo se posso iniziare una #serie un po' diversa", quindi trovai Skip &amp; Loafer, e vabbè, che ve lo dico a fare: ho consultato il trio descrizioni + recensioni + rapido sfogliaggio sui siti umma umma, e ho detto <em>okei</em>. I disegni non sono elaboratissimi, ma un po' ci sta come cosa... la storia in sé, fino ad ora, è parecchio scorrevole, e per la direzione in cui vuole andare i capitoli sono collegati bene. È uno #SliceOfLife, quindi poteva andare meno liscio sotto questo punto di vista, credo. 🧻</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3587,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-15.png" alt="" class="wp-image-3587"/><figcaption class="wp-element-caption">Il punto è, tra widget di quel tipo ed activity utili, con questi piccoli #trick si riesce ad usare una buona parte delle funzioni non strettamente #social di TikTok senza effettivamente accettare né termini di servizio né politica sulla privacy, e quindi senza legalmente cedere la propria anima a nessuno. Fatene buon uso, suppongo, questa roba è grossa: non hanno il diritto di rubarvi alcun dato in questo stato, e se lo fanno lo stesso allora potete portarli in tribunale, perché voi non avete letto alcun messaggio riguardo i termini né cliccato nessun tasto per accettarli tacitamente o meno... insomma, ci si può divertire con la loro camera senza classiche preoccupazioni, oppure ancora fare ricerche e guardare contenuti senza affidarsi a frontend terzi che ogni tanto si rompono. 😈️</figcaption></figure>
+<!-- wp:image {"id":3786,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image_editor_output_image1101499728-17117447061355891818781184089003-960x1346.jpg" alt="" class="wp-image-3786"/><figcaption class="wp-element-caption">La protagonista sono letteralmente io, mi faccio chissà che piani ogni volta che deve succedere qualcosa di grosso, e poi va tutto incredibilmente storto. In Mitsumi che inizia il #liceo ho visto un po' me che iniziavo l'università, eccetto che io non mi sono guadagnata il soprannome di "vomitina" (il che è buono), ma allo stesso tempo sono già passati mesi e non è successo niente di figo (il che invece non è proprio bellissimo). Le sue #distrazioni sono un po' meno ricercate delle mie, buon per lei. 🗿</figcaption></figure>
 <!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-23 21:36:43+00:00">23 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="basta-scudo-marcio"><a class="toclink" href="../../2024/03/23/basta-scudo-marcio.html">basta scudo marcio</a></h2>
-<!-- wp:paragraph -->
-<p>Mi pare sensato prendere qualche minuto per segnalare la #lettera aperta #StopPiracyShield, che come dice il nome vorrebbe riformare quella #schifezza rotta che qui in #Italia abbiamo avuto il primato negativo di inaugurare: <a href="https://stop-piracy-shield.it/"><a href="https://stop-piracy-shield.it/">https://stop-piracy-shield.it/</a></a> 🤕</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non so quanto senso abbia onestamente, ma probabilmente se potete è meglio firmarla che non. <a href="../../2024/02/15/piracy-shield-more-like-menacing-thing.html">Un mesetto fa ho già parlato</a> della questa questione anche qui sopra, e le cose sono solo peggiorate... non ho una timeline completa sotto mano ma insomma, i #blocchi sono stati più profondi e #problematici, <a href="https://t.me/ignuranza/1992">sono stati bloccati siti legittimi ed economicamente e moralmente danneggiate persone che hanno quindi anche sporto querela</a>, tramite un nuovo #blocco di #CDN anche di #CloudFlare (più incidenti minori). Quest'ultima si sta anche giustamente incazzando e ora sta iniziando pure a inviare mail ai suoi utenti chiedendo di lamentarsi con le autorità dei #problemi che questa #merda sta causando e potrà continuare a causare. Ma io ripeto, passino loro che anche se sono una parte (ahinoi) fondamentale dell'infrastruttura di #Internet non sono conosciuti dai normie... ma io ora aspetto che venga fatto un bel torto magari ad Amazon, a Microsoft, a Google, insomma altre aziende ben conosciute anche da chi non mastica tecnologia... me ne farò di risate quando tutti loro si coalizzeranno per boicottare #AGCOM e compagnia bella! 😍</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E comunque rimango dell'idea che 'sta cosa non si doveva proprio fare, perché nel nostro paese abbiamo il #vizio di fare sempre tutto e male finché ci sono gli interessi privati di mezzo (mentre quando ci sono gli interessi del popolo, le cose non si fanno e basta). Tutti i nostri parlamentari sono dei #cretini e noi come popolo siamo dei #coglioni; vi ricordo che la legge che ha portato a #PiracyShield era stata approvata all'unanimità, una cosa assurda, sicuramente un po' per le #mazzette date dalle #lobby del #calcio ai nostri politici, e sicuramente un altro po' per peer pressure tra quei signorotti sia al #governo che all'opposizione. Perché il colmo definitivo è che questa #cagata non funziona! Io continuo a seedare (caricare via torrent) decine e decine di GB al giorno di materiale #pirata, e il fatto che ci siano la nuova #legge e la #piattaforma scassata non mi ha impattata di una virgola; letteralmente, magari sarà che io ho a che fare con materiale che non è sport, però davvero pirato tanto bene quanto prima senza alcun accorgimento. #Soldi pubblici semplicemente bruciati, e nessuno che se ne vuole prendere la responsabilità, la #questione alla fine è anche questa, non sono solo i #danni causati e prospettati al #web. 🤮</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-23 00:49:08+00:00">23 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="whatsapped"><a class="toclink" href="../../2024/03/23/whatsapped.html">whatsapped!!</a></h2>
-<!-- wp:paragraph -->
-<p>Lo so che ho scoperto l'acqua calda, ma #WhatsApp è veramente un culo, #mannaggia!!! 🎃</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non avendo backupato anche quello prima di formattare il telefono, ora che mi serviva un attimo ho dovuto reinstallarlo da capo, fare l'accesso, e... il numero a cui dovevo inviare un messaggio non l'ho tra i contatti della SIM come ricordavo, e per qualche motivo sulla zappa non è salvato, e giustamente non esce nemmeno tra le chat perché quelle sono salvate solo in locale. Primo #sclero. 🤹‍♀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>"Però ho ancora l'acceso su Web sulla VM cloud, posso vedere lì sopra la #chat", penso... e ovviamente ho riscontrato #problemi di rete così insoliti che ci ho messo una decina buona di minuti solo ad arrivare lì sopra. Non è colpa di #Meta stavolta, ma seconda bestemmia. 🎳</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Solo che, quando finalmente si apre il coso lì sopra, noto che mi ha sloggato... e mi torna in mente che molto probabilmente questa è una cosa che succede sempre quando si fa un nuovo login su #client nativo (anno del Signore 2024 e vazapp è l'unico servizio al mondo con ancora questa limitazione), anche se allo stesso tempo non ho fatto ricerche e quindi nemmeno ci giurerei... chissà se invece è un bug? Ma baco o meno, terza imprecazione. 🎈</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A questo punto il numero lo trovo per fortuna salvato da un'altra parte perlomeno, altrimenti avrei dovuto aspettare di tornare a casa (ma a quel punto sarebbe stato troppo tardi), accendere il PC fisso, aprire WhatsApp Web stando offline, e nel caso migliore la pagina si sarebbe caricata lasciando visibili le chat, mentre nel peggiore avrei dovuto per forza ravanare tra i dati del database locale per trovare il dato in questione. Quarto allarme scampato?</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3537,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-12.png" alt="Chat con le mie schermate, &quot;This account is not allowed to use WhatsApp due to spam. Chats are still on this device&quot;, e &quot;WhatsApp Support will review your account and device info to check for activity that goes against our terms of service. Your request has been submitted. Reviews typically take 24 hours. We will notify you in WhatsApp. Chats are still on this device&quot;. Io ho letteralmente solo inviato un messaggio ad una persona che non ho nei miei contatti, ma a cui ho già scritto tante altre volte, da WhatsApp Web To Go, e dopo 2 minuti mi slogga, e provando ad aprire la app nativa vedo questo..." class="wp-image-3537"/><figcaption class="wp-element-caption">Se non fosse per il fatto che è poi successo questo. Non ho letteralmente parole, eccetto quelle che già ho usato in questa chat qui con la stessa persona che l'altro giorno mi ha detto di come questa esatta cosa fosse a lui successa a casaccio: l'account UoSapp è stato temporaneamente bandito "per #spam", ovviamente da me mai fatto. Allora la quarta #incazzatura eccola qui, non l'ho schivata proprio per niente. Che poi, perché "le mie chat sono ancora su questo dispositivo" e non me le fai nemmeno vedere o esportare? #Stronzo, menomale che io ho il root, ma tanta altra gente no. 🥴</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":3538,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-13.png" alt="Chat ore dopo con schermate: &quot;This account has been restored. Chats can be accessed after you verify your account. Visit our Help Center to learn about using WhatsApp responsibly.&quot;, e &quot;You need the official WhatsApp to log in. The app you are using has privacy and security risks. You can no longer use this app to access your WhatsApp chats. How to get the official WhatsApp: Download from the app store or directly from WhatsApp. Go to official website. Privacy and security on WhatsApp: On the official WhatsApp you can control your privacy, message securely, and add another number if you have multiple accounts.&quot;" class="wp-image-3538"/><figcaption class="wp-element-caption">E poi ho aspettato tutte queste ore per vedere se l'appello venisse accettato — e lo è stato, perché come ho detto non ho fatto nessuna cosa strana — e se poi dopo uscisse quella cosa menzionata da lui nei #messaggi di prima... e ops, si. Mi dice che sto usando una versione a #rischio del client e devo scaricare quella ufficiale... ma sto già usando quella, scaricata dal sito #ufficiale stamane come dice lui! Da notare che, se prima mi rassicurava sullo stato delle chat seppur non facendomici accedere, ora se ne sbatte completamente, mi dice che devo levare questa #applicazione e scaricare "quella ufficiale"... e le chat pazienza lol sono un problema mio, mica loro che si inventano #glitch di #merda tipo questo rovinando la giornata alla gente! Quantomeno non sono sola in questo, però insomma, questa tra poco rischia di diventare una cosa molto più #grave, perché stando all'esperienza degli altri non si risolverà. 🥰</figcaption></figure>
+<!-- wp:image {"id":3790,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image_editor_output_image327918005-17117454001242847783510461773205-960x769.jpg" alt="" class="wp-image-3790"/><figcaption class="wp-element-caption">E, she got no style, I got no style, anche su questo siamo uguali, troppe cose. Vi state accorgendo che non ho più nulla da dire e che però ora devo per forza allungare il brodo per giustificare ben 2 pagine di #vignette, vero? Dura fortuna. In appena 5 capitoli, in generale i personaggi stanno già iniziando a scoppiare, e in effetti la narrazione potrebbe essere nel complesso meno banale di cosa mi aspettavo... spero solo che non caccino fuori le manine già dal prossimo volume, altrimenti io decedo. ☠️</figcaption></figure>
 <!-- /wp:image -->
     
   </div>
@@ -10130,112 +10358,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-03-22 08:34:30+00:00">22 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/meta.html" class="md-meta__link">Meta</a>, 
-              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="inconsistentoct"><a class="toclink" href="../../2024/03/22/inconsistentoct.html">inconsistentoct</a></h2>
-<!-- wp:paragraph -->
-<p>Bruh #momento, ieri sera ho pensato che ultimamente sono veramente #inconsistente (e il fatto che io lo stia scrivendo ora è solo un'ulteriore prova a favore)... che vogliamo fà? 😶</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Qui sopra mi vengono in mente ogni tanto cose da #scrivere, ma non faccio tutto subito come invece dovrei, e finisco per rimandare, in alcuni casi con motivi validi ma in altri un po' perché altrimenti <em>penso che vado a creare inconsistenze</em>, però evidentemente... converrebbe di più andare con il #flusso (o almeno scriverle le cose intanto, e lasciarle nelle bozze per poco tempo).<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Penso sia solo una coincidenza, ma non è buffo che il ritmo di parole giornaliere scritte sia tornato erratico da quando sono ricominciate le mie lezioni? (Come illustrato [dai grafici](../../../dati-e-grafici-%f0%9f%93%8a%ef%b8%8f.md).)</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Altri singoli elementi che da soli non dicono molto, ma insieme sono preoccupanti; per decenza ora non mi metto a elencarli tutti, ma potete scoprirli da dettagli dei messaggi proprio delle ultime settimane. 👽</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":3487,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/my-whisper7515729475235552388-320x384.jpg" alt="How I feel after saying &quot;It's a tomorrow problem&quot;" class="wp-image-3487"/><figcaption class="wp-element-caption">Di questo passo sarà solo questione di tempo, forse pochi anni, perché io sia definitivamente rimpiazzata da un LLM... tanto l'unico motivo per cui non è ancora successo è che loro non sono ancora in grado di adottare una personalità molto specifica, mentre su tutto il resto sono già sopra di me, quindi la mia #fine è vicinissima. Ma suppongo che anche questa mia #paura sia un #problema <a href="https://pin.it/6UyTDyWX8">del domani, quindi...</a> 🤫</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-21 11:55:15+00:00">21 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ricopie-megafin"><a class="toclink" href="../../2024/03/21/3430.html">ricopie megafin</a></h2>
-<!-- wp:paragraph -->
-<p>Questa cosa è successa ieri sera e volevo scriverla prima di mimir, ma ero talmente seccata che ho detto #fanculo...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Volevo provare un po' ad usare il lettore musicale predefinito di Xiaomi, ma non legge i file con estensione <code>.opus</code>; i flussi audio Opus in sé li legge però (presumibilmente perché usa i codec integrati in Android), quindi la soluzione è rinominare tutto in <code>.ogg</code>, senza fare ricodifiche o altro. Problemino: per rinominare ogni cosa ho usato (direttamente da shell ADB) un comando <code>find -type f -name "*.opus" -exec mv "{}" "{}.ogg" \;</code>... che, sul momento, credevo sarebbe stato corretto, ma a quanto pare questo programma di #merda che è <code>find</code> (che normalmente non userei, ma in questo caso avevo a che fare con sottocartelle quindi non avevo scelta migliore) non piazza il nome del file in tutte le occorrenze di <code>{}</code> nel comando, il che significa che tutte le mie canzoni sono state spostate su un unico file chiamato proprio "<code>{}</code>" una dopo l'altra, e quindi le ho perse tutte, e quindi proprio ora sto risubendo la lenta tortura di ricodificarle e ricopiarle dal mio HDD... almeno ora ho l'adattatore microSD bono e veloce, però comunque aiutoooooo 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La cosa strana, ho notato dopo l'incidente, è che non si è liberato spazio sulla scheda; si è invece riempita una cartella "<code>FOUND.000</code>" con più di 2000 file, ma avevano tutti dimensioni un po' rotte nonché nomi ordinati ma non descrittivi (ed estensione <code>.CHK</code>)... forse potevo recuperare da lì qualcosa (ma mi chiedo perché si sia formata roba lì?), ma chissà quanto e con che fatica, quindi non ne vale la pena ed è meglio che metto semplicemente il PC a riconvertire le canzoni, che è vero che impiega mezza giornata, ma almeno fa tutto da solo. 😤️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Nel frattempo devo anche finire di #ricopiare sulla #memoria interna del #telefono tutti i #dati vari backupati sul PC (principalmente foto e video), è la terza volta che ci riprovo e stavolta vado una cartella grossa alla volta perché, durante i precedenti tentativi di copie totali, il collegamento USB è saltato, perché pure la scheda madre del mio PC è cacca e gestisce male la corrente data alle porte frontali... non ne uscirò mai. 💀️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-20 23:28:14+00:00">20 marzo 2024</time></li>
+          <time datetime="2024-03-29 01:54:12+00:00">29 marzo 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10255,76 +10378,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="ximiui"><a class="toclink" href="../../2024/03/20/%27ximiui%25f0%259f%2599%258f%27.html">ximiui🙏</a></h2>
+    <h2 id="manga-speedrun"><a class="toclink" href="../../2024/03/29/manga-speedrun.html">manga speedrun?!</a></h2>
 <!-- wp:paragraph -->
-<p>Come previsto (ops), oggi sono esplosa con #Android e ho deciso, non potendo fare acquisti d'impulso di svariate decine di euro, quantomeno di fare un #reflash d'impulso e rimettere la #MIUI sul mio #Xiaomi. Un po' di tira e molla stamattina, "<em>conviene tornare alla #stock che con pur tutti i suoi problemi aveva una #UX decente?</em>", "<a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$n5tMIs3KnT0eJcuNAVEHVGCBPHwvtJMBjV-sGzyf33I"><em>metto la versione cinese o la non-ufficiale Xiaomi.eu?</em></a>", "<em><a href="https://t.me/OTIdroid/628892">meglio MIUI 12, 13, o 14?</a></em>" ma intanto mentre tornavo a casa oggi pomeriggio ho fatto i backup delle app, a casa ho copiato tutti i file sul PC, ho scaricato la #ROM, ed ecco tutto pronto per il <em>mattonamento</em>. 🧱️</p>
+<p>Tocco sempre meno erba e sto sempre più a impazzire coi computer, ma nonostante ciò mi sembra che ultimamente riesco a #leggere di più? Idk, parlando solo di #manga, solo negli ultimi 4-5 giorni scarsi ho concluso un volume dove mi mancavano un paio di capitolini, e parallelamente ho iniziato e poi completato il primo volume di un'altra serie, e ancora nel frattempo ho iniziato il prossimo volume di ancora un'altra cosa...  🤯</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Son serviti un paio di scleri, perché non può andare mai bene nulla col #modding moderno di 'sti #telefoni: ho provato a #flashare (via <code>fastboot</code>) la ROM CN, ma falliva da subito... allora stavo per arrendermi ad installare la .EU, ma anche quella dava errori, però era comunque arrivato alla fine... e quindi, dopo aver installato quella ma avendo il telefono in uno stato suppongo incompleto, ho riprovato la #CN, ed è andato tutto liscio. Eccetto che la recovery TWRP ora non ne vuole sapere nulla di funzionare, quindi per reinstallare Magisk ho dovuto fare il giro in largo di patchare la partizione boot. Per il resto, sto ricopiando su la roba, dovrebbe funzionare tutto. 🤫️</p>
+<p>Complessivamente non è molto, per niente, in passato ho fatto di più assurdo... ma direi comunque non male, considerando che ho anche altre le mie altre #distrazioni, e che un minimo ci tengo a far durare videogiochi e #libri e non finire tutto subito. (Btw, i #volumi accavallati non sono dovuti ad una predilezione personale per il caos, è semplicemente che, valutando quanto penso di leggere portandomeli in giro ogni volta, qualche volta concludo che un solo capitolo rischia di farmi rimanere a secco, e allora per non viaggiare pesante quello lo lascio da finire a casina, e con me porto un solo volume ancora bello pieno di un'altra saga.) 👁️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":3424,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-11.png" alt="" class="wp-image-3424"/><figcaption class="wp-element-caption">Vabbé, ora ho di nuovo la #memeui, si spera dovrebbe girare meglio e ridurre la #frustrazione. Sto intanto notando che nella 14 #cinese ci sono tante robe fighe (rispetto alla 12 globale, che usavo anni fa), alcune sarebbero da raccontare forse... Btw, <a href="https://t.me/OTIdroid/628982">Gloria Eterna alla Repubblica Popolare Cinese 🙏🙏🙏</a></figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-19 21:33:12+00:00">19 marzo 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/rant.html" class="md-meta__link">Rant</a>, 
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="adrode-trolling-sempre-peggio"><a class="toclink" href="../../2024/03/19/adrode-trolling-sempre-peggio.html">adrode trolling sempre peggio!!</a></h2>
-<!-- wp:paragraph -->
-<p>Raga ma porca troia, ho scoperto uno dei motivi per cui mi pare che su #Android una buona parte della mia #archiviazione interna sia bruciata senza motivo: a quanto pare, le app <em>occupano più di quanto dovrebbero occupare</em>, sprecando un sacco di spazio, in certi casi fino a 7-8 volte tanto la dimensione dell'APK più eventuali librerie e cose. In altri termini, la sezione di informazioni su una #app in Impostazioni mi dice che alcune (non tutte manifestano questa #rogna, stranamente) occupano un peso che è 3-4 volte tanto la dimensione della cartella della stessa app in <code>/data/app</code> (che include librerie estratte e bytecode convertito in ODEX/OAT, cosa che già di suo occupa più #spazio e non mi sto dimenticando di contare, ma in questo caso andiamo anche oltre). 😭️</p>
+<p>Nel mentre... sentimenti contrastanti su questo argomento, perché da un lato, come ho detto, non voglio speedrunnare le esperienze narrative... mentre dall'altro aiuto non avete idea quanti soldi ancora ho sul #BonusCultura, che ho solo un altro mese per #spendere; e so già che tra qualche settimana dovrà succedere esattamente questo se voglio consumarlo, ma non mi piace fare enormi acquisti di roba ordinata, per me penso sia più apprezzabile #comprare man mano che leggo (chiaramente il paio di volumi comprati in anticipo come cuscinetto ci sta sempre, perché magari un giorno non vuoi scendere, un altro vai in fumetteria ma quello che cerchi deve essere ordinato, ecc...). 🐌</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ovviamente, non so la causa di tutto ciò, e cercando sul web non credo di trovare granché, e quindi intanto non trovo nemmeno il posto sul file system dove questo tantissimo spazio in più è occupato, e non so nemmeno se è una roba di #Android13 o c'è da ben prima. Il fatto è che... disinstallando completamente e poi reinstallando una delle app incriminate (ho provato con solo una ora, ma probabilmente sarà così con tutte quelle che manifestano il problema), il peso riportato ritorna normale. Aprire e usare un po' la app subito dopo non fa aumentare le sue dimensioni (a parte quelle dei dati, che dipendono e comunque non riguardano questa situazione), quindi sospetto che queste si gonfino nel corso di mesi... indipendentemente dalla frequenza d'uso, temo, perché io AIDA64 in questo esempio (in foto vedete il prima e dopo la reinstallazione) lo apro una volta ogni mai, eppure ha mostrato il #problema. 🤐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":3377,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-10-960x856.png" alt="" class="wp-image-3377"/><figcaption class="wp-element-caption">La app che ho casualmente scelto per la dimostrazione occupa sempre circa 18-19 MB nella sua cartella sia prima che dopo, ma prima è riportata come ~70 MB dal sistema, mentre dopo con un corretto ~18 MB.</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Insomma, sempre peggio con sto androide monco, la tentazione di comprare un KaiOSofonino o un Windowsfonino (Nokia Lumia sostanzialmente; lo so che son deceduti, mi accontento), giusto per provare qualcosa di diverso, è sempre più forte. Ho più speranze per la prima opzione però, perché non posso spendere tanto "per lo sfizio" o "per provare" quando tra l'altro il mio attuale #fonino è <em>tecnicamente</em> funzionante... anche se la seconda sarebbe molto più ganza... vabbè. 💀️</p>
+<p>A proposito di questo, proprio ieri ho ordinato in #libreria 2 #libri <a href="../../2024/03/27/libramento-con-pazienza.html">che avevo individuato a casaccio l'altra sera</a> (che sono effettivamente da leggere, c'era anche un altro che sarebbe un'enciclopedia visiva tematica ma non ho ancora deciso se comprare o no, in caso la prenderò un altro giorno)... sono appena 30€ insieme, che è tanto ma è poco! Mi sento come di star giocando <a href="https://neal.fun/spend/">al giochino dove devi spendere la fortuna di Bill Gates comprando l'impossibile, ma lui ha talmente tanti #soldi che non riesci a fare il minimo danno</a>. The italian bonus, a blessing and a curse... 😩</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10337,7 +10405,7 @@
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../28/index.html">28</a> <a class="md-pagination__link" href="../29/index.html">29</a> <span class="md-pagination__current">30</span> <a class="md-pagination__link" href="../31/index.html">31</a> <a class="md-pagination__link" href="../32/index.html">32</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../57/index.html">57</a>
+  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../28/index.html">28</a> <a class="md-pagination__link" href="../29/index.html">29</a> <span class="md-pagination__current">30</span> <a class="md-pagination__link" href="../31/index.html">31</a> <a class="md-pagination__link" href="../32/index.html">32</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../58/index.html">58</a>
 </nav>
         
       

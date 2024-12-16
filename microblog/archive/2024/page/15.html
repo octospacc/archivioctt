@@ -9826,7 +9826,173 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-08-12 03:00:57+00:00">12 agosto 2024</time></li>
+          <time datetime="2024-08-29 09:52:23+00:00">29 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="se-il-server-non-serve"><a class="toclink" href="../../../2024/08/29/se-il-server-non-serve.html">se il server non serve</a></h2>
+<!-- wp:paragraph -->
+<p>Linuc ha colpito ancora una volta. O forse è invece colpa di systemd? O, addirittura, la colpa è della mentalità UNIX implementata tecnicamente alla lettera? Boh, io certamente colpisco ancora una volta scrivendo questo il giorno dopo... ma questo è oltre il punto. 🤥</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Praticamente, l'altro ieri sera (mentre non ero a casa) il mio server ha smesso di rispondere a qualsiasi richiesta... e palle, ma ho pensato "non fa nulla, sarà caduta la linea Internet di casa, odio Vodafone, si sistemerà domani mattina". Ovviamente... non si è sistemato, ops. Il pomeriggio sono tornata, e ho subito resettato l'alimentazione del server per riavviarlo, e... non si è sistemato neanche così, mentre però la linea Internet non aveva alcun malfunzionamento. Wtf? 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ci penso un attimo, e mi viene in mente che io avevo staccato temporaneamente un disco USB giorni fa, perché devo sistemare delle cose noiose... e giustamente non l'ho tolto dall'<code>fstab</code>, perché chi minchia ci pensa... e, mi torna in mente che all'avvio del sistema, di default, una partizione messa così (che è il modo "corretto" per montarla a livello di sistema) fa fallire tutto il boot se fallisce anche solo il suo mount. Ci sarà stato un calo di tensione e il sistema si sarà riavviato. ...Linuc. Per il futuro: <a href="https://unix.stackexchange.com/questions/326791/cannot-boot-because-missing-external-disk">per gestire i dischi nel modo corretto (l'ho dovuto cercare)</a> dicono che si deve impostare la flag <code>nofail</code> all'<code>fstab</code>: <code>UUID=[...] /bla/bla/bla ext4 defaults,</code><code><strong>nofail</strong></code><code> 0 0</code>. 😖</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quelli di UNIX son dei pazzoidi. Per qualche motivo, se qualcosa va storto nell'avvio del sistema, e un disco aggiuntivo (non di boot eh) salta, allora bisogna fermare tutto, eccetto quando diversamente specificato... Ma poi, allo stesso tempo, quando nella shell UNIX (questo si applica a <code>sh</code>, <code>bash</code>, e credo tutto il resto) un comando in uno script fallisce, allora (di default) l'esecuzione continua in uno stato pericoloso e inconsistente (quando invece, in qualsiasi linguaggio di scripting vero, se capita un errore non gestito, di default si ferma tutto). 😴</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ad ogni modo, da quando ho il #server nuovo, appena un anno, onestamente downtime brutti così non ne ho mai avuti... a differenza del Raspino, che si era mezzo fuso, l'hardware di questo è bono. Resta l'inevitabile problema annuale che si verifica quando è il software a fare il cagaton, ed è in quel momento che si percepisce il danno della centralizzazione!!! C'è tipo una quindicina buona di servizi che uso lì sopra, di cui una buona parte usano anche altri, quindi se crolla qualcosa ci attacchiamo. Meno male che invece il sitoctt è statico, quindi me lo hostano GitLab e GitHub, e il Frittocto Misto è WordPress, quindi su Altervista sta...</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-27 18:30:37+00:00">27 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="sitoctt-torna-un-sito"><a class="toclink" href="../../../2024/08/27/sitoctt-torna-un-sito.html">sitoctt torna un sito</a></h2>
+<!-- wp:paragraph -->
+<p>Wo, la giornata di oggi è fuoco per il #sitocto. Per quanto no postaggio, perché vabbè abbiamo capito che ad agosto persino gli spiriti riposano... con infinita calma, progettando all'infinito negli infiniti momenti morti di questi ultimi infiniti giorni di ferie, sono leggermente più vicina all'infinito, tant'è che <a href="../../../2024/08/24/sitoctt-con-piu-octt.html">quella migrazione a nuovo generatore che un tempo sembrava infinita</a>... non è stata ultimata, ok, ma il #sito aggiornato è effettivamente già #online, ed è mejo de prima. 😇</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":8829,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/screenshot_2024-08-27-17-38-31-821_org7279596227665060744-665x1440.jpg" alt="Schermata home nuovo sitoctt" class="wp-image-8829"/><figcaption class="wp-element-caption">Visto che è <em>sitocto</em>, <em>facetevi il girocto</em>: <strong><a href="https://sitoctt.octt.eu.org">sitoctt.octt.eu.org</a></strong>. Ci sono troppe migliorie rispetto a prima... tipo che la home ora lista tutte le ultime pagine aggiornate, e non più un muro di testo... o che ho rifatto la struttura dei contenuti, dividendo tutto in 3 categorie distinte più logicamente di prima (cosa riflessa sugli URL)... e bo lol che palle le liste. 😵‍💫</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Come al solito, però: il lavoro non è finito. Come UX dovrebbe essere superiore al passato, però #Hugo (il generatore) non crea in automatico tutte le <em>metapagine</em> che potrebbero servire (nemmeno tutte quelle che avevo prima con staticoso), e nemmeno le fa il tema che ho preso come base (Ananke), che nemmeno lista le categorie e i tag del post sulle rispettive pagine... vabbè, da tweakkar. Il fatto che però non ci sia più un enorme menù, ma una roba molto essenziale, fa proprio bene alla testa. 😶</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sul lato grafico devo ancora fare aggiustamenti vari, ma il discostamento dal vecchio #design (con dovuta moderazione) è da un lato voluto (oltre che, dall'altro, necessario per un rilascio così rapido): non è una cattiva idea fare un passo indietro per ripensare, ad esempio, se il vecchio contrasto del testo con lo sfondo non fosse troppo forte, o la vecchia struttura HTML+CSS non fosse troppo sminchiata (...tanto da essere utilizzabile su browser senza alcun supporto al CSS moderno, ma non su quelli con supporto parziale). E poi ora si vede la copertina di pagine e post, che è kekkissimo!!! ☺️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Al netto di qualche link interno rotto (per i vecchi da fuori ho sistemato tutti i redirect, e ci è voluto non poco), e dei refusi di templating, il nuovo #sitoctt è già pacifico. Ora che ho la vera calma sistemerò queste schifezze, aggiungerò ricerca e commenti, e pure altre traduzioni (che per l'inglese hanno funzionato per molte pagine... ma non tutte, ???). Per diverse lingue, mi spacca tutta la zona dei metadati alla cima del Markdown... dovrò inevitabilmente <em>complicare</em> il mio codice&nbsp;per gestire quelli a parte. 😳 (La prossima localizzazione sarebbe il francese, per onorare lo Stato che ha arrestato Durov, ma evidentemente bisogna aspettare!)</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-25 22:45:52+00:00">25 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="durov-postmortem"><a class="toclink" href="../../../2024/08/25/durov-postmortem.html">durov postmortem!!!</a></h2>
+<!-- wp:paragraph -->
+<p>Avrete sicuramente sentito la notiziona, che non solo ho dovuto necessariamente condividere ieri sera su #Telegram quando ancora non era certissima, ma che entro oggi è stata rilanciata da testate grosse; ne ha parlato pure il TG1... Pavel Du Rove è stato #arrestato a Parigi!!! 🍾🍻🥂🧨🎉🎊</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ah povero scemo, che si fece la cittadinanza francese per meme, e ora giustamente lo Stato francese lo tratta come un cittadino francese! Sceso dal suo jet privato (mecojoni!), <a href="https://www.ilpost.it/2024/08/25/pavel-durov-fondatore-telegram-arrestato-francia/"><strong>lo hanno preso, e ora è accusato sostanzialmente di complicità nelle attività illegali</strong></a> che di continuo, da anni avvengono su Telegram, a danno di persone comuni (non fatemi fare elenchi, lo sapete tutti). 🥰</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mentre io (e non solo) stamattina facevo colazione doppia (solo spiritualmente; la mattina già per me è difficile fare colazione normale, non ce la faccio a mangiare...), ecco che <a href="https://www.ansa.it/sito/notizie/mondo/europa/2024/08/24/fondatore-di-telegram-durov-fermato-in-francia_c2b3cd11-4fd7-46b3-972d-b1d9f8f3e487.html"><strong>sono partiti all'attacco i soliti idioti, a dire che questo è l'ennesima azione della cenzura europea rettiliana</strong></a>; e in qualche modo ora Durov è l'ennesimo martire, nonostante non sia stato né maltrattato né, considerata la legge, oserei dire, arrestato ingiustamente. La differenza tra l'X di Elon Musk che parla sempre, e Telegram, però, è che almeno il secondo non spinge contenuti di estrema destra sugli utenti che non li vogliono... 🙄</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ovviamente, non è che Durov se lo son preso per sfregio, ma perché su Telegram la moderazione dello staff è del tutto assente, e allo stesso tempo la piattaforma non collabora mai con le autorità (eccetto quando qualche governo dittatoriale-o-quasi arriva e lo spegne, a quel punto muovono spesso il culo perché gli conviene). Vabbuò.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La cosa più strana però è che ora, <a href="https://www.rainews.it/articoli/2024/08/pavel-durov-russia-zakharova-medvedev-ucraina-censura-2a7826de-f230-4489-a204-b4c102742691.html"><strong>gente del governo russo, che una volta bandiva Telegram, sta facendo la stessa protesta che fecero all'epoca gli utenti</strong></a> della piattaforma contro il governo. Circa, pare. Damn, questo free speech è sempre più crazy!!! 😜🤪</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":8796,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/screenshot_2024-08-25-22-40-05-535_org6048334080513846688-960x1242.jpg" alt="Grafico prezzo odierno TON" class="wp-image-8796"/><figcaption class="wp-element-caption">Per concludere questa storia, che ora non ha molti altri dettagli, c'è il fatto che #TONcoin sta crollando a terra, con gli investitori (leggi come: speculatori) che scappano... o almeno, così sembrava fino a stamattina. Sembra proprio che stia risalendo... e io che speravo arrivasse a 1 dollaro o meno, così da farne incetta a pochi soldi, e poter finalmente comprare qualche numero virtuale per creare alt a prezzi stracciati! Cazzium!!! 😭</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-24 10:20:54+00:00">24 agosto 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9846,21 +10012,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="wincane-con-il-web-reale"><a class="toclink" href="../../../2024/08/12/wincane-con-il-web-reale.html">WinCane con il web reale</a></h2>
+    <h2 id="sitoctt-con-piu-octt"><a class="toclink" href="../../../2024/08/24/sitoctt-con-piu-octt.html">sitoctt con più octt</a></h2>
 <!-- wp:paragraph -->
-<p>Damn. Pensavo di postare questo prima, ma mi seccava fare tantissimo rumore per un obiettivo al di sotto del mio ideale inizialmente prefissato, quindi... ho dovuto programmare per qualche ora in più. Beh, dopo <a href="../../../2024/08/10/wincan-do-be-funnying.html">altri 2 giorni di lavoro</a> a tempo più che pieno, ma retribuzione monetaria pari allo zero spaccato, la versione #web di #WinDog è già molto più del <a href="../../../2024/07/01/wincane-no-js.html">proof-of-concept del mese scorso</a>... 😌</p>
+<p>Ancora una volta... sito!!! Finita <a href="../../../2024/08/22/il-sitocto-senza-sito.html">la confusione dell'altro ieri</a>, ho deciso che uso Hugo come #generatore. Sembra che si possa adattare ai paradigmi originali del #sitoctt senza eccessivo sforzo, e ha anche roba sua in più conveniente; per esempio, non separa strettissimamente le pagine dai post, e in una lista di pagine recenti ci va un po' tutto quello modificato di recente, ideale per un sito come il mio... 👀</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ora ha una UI decente (al buono ci arriveremo con calma) e un backend <em>arronzato meno</em>, che permette di aprire stanze di chat col bot anche ad URL personalizzati, e... da diversi client insieme; vale a dire che praticamente ho, senza volerlo, implementato una chat vera a propria, anche tra utenti web diversi. In effetti volevo semplicemente rendere "riciclabili" le stanze, per preparare il server a future migliorie, ma nel farlo è uscita fuori una problematica tale che mi è quindi convenuto fare come ho fatto. Quindi, ogni client riceve un colore a caso, e un username generato dall'hash di alcuni header HTTP, e boh buffo chat anonima kek. 🤪 (Non abusatene...)</p>
+<p>Non finirò tutto in tempi brevi, ma sento che almeno per questo fine settimana il deploy lo faccio... il mio cervello <em>really non vuole</em> che io impieghi un altro anno e mezzo a risolvere questa questione solo per poi ricominciare tutto da capo, tant'è che in qualche maniera magica non mi sto nemmeno distraendo con altre cose digitali; il 97% del tempo in cui uso attivamente un computer, sto facendo questo e basta (eccetto, tempo di scrittura del microblog non contato). Speriam. 🙏</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":8477,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/image-960x709.png" alt="Due finestre di Firefox in chat sul sito nella stessa stanza, mostrando i diversi colori degli utenti e uno dei comandi del bot." class="wp-image-8477"/><figcaption class="wp-element-caption">La persistenza dei messaggi la implementerò più avanti, così come utenti non-anonimi, account, o stanze private/riservate... per ora appunto è tutto pubblico, ma generato casualmente; aprendo la root del sito viene creata una nuova stanza con un UUID sicuro, e aprendo qualunque stanza viene istanziato un utente con un altro UUID (che è segreto, non è l'username). Stanza di esempio, magari se la aprite tutti insieme beccate me o qualcun altro, idk: <a href="https://windog.octt.eu.org/fritto-misto-019143d9bf9b7337adca0cbf2fe2efb9">windog.octt.eu.org/fritto-misto-019143d9bf9b7337adca0cbf2fe2efb9</a>. 😈</figcaption></figure>
+<!-- wp:image {"id":8758,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/image-3-960x542.png" alt="" class="wp-image-8758"/><figcaption class="wp-element-caption">Ieri, a parte continuare a sistemare i metadati delle varie pagine come necessario (che è essenziale ma non ho ancora finito), ho fatto un'altra cosa (non essenziale) che serviva da secoli: la traduzione automatica delle pagine. A parte dettagli ancora da sistemare, questa volta è stato facile e non è sfumato tutto, perché ho scoperto <a href="https://pypi.org/project/translate-shell/">Translate Shell</a>, quindi fatto un mio script che gestisce i vari file, con infine Hugo che fa il resto... gestisce da solo pure la traduzione degli slug e il collegamento delle pagine, assurderello!! 🤯</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -9868,11 +10034,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Questa è una delle più potenti manifestazioni della mia #magia... Il fatto che la codebase di questo coso sia vecchia di almeno 3 anni, e che ciò che prima era un banale #bot Telegram ora è un multiforme multipiattaforma, ad un livello che altri bot in giro non ne ho visti, è già tanto, ma... questa interfaccia in particolare, che gira nel browser, ancora senza alcuno script client-side (sans-JS), è proprio lo scopo della mia esistenza, la più valorosa e autogratificante espressione dei miei poteri di puella magica!!! (Sono davvero stranamente felice.) A dire il vero, eh, oggi del JS l'ho aggiunto, ma giusto per far comportare meglio la casella di testo, sfruttando la logica del miglioramento progressivo: chi ha JavaScript funzionante nel browser avrà la textbox che si allarga e si restringe in automatico con la scrittura, e potrà inviare il messaggio facendo Ctrl+Enter, ma la #chat funge lo stesso senza. 🕷️</p>
+<p>#Hugo è buono in effetti, e il suo linguaggio di templating è anche più potente di Liquid, pure se mi sembra un po' astruso e non so quanto ci vorrà per abituarmi (...gli operatori logici sono tipo funzioni, si scrivono tutti a sinistra e prendono infiniti argomenti). Template semplici, tipo lo shortcode che mostra l'avviso sulle pagine automaticamente tradotte, l'ho saputo fare, ma se dovessi riadattare da subito e perfettamente il mio vecchio tema sitoctt... questo #sito continuerebbe ad essere vaporware; e i miei (frettolosi) tentativi di fare retrofitting del vecchio codice a questo template stock non promettono bene, quindi mi sa che per iniziare metto almeno i colori rosa e viola, e poi si vede. 👾</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Comunque... che voi siate veri fan di HTML5, o che invece senza JavaScript non riusciste a combinare un accidente (maledetti #webdev moderni), concordete che è assurdo come io abbia potuto usare una #hack basata su una funzione di #HTTP e dei browser risalente al millennio scorso (!!!) per creare una live chat che funziona in #HTML puro, con addirittura meno lag di Telegram o qualsiasi cosa... Però poi bisogna cringiare per una casella di testo multilinea come si deve... E, ancora, non c'è modo di far scrollare in automatico in basso man mano che ci sono nuovi messaggi (per ovviare a quello si nota come ho scelto il male di UX minore, cioè invertire l'ordine della chat, per ora). Almeno, però, commettendo abusi sugli iFrame, due (2) problemi li ho risolti: mostrare un messaggio di errore in caso di caduta della connessione, e non far apparire la finestra come continuamente in caricamento... 🙏</p>
+<p>A proposito di tema: in realtà, prima di qualsiasi aggiustamento o fork, dovrei effettivamente decidere se partire da questo tema semplice qui per poi sistemarlo molto, o sceglierne un altro più completo... pendo però verso la prima opzione, o con le mie esigenze rischiano di uscire hack schifose. Certamente, testare #prototipi qui non è un problema: Hugo è assurdamente veloce... non che mi <em>serva</em> un tempo di build di appena 500 millisecondi per 150 pagine, ma certamente brutto non è, e il prototestaggio del sito è quindi più piacevole. 😳</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Riguardo la SEO, il tema Anake non include particolari accorgimenti, quindi li andrò a prendere a mano da altri temi (come ho fatto per i riquadri ammonitivi), per avere un sito <em>più sitabile</em>... specialmente ora che metto in mezzo le #traduzioni, che hanno il potenziale di portare più traffico e nuovi seguaci. Vedremo se l'articolo che spero di fare proprio riguardo questa migrazione (più in là) sarà un flop oppure, grazie alla traduzione in millemila lingue (anche se per iniziare ne metterò solo 4, 2 che conosco e 2 che alla bene e peggio so leggere), tutto il mondo inizierà a parlare di sitoctt... 🤭</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -9884,7 +10054,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-08-10 02:32:55+00:00">10 agosto 2024</time></li>
+          <time datetime="2024-08-23 02:13:50+00:00">23 agosto 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9904,25 +10074,17 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="wincan-do-be-funnying"><a class="toclink" href="../../../2024/08/10/wincan-do-be-funnying.html">wincan do be funnying</a></h2>
+    <h2 id="piante-filifere"><a class="toclink" href="../../../2024/08/23/piante-filifere.html">piante filifere</a></h2>
 <!-- wp:paragraph -->
-<p>Oggi dico: <strong>caspita</strong>, perché l'attuale è il postaggiobuco più grosso che io abbia mai creato. Almeno, quello che non scrivo qui in italiano lo scrivo nelle mie repo in millemila (3) linguaggi interpretati. A parte uno strumentopolo complicato che ho iniziato ieri, credo finirò domani, e posterò <em>domai</em>, la #programmazione sta andando alla grande per mezzo delle mie manine e fine di #WinDog... 🤗</p>
+<p>Caspita, ci ho pensato solo ora. La realizzazione non correlata capitante prima di mimire… della somiglianza... Praticamente oggi i miei dovevano comprare delle robe per #casa, e giusto per (andare a parlare con delle pareti diverse da quelle di casa mia ogni tanto) gli sono andata appresso. 😵‍💫</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":8425,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/image-1.png" alt="< .lua a 
-&gt; 💣 Errore 500: Errore Interno. LuaSyntaxError: [...] 
-< che figo errore 500 co la bomba 
-< il sottotesto è infuocato proprio 
---- 
-< non so perché ma questa cosa mi fa ridere 
-< /decode base64 aAAA 
-&gt; h
-< h" class="wp-image-8425"/><figcaption class="wp-element-caption">Detto al volo perché devo mimir: [in questi 3 giorni](../../../2024/08/07/programmazione-fumosa.md) nel #bot ho implementato un'altra funzione inutile (questa per fare [de]codifica di testo), e una utile che me lo fa riavviare (per quando modifico il codice) senza passare dal terminale del server; ho magicamente fixato l'invio di messaggi bridgiati, ho ripulito gran parte del codice togliendo anche delle cose più che deprecate, ho aggiunto funzioni alla API per standardizzare i messaggi di aiuto e quelli di errore, sistemato qualche comando vecchio, e insomma funziona già tutto meglio di prima. 🤑</figcaption></figure>
+<!-- wp:image {"id":8738,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/img_20240823_0145103637484740581843571-960x720.jpg" alt="" class="wp-image-8738"/><figcaption class="wp-element-caption">In realtà serviva una roba anche a me; almeno questo robo (edit per i posteri, si chiama <a href="https://www.ikea.com/it/it/p/arnbjoern-raccoglicavi-orizzontale-bianco-40560099/">ARNBJÖRN</a>), che ho per fortuna trovato, da appendere alla scrivania per creare uno spazio sotto, per appoggiare fili ("work in progress") o l'alimentatore gigante e mezzo strappato di WiiU, per rendere leggerissimamente meno rognoso lo spolverare. 😷</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -9930,15 +10092,27 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>L'unica cosa che richiederà ancora non poco sforzo in realtà è proprio il bridging, perché, seppur ora i messaggi li può mandare avanti e indietro, non può sincronizzare cose come modifiche o cancellazioni, oltre a non poter leggere reazioni o qualunque evento di messaggistica speciale... quindi non è utilizzabile. Oltre a questo, voglio in realtà rendere programmabili i ponti usando la runtime Lua (che già è nel bot!), così da rendere possibile la configurazione più estrema del loro comportamento (filtrare messaggi per testo, farlo andare solo ad una certa ora... le possibilità sono troppe).</p>
+<p>Vabbè, a quanto pare, di tutti i posti l'IKEA ora offre un prodotto che credo sia nuovo, che io ho beccato nella sezione di #arredamento, ma che a quanto pare è spinto pesantemente anche alle casse... una #pianta molto bizzarra che... non lo so, ha veramente una specie di aura magica, e il nome sull'etichetta non ha fatto altro che amplificare questo mio sentimento, quindi quando l'ho vista è diventata mia, loll. E anche oggi, insomma, il capitalismo ha vinto... ma non troppo, perché anche stavolta non ho adocchiato Blåhaj, pazienza. 😮‍💨</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Poi... sia per far andare bene i bridge, che per renderli programmabili a qualunque utente senza obbligo di self-hosting, che per aggiungere ancora altre cose al bot (tra cui minigiochi con uno stato e insomma cose epiche), dovrei anche finire il database, credo... yikes, difficile perché non so mai in anticipo cosa mi serve, quindi devo farlo via via, con tutte le scocciature del caso. Comunque, qualcosa a proposito di quello funzionerebbe già: per ora dopo il mio fix c'è il comando <code>/config</code> che permette almeno di cambiare la lingua del bot (wow). Darò a ciascun utente ben 512 KB di spazio per conservare script Lua... godi popolo per la mia generosità!!!</p>
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":8739,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/img_20240823_0123294274541971785907205-960x1280.jpg" alt="" class="wp-image-8739"/><figcaption class="wp-element-caption">Comunque voglio dì, ditemi che non sembra una cosa proveniente dal mio universo, forza. Il nome come ho detto è tutto un programma: "Dracaena [???] Lucky Bamboo [!!!]"... e in realtà, ho cercato, si chiama <a href="https://it.wikipedia.org/wiki/Dracaena_braunii">Dracaena braunii</a>, e (evidentemente) non è bambù. Maledetti liberali e il loro ridefinire i termini. Comunque, il punto è che con 'sta forma attorcigliata, pare proprio i fili delle mia scrivania che mi stanno facendo impazzire. La somiglianza. 😭</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>L'ultima cosa, che però ho già finito, appunto ora, è una API più specifica per inviare messaggi di servizio, come errori e aiuto... anziché ogni volta nei moduli richiamare invio di un messaggio generico, uso queste specifiche per avere meno boilerplate e, soprattutto, avere dei comandi che sembrano effettivamente parte dello stesso bot, non un'accozzaglia di funzioni ognuna con estetica di testo diversa. Andatevi a vedere i sorgenti se vi interessa, ma in pratica ho tutte le stringhe (anche per tante lingue) in dei file YAML con una struttura particolare, e insomma il programma fa il suo. Sorprendentemente, YAML è un ottimo formato per conservare piccole stringhe HTML, e HTML è un ottimo formato quando il testo fa così tanti giri che non puoi tenere traccia di come fare escaping di eventuali simboli speciali... (Markdown cacca).</p>
+<p>Forse un po' ha un'aria da bacchetta magica queer, e per questo ha un'aura magica, ma sinceramente non lo so. Ora che sta a casa mia avrò tempo di vedere come si comporta, e se mi infonderà qualcosa di buono, bo, speriamo. Mal che vada, posso diventare come Miku Hatsune che ha i bastoni di verdure (??? mi sfugge il nome aiuto...), le sue due amiche che ora lasciamo stare (è tardi), e io quindi con sto #bastone piantifero (a fare non si sa bene che cosa). 🤭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PS, dimenticai di specificare: il capitalismo non ha vinto molto, perché questa pianta costa solo 1,95 euro… che, a pensarci ora, sono praticamente 2 euro, e non 1 come al mio cervello da malata consumatrice è sembrato sul momento, ma dettagli; sarebbe stata comprata ugualmente. La pianta sembra inoltre essere abbastanza non-frecante, nel senso che le accortezze da prendere sono quelle poche scritte anche sulla Wokipedia, ma io non sono stata affatto non-frecante: avrò speso qualcosa come 5-10 minuti tra il vedere la pianta inizialmente, posarla scommettendo ci sarebbe stata all'uscita (per non dovermela portare troppo appresso), e all'uscita sceglierla abbastanza bene, arrivando a questa che pare in buona salute e ha persino 3 germogli!!!</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -9950,95 +10124,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-08-07 10:32:11+00:00">7 agosto 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="programmazione-fumosa"><a class="toclink" href="../../../2024/08/07/programmazione-fumosa.html">programmazione fumosa</a></h2>
-<!-- wp:paragraph -->
-<p>Sempre a dir poco #mistico svegliarsi dal mimire notturno e sentire così l'aria della mia stanza che puzza di marcio, il mio alito da vulcano, la testolina che gira perché l'ossigeno è solo un ricordo di prima di andare a dormire... nonostante questo, riesco comunque tranquillamente a posticipare le sveglie, e non sento particolare fretta di aprire le finestre e la porta e andare in un'altra stanza. #Rotting girl core!!! 🥰</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Comunq, i miei #progetti procedono ad un passo di composizione distinto da quello della mia personale decomposizione, che è tutto quello che in realtà mi importa... se la situazione che ne deriva non fosse il non aver nulla da scrivere!!! E questo si vede. Considerando che io ho il bisogno di saltare di continuo tra diversi compiti atomici per non scocciarmi, se non ho nemmeno nulla da scrivere una certa giornata, allora pefforza succede che magari passo dal #programmare una cosa all'altra, che fa divertire ma anche riflettere. 🙄</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Praticamente, c'è quella mia nuova <a href="../../../2024/07/31/la-tivuoctt.html">TiVuOcto</a> a cui devo aggiungere qualche feature più o meno banale, e ho iniziato l'altro giorno, ma ancora non ho terminato, perché... e prima mi metto a sistemare lo script di build del sito dove ho tutte le app per (diversi) motivi che non sto a spiegare... e poi penso ad aggiungere funzioni di utilità alla libreria client di SpaccDotWeb perché con questa app sarebbe la hopersoilcont-esima volta che devo riciclarne il codice... e nel frattempo mi metto a pensare e ricercare (ma senza ancora fare nulla) una cosa assurda, come assemblare (facile) e firmare (ahia) APK Android nel browser, per creare una app/libreria per generare app native di WebView senza smadonnare con Java e tutto (mi servirà per la app Android TV e altri progetti). 😵</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In tutto questo marasma, contrario ad ogni logica di project management, come mi piace a mme, ieri mi metto anche a sistemare cose su WinDog, levando da mezzo una buona parte deprecata dell'architettura... E questo non c'entrerebbe assolutamente nulla, se non per il fatto che le cose da fare per quell'altro progetto sono innumerevoli, e dopo quasi un anno di stallo (che non è il primo...), <a href="../../../2024/06/18/il-cane-da-li.html">un mese e mezzo fa ricominciai a trattarlo</a> per qualche giorno, finché non mi sono di nuovo scocciata e ho spostato l'attenzione su altri progetti (oppure, rotture varie non me l'hanno sottratta contrariamente al mio volere...). Vabbè, sarà questa la volta buona in cui finisco almeno di implementare i bridge lì? 😨</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-08-05 17:12:55+00:00">5 agosto 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="more-strugglin-senza-ops"><a class="toclink" href="../../../2024/08/05/more-strugglin-senza-ops.html">more strugglin senza ops</a></h2>
-<!-- wp:paragraph -->
-<p>Continuando con meno imprevisti <a href="../../../2024/08/04/strugglin-to-ops.html">la saga dei giorni precedenti</a>, in questo momento sto a casina, ma ieri so stata alle piscine termali, ci siamo andati un po' a caso; mentre stamattina al mare di nuovo con mio padre che, a differenza di andare il pomeriggio, è cosa ragionevole. Vabbè, nulla di nuovo, se non che è sorprendente come non è riuscito lo zolfo ieri a distruggere i miei capelli, nonostante l'acqua mi sia abbastanza schizzata (ma non ho messo la testa sotto) e come cuffia uso una di stoffa... ma ci è riuscita l'acqua salata di stamattina, col mare agitato e molto funny da starci dentro come non mi capitava da credo secoli (perché a mare non ci andavamo spesso perché era sporco bla bla...), ma che buttandomi pressoché a terra più di una volta s'è mangiato i capelli non legati. 🤯</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Comunque, ieri ho fatto due (2) foto, o forse tre (3), non importa, il fatto è che non sono liminl, quindi non le posso caricare sul Pixlfed!!! Potrei metterle sul profilo di .uno, ma è praticamente morto e non mi va di disturbare il suo riposo eterno. E mettere qui non mi va suppongo. ...Dovrei riconvertire la mia istanza Pxilfled ad una generica, togliendo l'obbligo del tema fotografico liminaccio, così magari è pure possibile che degli utenti nuovi arrivino, idk? Magari addirittura modificare il software per rimuovere la restrizione arbitraria (si, è tale, il supporto c'è) che fa si che solo i post multimediali siano visibili, e non anche i testuali, così lo rendiamo polivalente?? Oppure mandare tutto in mona, ora che la Spacc BBS è federata, e decidere che tutte le foto si caricano lì??? 😩</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>...Come si potrà ancora notare, dalla disastrosa incontenibilità di questa scrittura, la testolina fa ancora un po' strugglin'!!! Visto che proprio ieri c'è stata la luna nuova, questa potrebbe essere l'ennesima volta in cui si verifica la mia teoria magica a proposito del fatto che è proprio la luna a disturbarmi... ma, allo stesso tempo, se ora non ritornerò normale entro un tempo ragionevole, allora magari per forza questo modo di pensare è una stronzata... mah, il tempo decreterà. Però l'entropia non è proprio rasoterra, qualche nuovo progettino è anche quasi in cantiere, solo... non succede nulla di scrivibile a dire il vero!!! 🥴</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-08-04 00:17:25+00:00">4 agosto 2024</time></li>
+          <time datetime="2024-08-22 00:22:21+00:00">22 agosto 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10058,113 +10144,17 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="strugglin-to-ops"><a class="toclink" href="../../../2024/08/04/strugglin-to-ops.html">strugglin to ops</a></h2>
+    <h2 id="il-sitocto-senza-sito"><a class="toclink" href="../../../2024/08/22/il-sitocto-senza-sito.html">il sitocto senza sito</a></h2>
 <!-- wp:paragraph -->
-<p>Il mio cervello sta facendo 1 po' strugglin'!!! Da un bel giorno e mezzo, come si potrà ben vedere, non ho postato, non mi viene davvero in mente nulla di nulla di valore da scrivere... è chiaramente perché ho l'entropia troppo bassa, quindi il generatore di numeri casuali non genera, ma non so proprio il perché sia così. Forse sono stati troppo dispersivi questi ultimi 2-3 giorni? M.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>L'altra mattina ero al mare e vabbé, epico ma nulla di trascendentale, poi dal pomeriggio ho principalmente programmato per TiVuOcto, ma perso forse decisamente troppo tempo su Telegram... Ieri mattina invece a comprare due cose che mi vadano bene come pezzo superiore di costume da bagno (perché se continuo ad usare una mezza canotta per coprirmi non mi posso totalmente bagnare in acqua), e tra il misurare ogni cosa è passato tanto di quel tempo che, per andare anche ad annaffiare le piante a casa di mia nonna e non fare tardi per pranzare, ho dovuto incastrare il tempo quasi <em>pazzurdamente</em>... e poi il pomeriggio al mare, anche se <em>decisamente</em> un po' cald, e la sera perso <em>decisamente</em> un sacco di tempo per Piani Segreti su Telegram...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stamattina un servizio coi miei, e l'entropia era già bassa (a caso, uffa)... però è tipo successo il più strano attacco dell'universo... derivando dalla legge di #murphy, e non è la prima volta: <em>se c'è poco tempo per fare qualcosa, e si va quindi di fretta nel tentativo di rientrarci, uscirà necessariamente fuori qualcosa che porterà al perdere ancora più tempo</em>. Per andare oggi pomeriggio al mare mi stavo mettendo uno di quei costumi da sopra che ho detto, ma evidentemente l'elastico che avvolge il petto sotto era già vecchio marcito muzunna (Decathlon lezzo?), e nel fare in fretta ho messo male il braccio, facendo troppa leva, e si è smollato!!! Nel disastro ho pure dimenticato i pantaloncini da sopra al costume, <em>lmao</em>; non un problema andando con l'auto parcheggiata appena sotto casa, ma comunque <em>pazzurdo</em> a dir poco.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sono rimasta abbastanza <em>sminchiata</em> in quel momento perché che du' palle, e totalmente onestamente sono stata sul lettino del lido a non fare nulla o quasi, manco leggere o giocare, troppo scocciante in quel momento... e non aiutava il fatto che per i primi quarti d'ora non trovavo la minima ombra. A proposito, a parte il caldo che era (dicono) più tosto di ieri, ma io essendo abbastanza dissociata non lo sentivo, mi sa che mi sono scottata sulle spalle, perché un po' brucia, anche se non è rosso... #mannaggia al semaforo stellare!!! Mi sono <em>circa</em> fixata una volta tornata a casa, che mi sono messa a cucire quel coso per stringere la fascia e quindi ovviare allo smollamento... <em>circa</em>, perché l'entropia è ancora bassina...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A proposito di quest'ultimo fatto, che temo sia un vero meme... innanzitutto, ciò mi ricorda che <a href="../../../2024/07/04/bandieroct-quasi-a-meta.html">la bandiera Octt</a> è on hiatus da un bel po', dovrei finirla (cucire con manine...), e poi: chi ritiene difficile trovare reggiseni et similia per chi ha taglie estremamente piccole, forse è perché non ha provato cosa significa avere <code>sin 0°</code>... per fortuna appunto, in quanto a roba da bagno (che casualmente è l'unica istanza in cui mi serve quel tipo di indumento) qualcosa che sta bene la si trova, e ringrazziamm' a san Gennaro per il fatto di avermi comunque somewhat concesso l'indomabile drip femmineo pur non avendo le minne. 🙏️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-08-01 10:35:17+00:00">1 agosto 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="olimpiadi-senza-gaming"><a class="toclink" href="../../../2024/08/01/olimpiadi-senza-gaming.html">olimpiadi senza gaming</a></h2>
-<!-- wp:paragraph -->
-<p>Me so distratta n'attimo, ed ecco che è arrivato il primo agosto... e come agosto di un anno divisibile per 4 è bizzarro. Maremma, ogni giorno che passa ci sono nuovi motivi per essere #triste, e di tutte questa qui è la meno triste, il che è tutto dire per il resto: avete fatto caso che non è uscito <em>Mario e Sonic ai Giochi Olimpici di Parigi 2024</em>? Spoiler: <a href="https://www.ign.com/articles/why-theres-no-mario-sonic-video-game-tie-in-for-the-paris-2024-olympics">non è un ritardo</a>... 😱</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Questa cosa non la dico <a href="https://bbs.spacc.eu.org/new/topic/7/le-holyimpiadi-olimpiadi-parigi-2024/10">sul thread delle holympiadi</a> (dove comunque ci sono messaggi quindi andate a vedere...), ma qui, perché non si può proprio replicare. Soprattutto perché non hanno semplicemente fatto scadere la collaborazione con Nintendo e Sega che andava avanti da credo quasi due decenni, ma... vogliono puntare sugli e-sport (e ok, ci può stare, ma non vedo perché non vadano più bene Mayro e Sony, e soprattutto non vedo ancora nessun e-sport a Parigi) e sugli NFT (no comment, il 2022 è passato da 2 anni, l'uso speculativo e quindi cattivo di quella ottima tecnologia dovrebbe essere del tutto morto e sepolto)... 😩</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però ai gamer hanno comunque dato il contentino, e di semplice contentino si tratta: il gioco ufficiale per questa edizione è... <em>Olympics™ Go! Paris 2024</em>: <a href="https://play.google.com/store/apps/details?id=com.nway.olympics2024">play.google.com/store/apps/details?id=com.nway.olympics2024</a>. Free-to-play, quindi qualcuno dirà che è una cosa buona... ma ragà, dicono che sia solo single-player, e addirittura stranamente pare essere un city builder, dove per progredire partecipi agli eventi olimpici... non propriamente un gioco sulle #olimpiadi. Poi, onestamente, dalle schermate non fa un'ottima impressione... sono la prima a dire che la grafica non freca se il gameplay è fuoco, ma da un gioco palesemente fatto per spillare acquisti in-app il gameplay non può essere fuoco, mi dispiace, smettetela col copium. (E la versione PC, su Epic Games Store, non pare meglio, nonostante pesi 3 GB invece di 1.) 😖</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Comunque no, a Mario e Sonic non ci avrei giocato o, più precisamente, lo avrei piratato per poi manco mai installarlo, come succede sempre... troppo tempo. Quindi da un lato non dovrebbe fregarmene, ma dall'altro è comunque triste, perché era praticamente un sigillo di garanzia, quello che alle olimpiadi corrispondeva l'uscita del giochino. Non ho nemmeno idea di cosa cambiasse di effettivo ogni 4 anni rispetto al gioco precedente, ma se già abbiamo detto che non lo avrei comprato questo non è un mio problema. Il mio problema era lamentarmi, e l'ho risolto... 😭</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-07-31 00:34:51+00:00">31 luglio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/07/31/8179.html"></a></h2>
-<!-- wp:paragraph -->
-<p>Chi sta seguendo le #olimpiadi col piede giusto (cioè non per fare le solite lamentele politiche, ma per godersi il fottutissimo sport, che è la cosa che a quanto pare aprendo Internet finisce sempre in secondo piano), lo sa che l'applicazione che serve per stare al passo con gli eventi non è un client social, bensì un #player IPTV... ed è a questo che sono finita con <a href="../../../2024/07/30/ok-la-pazzia-e-fatta.html">la matta programmazione di ieri sera</a>... 🤫️</p>
+<p>Tra tutte le cose esagerate che conosco o ho fatto o che devo fare, e che sarebbe bene documentare (tra cui le pazzie con Linux), mi rendo conto che ho da creare delle pagine apposite sul benedettissimo #sitoctt, che posso poi a piacere aggiornare (a differenza di post che vanno e vengono, che siano qui o <a href="../../../2024/07/27/come-biesso.html">sul forum</a>), e che siano adatte ad aggiungere dettagli su dettagli (insomma, non dei banali memos). E sarebbe tutto bello e fattibile se solo non ci fosse di mezzo il problema del #decadimento... ahi me misera me tapina. Sapevo, quando inaugurai il sito, di aver raggiunto un punto di svolta della mia carriera, ma non mi aspettavo che la direzione sarebbe stato un viaggio di sola andata verso l'entropia. ☠️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":8180,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/07/image-11.png" alt="" class="wp-image-8180"/><figcaption class="wp-element-caption">Beh, sul PC con Firefox RaiPlay non mi funziona... ma lì non è un problema, perché uso <a href="https://github.com/linuxmint/hypnotix">Hypnotix di Linux Mint</a>. Ottimo player, peccato che il problema è su mobile, dove non ho provato se il sito di RaiPlay funziona, ma comunque ricordo che gira proprio male, e non andrò ad installare né VLC né MPV perché Android [più app installi e più le prestazioni degradano]. E allora, anche stavolta, mi sono fatta io la #webapp che mi serviva... provatela a <a href="https://hub.octt.eu.org/TiVuOcto/#/0/Rai2.it"><strong>hub.octt.eu.org/TiVuOcto/#/0/Rai2.it</strong></a>, su 😼️</figcaption></figure>
+<!-- wp:image {"id":8712,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/image-2-960x528.png" alt="Schermata della home del sito coi bacarozzi piazzati a caso con uno script JS kek" class="wp-image-8712"/><figcaption class="wp-element-caption">Il problema è... er sito c'ha i bacarozzi, da quanto tempo è che non aggiorno qualcosa e, soprattutto, da quanto tempo è che dovrei cambiare generatore (...un anno e mezzo), perché il mio staticoso è deprecato, e ha un sacco di problemi che mi ostacolano la vera scrittura delle pagine. Se non avessi i miei poteri da ragazza magica, dovrei buttare via tutto e ricominciare da capo, perché guardate quanti sono!!! 😭️😭️😭️</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -10172,15 +10162,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Il material design ha colpito forte qui, e mi piace come ho messo tutti i canali nel menu laterale, tutti accessibili al volo, facilissimo passare da una categoria all'altra, meglio delle altre app. Versione proprio MVP stasera comunque, ci sono tante cosine da poter migliorare... devo per esempio implementare ancora le azioni da tastiera; e lo farò, perché ora questa è la mia app IPTV anche su desktop, oltre che sul cellulare! Ha la stessa <a href="https://github.com/Free-TV/IPTV">collezione di canali in chiaro che usano tutti</a>, con decine di nazioni, ma sarà il caso di permettere agli utenti di aggiungere le loro sorgenti. E poi i preferiti, e la guida TV. 🤭️</p>
+<p>Miseria a parte, altra miseria: non so proprio a cosa migrare il #sito. Jekyll non se ne parla, ho già detto quanto è limitato; staticoso lo creai proprio perché Jekyll non sarebbe bastato. Un po' sto guardando <a href="../../../2024/07/26/pelicoso.html">a Pelican</a> anche in questo caso, però mi sembra irreale quanta roba dovrei sistemare per adattarlo ai paradigmi del mio sito (tra cui la mia bizantina implementazione dei template, per non parlare della gestione inesistente dei nomi dei file). Potrei scegliere Docusaurus, che dovrebbe essere comunque ben personalizzabile con la mia temizzazione (anche se il template dovrei praticamente ricostruirlo), però è tutto React... e quindi, anche se so che è possibile (perché lo feci), avere una build del sito dove tutti i bottoni e le robe funzionano senza server (cioè da <code>file://</code>, che è utile), richiede una caterva di hack. Forse Hugo in questo caso va bene? ...mah, vedremo, pure lui ha pregi e difetti, ma non usa tecnologie antipatiche e non è super-opinionato, quindi, almeno ci provo. Accetto ancora consigli, ovviamente. 😑️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tra le cose da fare, il supporto agli input con tasti sarebbe buono per la UX desktop, ma è praticamente obbligatorio per una app che va su #TV, cosa che per ora non mi serve, ma chissà, potrebbe tornare utile... di app #IPTV belle minimali e non-malware per Android TV non ne conosco. Quindi, se dovesse servire a qualcuno, potrei creare un APK (sulle TV le PWA non sono cosa, anche se quasi tutte le #app pacchettizate lì sono fatte con tecnologie #web, ironicamente). 😷️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Insomma, #TiVuOctt è l'ennesimo trionfo della programmazione vanilla JavaScript rispetto a tutto il resto!!! Fa quello che deve fare. A dire il vero, alcuni canali che su Kodi o quell'altro si vedrebbero, qui non vanno, perché sono da fonti particolari come YouTube o DailyMotion (!?), e dovrei gestirle appositamente, anziché darle a Video.js come fonti HLS lisce... ma nessuno dei principali canali italiani è così, quindi non freca troppo. Altri invece non vanno perché bloccati dal CORS e non gestiti dal mio proxy casalingo; ne butterò uno su Cloudflare Workers poi, quindi senza preoccuparmi di whitelistare domini... 🙏️</p>
+<p>A parte i #problemi che so già ci sono con il mio generatore, di cui appunto ho già perso tanto tempo fa la voglia di averci a che fare, cambiarlo è un'occasione per vedere se la SEO migliora (ho letto, nel tempo, che varie cose che il mio fa sono <em>forse</em> deleterie), e pure finalmente ottenere la mia chimera dei post multilingua (...automaticamente tradotti dall'italiano a build time). Il tema principale del sito (quello delle pagine non-home) invece è un po' clunky, ma onestamente è ok... veloce, colorato ma minimale, credo buona accessibilità, quindi non ho alcuna intenzione di cambiarlo; il problema è che è un singolo file HTML usato per qualunque tipo di pagina, cosa che gli altri #generatori non fanno, quindi... sarà mezza tosta, e la #speedrun per la #migrazione del mio sito inizia ora. (Spero di farcela entro la fine della settimana al massimo, del giorno se va bene... mi auguro non del decennio stavolta...) 😱️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10192,159 +10178,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-07-31 00:34:51+00:00">31 luglio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="la-tivuoctt"><a class="toclink" href="../../../2024/07/31/la-tivuoctt.html">la tivuoctt</a></h2>
-<!-- wp:paragraph -->
-<p>Chi sta seguendo le #olimpiadi col piede giusto (cioè non per fare le solite lamentele politiche, ma per godersi il fottutissimo sport, che è la cosa che a quanto pare aprendo Internet finisce sempre in secondo piano), lo sa che l'applicazione che serve per stare al passo con gli eventi non è un client social, bensì un #player IPTV... ed è a questo che sono finita con <a href="../../../2024/07/30/ok-la-pazzia-e-fatta.html">la matta programmazione di ieri sera</a>... 🤫️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":8180,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/07/image-11.png" alt="" class="wp-image-8180"/><figcaption class="wp-element-caption">Beh, sul PC con Firefox RaiPlay non mi funziona... ma lì non è un problema, perché uso <a href="https://github.com/linuxmint/hypnotix">Hypnotix di Linux Mint</a>. Ottimo player, peccato che il problema è su mobile, dove non ho provato se il sito di RaiPlay funziona, ma comunque ricordo che gira proprio male, e non andrò ad installare né VLC né MPV perché Android [più app installi e più le prestazioni degradano]. E allora, anche stavolta, mi sono fatta io la #webapp che mi serviva... provatela a <a href="https://hub.octt.eu.org/TiVuOcto/#/0/Rai2.it"><strong>hub.octt.eu.org/TiVuOcto/#/0/Rai2.it</strong></a>, su 😼️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il material design ha colpito forte qui, e mi piace come ho messo tutti i canali nel menu laterale, tutti accessibili al volo, facilissimo passare da una categoria all'altra, meglio delle altre app. Versione proprio MVP stasera comunque, ci sono tante cosine da poter migliorare... devo per esempio implementare ancora le azioni da tastiera; e lo farò, perché ora questa è la mia app IPTV anche su desktop, oltre che sul cellulare! Ha la stessa <a href="https://github.com/Free-TV/IPTV">collezione di canali in chiaro che usano tutti</a>, con decine di nazioni, ma sarà il caso di permettere agli utenti di aggiungere le loro sorgenti. E poi i preferiti, e la guida TV. 🤭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Tra le cose da fare, il supporto agli input con tasti sarebbe buono per la UX desktop, ma è praticamente obbligatorio per una app che va su #TV, cosa che per ora non mi serve, ma chissà, potrebbe tornare utile... di app #IPTV belle minimali e non-malware per Android TV non ne conosco. Quindi, se dovesse servire a qualcuno, potrei creare un APK (sulle TV le PWA non sono cosa, anche se quasi tutte le #app pacchettizate lì sono fatte con tecnologie #web, ironicamente). 😷️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Insomma, #TiVuOctt è l'ennesimo trionfo della programmazione vanilla JavaScript rispetto a tutto il resto!!! Fa quello che deve fare. A dire il vero, alcuni canali che su Kodi o quell'altro si vedrebbero, qui non vanno, perché sono da fonti particolari come YouTube o DailyMotion (!?), e dovrei gestirle appositamente, anziché darle a Video.js come fonti HLS lisce... ma nessuno dei principali canali italiani è così, quindi non freca troppo. Altri invece non vanno perché bloccati dal CORS e non gestiti dal mio proxy casalingo; ne butterò uno su Cloudflare Workers poi, quindi senza preoccuparmi di whitelistare domini... 🙏️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-07-30 03:09:08+00:00">30 luglio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              4 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ok-la-pazzia-e-fatta"><a class="toclink" href="../../../2024/07/30/ok-la-pazzia-e-fatta.html">ok la pazzia è fatta</a></h2>
-<!-- wp:paragraph -->
-<p>Avrei dovuto postare fin troppe ore fa, ma come al solito il JavaScript mi risucchia, e quindi perdo totalmente la concezione e la capacità di gestione del tempo (dalla mezzanotte all'una è passato troppo subito). Perlomeno però, adesso è passato così tanto tempo che questo che dico è acqua passata, quindi non è necessario che vi preoccupiate, potete limitarvi a compatirmi... 🤗</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Praticamente è assurdo come ogni volta che c'è da fare una cosa che per un motivo o l'altro non sento, il mio corpo deve psicosomatizzare ogni singola cosa, anche impossibile, se immaginabile; oggi a dir poco tremendo. Anche se questa cosa alla fin dei conti è una cazzata, non fa male, non mi fa morire, eccetera. È da qualche giorno che avevo dei #sintomi un po' così, leggerissimi... ma oggi veramente è esploso tutto, perché dovevo fare quello per cui mi stavo involontariamente crucciando, cioè l'esame particolarmente impossibile (come per tutti) che dovrei fare (come tutti).</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ovviamente ho preso un tondissimo 5/30, ma lo sapevo già probabilmente, ops, infatti stavo male più prima che dopo la mail col voto (anche perché a quel punto il fatto è finito e mi faccio i fatti miei, cioè la JavaScript masturbation). Perché appunto si sapeva che non potevo superarlo con quello che lo studio mi ha permesso fin ora, ma i miei genitori insistevano e allora minchie. Senza scoprire nulla di nuovo, perché era come quello degli appelli precedenti che avevo già visto. Appunto, allora, grazie per i seguenti sintomi:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Ribadisco il generico #malessere perlopiù mentale anche dei giorni immediatamente precedenti, avuto perché con il mio cervello, utile alla programmazione esoterica ma non alle attività normotipiche, non riuscivo nemmeno volendo ad aprire un libro per ripetere o un quaderno per fare esercizi né tantomeno ChatGPT per <em>farmi fare</em> esercizi.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Stamattina mi sono svegliata in modo solito, ma l'aria era un po' pesante, ho anche fatto le cose come le altre mattine ma, ecco qua, mi metto al computer, e senza fare niente mi iniziano a far male le spalle... intrigante!!! Anche perché appena mi distraevo non facevano più male, ma se la mente si rishiftava ecco che son dolori di nuovo.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Ho bevuto il solito caffè della mattina, poco poco proprio perché altrimenti tendo ad esplodere e non è piacevole, ma stamattina anche quel poco ho sentito che mi faceva un po' (1 po') saltellare. Ma anche questo dipendeva dalla distrazione o meno, lol. (Coffi buono ma, &lt;&lt;&lt; microplastiche.)</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Mal di pancia... ho fatto cacchina a metà mattinata, e poi subito dopo pranzo, per qualche motivo, anche se avevo ben poca roba in corpo, e ovviamente gli stronzi sono usciti degni di questo nome, non c'è stata la sciorda non c'è stato liquame signore e signori, solo cacca intera e sana. Più sana quella, del mio cervello che fabbrica i #dolori, insomma.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Dopo pranzo vado all'università (mi accompagna il papi perché la SITA merda ha ridotto le corse a solo 2, ancora prima che finisse il mese di luglio, di cui la seconda sarebbe a esame iniziato e non dopo), e stranamente subito devo fare pipì, anche se l'ho fatta prima di uscire di casa... e infatti era pochissima e chiarissima, e io lo sapevo in anticipo, ma il corpo ha detto no.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Durante la prova in sé, non mi son riusciti a stare a mente manco due esercizi di cose che tecnicamente ho capito, lol. Il cervello non ha cervellato... a dire il vero ha cervellato in altro modo, perché mi ha dato delle intuizioni su tipi di esercizi che non ho nemmeno avuto modo di studiare ancora, ma se ho preso quel bellissimo voto evidentemente le intuizioni non erano così geniali.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Non so cosa è successo per la via del ritorno a casa, inizialmente ero spenta ma non proprio instabile, poi a un certo punto idk, gli spiriti si sono accesi, e ho iniziato a sentire una sensazione di insofferenza non triggerata da nulla in particolare, e non sono andata mentale solo per la stanchezza. Forse è stata colpa dello Ximi che ha laggato... anzi, forse ci giurerei che la colpa è proprio sua, quanto cazzo odio la tecnologia.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>È vero che non mi sono nemmeno cambiata in roba leggermente più leggera quando tornata a casa, perché dovevo mettermi subito al PC a finire di distruggere del tutto quel poco che mi rimaneva della mia anima con il JavaScritto... ma avevo un caldo strano, del tipo che con il condizionatore messo tale e quale a ieri pomeriggio (appena 1-2 gradi in meno della temperatura naturale quindi ok non fortissimo) non sentivo il fresco... ma allo stesso tempo non sentivo propriamente caldo, perché ero troppo dissociata.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Vabbè non lo so, vorrei dire qualcos'altro anche... tipo che la mia programmazione a questo punto è stata molto incazzata, la nebbia della testa mi faceva percepire fortissimo il limite dell'interfaccia umano-macchina, e di non riuscire a premere bene i tasti per effettivamente fare quello che volevo (misclick frequentissimi sulla tastiera), cosa che di per sé è incazzosa, e via così. Poi c'è sempre il fatto che il selettore di file lagga, l'apertura di finestre lagga... tutto questo proprio quando la mia testa di cazzo dovrebbe laggare per protezione, ma invece va in overcock. Tipo ora che finisco di scrivere questo coso alle 3 invece di dormire, cosa???</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-07-28 14:18:11+00:00">28 luglio 2024</time></li>
+          <time datetime="2024-08-20 23:53:12+00:00">20 agosto 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10364,30 +10198,200 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="muschio-impazzito"><a class="toclink" href="../../../2024/07/28/muschio-impazzito.html">muschio impazzito</a></h2>
-<!-- wp:image {"id":8123,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/07/image-10-960x518.png" alt="" class="wp-image-8123"/><figcaption class="wp-element-caption">Ma vi ricordate quando #Musk postava memi di questo tipo, appena 2 anni fa, e lo pensavamo per ciò totalmente #pazzo? Se solo avessimo potuto prevedere il futuro, avremmo riso meno e pianto di più... (Politicamente inaccurato btw, stando a <a href="https://www.washingtonpost.com/politics/2022/04/28/what-elon-musks-polarization-graph-gets-wrong/">washingtonpost.com/politics/2022/04/28/what-elon-musks-polarization-graph-gets-wrong</a>)</figcaption></figure>
-<!-- /wp:image -->
+    <h2 id="il-linuxxaggio-piu-migliore"><a class="toclink" href="../../../2024/08/20/il-linuxxaggio-piu-migliore.html">il linuxxaggio più migliore</a></h2>
+<!-- wp:paragraph -->
+<p>Lo #spirito da utente #Linux autisticamente fissata è forte con questa faccenda. Credevate che io potessi star facendo chissà cosa tra ieri mattina e stasera, dopo <a href="../../../2024/08/19/linuxaggio-androidico.html">l'ultima goduria che ho postato</a>? Assolutamente no, la mia anima è stata consumata come al solito dal demone #opensource. #Sad! O meglio... sad perché non funziona tutto esattamente come voglio, però tutto ciò che ho detto resta valido, e le mie idee sono buone, ma andrebbero esplorate di più (...ancora altri giorni...). Con gli enormi miglioramenti portati da Termux:X11, questa potrebbe quasi essere la soluzione al <a href="https://t.me/c/1383332798/20406">problema della workstation cross-spaziotempo</a> che mi porto avanti da tantissimo... 😔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":8694} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/lv_0_20240820225630.mp4"></video><figcaption class="wp-element-caption">In breve: un'esperienza desktop Linux comparabile ad un raspino (che brutti ricordi quella sfida...), leggermente meno malata sotto certi aspetti (il #tablet feels so good), ma di più sotto altri (accelerazione grafica? ahaha). Mi sono presa qualche quarto d'ora solo per sistemare le scorciatoie da tastiera, che ora oltre che comode sono convenzionalmente strambe, perché ho dovuto metterne certe che non andassero in conflitto con #Android (o con scrcpy, ma non del tutto), ma per il resto da ieri non è cambiato nulla, se non il tempo buttato. 🙂️</figcaption></figure>
+<!-- /wp:video -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Solo negli ultimi 3 giorni il tizio ne ha cacciate fuori di ogni, è sempre peggio. Ma cosa è peggio, il fatto che abbia personalmente violato le regole della propria piattaforma pubblicando un video #deepfake politico senza dire fosse falso (<a href="https://www.nytimes.com/2024/07/27/us/politics/elon-musk-kamala-harris-deepfake.html">nytimes.com/2024/07/27/us/politics/elon-musk-kamala-harris-deepfake.html</a>)... o la sua solita figura di merda nell'usare malissimo le parole, avendo spinto la figlia a dire (sul social dell'avversario!!) che in realtà she do be "look[ing] pretty good for a dead bitch" (<a href="https://www.huffingtonpost.co.uk/entry/elon-musks-trans-daughter-hits-back-called-her-dead_n_66a2b3d5e4b0ac6125bde884">huffingtonpost.co.uk/entry/elon-musks-trans-daughter-hits-back-called-her-dead_n_66a2b3d5e4b0ac6125bde884</a>)?</p>
+<p>Purtroppo non c'è stato verso di eseguire Wine, una cosa che vorrei molto, non perché mi servirà immediatamente, ma perché so che prima o poi la necessità uscirà... Le ho provate tutte, dall'installare build diverse di <a href="https://memos.octt.eu.org/m/JaBkimfNMNyAsye56H6Rvt">box86 e box64</a>, al provare diverse versioni maggiori di Wine, all'usare server X11 diversi da quello di Termux (per scongiurare eventuali problemi che ha dimostrato di avere per altri programmi; BB non funziona). Più di preciso, Wine funziona, e il CMD anche, ma tutte le app grafiche falliscono a creare la finestra... roba noiosa, la lascio su <a href="https://memos.octt.eu.org/m/kZ7EZoZjkdGif8CUYmEtm2">memos.octt.eu.org/m/kZ7EZoZjkdGif8CUYmEtm2</a>. Ci sono altri modi per eseguire app Windows su Android, ma un po' devo ancora vedere, un po' roba che ho provato non funge bene, in ogni caso sarà argomento per la prossima volta, dunque siamo alla frutta. 😭️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Vabbè ma che minchia deve dire uno a questo punto? Io ho in mano tanti spazi online, anche se piccoli, qualcuno di mia completa proprietà e qualcuno che semplicemente amministro, ma comunque non andrò mai a violare le regole scritte solo perché so che tanto non verrò bannata, dato il fatto che o comando io, o sono di troppo aiuto per mandarmi via per cazzatine. Invece lui dall'alto della sua <em>megalovania</em> fa il cazzo che gli pare. Vorrei ricordare che Zuckerberg di cose cattive ne ha fatte, ma da utente delle sua piattaforme non viola le sue stesse norme, così come non lo fanno altri signori.</p>
+<p>Con l'accelerazione grafica siamo molto hit-or-miss, perché il tablet ha la GPU sfigata (aridaje), la Mali, e non solo non c'è quindi il driver Turnip ottimizzato (che è solo per Adreno), ma in generale... quando va bene da potenziamenti prestazionali trascurabili ai processi grafici, e quando va male va malissimo. Nel video si vede come girano tutti belli Chromium (pare vada meglio di Firefox), Kdenlive, Blender (anche se oddio...)... ma sono con il driver <code>llvmpipe</code> (software rendering); con Virgl invece gli ultimi due programmi non partono, mentre Chromium e roba Electron prima impiegano interi minuti a stabilizzarsi dopo essere partiti (in cui l'intero sistema host si freeza!!!), mentre quando ce l'hanno fatta mostrano glitch a caso. Ops. Ho capito che di gaming qui dentro non se ne farà... pure se i giochi nativi Linux partono, avoja. 😪️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Poi il fatto della figlia, maremma cara... Si lamenta che quando lei aveva 16 anni è stato ingannato a firmare i documenti per il consenso dei genitori (entrambi) alle titty skittles / al girl juice, di non aver capito potessero causare la sterilità, dando così bella mostra della sua incapacità di comprensione del testo, bello e semplice. Dice testualmente "Mio figlio è morto. Ucciso dal VIRUS MENTALE WOKE"; raga non è uno scherzo a questo punto, è andato completamente mentale... gli altri sono malati, ma lui che va in ufficio fatto di ketamina no. E poi continua, con una frase che sembra uscita da r/iam14andthisisdeep, "<a href="https://www.huffpost.com/entry/elon-musk-says-his-child-is-dead-to-him-in-disturbing-anti-trans-tirade_n_669f88bce4b04ed80d391497">si chiama deadnaming perché tuo figlio è morto</a>". Premio padre dell'anno a questo tizio, che proprio non capisce che, se ora non fosse così invasato, e se prima non fosse stato totalmente assente, la figlia non se ne sarebbe andata.</p>
+<p>Vabbè, Vino a parte, più o meno il bilancio è positivo, e tutto questo sarebbe un ottimo miglioramento al mio #workflow in generale, principalmente per lo sviluppo software (che è l'altra cosa per cui esisto), che in giro con Android puro è sempre stato un problemin. Il tablet ha #Samsung Dex, quindi se prendessi l'hub con HDMI sarebbe comodo da usare anche a casa, mentre quando sono in "mobilità lenta" me lo porto e ho comunque virtualmente tutti gli strumenti desktop che possono servirmi (...finché non mi serve er Frullatore, almeno). Vorrei poi inventarmi qualcosa con egual modus operandi sul telefono (...che ha root e la GPU bona...), utile invece alla "mobilità agile", magari sincronizzando le mie cartelle di lavoro in automatico e aggiungendo una microSD più capiente per installare tutti i programmi anche lì. Ricordando poi, in tutto questo, che Android è sempre lì; le mancanze di questo container #Debian malato (tipo il gamin') le può gestire lui. 🥳️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-19 02:07:08+00:00">19 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="linuxaggio-androidico"><a class="toclink" href="../../../2024/08/19/linuxaggio-androidico.html">linuxaggio androidico</a></h2>
+<!-- wp:paragraph -->
+<p>Ieri in una conversazione scaturita dall'osservazione (non mia) di come possedere un "portatile Linux" (cioè, pensato e venduto con GNU+Linux; no, credo che nessuno di loro venga con distro non-GNU) sia sofferenza e miseria, perché a quanto dicono hanno sempre strani difetti di driver che non dovrebbero, e difetti hardware spettacolari (rest in piss Framework owners)... ho detto una cosa per scherzare, ma seriamente. Il tablet #Android medio, su cui si fa girare "Linux desktop" in modi più o meno ortodossi, ammesso di avere una tastiera fisica add-on decente, potrebbe essere un laptop Linux migliore di... boh, qualsiasi; a parte il Mac M1, credo. 😡️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Coi #miliardari è sempre così, ogni volta che ce n'è qualcuno nuovo, ti viene quasi la nostalgia per quello di prima... <a href="https://youtu.be/4xDQnGD7b-w?t=1943">citando Mortebianca</a>: il conservatorismo estremista di Musk fa rimpiangere il professionalismo calcolatore di Bezos, e il liberismo sfrenato di Bezos fa rimpiangere Bill Gates, che quantomeno promuoveva l'aumentare le tasse ai ricchi. Secondo me, per legge, una volta che una piattaforma digitale diventa classificabile come gatekeeper, non deve più stare in mano ad corporazioni for-profit, quindi devono o essere cedute, o chi le possiede deve essere riconvertire la sua attività in una non-profit. Frega 'n cazzo della mano invisibile, usatela per farvi le pippe su come lo stato non deve mai intervenire, va va...</p>
+<p>In effetti così è imbrogliare, perché Android usa (una versione malata de) il kernel #Linux, quindi la parte desktop dell'equazione è tutta #userspace, e quindi o funziona o non funziona (funziona), vie di mezzo scomode non ce ne sono. Chrome OS sarebbe ancora più imbrogliare, perché quello in effetti è un semplicemente un sistema #desktop Linux un po' malato, ma... chi fa i laptop Chrome OS? Esatto, gli stessi OEM che fanno i laptop Windows, che quando non hanno problemi di driver (cosa già rara) hanno sempre, e dico sempre, problemi hardware, o almeno compromessi... tablet Android da 100 euro avranno sempre uno schermo migliore di portatili Windows da 500 euro, quindi facciamo finta che non esistano proprio. 👻️</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vabbe, io la tastiera fisica ideale per #tablet non la ho, ma di tablet Adrod ne ho (anche troppi), quindi perché non fare un #esperimento??? Avendo l'urgio di spendere il mio tempo in modo poco saggio stasera, mi sono messa a configurare XFCE sul mio Galaxy Tab S6 Lite; ricordo che XFCE non è il desktop scrauso che tutti credono, ha semplicemente un tema default #scrauso, e una configurazione che su touch screen lasciamo perdere. Dopo un po' di valutazioni, ho innanzitutto pompato i DPI custom a 168, per rendere il testo leggibile e le hitbox della UI toccabili, pur non volendo scalare tutta l'interfaccia a 2x (troppo grossa), o usare scaling frazionale (pupù cacca tutto sbleurrato), ingrandito di 2 punti tutti i font, e installato il <a href="https://github.com/nana-4/materia-theme"><code>materia-gtk-theme</code></a> come stile GTK, mentre ho messo <a href="https://github.com/loichu/arc-theme-xfwm4-hidpi">Arc-Darker, fork HiDPI</a>, per XFWM (altrimenti, barre del titolo troppo piccole, mi sentivo a disagio). Tocchi finali: <em>trasparenzine</em> del compositor, singolo click per aprire elementi sul desktop e nel gestore di file, e il pannello in alto fissato a 64px di altezza, con icone belle toccabili e niente testo inutile. 💯️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":8663} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/lv_0_20240819005802.mp4"></video><figcaption class="wp-element-caption">Quindi ora che si fa con 'sto coso? ...non lo so. Almeno, a casa col PC non lo so, ma fuori gli utilizzi sono molteplici, con tutte le app produttive che su Android non ci sono (o hanno versioni brutte), mentre su Linux avoja (inclusi programmi o giochi Windows, scomodando strati di compatibilità vari). A proposito di giochi... "<em>come fai a fare gamin' se lagga persino lo scrolling in Firefox e la riproduzione di YouTube?</em>" Semplice, installando virgl, anziché tenere llvmpipe, che è il peggior emulatore di driver video dell'universo ma stranamente è sempre quello default su ogni cosa Linux. 🪨️</figcaption></figure>
+<!-- /wp:video -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ora qualcuno dirà pure... "<em>cosa ma #XFCE sul tablet?</em>" Si regà, basta, è un ambiente desktop meno stupido di quanto sembri... come si vede nel video ha pure il tiling ai bordi dello schermo, e ricorda persino lo stato massimizzato delle #finestre quando una app viene riaperta (cosa a cui non vorrei rinunciare su tablet). Certo vorrei anche magari le finestre con bordi di ridimensionamento più grossi, pensandoci, cosa che però pare un vero casino (con <a href="https://superuser.com/questions/436541/how-do-you-increase-the-resize-border-thickness-in-xubuntu-12-04">guide che indicano file da modificare che nei miei temi non ci sono</a>), e che mi sa non riuscirò a quagliare... ma alla fine non è vitale, avendo pure il pennino. ✨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>...Ah no? Giusto, qualcuni diranno "<em>cosa ma XFCE sul tablet? in che modo, come hai fatto</em>"... non c'ho tempo di spiegarlo, dopo anni e anni la pazienza non ce l'ho più. Su questo blog cinese dalla grafica rilassante ci sono guide molto efficienti al Linuxaggio sugli Androidi, tra cui come installare #Debian in #Termux (virtualmente obbligatorio, le repo di Termux hanno 2 app desktop in croce) e avere subito tutto funzionante, tra cui video, audio, e la scorciatoia home per avviare tutto in 1 click... si noti solo che io sudo l'ho settato in modo meno complicato, e l'emulazione del mouse di Termux:X11 l'ho messa a "Direct touch", che con gli aggiustamenti di prima è perfetto, e in tutte le app GTK3/4 funge lo scrolling naturale e la selezione del testo <em>come se fosse antani nativo</em>... <a href="https://ivonblog.com/en-us/posts/termux-proot-distro-debian/"><a href="https://ivonblog.com/en-us/posts/termux-proot-distro-debian/">https://ivonblog.com/en-us/posts/termux-proot-distro-debian/</a></a> 🙏️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-17 17:48:45+00:00">17 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="adrode-senza-spazio"><a class="toclink" href="../../../2024/08/17/adrode-senza-spazio.html">adrode senza spazio&#8230;</a></h2>
+<!-- wp:paragraph -->
+<p>In questi giorni sono un po' meno salata del solito riguardo #Android, forse perché <a href="../../../2024/08/15/androide-ricacato.html">i trucchi dell'altro giorno</a> hanno risolto la #rogna che più di tutte mi faceva incazzare... ma i #problemi restano!!! Sto usando abbastanza il telefono di recente, quindi tra le mie robe hackerine l'archiviazione mi si è riempita di nuovo, e di file da cancellare al volo non ne ho... però, mi ricordo che su Android le app finiscono (quasi) sempre ad occupare più spazio del loro peso di #APK, quindi buona parte del mio #storage è sprecata! L'ho accennato qualche volta, ma mai discusso, ma in pratica in <code>/data/app/&lt;pacchetto&gt;/</code> vengono memorizzate le seguenti cose extra dal sistema, che le fabbrica a partire dagli APK. ⛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><code>./oat/base.{odex,vdex,art}</code> (link interessanti su <a href="https://memos.octt.eu.org/m/bHLZbc9LLVmkehsLxfoVSn">memos.octt.eu.org/m/bHLZbc9LLVmkehsLxfoVSn</a>): file di compilazione <em>-Of-Ahead-Time</em> della runtime Android, praticamente il codice DalvikEXecutable ricompilato come nativo... Senza spiegare tutti i dettagli, servirebbero per velocizzare avvio ed esecuzione, però per certe app questi diventano letteralmente enormi; soprattutto il VDEX, che (stando a Google) conterrebbe copie 1:1 (di parti?) del #DEX assieme al codice aggiuntivo... sul mio Ximi per CapCut era 130 MB solo lui (quindi, tutta la cartella non-dati della app aveva superato i 500 MB!). 💣️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><code>./lib/*.so</code>: librerie native estratte dall'APK per l'architettura del proprio sistema... certo, queste servono, ma il punto è stanno anche nell'APK, quindi spazio buttato. In realtà, da Marshmallow in su, per un APK con una flag particolare nel manifest, e librerie conservate senza compressione, queste non vengono estratte, ma vedo ben poche app in giro che fanno così (ancora, <a href="https://memos.octt.eu.org/m/LBwtRWgGA5gbTVi8N97eXq">memos.octt.eu.org/m/LBwtRWgGA5gbTVi8N97eXq</a>). 📦️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Beh, in realtà si può risolvere qualcozina. Precisamente, avendo il root si può sia cambiare il comportamento di Android RunTime, che di default punta all'ottimizzazione delle prestazioni, ma può essere spinto alla #ottimizzazione dello spazio... sia inibire l'ottimizzazione per specifiche app. Le differenze in negativo che io ho notato con questa cosa sono sempre state minime, in realtà, però personalmente, avendo 64 GB e non 16 come un tempo, preferisco tenere le ottimizzazioni default per le app che uso giornalmente (o quasi), ma risparmiare spazio per quelle che tengo installate per "quando mi servono" (...che apro per davvero eh, ma solo qualche volta al mese o all'anno; ecco perché quando posso preferisco le webapp, ma non sempre posso). 🤭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ecco, ho testato e visto che basta cancellare la cartella <code>oat</code>, e rimpiazzarla con un file (vuoto) dallo stesso nome, e pare Android non vada più a rigenerare i file ottimizzati per quella app, la farà invece sempre girare con l'interprete JIT (che ripeto, io 'sta differenza la vedo solo nell'avvio che dura 2-5 secondi in più). Facendo questo procedimento anche solo per la prima decina scarsa di app ordinate per peso della cartella, escluse quelle che uso di continuo, ho guadagnato circa 1 GB, che... non è tanto... ma, dato che non ho alcun vero svantaggio, è tanto. Ora, se volessi levare l'ottimizzazione per tutte le app, che non farò anche se mi farebbe guadagnare 1 altro GB quasi tondo... è più complicato, per questo lascio i link, ma in breve si setta la sysprop <code>dalvik.vm.dex2oat-filter=space</code>, e le cartelle <code>oat</code> non verranno mai più ricreate (ma non so se debbano essere cancellate a mano o no). 👻️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo, per le librerie native una soluzione così bella non c'è... procuratevi APK con le librerie non compresse (ad esempio, Chromium da <a href="https://download-chromium.appspot.com">download-chromium.appspot.com</a> le ha così), rompete le palle agli sviluppatori affinché buildino i loro APK nel modo giusto, o altrimenti riassemblatevi voi gli APK delle app più grosse che avete, se la situazione vi turba (io questo non lo farò, dovrei pure cambiare la firma sennò...). Insomma, ancora una volta Adrod è per chi vuole smanettare; chi vuole un telefono che funziona e basta se ne compri uno con KaiOS! 💖️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-16 10:37:19+00:00">16 agosto 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="capitombolo-di-ferragosto"><a class="toclink" href="../../../2024/08/16/capitombolo-di-ferragosto.html">capitombolo di ferragosto</a></h2>
+<!-- wp:paragraph -->
+<p>Ieri ero a un #picnic ...idea forse un po' discutibile a #ferragosto, non tanto per la temperatura ma per la maremma di umidità, ma non comando io e non avrei avuto idee migliori, per cui pazienza. È effettivamente stato un test per lo Ximi che <a href="../../../2024/08/15/androide-ricacato.html">ho elevato a perfezione giusto qualche ora prima</a>, che avendolo usato il normale (non tanto direttamente, ma quello anche a schermo spento mi fa girare delle cose) è giusto arrivato in tempo al 4% per caricare in auto per tornare a casa... pazienza. No dai, a parte gli scherzi la batteria dura effettivamente ancora bene.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Small issue: il tempo di ritornare a casa, io cenare e poi farmi la doccia (il fumo appiccicato addosso tale che l'acqua sulla pelle diventava nera), si è fatta mezzanotte (ho finito di asciugare i capelli esattamente alle 23:59 per evitare querele), e ho deciso di crollare quasi subito perché... caca, ero stanca e manco vedevo più bene niente (muzunna). E probabilmente è stato giusto, perchè credo che non dormivo circa 9 ore da almeno due settimane (per andare al mare la mattina nonostante il dormire tardissimo, per fortuna non stamattina). ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":8598,"width":"826px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/08/wp-1723794708756861320350195497879-960x960.jpg" alt="" class="wp-image-8598" style="width:826px;height:auto"/><figcaption class="wp-element-caption">Ho però riso quando, dopo aver pranzato, ecco che volevo il caffè, e allora ho chiesto a mio padre se lo voleva... lui dice che non sa se c'è il bar, e io gli indico precisamente dove sta, dopo che l'ho trovato senza nemmeno cercarlo, perché io trovo i bar esattamente come chi fuma trova i tabacchini (liquido droga, yummy!!!)... e, una volta che il caffè è finito (sad), ci rimane lo stecchino di legno da mangiare (che sa di coffi, happy!!!)... 🥰</figcaption></figure>
+<!-- /wp:image -->
     
   </div>
 </article>
@@ -10399,7 +10403,7 @@
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="13.html">13</a> <a class="md-pagination__link" href="14.html">14</a> <span class="md-pagination__current">15</span> <a class="md-pagination__link" href="16.html">16</a> <a class="md-pagination__link" href="17.html">17</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="47.html">47</a>
+  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="13.html">13</a> <a class="md-pagination__link" href="14.html">14</a> <span class="md-pagination__current">15</span> <a class="md-pagination__link" href="16.html">16</a> <a class="md-pagination__link" href="17.html">17</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="48.html">48</a>
 </nav>
         
       

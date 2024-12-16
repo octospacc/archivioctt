@@ -9826,7 +9826,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-28 00:59:30+00:00">28 settembre 2024</time></li>
+          <time datetime="2024-10-08 16:48:34+00:00">8 ottobre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9846,38 +9846,50 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="2damoring"><a class="toclink" href="../../../2024/09/28/2damoring.html">2damoring..</a></h2>
+    <h2 id="la-mrocte"><a class="toclink" href="../../../2024/10/08/la-mrocte.html">la mrocte</a></h2>
 <!-- wp:paragraph -->
-<p>Non so se da ieri, o l'altro ieri, vabbè non importa... volevo provare a fare dei giocattolini interattivi (non oso chiamarli giochi perché non ho piani per renderli tali, se esce qualcosa bene e sennò pazienza), quindi ho ripreso <a href="../../../2024/06/13/softwarepostaggio.html">il discorso delle librerie che feci tempo fa</a>, e stavo quindi provando un po' meglio <a href="https://memos.octt.eu.org/m/bDDj57cuyg55CGx3qK6W7q"><strong>LOVE2D</strong></a>. È basato!!! ...Circa. 🦧️</p>
+<p>Mai più di oggi è il caso di dire "zio pera", perché mai più di ieri sera e stamattina ho avuto quel tipo di #rogne per cui il mio corpo sta male per finta, cioè senza alcuna apparente causa reale... ho <em>soffritto</em>. ☠️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bello che ha comunque una libreria di robe abbastanza intuitiva e completa, cross-platform bla bla... e poi, è abbastanza conosciuto da avere una community. Finite le cose belle, tuttavia, resta il fatto che la versione Android ha qualche <em>mancanza</em> non poco grave... permette di caricare giochi solo da archivi <code>.love</code>, o l'eventuale presente nella cartella <code>/sdcard/Android/data/org.love2d.android/files/games/lovegame/</code>, che può contenerne solo uno alla volta. Come si fa per sviluppare, quindi? Bella domanda, stamattina. 🥱️</p>
+<p>Ieri sera stavo un po' R, e avevo un leggero mal di testa, quindi mi sono avviata per andare a mimire relativamente presto, ad un orario forse umano troppo umano, in confronto ai miei soliti sminchiati. Quindi, a mezzanotte ero già a letto; molto figo, avrei dormito quasi 7 ore prima di svegliarmi... se non fosse che... 🤭</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Poi, onestamente, #Lua ci sta, non mi dispiace, ma... dato che esiste letteralmente <em>il linguaggio di scripting delle ragazze magiche</em>, che di design traspila verso Lua, è meglio usare quello per me, ovviamente... ho sentito proprio l'attrazione. È <strong>MoonScript</strong> (<a href="https://memos.octt.eu.org/m/HCocbexUdDAZzLtMi4zijp"><a href="https://memos.octt.eu.org/m/HCocbexUdDAZzLtMi4zijp">https://memos.octt.eu.org/m/HCocbexUdDAZzLtMi4zijp</a></a>), e si, è veramente delle magipuelle perché... guardate il logo insomma (non è opera mia, quindi non me lo sto inventando). Inusuale la sintassi eh, però mi è bastato usare <em>i poteri</em> per comprenderla subito. ✨️</p>
+<p>Dal momento in cui mi sono resa conto dell'R, a quando sono entrata nel lettino, ho iniziato ad avere anche i brividini... boh. E nel letto mi sono decisamente surriscaldata, al punto che stamattina mi sono svegliata mezza sudata; in un attimo la temperatura ha iniziato ad alzarsi da ogni parte del mio corpo, e chissà poi cosa è continuato a succedere, una volta preso il #sonno. 🥵</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Problema di MoonScript è che, anche se funziona in modalità immediata (cioè, che si carica all'interno di una runtime Lua normale, e da solo o programmaticamente può caricare per tradurre ed eseguire tutti gli script lunari), in realtà sembra spaccatissimo all'interno di alcuni ambienti... ad esempio, per LOVE2D pare funzionare solo su PC via cartella; niente file <code>.love</code>, e no su Android in generale. Quindi, vanno precompilati, cosa semplicissima ma che richiede di installare il toolchain... poco male, perché è tutto leggero e compatto. 🙏️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Considerato sia questo fatto, sia il problema di prima (Android mi farà impazzire), in realtà penso di aver fatto una cosa non troppo merdosa: uso uno script shell piccino per compilare da MoonScript a Lua (...dovrei usare un Makefile, per non ricompilare tutto ogni volta...), e poi un altro per avere un menu di selezione. Il tutto avviabile con un tap da <code>Termux:Widget</code> sulla home del telefono... ma solo quando Termux è già in RAM o qualcosa, altrimenti l'avvio viene esplicitamente negato dal sistema, nonostante io abbia dato tutti i permessi a tutto (MIUI mi farà impazzire). 😵‍💫️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il menu per la selezione del "gioco" è tipo, <em>wow</em>. Volevo farlo con <code>Termux:GUI</code>, ma poi ho visto che quello ha tipo un server che deve rimanere attivo, e non parte da solo, quindi cacata perché dovrei aprire ancora una app di più a mano. Quindi ho usato invece <code>dialog</code>, con l'opzione <code>--fselect</code> che punta alla mia cartella #Dev; da lì, scegliendo una cartella, questa viene copiata alla posizione interna di prima, e viene avviata la activity principale della app di Love2D, quindi parte ciò che starei sviluppando. 😳️ (E mi chiedo perché questo widget su GNU dialog sia tipo rotto, mi richiede di premere freccia giù tipo 3 volte prima che i successivi click di spazio ed invio prendano effettivamente una cartella, altrimenti fa altre cose; gradisco alternative, purché sempre TUI.)</p>
+<p>Durante la notte, eh, ho dormito... non male da quello che percepisco, ma evidentemente comunque in modo molto strano, visto quello che ha registrato la Mi Band. Ci ha messo 3 quarti d'ora a capire che mi ero addormentata, perché il battito cardiaco è rimasto, per tutto il tempo, molto alto e molto variabile... cosa che normalmente non succede. 💣</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":9716,"loop":true} -->
-<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/Club-delle-IT-Ragazze-Magiche-.mp4"></video><figcaption class="wp-element-caption">Questo quindi è il modo in cui riesco a devvare con questo stack anche su Android, senza fare tutto dentro un desktop Linux, che su telefono è scomodo. Non il meglio, ma accettabile... credo che su Android sia più veloce ricompilare e far partire un gioco di questi, rispetto a qualsiasi webapp con più di 0 build step. E, boh, il mio giocattolino #WIP di typin' funziona, ma dovrei continuarlo ancora... 😭️</figcaption></figure>
-<!-- /wp:video -->
+<!-- wp:image {"id":10117,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/screenshot_2024-10-08-16-20-28-224_me7854439016479490186-665x1440.jpg" alt="Grafico battito cardiaco e sonno di oggi di Zepp Life." class="wp-image-10117"/><figcaption class="wp-element-caption">Non so, questa cosa mi fa ridere, anche se non dovrebbe... solo io (ragazza magica) riesco a prendere sonno come se nulla fosse, e mantenerlo, con picchi di battiti al minuto che superano anche i 100. Certo, la band è cinese e tutto, quindi la #misurazione non è precisissima, ma su una scala temporale così ampia i dati sono da prendere per veri, nonostante sembrino assurdi (visto che la misurazione del battito non è algoritmica). 💖</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tra l'altro, ad un punto prima delle 6, ho iniziato a #soffrire malamente. Ero in dormiveglia col mal di testa, e le pieghe delle coperte del letto (che avrò mosso malamente nelle ore prima) hanno iniziato a darmi fastidio... ero tipo in un sogno strano, e sentivo fossero una specie di labirinto dove dovevo muovermi, e ogni volta non riuscivo mai a stare né uscire, e avrei voluto non pensarci ma mi era semplicemente impossibile. 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non ho capito se questo rompicapo immaginario che stavo sognando mi abbia effettivamente causato il mal di testa allucinante, oppure se, al contrario, era un effetto del mal di testa... Ma alla fine (la linea gialla sottile nel grafico) ho sentito che stavo male perché dovevo andare a fare pipì (non so come, non mi capita mai) e bere acqua (non mi capita mai, ma forse è perché ho sudato). 🤕</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>All'orario della sveglia, speravo sarebbe andato tutto liscio, a parte la confusione accumulata dalle ore prima... ma, quando mi sono alzata, è successo quel magico senso di nausea e morte imminente che almeno una o due mattine all'anno mi tocca. Mi sono come sempre messa sul divano ad aspettare che passasse, e in meno di 5 minuti lo ha fatto come previsto, anche se un po' di mal di testa mi era rimasto. Poi però mi sono rimessa a #dormire, fino all'una. 🤢</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahimè, viene da sé, dopo che i miei genitori questa volta hanno visto come stavo: oggi niente università, anche se avrei preferito andarci. Ed è un problema... ok, credo che oggi in particolare non sia grosso, non sembra (anche da quello che dicono gli altri) io abbia perso chissà che lezioni, però con st'università è sempre tutto allo sbaraglio, tra orari strani e lezioni che saltano. Manco sono riuscita a fare effettive amicizie nella nuova classe fin'ora, e più giorni saltano più diventa complicato... 😖</p>
+<!-- /wp:paragraph -->
     
   </div>
 </article>
@@ -9888,7 +9900,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-26 20:15:27+00:00">26 settembre 2024</time></li>
+          <time datetime="2024-10-07 17:39:04+00:00">7 ottobre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9908,249 +9920,45 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="distrasocto"><a class="toclink" href="../../../2024/09/26/distrasocto.html">distrasocto</a></h2>
+    <h2 id="gamfabbbricagio"><a class="toclink" href="../../../2024/10/07/gamfabbbricagio.html">gamfabbbricagio</a></h2>
 <!-- wp:paragraph -->
-<p>Dato che... ecco, non so cosa volevo dire, quindi: dato che ho deciso così, devo dire quello che è successo tra <a href="../../../2024/09/25/universiwhat.html">il post di ieri mattina</a>, e appena pochi quarti d'ora dopo. <strong>Un disastro!!!</strong> Che solo per pochissimo ho risolto, altrimenti era per davvero la fine. 😭️</p>
+<p>Dopo la mia <a href="../../../2024/06/13/softwarepostaggio.html">disamina arrangiata di qualche mese fa su librerie varie per sviluppamenti videoludici</a>, ora devo ritornare sulla cosa, perché in quel momento ho considerato solo roba 2D... e, principalmente, per quello vale ciò che ho già detto; però, tra ieri e oggi, stavo guardando meglio altre due opzioni, che sarebbero invece ideali per il 3D, visto che avrei in mente qualche <em>progetto segreto di <a href="https://bbs.spacc.eu.org/old/viewtopic.php?t=105">porting umma umma</a></em> che al momento non voglio dire. 🤫️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Praticamente, dovevo scendere dal #bus, e nel frattempo avevo mille cose tra i piedi (non avevo finito di leggere il capitolo del mio manga e dovevo posarlo, stavo ragionando sul fatto che dovevo andare a comprare altri biglietti, e come dissi pioveva e dovevo prendere l'ombrello dallo zaino). Avevo il giubbino chiuso arrotolato, e agganciato ai tiretti della zip dello zaino, come sempre... solo che, per aprire lo zaino, ho dovuto staccarlo... SOLO CHE, per qualche motivo, non l'ho spostato su uno solo dei vari agganci come di solito, ma affianco a me... ed ecco quindi che scendo giù alla fermata dimenticandomene. 🥶️</p>
+<p>In questo caso, avere un #framework completo di tanta roba specifica fa comodo, visto anche che il funzionamento interno del #3D non è qualcosa che programmi da zero dalla sera alla mattina. Però, gli altri requisiti restano uguali... poter programmare in qualunque situazione, con qualunque hardware (cosa che squalifica immediatamente Unity ed Unreal), usando un linguaggio non marcio (che gestisca la memoria per me, che non crashi in modo misterioso dicendo solo "<em>segmentation fault</em>", la cui API non si rompa da una versione all'altra rendendo tutto incompilabile, e con una sintassi che non mi faccia piangere mentre dormo... mamma mia quanti linguaggi odio io), e che supporti principalmente Android, ma in secondo luogo anche PC desktop e web. Quindi... 🤓️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Come prima scelta... ho installato l'editor dei progetti di <strong><a href="https://memos.octt.eu.org/m/MSVwuXwCQchFN9ZbPMJTKw">Godot</a></strong> sul tablet, per provarlo un po' meglio; infatti ora in ogni caso me lo tengo, e se mi viene in mente di giochicchiarci lo ho già lì. So già che come #engine funziona bene, rispetta i requisiti, la comunità è sufficientemente grossa, e il porting mobile dell'editor ufficiale completo funziona fin troppo bene. 🤖️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Penso che con questo, se ci si prende la mano, si può realisticamente passare da "Godot" a "Godo", ed usarlo seriamente. Anche se, non so quanto radioso sia il futuro di Godot, considerato <a href="https://knowyourmeme.com/memes/events/godot-engine-user-blocking-controversy-wokot">il disastro che la social media manager pazza ha combinato la settimana passata</a>; questioni che a me, come developer che guarda il prodotto di per sé, fregano meno di zero, ma intanto sia utilizzatori che backer hanno iniziato a scappare... non buono, perché significa meno supporto, sviluppo più lento, e tutto quanto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Poi però... mi torna in mente anche <strong><a href="https://memos.octt.eu.org/m/UqrcTf8cViuubbDQqBFcas">libGDX</a></strong> che, seppur meno popolare, in realtà è interessante parecchio. È #Java, e io Java <em>non lo apprezzo particolarmente</em>... ma supporta tranquillamente Kotlin, e quello invece mi piace. Dalla sua ha che, pur essendo un framework molto ricco, non è costruito attorno ad un editor (anche se <a href="https://github.com/JamesTKhan/Mundus">qualcuno terzo esiste</a>, ganzo), quindi sarebbe forse più accessibile per me, che devo così abituarmi a meno cose... devo solo imparare la API praticamente (cosa che vale per qualunque libreria). ☕️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>A quanto pare, #libGDX supporta ufficialmente la compilazione verso web, nello specifico con TeaVM nel caso si abbia codice #Kotlin... ma ho dovuto testare personalmente, perché <em>non si sa mai</em>, visto che quando avevo provato a compilare del codice esempio di TeaVM mesi fa per altri motivi non funzionava. Sorprendentemente, quel mostro di Gradle non ha dato problemi, e quindi ora so che, con questa libreria, la compilazione verso tutti i target che mi interessano funziona sulla mia macchina. 🤯️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per fortuna, quando sto coso manca, me ne accorgo relativamente subito (tipo <a href="../../../2024/09/05/fantasexspo.html">quando si strappò correndo per strada</a>; poi fu ricucito l'aggancio)... però in quel momento il bus era già ripartito, e quindi sono cazzi. Ho iniziato ad avviarmi per la via di casa, perché chiaramente non potevo mettermi a rincorrerlo, però nel frattempo guardavo le tabelle orarie di quella linea, e... se non lo passano ad un'altra linea, questo dovrebbe fare il giro per ritornare all'università immediatamente, quindi so per dove dovrebbe passare. Quindi... l'ho beccato ad un'altra fermata, e ho ripreso il coso. MENOMALE!!! 😭️😭️😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>(Quando ho intercettato l'<strong>autosus</strong>, era ripartito appena 15 secondi prima dalla fermata che ho detto... mi dispiace molto che ho dovuto rompere il cazzo all'autista, perché col traffico che c'era avrei benissimo potuto a quel punto correre fino alla fermata ancora dopo, che non è molto dopo, e lì fare con calma, ma in quel momento era difficile pensare. A giudicare dai gesti che faceva quando ha notato che stavo arrivando correndo, però, ho come l'impressione che mi abbia aperto solo perché, dopo qualche secondo, ha riconosciuto che ero una delle ultime persone scese, e quindi avrà capito sarà successo qualche #disastro.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però — per quanto ora di meno, dato che stanotte ho dormito (no pensieri vuota testa) — è comunque tutto WTF, voglio letteralmente esplodere, scoppiare, frammentarmi... ma purtroppo in casa non ho polvere da sparo commestibile. Si vede che solo per stavolta me la faccio passare, solo perché ho risolto, altrimenti... altrimenti la prossima volta faccio sparire il mio corpo all'interno di un tombino, così torno al Reame delle Fogne, che almeno lì non mi devo preoccupare di questi problemi terreni. 💣️💣️💣️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non capisco perché mi succedono queste cose... Cioè, sono una ragazza magica e faccio le cose del tipo wooo <em><em>scintillio rumorini</em></em>, ma poi crollo di faccia quando escono fuori cose da persone normali, certe volte. Ma, se è per questo, non capisco perché io in primo luogo mi meriti che mi succedano queste cose... cioè, è così cattivo il mio karma? Timbro sempre i biglietti sul bus, non appicco incendi d'estate, e non rispondo male alle persone (credo)... quindi perché ogni tanto devo scontare pene di questo tipo? 😥️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A parte questa, due cosine mi sfuggono: com'è possibile che Octt futura non è mai apparsa con un varco spaziotemporale in camera mia a picchiarmi per tutti i danni che faccio, e com'è possibile che i processi del cervello umano possano essere così buggati da sminchiare tutte le priorità delle task, tra l'altro eliminando dalla memoria immediatamente quelle che dopo l'inizio richiedono un'azione successiva prima del termine effettivo?!?!?! #Mannaggia. 🥱️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Guardando il lato positivo: oggi pomeriggio avevo ancora più casino in mano (letteralmente: a parte lo zaino, biglietto + telefono + portamonete), perché oggi tornavo a casa col treno (da un'altra parte), e non ho dimenticato/perso niente... E, se è per questo, ieri alla fine una volta in città non pioveva così tanto quanto pareva dall'autostrada, quindi ho potuto fare i giri senza farmi la doccia. ...Però damn, è grave se i momenti in cui qualcosa semplicemente non va storto sono "il lato positivo". ☠️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-25 12:01:47+00:00">25 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="universiwhat"><a class="toclink" href="../../../2024/09/25/universiwhat.html">universiwhat?!</a></h2>
-<!-- wp:paragraph -->
-<p>Forse rischio di secciarmi così ma... ho come il presentimento che gli esami di questo semestre li farò tutti letteralmente pisciando, senza alcuno stress??? Mentre non ho guardato bene quelli del prossimo, perché così presto non freca, però in generale dovrebbero essere per me meno stronzi di quelli dell'anno scordo, quindi forse iniziamo bene. 🙏</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però voglio dire... le modalità d'esame di questi tre mi sembrano ragionevoli (senza merda a crocette; non mi dimenticherò mai che inferno fu!!!), anche se ovviamente è bene stare all'erta... e poi, gli argomenti, mamma mia; anche se ovviamente non so tutto tutto, sembrano mezze stronzate bene o male. Per dire, nell'ora di sistemi operativi percepisco nell'aria la differenza tra chi, come me, ha impiantatosi un computer Linux sotto la pelle del polso, e tutti gli altri che no. 💖</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Comunque, fino a cosa ho avuto modo di vedere ora, cioè non tutto, i professori non dovrebbero essere malamente... e, tra tutti, ci sta quello della pratica di <em>prostituzione orientata agli oggetti</em>; pare proprio basato. Il corso è basato su Java eh, quindi meh, perché Java non tanto mi piace... ma, almeno, non è certa altra roba ben più peggiore, quindi posso fare molto bene finta di essere felice. Ha detto di installare IntelliJ, e il plugin Academy, perché, per il suo corso... ha creato proprio lui una serie di esercizi e robe in Java per quella piattaforma, con dietro la logica abbastanza basata del fatto che sia chi è lento, sia chi è veloce, riesce ad andare al proprio ritmo...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Poi dopo, quando a lezione finita ci vado vicino a chiedere come mai, avendo installato tutto l'ambaradan sul tablet, la UI del plugin fosse in parte mancante (la descrizione degli esercizi non si legge, lul), lui "<em>ecco, questo è perche Java è portatile</em>" (rimarcando con ironia quello che durante l'ora aveva detto seriamente). E dire che almeno IntelliJ sul resto funziona ufficialmente sul Linux desktop Aarch64... se sapesse invece di Minecraft, aiuto... 🤯</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Oggi ho avuto solo questo qua, e ora quindi già stavo tornando a casa... stamattina ho deciso di svegliarmi presto ed andare al primo turno, sia perché non ricordavo quale fosse il mio (ooopsie!), sia perché così torno a casina ancora prima dell'ora di pranzo (tutte le altre persone che conosco o se ne devono andare, o hanno lezione, non avrebbe senso restare). Grande giocata, se non per il fatto che ora sta piovendo malamente, scendere dal bus mi costerà una doccia, pure avendo l'ombrello. ☠️ (Cazzarola!!!)</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-25 01:32:56+00:00">25 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="la-riuniversitoctt"><a class="toclink" href="../../../2024/09/25/la-riuniversitoctt.html">la riuniversitoctt</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi <a href="../../../2024/09/24/momento-antigiococto.html">sapevo di non essere minimamente pronta</a> per una giornata di università piena, ricominciando così dal nulla... ma non pensavo di non reggere nemmeno ad una giornata dove la metà è volata via per cancellazione di delle lezioni, e che quindi sostanzialmente è più sui 3/4 di giornata. Ma ahimé, il complesso industriale universitario imperversa. 🥶️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Praticamente al ritorno in bus tardissimo, come ora mi toccherà sempre (sigh, orario pazzoide), il tempo è passato alternando Duolingo a del gamin' misto... e alla chiusura compulsiva degli occhi. Ovviamente, appena scesa dal mezzo, ho riacquisito tutta l'energia fisica — non capirò quindi mai perché succede così. E meno male che a quell'ora tardi, per ancora poche settimane, non è buio pesto... 😵‍💫</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La cosa buffa, però, è appunto la lezione mattutina annullata per skill issue (o simili) della professoressa interessata. Perché, ok, la notizia è girata già dal giorno prima, ma solo stamattina a caso hanno preso e aggiornato l'orario online ufficialmente... e vederlo sminchiato dal niente la mattina ancora con il sonno non è bello, anche nel caso di aver già capito tutto. Perché si, comunque volevo partire all'orario normale, sapendo di trovare qualche persona, vabbé. 🤢</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>È stato almeno utile questa sorpresa però, perché dovevo fare una videochiamata per robe mie, che doveva essere un giorno più comodo ma per una serie di coincidenze è finita spostata proprio al volo stamattina. Ecco, non benissimo, con lo Ximi che a quanto pare ha un fruscio nel microfono degli auricolari, e la rete mobile che lì funziona miracolosamente male (e non che il WiFi di ateneo funzioni estremamente più bene, però comunque non potevo usarlo, perché dovevo trovare una parte per stare senza avere o causare disturbi, quindi dovevo stare del tutto fuori)... ma poteva andare peggio. 😐</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ma domani ancora, per grandissimo culo mancano tutti i prof di pomeriggio, quindi torno a pranzo a casa anziché mangiare pezzotto, e godo. La rogna però con cui già si inizia, con questi salti di lezione indotti dall'altro: pare la prima prof voglia recuperare le lezioni perse... in un giorno in cui non avremmo altro e dovremmo venire quindi apposta per quello... diverse settimane... di primissimo pomeriggio...... MA MI FACCIA IL PIACERE! 🤡 (<em>risate napoletane</em>)</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-24 01:20:01+00:00">24 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="momento-antigiococto"><a class="toclink" href="../../../2024/09/24/momento-antigiococto.html">momento antigiococto</a></h2>
-<!-- wp:paragraph -->
-<p>Stasera... è la fine. Perché domani è l'inizio!!! Però sono in realtà più o meno felicemente serena, a parte li scherzi, perché alla fine ce l'ho fatta a finire il nuovo #articolo iniziato ieri prima che il tempo di interesse del mio cervello terminasse. Quasi due giorni fin troppo pieni di lavoro, un pochino impazzisco.,..,.. 😇</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sono più di 6000 parole, il file Markdown pesa quasi 50 KB, e praticamente è l'articolo più lungo che ho mai scritto, tra quelli non rimasti nel Buco Nero delle Bozze (esatto, li ce n'è 1 anche più grosso...). Dovrei anche decisamente aggiungere più titoli ai paragrafi, perché al momento è veramente impossibile da navigare... domani. 😴</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>L'ho già pubblicato, così almeno ora posso riposare... e il titolo è volutamente mezzo ambiguo ma, come la descrizione chiarisce, è su come la politicizzazione dei #videogiochi (da parte di chi urla woke a vanvera) ne va a far dimenticare l'arte e rendere inutile la #critica. Read read read!!! <a href="https://sitoctt.octt.eu.org/it/blog/2024-09-23-I-guerrieri-del-woke-e-lappiattimento-del-gaming/"><strong><a href="https://sitoctt.octt.eu.org/it/blog/2024-09-23-I-guerrieri-del-woke-e-lappiattimento-del-gaming/">https://sitoctt.octt.eu.org/it/blog/2024-09-23-I-guerrieri-del-woke-e-lappiattimento-del-gaming/</a></strong></a> 🥰</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Dopo tutto questo parlare di #gaming-non-gaming, <a href="../../../2024/09/23/tuttofarocto.html">quasi senza manco il tempo di respirare</a>, visto che ho preso come ispirazione roba fresca di giorni (mannaggia agli youtuber #mannaggia!!!)... volevo un po' giocare stasera, e invece alla fine non c'è stato il tempo. Non posso farlo ora #tardi, perché domani per me c'è il tran tran, che stavolta inizia addirittura pieno come la merda, a livelli girlbossing, quindi il risveglio sarà militare. 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>(Devo anche dire che il meteo mi preoccupa non poco; se domani piove è veramente male... e per ora non sembra, ma qui proprio ora sta facendo un temporale tale che i tuoni fanno frastornare i vetri... e mi chiedo come stiano facendo a non spaccarsi, io mi sto cagando sotto.) A mimir. 🙄</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-23 02:26:47+00:00">23 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="tuttofarocto"><a class="toclink" href="../../../2024/09/23/tuttofarocto.html">tuttofarocto</a></h2>
-<!-- wp:paragraph -->
-<p>Ieri sera mi è venuta la mala ispirazione per un articolo tema, che quindi oggi pomeriggio ho iniziato a scrivere... speriamo che almeno stavolta non ho regalato ore del mio lavoro all'Entità delle Bozze, speriamo che sono davvero ben oltre metà testo e che riesco a pubblicare già domani, sennò, davvero, a 'sto giro finisce <em>maluccio</em>. 😇</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Soprattutto perché quindi, avendo speso l'intera metà giornata a fare quasi solo quello, non ho finito manco altre cose che forse avrei voluto, e di conseguenza + soprattutto qui sopra quasi non riuscivo a postare manco niente!!! Il che è una tragedia, perché... <a href="../../../2024/09/21/lo-slanciocto.html">la streak</a>...... non posso perdere o altrimenti non sono più una Dea......... 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Già che ho mancato il post su Pixelfed oggi è male, ma mancare il microblog, proprio no; è peggio di Duolingo, non c'è manco il congelamento. A proposito, però: a quanto ho capito osservando <a href="../../../dati-e-grafici-%f0%9f%93%8a%ef%b8%8f.md">i grafici del mio stesso sito</a>, dovrebbe contarmi la sequenza anche postando dopo mezzanotte, se nella giornata solare corrente finisco poi per pubblicare anche un'altra cosa... speriamo. 🙏</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Per ora vado a dormire e basta, ma, nel caso, se domani mattina scopro che lo slancio è bruciato, posso sempre piazzare sul calendario un giorno nel breve futuro per togliermi la vita!!! JK... unless?!?! Il fatto è che il mio cervello da scimmia priva di pace cerca di trovare quel minimo di sollievo esistenziale almeno nel numerino che sale, quindi se questo scende a zero è davvero finita per sempre. 🤢</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Va bene, però la cosa buffa è che io fino a poco fa ho messo in pausa la scrittura dell'articolone per fare "<em>qualche faccenda sul sitoctt</em>", così da "<em>avere qualcosina da scrivere per prima di mezzanotte</em>". È stato evidentemente stupido, ma non stupidissimo, si tratta di cose che avrei dovuto fare comunque... Forse? 🤭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stasera ho aggiunto <a href="https://sitoctt.octt.eu.org/it/miscellanea/%EF%B8%8F-Raccolta-Tecnologia-Mista/">una pagina che non so come spero di mantenere</a>, dei video YouTube su altre due vecchie paginette, e... questo è quanto. Ho fatto forse più ieri (o ieri l'altro?), in cui ho sistemato qualcosina del layout, tra cui la profondità dei link nella table of contents, che col default del mio tema non mi gustava. O, stamattina, in cui ho aggiunto una pagina con un <a href="../../../contatti-%f0%9f%98%ba%ef%b8%8f.md">comodo form di contatto</a> al sito qui del fritto misto microblogging. 🥰</p>
+<p>In ogni caso, enfasi sul dover imparare, comunque... perché OK, bello l'IDE che, in classico stile Java, ha non solo l'autocompletamento delle cose, ma pure tutta la documentazione integrata bellina... però la roba è comunque tanta, e la wiki ufficiale non mi pare fatta benissimo, per libGDX; anzi, proprio per il 3D rimanda principalmente a una guida esterna, per giunta vecchia, che non usa API apparentemente più nuove che ho trovato invece <a href="https://monstroussoftware.github.io/2023/11/01/Tutorial-3D-step1.html">in un'altra guida</a>. 😶‍🌫️️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":9573,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/image-5.png" alt="Schermata di due finestre del browser su entrambi i siti mostrando la piccola parte di pagina con i bottoni interessati" class="wp-image-9573"/><figcaption class="wp-element-caption">...O ancora, per le cose che ho fatto ieri e dimenticato, ho creato (con il mio adorato GIMP!!!) dei bottoni 88x31 che mi mancavano: per il sito fritto misto e, già che c'ero, anche per la Hub (che non è stato facile da fare, tutto sul telefonino in giro...). Avevo scordato di mettere qui il secondo, quindi l'ho messo prima, mentre sul sitoctt li avevo messi entrambi. Quindi ora ho <a href="https://octospacc.altervista.org/#area-siti">l'area siti sulla home</a>... e la pagina di contatto mi serve proprio perché accetto richieste di aggiungere altri bottoni. 😳 (Send. Send. Send.)</figcaption></figure>
+<!-- wp:image {"id":10088,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-3-960x528.png" alt="Android Studio, finestra libGDX, editor Godot sul tablet." class="wp-image-10088"/><figcaption class="wp-element-caption">Al di là di averci messo una quantità imbarazzante di tempo per soltanto mostrare un pavimento all'interno di uno spazio 3D vuoto, perché non mi ero proprio accorta di dover specificare 1 particolare argomento opzionale nella funzione <code>ScreenUtils.clear()</code>... ripeto, non sembra male. Infatti quasi la scelta principale è libGDX, non #Godot... 👻️</figcaption></figure>
 <!-- /wp:image -->
     
   </div>
@@ -10162,57 +9970,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-21 23:59:01+00:00">21 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="lo-slanciocto"><a class="toclink" href="../../../2024/09/21/lo-slanciocto.html">lo slanciocto</a></h2>
-<!-- wp:paragraph -->
-<p>Non è molto divertente, ma per non versare lacrime bisogna ridere al come questi ultimissimi giorni (2 o 3, proprio pochini!!) la mia vita sia essenzialmente regolata dalle #streak. Cosa è peggio, tra il gufo fascista Duo che mi costringe ogni giorno a studiare le lingue, WordPress che a sorpresa mi manda le notifiche per dirmi che il mio slancio aumenta, o Microsoft Rewards che aiuto mi scordo sempre di farlo non ho il tempo ogni giorno a fine giornata ci rimango di sasso...? 😬</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Si, non capisco come mai il #ritmo della mia esistenza cambia dal nulla a distanza di giorni, ma questa è, e così me la devo tenere (contro la mia volontà, visto che essendo una ragazza magica sono ancorata a questo piano di realtà da forze a me superiori). Vorrei quindi magari capire come aumentare l'entropia del mio cervello, per avere inutili idee nuove scrivibili... ma il suggerimento che per molti funziona, cioè prendersi dei momenti per annoiarsi, con me non è ottimo (mente neurodivergente). 😙</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Probabilmente però, varie cose andrebbero meno a rotoli, se anche quelle avessero gli #slanci. Ad esempio, se il sitoctt avesse la streak, forse riuscirei a creare o aggiornare una piccola paginetta ogni giorno? Se la Mi Band avesse la streak del sonno, magari la finirei di rimanere a letto ignorando la sveglia? Oppure, ecco, se il libro di matematica discreta mi inviasse le notifiche, forse riuscirei pure a studiare qualche giorno, anziché fare solo girlrotting... Ma questa è fantascienza!!! 😝</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In realtà, non lo so; è vero che il sitocto non ha un tracciamento interno dei progressi di crescita, ma il muro di piastrelle da bagno dei vari Git misura, tra tremila cose, anche quello. Forse il problema è che non dice alcun numero di giorni di slancio, ma mette un grafico lì e boh, il cervello certamente ha l'impulso di renderlo tutto colorato, ma inconsciamente non sa come. E infatti, se è per questo, scrivo codice meno di 365 giorni all'anno. 🧐</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Rigirando ancora la questione però, per finire, devo ammettere che l'aver scoperto la streak di WordPress, in questi pochi giorni un po' incerti, mi sta permettendo di #scrivere <em>qualcosa</em>, nonostante io non sappia quasi mai che cosa. Non posso bruciare la <em>strecca</em>. Allora devo creare il nuovo post, e qualche centinaio di parole buttate deve uscire... altrimenti finisco a scriverle alle 2 e passa di notte, anziché dormire, e non è bello. Vabbè, mi spiace per il racconto un po' cagoso oggi. 🥲</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-20 23:16:36+00:00">20 settembre 2024</time></li>
+          <time datetime="2024-10-06 18:43:26+00:00">6 ottobre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10232,21 +9990,17 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="aggiornamenti-gaming"><a class="toclink" href="../../../2024/09/20/aggiornamenti-gaming.html">aggiornamenti gaming</a></h2>
+    <h2 id="pirascudo-2"><a class="toclink" href="../../../2024/10/06/pirascudo-2.html">pirascudo 2!!!</a></h2>
 <!-- wp:paragraph -->
-<p>Ciò che a molti gamer sfugge, ma non a me, è che: dopo il soffrire del pre-gaming, e il godere del gaming, c'è il morire del post-gaming... Cioè, tutto sto pensare al gamin' in pochi giorni, dopo interi mesi per cui mi ero letteralmente dimenticata che fosse un'attività esistente, mi fa ricordare che il mio lavoro a proposito non è mai finito!!! 💀️ (E quando mai non succede così...)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La prima cosa è che, per via di come EmulationStation lista tutte le #ROM in base alle relative cartelle, e non ha "playlist" come RetroArch (ma forse ha qualche impostazione?)... ogni volta che mi ritrovo davanti le cartelle con i nomi strani che so io, mi ricordo che ho ancora romset da migliaia di elementi da filtrare e ripulire, per tenere solo i #giochi che voglio. Non finirò mai ma, ogni volta che faccio almeno qualcosa, c'è almeno un po' più di ordine, quindi boh, oggi ho mosso in giro qualche giochino, bene. 😇️</p>
+<p>Questa settimana all'università ho visto varie cose strane che... boh, c'è evidentemente un focolaio di attività paranormale nel campus. Dovevo dirle tutte insieme, but alas, sono troppe... però una in particolare capita <em>a fagiuolo</em>, quindi va bene di per sé:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":9461,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/img_20240919_2054525988084129892154255-960x1280.jpg" alt="Adattatore TekOne con la schedina inserita, sulla confezione di cartone verde e bianco aperta malamente, &quot;ADATTATORE MINI LETTORE SCHEDE MICRO TF&quot;" class="wp-image-9461"/><figcaption class="wp-element-caption">Cosa di mezzo: <a href="https://liminalgici.spacc.eu.org/i/web/post/742372822008654489">dalle foto che postate ieri</a> forse si intravedeva l'enorme adattatore che avevo in mezzo, per la microSD di ROM e salvataggi... ovviamente era temporaneo e, visto che a quanto pare non ne ho più di piccoli e liberi in casa, ieri sera ho preso al casalinghi cinese questo qui. Zero frecanza di prestazioni, l'importante è che è piccolo e, sorprendentemente visto il prezzo di solo 1 euro, totalmente funzionante!! 🤯 (Messo solo un po' di scotch fuori per inspessire, che ballava un po' nella porta del Pi.)</figcaption></figure>
+<!-- wp:image {"id":10047,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-1.png" alt="Cartello &quot;PIRACY SHIELD È UNA MERDA!!! NON CONSIDERA CHE SOTTO UNO STESSO IP SI TROVANO DIVERSI SITI WEB CHE POSSONO NON CENTRARE NIENTE. FIRMA stop-piracy-shield.it PER UN SISTEMA ANTI-PIRATERIA PIÙ SENZATO E SOPRATTUTTO FUNZIONANTE E TRASPARENTE&quot;" class="wp-image-10047"/><figcaption class="wp-element-caption">L'altro giorno, girando, ho beccato questo cartello in bacheca... che, al di là della scrittura discutibile (capisco l'orientamento scientifico, ma porca troia, l'italiano non si studia?), è ovviamente <em>senzato</em> nel messaggio; basato direi, persino. 🤩️</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -10254,15 +10008,39 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per quanto ora, con l'ennesimo adattatore dedicato, sia più comodo collegare al PC per gestire i file, resta scomoda la terza questione: i backup, di salvataggi, configurazioni, eccetera!!! Dato che a questo punto c'è il Raspino, che viene acceso solo per giocare, potrei anche fare uno script zero-click che carichi in automatico ogni cosa sulla mia repo Git privata, quando si accende… Ma non è urgente, visto che, anche senza avere questa cosa, quando capita ogni tanto, uso lo script one-click che ho sul PC (che per il momento però non copia le configurazioni RetroArch del Pino, che stanno sulla #microSD interna). 😶️</p>
+<p>Capita <em>a fagiuolo</em>, con la O, perché, anche se giurerei ci fosse da un po' prima di quel giorno (se non addirittura molto), l'ho notato forse proprio perché in questi ultimissimi giorni ce le hanno fatte di nuovo quadrate, co 'sto #PiracyShield... Precisamente, il dolore alle palle lo sentono tutti, ma alcuni non sanno perché, perché alcuni non sanno della nuova #legge che è uscita (abbiamo avuto <strong>Piracy Shield 2 prima di GTA 6</strong>, rendiamoci conto)... 😪️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ma, in tutto ciò, la terza cosa: il sito… cioè, i siti!?! Ieri sera ho semplicemente sistemato delle pagine sul sitoctt, che dalla migrazione del sito si erano rotte, quasi tutte parte della <a href="https://sitoctt.octt.eu.org/it/miscellanea/raccolta-videogiochi/"><em>Raccolta Videogiochi</em></a>. Nel sistemare gli embed di video YouTube per letteralmente 4 videogiochi, ne ho aggiunti anche per alcuni degli altri che non li avevano, perché suppongo Octt di 2 anni fa era troppo impegnata (ma ora non ho fatto manco per tutti, quindi io di oggi sono peggio, rido). Però, in totale, non sono tantissimi... 🤔️</p>
+<p>Io, <s><em>questo video</em></s>... ehm, questo post, <em>non lo volevo fare</em>, perché mi sembra sempre di stare a dire le stesse cose di continuo, per colpa dei nostri regnanti cerebrolesi... Ma, visto che c'era anche da ridere, ho fatto uno strappo alla regola. Peccato che c'è anche da piangere, e molto più forte, per l'appunto. Spoiler: ancora una volta, è colpa anche di quel (stando a Wikipedia) pluricondannato, mastropastrocchiere, di Claudio Lotito... 🐷️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ora quindi penso ci sarebbero decine, centinaia, di giochi su cui penso di creare pagine... ma, mi ricordo che ho anche la Sala Museo Games, su cui non carico <strong>nulla</strong>, da ben <strong>4 mesi</strong>, e lì avrebbe senso caricare cose nuove (anche se non scrivo alcun testo), visto che c'è anche l'emulazione web, mentre piuttosto sulle mie raccolte ho sempre messo giochi non direttamente avviabili da lì... il casino. Però, giusto per fare scena, ora ho caricato al volo 1 nuovo gioco sul sito meno lecito, toh: <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/09/20/hello-kitty-world/"><a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/09/20/hello-kitty-world/">https://gamingshitposting.github.io/SalaMuseoGames/2024/09/20/hello-kitty-world/</a></a>. 🤤️</p>
+<p>Ma il punto è che: io non so che devo dì... Questo aggiornamento della legge non fermerà la pirateria neanche stavolta, e metterà in pericolo la rete ancora di più, ancora una volta. Se volete una rassegna rapida — anche se, a mio parere, non rende bene l'idea del male — delle nuove stronzate, leggetevi il post delle <em>Note di Matteo</em>: <a href="https://t.me/notedimatteo/1082"><a href="https://t.me/notedimatteo/1082">https://t.me/notedimatteo/1082</a></a>. Altrimenti, c'è l'articolo di Quintarelli: <a href="https://blog.quintarelli.it/2024/10/legge-antipirateria-una-norma-che-piace-molto-alle-persone-cui-piace-questo-genere-di-norme/"><a href="https://blog.quintarelli.it/2024/10/legge-antipirateria-una-norma-che-piace-molto-alle-persone-cui-piace-questo-genere-di-norme/">https://blog.quintarelli.it/2024/10/legge-antipirateria-una-norma-che-piace-molto-alle-persone-cui-piace-questo-genere-di-norme/</a></a>. 😴️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In breve... Vogliono che letteralmente qualsiasi entità globale offra servizi #Internet, tipo DNS e VPN, rispetti i blocchi e abbia un qualche tipo di rappresentanza legale in Italia (altrimenti cosa succede, i governanti vanno a cercarli per il <em>globo terraqueo</em>?); Intermediari come motori di ricerca, provider, CDN, insomma i "<em>pover'alloro</em>", devono segnalare attività illecite proattivamente, altrimenti rischiano il carcere (buona fortuna ad arrestare Google); Un indirizzo può essere bloccato anche se è solo "<em>prevalentemente</em>" (qualsiasi cosa voglia dire) usato per la #pirateria (buona fortuna ad andare contro le grosse CDN); E infine, ora il numero di blocchi possibili è illimitato (nonostante gli indirizzi IP siano un numero finito)... 😩️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":10049,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-2-960x640.png" alt="Foto in uno stadio, bambini mantengono uno striscione di propaganda TIM &quot;LA PIRATERIA UCCIDE IL CALCIO.&quot;, l'immagine è stata alterata per includere alla fine la scritta &quot;GODO&quot;" class="wp-image-10049"/><figcaption class="wp-element-caption">2 anni fa dicevo che <a href="https://feddit.it/post/46626">non è vero che "<em>la pirateria uccide il calcio</em>"</a>, perché ci sarà comunque chi va allo stadio a guardare, senza problemi informatici, DRM, monopoli di #streaming, ed altre minchiate del nostro mondo... Ora invece dico che è ancora così, la pirateria non riuscirà ad uccidere il calcio; però, per colpa dei vostri interessi corrotti, <a href="https://t.me/pirateriainformatica/167">cazzo se adesso invece lo desidero ardentemente, cazzo quanto godrei</a>, così forse vi imparate. 🖕️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questa legge non doveva manco arrivare a questo punto; se già prima puzzava di #marcio, ora è evidentemente ed innegabilmente distorta, guidata da puri interessi ideologico-economici, non gli ideali nobili di 'sto cazzo di fermare la "<em>mafia digitale</em>", visto che io ancora trovo <a href="https://www.giardiniblog.it/migliori-siti-streaming-calcio/">le partite in streaming gratis sul clearweb</a>. È allucinante che, nell'anno del Signore 2024, ancora permettiamo di stare in politica (parlamento, in questo caso) a tizi la cui esistenza in territorio italiano è ormai di per sé un conflitto di interessi, perché hanno troppo potere (in questo caso, squadre di #calcio).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La Repubblica andrebbe abbattuta e ricostruita da zero, così come si fa in informatica quando si ha tra le mani codice sorgente talmente vecchio, brutto e inmantenibile. No, non è un'esagerazione: basta considerare che, nei nostri codici legali, <a href="https://t.me/c/1383332798/19868">ancora abbiamo roba risalente al ventennio fascista e che menziona il PNF</a>, mai modificata, che sta lì; senza fare male a nessuno, qualcuno dice, ma è semplicemente uno dei sintomi di un cancro incurabile. 🤮️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10274,7 +10052,85 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-19 22:28:17+00:00">19 settembre 2024</time></li>
+          <time datetime="2024-10-05 12:02:12+00:00">5 ottobre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="memorroid"><a class="toclink" href="../../../2024/10/05/memorroid.html">memorroid&#8230;</a></h2>
+<!-- wp:image {"id":10006,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/Screenshot_20241005-113739_Samsung-Notes-edited.png" alt="" class="wp-image-10006"/><figcaption class="wp-element-caption">Inevitabile che, dopo una microscopica frazione di pomeriggio totalmente blessata dalla flessibilità di #Android e l'epicità del tablet... la sera passata dovesse essere piena di rancore, a causa delle strambità di Android e i disastri che causano i vari OEM, in modi anche molto intricati. ...<strong>Cosa accade quando l'archiviazione non basta?</strong> 💀️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cioè, non scherziamo, la flash su questi aggeggi non basta mai. Non 10 anni fa, non 5 anni fa, non oggi, e non nelle prossime generazioni, se il bloatware continua a crescere come oggi ma gli OEM restano ipertirchi. Da più di un decennio vivo costantemente la sensazione di memoria piena, e di dover sacrificare il bello per il necessario... (e quindi, in cosa i computer moderni sono meglio dei vecchi, se questo #problema ancora rimane?) 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Spero di non comprare mai Androidi senza slot #microSD (nonostante temo in futuro non sarà possibile), perché è veramente l'unica salvezza per queste situazioni... Non solo le magiche schedine fanno conservare infiniti file personali in più (per cui si pretende di avere accesso immediato, sempre e ovunque, senza dipendenze di rete o chiavette penzolanti), ma... Uh, <em>ma niente</em>; si possono mettere solo file, non altri dati, a dire il vero. 🤨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://octospacc.altervista.org/2024/10/04/zzzming/">Ieri la microSD ha salvato il mio culo per installare <em>ZZZ</em></a>, visto che da un lato ho potuto spostarci file che avevo da parte (e non potevo cancellare), mentre dall'altro ho potuto usare la funzione classica di Android per spostare qualsiasi app e non fargli occupare la memoria interna, ma... In questo caso <em>ma si</em>, perché purtroppo questo non è un modo per espandere l'archiviazione del dispositivo all'infinito, riguardo le app: non sposta anche i dati utente (<code>/data/data/...</code>), che rimangono su memoria interna. 😩️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Problemone, perché OK, spostando APK e librerie di tutte le app ho liberato quasi 4 GB, che non è poco... ma ci sono varie app che il grosso lo hanno come dati utente. A parte Termux, che mi prendeva 21 GB (16 dopo un po' di pulizia) ma è un caso speciale (perché posso fare magheggi per spostare la sua cartella dati sulla #SDcard), i giochi grossi moderni fanno ahimè tutti così... <em>ZZZ</em> mi prende 23 GB, e quindi (sul tablet da 64 GB) io ora non potrei nemmeno installare anche <em>Fortnite</em> e <em>Genshin Impact</em>; non ci sarebbe spazio, anche con la microSD più capiente della galassia. 💩️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questo sistema di spostamento esiste dalla preistoria (Android 2), ma in realtà non l'ho mai davvero visto su molti dispositivi...!? Non ho capito se sono gli OEM a bloccarlo, non ricordo se AOSP ha ancora questa cosa o no (ma certamente la aveva), o se è Samsung nello specifico a renderla disponibile su tutti i suoi dispositivi... al contrario di tipo tutto il resto del mondo. 💣️ (C'è su tutti i miei Samsung, ma non su Xiaomi, Huawei, e il <em>Clempad</em>.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il lato brutto della funzione è questo, che non sposta i dati... ma d'altro canto questa semplicità è una forza, nel senso che le prestazioni francamente non degradano. (Le app partono qualche frazione di secondo più lente, ma per quello che io vedo girano proprio uguali.) Allora non capisco... e nemmeno Google, visto che da Android 6 implementò un'alternativa probabilmente peggiore, nel tentativo di tappare i buchi della vecchia funzionalità: l'<em>Adoptable #Storage</em>. 🕳️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Con quest'altra cosa, le memorie vengono fuse, quindi è come se il sistema ne avesse semplicemente una più grossa, cosa che tappa anche il problema delle app che non fanno scegliere la posizione di memorizzazione dei dati. Però, se non ti rendi conto di cosa fai e che memorie usi, il dispositivo può rallentare, e possono avvenire suppongo crash o corruzioni (mai successo a me), e per questo la maggior parte degli OEM disattivano del tutto la formattazione come #archiviazione adottabile... evitare lamentele degli utonti. 🔪️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In realtà, su MIUI 14, l'opzione è ancora presente nel menu di info archiviazione di AOSP, che ovviamente è nascosto e si raggiunge solo facendo vari giri di activity. A parte i glitch grafici, benissimo: se dovesse servirmi (anche solo come metodo per cifrare la scheda SD) l'ho qui. Ma sul tablet con OneUI 4.1... ops, è rimasto solo il bottone per fare una normale formattazione! E io che letteralmente non ho spazio, mi attacco? 🤡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cercando ancora, mi ricordo che si potrebbe forzare l'adozione tramite comandi shell... e si sa da sempre, perché, già quando la funzione era nuova, OEM come Samsung hanno detto "<em>non sia mai!</em>". Al momento non provo, perché la scheda va innanzitutto cancellata, e dovrei comunque metterne una almeno da 64 GB per avere un'utilità pratica... e proprio per questo, in realtà, non canto ancora vittoria: ci sono utenti che riportano il metodo CLI non aver funzionato sui loro dispositivi... 🥺️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vabbè, aiuto, non volevo scrivere così tanto. Per chi anche ha questi problemi, ho raccolto i soliti link: <em><a href="https://memos.octt.eu.org/m/Yygc4tT4JeWUmVdbkvvZo7"><strong>sul metodo classico di spostamento delle app</strong></a></em>, e <em><a href="https://memos.octt.eu.org/m/mCorscqv5RPpnB6s9SJ4a3"><strong>sulle robe dello storaggio adoptabbile</strong></a></em>. 🥰️ (Se gli ultimi metodini non funzionano, sarò ovviamente spacciata, perché l'unica soluzione sarebbe usare Link2SD, che richiede root, che sul telefono ho ma sul tablet no.)</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-04 19:01:44+00:00">4 ottobre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10294,37 +10150,37 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="scrittamenti-octosi"><a class="toclink" href="../../../2024/09/19/scrittamenti-octosi.html">scrittamenti octosi</a></h2>
+    <h2 id="zzzming"><a class="toclink" href="../../../2024/10/04/zzzming.html">zzzming</a></h2>
+<!-- wp:image {"id":9970,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/202410041805557555442699675917154960-960x1279.jpg" alt="Foto tablet in bus appoggiato col gioco aperto nell'ambiente base della città." class="wp-image-9970"/><figcaption class="wp-element-caption">Oggi, #gaming. Eeeh già, e se la batteria del #tablet non mi fosse del tutto morta qualche minuto fa ora non starei qui a scrivere, ma ancora a giocare (con un framerate scarso ma accettabile, a dettagli minimi). Risparmio i dettagli su come ci siano volute 2 ore sane a scaricarlo sotto WiFi di ateneo, e il casino sorbitomi tra spostare file e app su microSD per liberare i ~22 GB necessari su archiviazione interna... 😱</figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
-<p>Stasera, solo #pensieri a casaccio, perché quelli ordinati li ho esauriti stamane. Indeed, questo è il caso, visto che ieri sera mi è effettivamente rimasto quel minimo di forza per farmi riuscire a fixare <a href="../../../2024/09/18/retrowhy.html">il problema che mi ero trattenuta dal dire</a> <em>perché gli spiriti mi hanno sussurrato di non correre</em>... E ho iniziato a scrivere ieri sera, per finire stamattina, una nota a riguardo che è come al solito venuta il quadruplo più lunga delle aspettative. 😵</p>
+<p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>La "<em>octo prova a dire qualcosa senza allungare il brodo a tal punto da farlo diventare tè challenge</em>" sul #blogoctt è dunque fallita anche stavolta, con: 🔉️ Output audio in contemporanea HDMI+analogico su Raspberry Pi con ALSA, <a href="https://sitoctt.octt.eu.org/it/note/2024-09-19-%EF%B8%8F-Output-audio-in-contemporanea-HDMI-analogico-su-Raspberry-Pi-con-ALSA/"><strong><a href="https://sitoctt.octt.eu.org/it/note/2024-09-19-%EF%B8%8F-Output-audio-in-contemporanea-HDMI-analogico-su-Raspberry-Pi-con-ALSA/">https://sitoctt.octt.eu.org/it/note/2024-09-19-%EF%B8%8F-Output-audio-in-contemporanea-HDMI-analogico-su-Raspberry-Pi-con-ALSA/</a></strong></a>.</p>
+<p>C'era questo #gioco, che sta in giro da qualche mese, che avevo sempre voluto provare... ma palle, perché tutte le solite rogne del moderno gaming, cioè che non ho spazio sul telefono e non voglio dover usare il PC (a prescindere, ma a maggior ragione per un gioco mobile). A caso oggi mi è venuto in mente, e l'ho scaricato, finalmente; forse perché ieri ho messo una microSD nel tablet per espandere l'archiviazione, che sta strettina, e volevo quindi sfruttare lo spazio in più, ma paradossalmente è peggio ora. 🤭</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Al di là del post assolutamente da leggere, i flussi sia di scrittura, che mancata tale, di questi giorni, hanno costretto la mia persona a riflettere a proposito della natura degli stessi... In parole normali: pensavo a quali siano le cose che mi mettono in condizione di scrivere, e quali che invece non, perché è una bella (brutta) questione, che mi fa provare emozioni buone e cattive, in un ciclo continuo e inarrestabile dove ho sempre la costante illusione di sapere come andrà a finire un dato giorno. ☠️</p>
+<p>Quindi, #opinioni a caldissimo su Zenless Zone Zero, anche detto #ZZZ... Per ora, per fortuna, non è "zzz", nel senso che non è noioso e inducente al sonno, e anzi potrebbe essere molto carino. In realtà, chissà se rimarrà così, perché è fatto dagli stessi di Genshin Impact... e quel gioco mi era parso bellissimo per le prime ore, ma poi ha iniziato a seccare mortalmente. 🙃 (Mai uscirà una recensione a freddo, perché non si può finire, credo.)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Una cosa che sto notando essere un mio limite è che, se inizio a sfruttare, ma poi non riesco subito a completare, un'idea su qualcosa da scrivere, per qualche motivo questa finisce puntualmente male... <em>Caso in punto</em>, eventuali articoli che ho iniziato a scrivere, ma non ho poi mai finito, perché (per via dei soliti impegni della vita) si sono protratti per troppi giorni, e alla fine la voglia... c'è ancora, non svanisce, ma è tipo corrotta e non più utilizzabile. 😵‍💫️</p>
+<p>Mi sembra che questo non sia open world, quindi dovrebbe essere non troppo dispersivo, quindi non dovrebbe esasperarmi. In termini di difficoltà invece, ho percepito che nei primi minuti era palesemente casual, e questo sarebbe preoccupante... ma già dalla seconda missione mi ha fatto scegliere una difficoltà vera, che mi ha dato del filo da torcere per una decina di minuti, perdendo una volta, quindi godo. 😍</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Qualche argomento l'ho in passato diviso in parti per evitare questo problema, così da avere subito almeno una cosa da considerare finita e rilasciare, <em>e il resto poi si vede</em>, ma questo non funziona nei casi in cui ho qualcosa che davvero non è granché divisibile in parti, e per correre ai ripari dovrebbe essere ristrutturato del tutto, magari come pagina non-post... ma quello poi comporta cose magari non sempre ideali. Vabbé, mi sa che devo almeno sperimentare, per capire... 😶️</p>
+<p>L'ambiente, l'estetica, le robe, sono veramente bellissimi. Forse come personaggi, a primo impatto, preferisco quelli di Genshin (chissà perché), ma questi qui sono comunque veramente fighi. Al mio cervello fritto ricorda molto vagamente Splatoon, con questa ambientazione cittadina miscuglio di oriente e occidente in un futuro lontano e distorto con mostri digitali strambi e creaturine simpatiche bizzarre. Ci sono anche parecchie reference informatiche, stranamente corrette (per intenderci, diversamente dai film di Hollywood). 😝</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ma ancora più complicata è la questione di questo microblog fritto misto, dove appunto posto <em>La Most Random Shit Ever</em> (cit.)... qui non c'è il problema del tempo, perché comunque non posso mai spendere ore per un post, ma a volte mi ritrovo in difficoltà con gli argomenti. In questi giorni sto forse godendo, WordPress mi dice che ho una streak di postaggio di ben 11 giorni (con questo 12), ma è un caso. 🎲️</p>
+<p>In tutto questo c'è poi una lore abbastanza complessa... forse troppo? Cioè, i primi 5-10 minuti del gioco sono praticamente solo video full-motion e dialoghi doppiati; questi ultimi in tutte le salse, tra l'altro, sia in 2D che in 3D e in ambienti diversi. Alcuni dialoghi si possono saltare, io ovviamente non lo faccio, ma secondo me un inizio così è troppo discordante con il tipo di gioco che poi si sviluppa, cioè azione #RPG sfrenata con effetti speciali che mettono il dispositivo in ginocchio. 🤥</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Quando mi succedono cose particolari, o faccio stranezze, e magari mi incazzo pure, allora avoja di parlare... ma altrimenti... boh, l'unica è commentare: le notizie, ma raramente ho qualcosa di furbo da scrivere, o altri media che consumo, e qui invece non capisco se mi manca l'abitudine di parlare (ogni tanto faccio, ma vedrete che non sempre) o l'ispirazione per farlo. Dovrei forse cercare i suggerimenti di scrittura, ma in quest'ultimo caso roba che sia più da diario che da blog? 😪️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>È anche curioso come, nonostante io abbia rinnovato il sitoctt apposta per mettere nuove pagine, con raccolte di miscellanea, non solo in formato post... per il momento non ho combinato un'accidente, ma ho solo risistemato le pagine esistenti (manco tutte velocemente!) e pubblicato queste due note nel mesetto. Eee deve andare come deve andare, è tutto un divenire, una questione octosa, come sempre. 🗿️</p>
+<p>Il combattimento non mi sembra comunque nulla di estremamente elaborato; ci sono diversi personaggi, che hanno caratteristiche diverse e attaccano a modo loro, ma per il resto i modi di attacco quelli sono. Figo che pure qua una delle meccaniche sia cambiare personaggio al volo per fare combo strane, però. Insomma, ho da provarlo meglio, ancora e ancora... se volete aggiungermi agli amici (non so per che motivo pratico), il mio UID è 1504261074. 🤯</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10336,7 +10192,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-18 19:11:53+00:00">18 settembre 2024</time></li>
+          <time datetime="2024-10-03 22:05:52+00:00">3 ottobre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10356,45 +10212,299 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="retrowhy"><a class="toclink" href="../../../2024/09/18/retrowhy.html">retrowhy</a></h2>
+    <h2 id="wprogne"><a class="toclink" href="../../../2024/10/03/wprogne.html">wprogne</a></h2>
 <!-- wp:paragraph -->
-<p>Ops, ho per sbaglio iniziato un'altra saga con 'sta roba del #gaming... peccato. Ecco, <a href="../../../2024/09/17/librottro.html">ieri fare il rantolo</a> è stato così importante da aver distolto la mia attenzione dal provare se con il #Raspberry ora sia effettivamente tutto apposto. Diciamo che... piccoli passi, ecco. Ieri sera ho sclerato, stamattina ho goduto, ma adesso sto sclerando, e non si sa se la corsa contro i #problemi del software finirà mai. <strong>💥️</strong></p>
+<p>Rogne, #rogne con WordPress... più precisamente, WordPress.com, che è il servizio #SaaS ufficiale offerto da Automattic. E a questo punto volevo dire delle cose anche su loro come compagnia, e <a href="https://wordpress.org/news/2024/09/wp-engine/">il disastro che sta combinando proprio negli ultimi giorni</a>, ma non centra con il problema di oggi (e il post è già lungo). 😑</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Un'idea importante sarebbe stata quella di collegare come gamepad, per fare il gamin' anche senza stare alla scrivania con la tastiera, un WiiMote in particolare... perché è un controller Bluetooth (i cavi sono un problema sulla TV in una casa non giapponese) molto semplice (no tasti inutili, perfetto per i #retrogame) alquanto comodo e di buon feeling (riposa alquanto naturalmente in mano, pesa poco, e la qualità costruttiva è quella Nintendo di 15 anni fa anziché la merda di oggi). Un problema: gli input di quel coso vanno in conflitto con quelli da tastiera. 👹️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Praticamente, la croce direzionale del telecomando agisce come le freccette direzionali della tastiera... ma in verticale. Dato che devo tenerlo in orizzontale per giocare realisticamente, e non c'è un modo (che sia ovvio?) di girarlo in software... l'unica soluzione sarebbe tenere le frecce della tastiera non mappate, ma poi non potrei più usare quest'ultima per giocare senza rimapparla ogni volta... è un disastro. 💀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Giù di #scleri appresso a pagine di documentazione e forum varie, che spiegavano come fare questo e quell'altro di robe inutili... ma nessuno che dicesse come far riconoscere il d-pad del #WiiMote come quello di un gamepad vero, al posto di 'sta monnezza ibrida. E, da nessuna parte si riusciva a capire <em>cosa</em> esattamente nel sistema gestisce 'sti telecomandi, e se eventualmente c'è una configurazione. 🙄️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stamattina, andando a tentoni, scopro (o mi ricordo?) che i telecomandi Wii sono gestiti da <code>hid-wiimote</code>, un driver incluso nel kernel Linux ufficiale a partire dalla versione 3.? (!). Ecco, in quel momento mi ricordo che fa schifo alla merda per tutta una serie di motivi, al punto che non mi capacito di come sia finito nel kernel messo così male, ma comunque... trovo <a href="https://github.com/dkosmari/hid-wiimote-plus">hid-wiimote-plus</a>, un fork che apparentemente sistema questo ed altre bizantinate del design. Fortunatamente, è davvero un rimpiazzo drop-in... è bastato scaricare il codice ed eseguire paro paro i comandi del README, per installarlo facendogli sostituire il driver pezzotto. E ora in quanto a gamepad dovrei aver effettivamente finito!!! 🙏️</p>
+<p>In pratica, mi servirebbe ospitare dei sitarelli specifici, qualcuno già adesso e qualcun altro che potrebbe essere un esperimento per il breve futuro. I fatti di ciò non sto qui a spiegarli, ma il punto in questo caso è che... WordPress.com non è più buono come una volta, per chi come me non vuole pagare... e, a dire il vero, non conviene neanche a chi ha un budget superiore allo zero: praticamente tutti i piani oggi sono più castrati, su vari fronti. ✂️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":9368} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/lv_0_20240918154751.mp4"></video><figcaption class="wp-element-caption">Quindi, dopo tutto sto #casino per i WiiMote, tra cui almeno una ventina di tentativi di remap fatti ieri sera dentro RetroArch... ecco un video gameplay con la #tastiera che non ha mai dato problemi, lol. Durato anche troppo, perché con la tastiera sono troppo OP ai giochi stile arcade e non muoio facilmente... e venuto anche male, perché le freccette direzionali non sono in frame. Ops. (Però sentite il clic clac!!!) 🤗️</figcaption></figure>
-<!-- /wp:video -->
+<!-- wp:image {"id":9941,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/Screenshot-from-2024-10-03-22-25-27-960x540.png" alt="Panoramica dei costi e delle caratteristiche dei piani del SaaS per il giorno odierno di quest'anno (2024), del 2020 e del 2018." class="wp-image-9941"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Quindi, dai, bello di nuovo ma... <em>non finisce qui</em>. In primis, per quanto non veri problemi, ci sono <em>minuzie</em> riguardo l'audio... che conservo per un'altra volta, altrimenti è dolore. Però poi, devo decidere se tenere EmulationStation come frontend, considerando che, ogni volta che deve far partire un gioco, va ad avviare da zero RetroArch, che poi si chiude del tutto all'uscita... e tutto questo mi spreca tempo inutilmente (nel video non si nota, perché ho tagliato, ma sono circa 10 secondi).</p>
+<p>Ho dovuto accontentarmi, per il design di <a href="https://StreetPassResearchClub.wordpress.com">un nuovo sito </a><a href="https://StreetPassResearchClub.wordpress.com"><em><s>targato WordPress</s></em></a><a href="https://StreetPassResearchClub.wordpress.com"> ospitato lì</a>, del tema gratuito con la combinazione di colori predefinita migliore che potessi trovare, perché... la personalizzazione anche dello stile di base del sito (colori e font, fine) si paga. Ovviamente, la personalizzazione avanzata dello stile, con anche CSS arbitrario, è riservata dal piano Business in su; minimo 25 euro al mese. 💸</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Su quest'ultima cosa converrebbe quasi far si che "la console" si avvii direttamente in RetroArch, e uso i suoi menù... ma dall'altro la gestione dei metadati e la selezione dei giochi dovrebbe funzionare meglio in EmulationStation, quindi non so proprio. Al di là del fatto che poi ci sono emulatori non-libretro (almeno Drastic, e la versione consigliata di mupen64plus), quindi non avviabili da RetroArch! Bonanotte... 😴️</p>
+<p>Non finisce qui, però... "<em>Chi se ne frega dell'estetica, sono importanti i contenuti</em>", sento piangere chi di siti web non sa nulla. Beh, anche l'HTML è pesantemente castrato: niente JavaScript custom, ma addirittura niente iFrame; gli unici contenuti esterni embeddabili sono quelli per cui esiste un blocco ufficiale, quindi YouTube e qualche altra decina di siti... male. Ovviamente, bisogna pagare lo stesso anche per avere i plugin. 👹️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Loro dicono che le restrizioni sono per motivi di sicurezza, e che pagando quel piano alto il sito viene trasferito su un'infrastruttura dedicata, non condivisa con i siti di piani inferiori... ma io dico che è una scusa. O meglio, vero per quanto riguarda i plugin (che fanno qualsiasi cosa nel backend) e gli script lato client (visto che i dati del profilo utente WordPress.com sono caricati sulle pagine di qualunque sito che si visita, quindi uno malevolo potrebbe approfittarne)... ma, per CSS ed iFrame... tutta una scusa per spennare, visto che col primo si fa poco e per il secondo esistono protezioni (si veda Google Sites). 👿️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ma, il vero problema qui è che il modus operandi è quello alla Durov: io ho vaghi ricordi del fatto che anni fa ci fossero meno restrizioni, per chi pagava poco o nulla... E per quanto ora non riesco a fare un elenco completo, con la WayBack Machine posso fattualmente affermare che almeno fino a 4 anni fa (ma a me pare 2 o 3) lo spazio di archiviazione era 3 GB per chi non pagava, mentre oggi è 1 GB, e 200 GB per gli utenti da Business in su, che invece oggi hanno 50 GB per lo stesso prezzo di base... a meno di pagare un premium di 45 o 76 salatissimi euro <u>in più</u> al mese, per avere rispettivamente 100 o 150 GB. Inoltre, almeno 6 anni fa la personalizzazione dello stile base del sito era gratis... 😱️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Un disastro, perché comunque WordPress è l'unico #CMS e costruttore di siti ad uso estremamente immediato, con tante funzioni di layout integrate, e realisticamente maneggevole su mobile. (Attenzione, <a href="https://wordpress.org/documentation/article/wordpress-block-editor/">l'editor web a blocchi</a> è parecchio laggoso e buggato su smartphone e tablet, nonostante esista dal 2018, ma le app native sono OK.) Tante altre soluzioni, sia commerciali (costruttori di siti proprietari) che non (siti statici coi generatori, o altri CMS liberi), o hanno #problemi tecnici a non finire, o sono meno espandibili di un #WordPress con 999 plugin installati, o non sono per niente agili. <em>Questo sarà terribile <s>per l'economia</s> per i miei piani...</em> 💀️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-02 17:45:01+00:00">2 ottobre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../../2024/10/02/9859.html"></a></h2>
+<!-- wp:paragraph -->
+<p>Brutto dover scrivere ma... non si può MAI abbassare la guardia, con #Nintendo!!! Avrete sentito che lo hanno appena rifatto: quasi precisamente 7 mesi <a href="../../../2024/03/05/yuzu-la-morte.html">dopo aver distrutto Yuzu</a>... <a href="https://www.theverge.com/2024/10/1/24259791/nintendo-ryujinx-switch-emulator-gdkchan-removed-downloads-github"><strong>ora pure Ryujinx <em>è non più</em></strong></a>, e la notizia arriva così di sorpresa. Il sito esiste ancora, ma niente più download o sorgenti. Brutto. 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":9872,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-1-edited.png" alt="" class="wp-image-9872"/><figcaption class="wp-element-caption">A dire il vero qui non sembra trattarsi di una diffida, e assolutamente non è DMCA; si dice che <a href="https://old.reddit.com/r/Ryujinx/comments/1ftvi13/posted_via_ryujinx_discord_server/">sia stato il capo sviluppatore, <em>gdkchan</em>, ad accettare un accordo</a> con Nintendo... Non è chiaro se in cambio di soldi, ma francamente credo sia l'unica opzione possibile, altrimenti che incentivo avrebbe dovuto avere, a cancellare organizzazione GitHub e tutto? ...Altrimenti, se ha fatto questo in cambio di nulla, avrà possibilmente ricevuto minacce per via del fatto che <a href="https://www.patreon.com/ryujinx">Ryujinx ha un Patreon</a> (anche se non offriva versioni migliori del software per gli abbonati)? ☠️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comunque, anche se tecnicamente questo non è il caso, perché il disastro è avvenuto in modo abbastanza pacifico... Nintendo, è, sempre, più, litigiosa. Perché... proprio uno o due giorni prima, <a href="https://old.reddit.com/r/SBCGaming/comments/1frjcaa/hey_everyone_this_is_russ_from_retro_game_corps_i/">lo youtuber Retro Game Corps ha dichiarato di aver ricevuto una quantità pericolosa di strike dai ninja</a>, solo per aver mostrato i loro giochini (non più in vendita) girare sulle consoline da emulazione. E non penso più che sia un problema di soldi, che il pubblico non dovrebbe fare alle spalle della enorme N; altrimenti non butterebbero giù ogni cosa, ma obbligherebbero soltanto a non guadagnarci più sopra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'unica cosa buona è che il software libero non può essere distrutto... e infatti, come l'altra volta, ecco la lista con tutti i #backup dell'emulatore che man mano trovo o carico, binari e sorgenti: <a href="https://octospacc.altervista.org/paste/ryujinx-postmortem-links/?ppt=cfafee2952a17ca3a0bc0b09e813d1c3725223ff61f705e355428c87128ddc40"><strong>octospacc.altervista.org/paste/ryujinx-postmortem-links/?ppt=cfafee2952a17ca3a0bc0b09e813d1c3725223ff61f705e355428c87128ddc40</strong></a>. Però, quasi sicuramente, ora lo sviluppo inevitabilmente morirà, e rimarremo per sempre con le vecchie build di #Ryujinx (qualche fork uscirà fuori, ma dopo poco morirà). Troppo peccato, perché stavano anche lavorando a un porting Android, e stavano facendo esperimenti per iOS, oltre a miglioramenti generali di un #emulatore già eccellente. 💣️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sempre più impossibile anche per i fan supportare Nintendo... Io ormai, dopo tutti i problemi di Switch, avevo già deciso anni fa che non comprerò mai più prodotti Nintendo nuovi... Ovviamente, quando succedono cose del genere — l'azienda che, invece di riconoscere le sue debolezze, per migliorarsi e superare la concorrenza offrendo un prodotto sempre migliore che dia sempre più valore a chi lo acquista a prezzi sempre più bassi, sceglie di togliere fondi al reparto hardware e firmware per buttare tutto su quello legale — la reazione certamente non può essere positiva. 🙊️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo la situazione continuerà a peggiorare per i gamer, se quei fan cerebrolesi potenti che vivono nutrendosi dello sperma che succhiano dal cazzo delle corporazioni ogni giorno — senza in cambio ricevere nulla per la prestazione sessuale incessante — continuano a giustificare queste cose. Mi sa che, giusto per farmi burla di Ninty, questo è proprio il momento perfetto per mettere in pratica un'idea che nessuno ha avuto il coraggio di fare finora: un porting WASM di Ryujinx, così da rendere embeddabile, gratuitamente, su qualsiasi sito web, senza download o setup per i visitatori, qualsiasi gioco #Switch... 😈️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-02 17:45:01+00:00">2 ottobre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ryujisnt"><a class="toclink" href="../../../2024/10/02/ryujisnt.html">ryujisn&#8217;t</a></h2>
+<!-- wp:paragraph -->
+<p>Brutto dover scrivere ma... non si può MAI abbassare la guardia, con #Nintendo!!! Avrete sentito che lo hanno appena rifatto: quasi precisamente 7 mesi <a href="../../../2024/03/05/yuzu-la-morte.html">dopo aver distrutto Yuzu</a>... <a href="https://www.theverge.com/2024/10/1/24259791/nintendo-ryujinx-switch-emulator-gdkchan-removed-downloads-github"><strong>ora pure Ryujinx <em>è non più</em></strong></a>, e la notizia arriva così di sorpresa. Il sito esiste ancora, ma niente più download o sorgenti. Brutto. 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":9872,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-1-edited.png" alt="" class="wp-image-9872"/><figcaption class="wp-element-caption">A dire il vero qui non sembra trattarsi di una diffida, e assolutamente non è DMCA; si dice che <a href="https://old.reddit.com/r/Ryujinx/comments/1ftvi13/posted_via_ryujinx_discord_server/">sia stato il capo sviluppatore, <em>gdkchan</em>, ad accettare un accordo</a> con Nintendo... Non è chiaro se in cambio di soldi, ma francamente credo sia l'unica opzione possibile, altrimenti che incentivo avrebbe dovuto avere, a cancellare organizzazione GitHub e tutto? ...Altrimenti, se ha fatto questo in cambio di nulla, avrà possibilmente ricevuto minacce per via del fatto che <a href="https://www.patreon.com/ryujinx">Ryujinx ha un Patreon</a> (anche se non offriva versioni migliori del software per gli abbonati)? ☠️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comunque, anche se tecnicamente questo non è il caso, perché il disastro è avvenuto in modo abbastanza pacifico... Nintendo, è, sempre, più, litigiosa. Perché... proprio uno o due giorni prima, <a href="https://old.reddit.com/r/SBCGaming/comments/1frjcaa/hey_everyone_this_is_russ_from_retro_game_corps_i/">lo youtuber Retro Game Corps ha dichiarato di aver ricevuto una quantità pericolosa di strike dai ninja</a>, solo per aver mostrato i loro giochini (non più in vendita) girare sulle consoline da emulazione. E non penso più che sia un problema di soldi, che il pubblico non dovrebbe fare alle spalle della enorme N; altrimenti non butterebbero giù ogni cosa, ma obbligherebbero soltanto a non guadagnarci più sopra. 💸️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'unica cosa buona è che il software libero non può essere distrutto... e infatti, come l'altra volta, ecco la lista con tutti i #backup dell'emulatore che man mano trovo o carico, binari e sorgenti: <a href="https://octospacc.altervista.org/paste/ryujinx-postmortem-links/?ppt=cfafee2952a17ca3a0bc0b09e813d1c3725223ff61f705e355428c87128ddc40"><strong>octospacc.altervista.org/paste/ryujinx-postmortem-links/?ppt=cfafee2952a17ca3a0bc0b09e813d1c3725223ff61f705e355428c87128ddc40</strong></a>. Però, quasi sicuramente, ora lo sviluppo inevitabilmente morirà, e rimarremo per sempre con le vecchie build di #Ryujinx (qualche fork uscirà fuori, ma dopo poco morirà). Troppo peccato, perché stavano anche lavorando a un porting Android, e stavano facendo esperimenti per iOS, oltre a miglioramenti generali di un #emulatore già eccellente. 💣️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sempre più impossibile anche per i fan supportare Nintendo... Io ormai, dopo tutti i problemi di Switch, avevo già deciso anni fa che non comprerò mai più prodotti Nintendo nuovi... Ovviamente, quando succedono cose del genere — l'azienda che, invece di riconoscere le sue debolezze, per migliorarsi e superare la concorrenza offrendo un prodotto sempre migliore che dia sempre più valore a chi lo acquista a prezzi sempre più bassi, sceglie di togliere fondi al reparto hardware e firmware per buttare tutto su quello legale — la reazione certamente non può essere positiva. 🙊️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo la situazione continuerà a peggiorare per i gamer, se quei fan cerebrolesi potenti che vivono nutrendosi dello sperma che succhiano dal cazzo delle corporazioni ogni giorno — senza in cambio ricevere nulla per la prestazione sessuale incessante — continuano a giustificare queste cose. Mi sa che, giusto per farmi burla di Ninty, questo è proprio il momento perfetto per mettere in pratica un'idea che nessuno ha avuto il coraggio di fare finora: un porting WASM di Ryujinx, così da rendere embeddabile, gratuitamente, su qualsiasi sito web, senza download o setup per i visitatori, qualsiasi gioco #Switch... 😈️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-02 10:47:17+00:00">2 ottobre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="spookfreddore"><a class="toclink" href="../../../2024/10/02/spookfreddore.html">spookfreddore</a></h2>
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":9849,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/photo_4908944094168984422_y3036114331329009662-960x960.jpg" alt="&quot;it's autism&quot; the." class="wp-image-9849"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":9848,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/photo_6021769661001089161_y2011457423417458527-960x669.jpg" alt="Link in un ammasso di foglie secche &quot;it's finally autism&quot;" class="wp-image-9848"/></figure>
+<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">Pensavo l'anno sarebbe proseguito bene, essendo da un lato iniziati ad apparire questi disegnini divertenti [<a href="https://t.me/thethethethethethethethethe/129">1</a>, <a href="https://x.com/Laenarra/status/1838546391309676957">2</a>] creati dai finti fan dell'autunno, e lo #spooktober che prima si avvicinava ed ora ci siamo proprio dentro... <em>but alas</em>, <em><strong>qualcosa</strong></em> doveva andare storto... ☠️</figcaption></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Praticamente, mi è venuto un mix tra raffreddore e non so cosa negli ultimi giorni, che evidentemente è in divenire costante, ma non si capisce se cambiando migliora o peggiora... damn. Ieri sera sono stranamente andata a dormire non tardissimo, perché mi era venuto un mezzo mal di testa con qualche brividino (spooky!!!). Il che è tutto dire. 🎃</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stamattina invece ho ceduto alla tachipirina; pazienza, almeno in questo momento non si soffre. Però avrei voluto gridare "zio pera" al risveglio, se solo la mia voce non fosse stata rauca all'ennesima potenza... perché praticamente la notte il muco fa le solite schifezze sue a danno mio, approfittandone che sto stesa e quindi si può spargere, solidificandosi in qualunque parte ci sia un minimo di aria. Che bello!!! (No.) 🗡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stanotte, mi sono zvegliata diverse (troppe) volte, poiché no respir, e ogni volta là a soffiare il naso... che palle. La Mi Band questi risvegli così leggeri non riesce a rilevarli, ma mi segna che maggior parte del mio sonno è stato troppo leggero... e non mi è servita la tecnologia cinese per accorgermente, visto che stamattina ero mediamente rintronata. Ma, almeno, non avevo il mal di testa di ieri, che è qualcosa... 😵‍💫</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ho fatto però bene a mettere la sveglia in un orario che "<em>se mi sveglio subito bene, se succede qualche incidente riesco a prendere comunque il bus subito dopo e arrivare in tempo a lezione</em>", perché è stata lì mezz'ora a suonare... nonostante a 'sto giro il mio tempo lordo di sonno non è stato poco, quasi 8 ore, evidentemente lo sminchiamento è stato tale da fare danni comparabili all'andare a letto tardi. 🤧</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In tutto il quadretto, non aiuta affatto che ho, a quanto pare dalla notifica di sveglia persa, attivato per sbaglio anche un'altra sveglia di 2 ore prima sul tablet... e quindi il suono malefico l'ho forse sentito anche prima senza accorgermene, ma il cervello lo avrà quindi messo in categoria zzz quotidiana. Vabbè robe strane. 🥶 (Ora ho cancellato l'altra sveglia; conviene tenerne solo una memorizzata, e cambiare ogni volta l'orario a necessità, altrimenti finisce così.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ecco, non so se tutto questo è direttamente colpa dell'autismo stagione — spero di no, perché se è per via di ciò sono altri 3 mesi da aspettare per arrivare all'inverno, che non credo sia meglio — oppure semplicemente per questo ottobre le forze oscure hanno iniziato a manifestarsi proprio ostacolando la mia magia. Non so, ieri è stato il peggio, ma le mattine prima mi sono comunque svegliata con la gola molto seccosa e un filino di muco. 🤮</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Che palle oh... la magia è una delle poche certezze della mia vita, quando mi fallisce pure quella non posso fare altro che intristirmi. Realisticamente, avrò preso #freddo, in parte ieri all'università, in parte l'altra sera in giro, in parte <a href="../../../2024/09/29/nonmifermocto.html">il pomeriggio prima</a>... e la mia magia non protegge contro quello, visto che riguarda principalmente la creazione di artefatti digitali, e non è di cura fisica o vattelappesca... Quindi, oggi felpa. 😭</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-01 22:16:07+00:00">1 ottobre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="murphyversita"><a class="toclink" href="../../../2024/10/01/murphyversita.html">murphyversità</a></h2>
+<!-- wp:paragraph -->
+<p>Queste ultime giornate sono state pazzerelle all'università... non negative tutto sommato eh, visto che alla fine non sono accaduti cataclismi, però ho come l'impressione che l'universo abbia voglia di trollarmi sempre un pochino... in modi sempre diversi e subdoli... fino a che non si accorge che <em>nun me ne po' fregà de meno</em> (circa), e quindi si ferma, dandomi tregua un attimo, ma solo finché non mi si abbassa di nuovo la guardia, o i poteri forti inventano una nuova burla ai miei danni. 🤡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I professori continuano a confonderci di continuo (non solo a me), con le loro inazioni ed omissioni, tant'è che mio padre scherzava su come noi del secondo anno siamo più spiazzati delle nuove matricole... e ha probabilmente ragione. Ieri alla fine sono andata <a href="../../../2024/09/25/la-riuniversitoctt.html">alla lezione di recupero maledetta</a>; anche se boh, non ha spiegato nulla, ha fatto solo il solito yapping pre-corso. 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non sono tornata a casa completamente salata però, perché ha finito la lezione in tempo perché prendessi l'ultimo bus del primo pomeriggio prima del buco — grazie anche ad un altro studente che ha avuto la faccia tosta di chiedere se per l'ora in questione avrebbe finito, per lo stesso motivo — quindi ho mangiato pure il secondo casalingo, oltre al primo portatile, gnam. 😇️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stamattina, e ormai a questo punto è un vizio, di nuovo mancava la stessa professoressa... e si, ce l'ha detto anche in questo caso con un preavviso schifosamente corto, ma ok. Quindi, almeno, ho potuto svegliarmi con calmina; bene, anche perché ieri sera ho fatto proprio tardi <a href="../../../2024/10/01/ultravisiocto.html">a scrivere quel post</a>, e sarei potuta collassare per strada se avessi dovuto alzarmi due ore prima. Ho comunque preso un bus non troppo tardi, perché in piena mattinata dovevo fare pure stavolta una videochiamata, ma se la facevo bella a casa poi non facevo in tempo a prendere il mezzo... solite rogne. 😩️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Invece... Stasera ovviamente finisco a dover tornare tardi, con quel maledetto bus piccolo e pienissimo (e io non capisco perché non usino quello grosso a quell'ora, zio caro la SITA)... e, nonostante sono arrivata in tempo per prenderlo appena parcheggiatosi (arriva sempre qualche minuto prima dell'orario di partenza), ho fatto male la mia mossa nella ricerca del posto, e quindi son dovuta stare in piedi per un bel po'. Non mi mancava per niente. 💀️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Per fortuna, alla prima fermata di discesa si è liberato proprio un posto affianco a dove ero in piedi, e quindi subito l'ho preso, mentre tanta altra gente ha dovuto aspettare ancora... e qui, invece, ho goduto. Ovviamente ancora, perché la <em>Legge di Murphy</em> con me non si frena, è salito il controllore (e già qui...), e lo ha fatto ad una fermata di salita, quindi con tutto che stavo ancora in piedi ho dovuto cacciare dallo zaino la smartcard per mostrarla, e poi rimetterla a posto. (Forse dovrei tenerla dietro il telefono.) 👹️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tuttavia, da un lato l'avere lo Ximifonino molto scarico, dall'altro avere il tablet già in mano da prima (perché stavo facendo delle robe e volevo finirle prima), ho usato il tablet da in piedi... perché certamente non riuscivo a metterlo a posto in quel momento. Devo dire: decisamente meglio di quanto temevo; anzi, è forse più comodo del telefono. Con il tablet, posso tenermi sulle maniglie del bus con una mano, che allo stesso tempo regge la parte di sopra del tablet, e l'altra mano regge il tablet dal lato e clicca in giro... anche usando il mouse virtuale di Samsung, se non arrivo da qualche parte. E, col tablet in mezzo, il mio corpo è leggermente appoggiato in avanti, verso il sedile cui sto girata, e sto bene in equilibrio. ✨️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10407,7 +10517,7 @@
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="9.html">9</a> <a class="md-pagination__link" href="10.html">10</a> <span class="md-pagination__current">11</span> <a class="md-pagination__link" href="12.html">12</a> <a class="md-pagination__link" href="13.html">13</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="47.html">47</a>
+  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="9.html">9</a> <a class="md-pagination__link" href="10.html">10</a> <span class="md-pagination__current">11</span> <a class="md-pagination__link" href="12.html">12</a> <a class="md-pagination__link" href="13.html">13</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="48.html">48</a>
 </nav>
         
       
