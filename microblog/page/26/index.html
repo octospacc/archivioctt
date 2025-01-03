@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -9529,6 +9529,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../archive/2025.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
       <a href="../../archive/2024.html" class="md-nav__link">
         
   
@@ -9824,7 +9847,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-05-06 16:10:45+00:00">6 maggio 2024</time></li>
+          <time datetime="2024-05-25 15:38:27+00:00">25 maggio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9835,7 +9858,7 @@
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              1 minuto di lettura
             
           </li>
         
@@ -9844,337 +9867,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="not-even-gaming"><a class="toclink" href="../../2024/05/06/not-even-gaming.html">not even gaming!!!</a></h2>
+    <h2 id="gayming-web"><a class="toclink" href="../../2024/05/25/gayming-web.html">gayming web</a></h2>
 <!-- wp:paragraph -->
-<p>Torniamo a parlare <a href="../../../series/troppo-cloud-gaming.md">del cloud gaming appezzottato</a>, perché la mia soluzione richiede evidentemente ancora perfezionamenti. L'importante è avere #pazienza e sperimentare il necessario man mano, e forse dopo abbastanza settimane avrò effettivamente il perfettissimo setup... ormai sono fin troppo dentro questa questione per tirarmi indietro. 😱</p>
+<p>C'è qualche novità per il web, nell'ambiente dei giochi C# e .NET. Già la roba fatta con quelle tecnologie poteva girare da anni sul web eh, ma... non farò finta di sapere cose che non so (non uso nessuna delle due tecnologie), ma ciò che voglio dire è che <em>i gaymers</em> sono passati all'attacco; ora pare esserci qualche risorsa in più, tipo <a href="https://github.com/RedMike/FNA.WASM.Sample">FNA.WASM.Sample</a>, che fa vedere come portare a WASM un gioco fatto con FNA-XNA. 🤔️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>La prima cosa è che devo al più presto ottenere la scheda di cattura ultra-cheap, perché SysDVR è un problema per l'esperienza utente. (Devo ancora ordinarla in realtà, stavo nel frattempo però cercando altra roba che mi serve su AliExpress, così da fare un solo ordine e ridurre l'inquinamento.) A parte il fatto che (come ho già detto) i menu di sistema non sono specchiati, e quindi in certi casi devo guardare la webcam, i #difetti sono vari: dovendo fisicamente collegare la console al PC anziché alla dock, può capitarmi di sbagliare qualcosa, soprattutto stando di fretta come stamattina. Anche perché, collegando direttamente al PC, la batteria si appiattisce troppo velocemente, quindi devo aggiungere il cavo Y, e quindi complessità (che comunque non è abbastanza per permettere la ricarica, ma solo una scarica più lenta, lol). 🗑️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stamattina, tra il dover ricaricare il telefono, l'evitare di perdere il bus, e finire di vestirmi, ho mischiato i collegamenti tra Switch e PC, cavo Y e cavo USB-C, e l'ho realizzato solo fuori casa, quindi riuscivo a collegarmi solo tramite rete... ci ho anche provato, ma evidentemente le prestazioni sono totalmente inadeguate per giocare. La cosa più logica da fare è stata messaggiare mio padre a casa e chiedergli il piacere di risistemare i cavi nel modo giusto e, dopo un po' di confusione perché gli avevo dato indicazioni parzialmente errate sullo stato presente dei collegamenti, ha sistemato tutto e la console è apparsa sul PC. Eccetto che ha anche panicato nel frattempo, e quindi ho dovuto chiedere a mio padre di premere i tasti del volume per riavviarla. E poi, visto che sulla schermata di blocco lo schermo non rimane acceso sempre, non ho fatto in tempo a premere tasti per sbloccare e ho dovuto chiedere anche questo a mio padre. 🪃</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Nel frattempo, i #problemi ci sono anche per quanto riguarda gli input del gamepad, ovviamente... Ieri ho scoperto mio malgrado (perché pensavo di provare ancora a giocare fuori casa, ma ecco che non ho potuto) che sys-botbase in certi casi (chissà quali!) può buggarsi e non interpretare più i comandi che riceve, costringendo ad un riavvio del sistema. La soluzione sarebbe magari riavviare ogni volta prima di uscire di casa, così da stare senza pensieri. Intanto però scopro anche di dover migliorare la gestione degli input sul mio programma, aggiungendo quantomeno una deadzone per gli analogici, altrimenti spesso può succedere che gli input driftino una volta rilasciati, e capite che questo è un bel problema. (Chiaramente, i giochi che usano solo i tasti sono già perfettamente operabili, ma quelli e solo quelli lo sono anche su NXController, dove invece gli stick finiscono per essere interpretati digitalmente e quindi fanno movimenti estremi.) 🧼</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Segnalo comunque che ho scoperto di <a href="https://github.com/Koi-3088/USB-Botbase">usb-botbase</a>, che fa la stessa cosa della versione sys ma appunto via USB, e quindi dovrebbe sicuramente essere più stabile (e forse riesce a risvegliare la console dalla modalità riposo, ma non so). Se non programmassi di passare a scheda di cattura, e quindi continuassi a tenere collegata la Swiss al PC, lo implementerei subito su #FrameNX. Si vede che continuerò ad usare il WiFi per inviare gli input allora, con le giuste accortezze... e se proprio proprio tutto va male (ma è difficile dai), allora comprerò un Arduino e implementerò il protocollo per usare quello come controller simulato via hardware, e ciò sarebbe effettivamente infallibile (e andrebbe anche su console non modificate, figata). ⛓️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-06 01:54:55+00:00">6 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="la-fine-di-emezon"><a class="toclink" href="../../2024/05/06/la-fine-di-emezon.html">la fine di emezon</a></h2>
-<!-- wp:paragraph -->
-<p>Ora vado a mimir e non sgarro come ieri sera, ma devo interrompere l'incessante pubblicazione delle mie avventure col cloud gaming perché sono un po' <em>pisciata giù</em>... devo per l'ennesima volta creare un fantoccio mentale di Bezos per distruggere la sua schifossissima piattaforma, che non sembra migliorare e sembra che me lo stia sempre più infilando (il brutto modo di fare) lì sotto in mezzo (nella logica di backend collegata al mio account). 🎃</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>L'altro giorno sono arrivati i nuovi #manga che avevo ordinato, le ultimissime tante decine di euro del #BonusCultura che ho dovuto spendere esattamente all'ultimo minuto (come sapevo sarebbe successo), ma come mi ero ripromessa non ho lasciato allo Stato comunque nemmeno un euro. (Gli ho lasciato 60 centesimi, perché Amazon non accetta buoni non interi, si prendessero il caffè idfc.) Stasera sono passata a prenderla e portarla a casa; con qualche difficoltà, visto che è stata divisa in 2 pacchettini (evidentemente gli scompartimenti larghi del <em>bloccatore</em> erano pieni), ma ce l'ho fatta. 🎎</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Boh, a esserci la roba c'è tutta, ma forse non proprio come mi aspettavo... chiaramente nulla può mai essere intonso, e bene o male maggior parte delle cose è arrivata comunque intatta, ma qualcosa mi ha fatto storcere il naso. Si parte da uno o due #libri poco più ammaccati del solito, ma che comunque non si noterebbero rovinati senza pensarci troppo, per passare ad uno in particolare con la copertina specialmente rovinata con anche un taglio sul lato che va a creare un'orecchietta... e addirittura un altro che pare ok ma secondo me è stato letto da qualcuno; cioè, la copertina esterna da un lato era richiusa non perfettamente su quella interna, ma su alcune pagine, praticamente come a tenere il segno. Vabbè, le pagine ci sono tutte, a prima vista, almeno... 🪆</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In genere quando ho potuto ho sempre comprato in libreria e in fumetteria, sia per comodità che filosofia, ma ogni tanto è capitata la roba che non c'era, e in questi ultimi casi specifici dovevo di fretta spendere questi soldi, non ce l'avrei fatta nei negozi fisici considerando che avrebbero dovuto a loro volta ordinare un sacco di cose e avrei dovuto aspettare. Però, le volte precedenti non mi sono successi #incidenti così strani con i libri da #Amazon, quindi pensavo fosse più raro... e invece no, la frequenza di recensioni negative per spedizione fatta male è altina per un motivo. Considerando che i libri piccoli li buttano tutti mezzi a cazzo in quei pacchetti di cartoncino, però, non mi devo stupire. Chissà se posso fare rimborso... se mi chiedono di rispedire indietro, neanche per sogno, ma se mi danno i soldi e basta (e non è detto, avendo pagato col saldo promozionale) allora ci provo. Morale della favola: meglio spendere i vostri #soldi in negozi reali visibili toccabili <em>odorabili</em>, se potete. 🦜</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Come se non bastasse, e questo non l'avevo detto perché avevo come il presentimento che sarebbe a giorni arrivata una migliore occasione per lamentarmene (questa, #mannaggia), ma mi hanno ingiustamente sgraffignato 2,90 eurini quando ho fatto questo ordine. Per qualche motivo, avendolo fatto dalla versione mobile del sito, in questa occasione ho avuto una schermata di checkout che non ricordavo di aver mai visto prima: è a dire il vero meno buggata, ma (apparentemente?) con meno opzioni, ed evidentemente troppo rapida. Avendo la stessa grafica del carrello, ho continuato selezionando le opzioni necessarie senza pensarci troppo, immaginando fosse qualcosa di intermedio e che alla fine sarebbe dovuta apparire la schermata classica. Però, ho notato solo dopo aver premuto il grosso bottone giallo in fondo, che questo diceva qualcosa come "acquista ora", e non "continua" o chissà che cosa mi immaginavo... 🤳</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>...Quindi, la roba mi è stata spedita con il prezzo premium, nonostante sia ovviamente arrivata in tempi da #spedizione gratuita, perché il tasto per non pagare non c'era, e non mi sono fatta troppe domande perché sulla schermata di acquisto classica quella esce solo alla fine, dopo che ho già scelto il pagamento. (Ah, ovviamente di default era anche in questo caso selezionata la spedizione da 20 schei, ma quella non avrei potuto usarla neanche per sbaglio, non avendo abbastanza credito.) Non ho annullato per paura che il saldo promozionale potesse sparire or smth. #Morale della favola: non spenderò mai più soldi su un sito mobile, se proprio ho solo il telefono con me allora almeno attivo la modalità desktop, così vedo per forza tutto e non ci sono esseri dietro <em>le pareti</em>. Unico lato positivo, queste 3 monetine erano di Bing Rewards, quindi non proprio risparmi sudati... 🙏</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-05 02:22:37+00:00">5 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="framenx"><a class="toclink" href="../../2024/05/05/framenx.html">(FrameN)X.</a></h2>
-<!-- wp:paragraph -->
-<p>Sono sicuramente un po' paxxerella per iniziare nuovi progettini mezzi complicati ancora prima di finire i precedenti, ma che ci voglio fare? Quantomeno, a 'sto giro ho effettivamente portato #FrameNX, <a href="../../2024/05/04/framionx.html">il programma iniziato ieri</a>, ad uno stato di completezza, tant'è che da ora penso non avrò alcun intoppo ad usarlo... e quindi l'ho anche rilasciato già stasera pubblicamente con tanto di README quasi logorroico (il link di stamattina era privato): <a href="https://octt.itch.io/framenx"><a href="https://octt.itch.io/framenx">https://octt.itch.io/framenx</a></a> 🪟</p>
+<p>Quindi? Beh, un'idea venuta a caso la settimana scorsa era "<em>cosa se portassi Celeste al browser?</em>", ma non ho poi fatto nulla, presa da altre cose. Volevo quasi quasi iniziare stamane, ma giusto per scrupolo cerco di nuovo sul web "celeste wasm", <em>sia mai</em> che la volta scorsa mi era sfuggito qualcosa. E, nell'arco di precisamente questa settimana, non so se mi hanno letto nel pensiero o spiato spacctorium, ma hanno effettivamente iniziato e finito <a href="https://github.com/MercuryWorkshop/celeste-wasm">il fottutissimo celeste-wasm</a>. Un po' mi rode, ma meglio così, ho più tempo per altre imprese. 🤯️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":5168,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/screenshot_2024-05-05-02-14-47-843_io2733305805360369156-960x987.jpg" alt="" class="wp-image-5168"/><figcaption class="wp-element-caption">La UI è ancora grezza, ma ho migliorato i messaggi a schermo, aggiungendo avvisi a scomparsa quando si verifica un errore o viene fatta un'azione (qualcuno l'ho dimenticato però oooops, dovrò metterlo, ma poca roba). Funziona in ogni caso solo con la tastiera, perché il mouse è dannoso e #programmare le hitbox sarebbe uno sbattimento in più per nessun buon motivo, dato che comunque questa per ora è una #applicazione solo PC. (Ormai si sta costruendo una lore dietro questa interfaccia, ops.) ☠️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In realtà sotto la scocca quella UI è comunque più complicata di quanto sembra, anche se è relativamente semplice, perché in primis già solo per le notifiche ho dovuto implementare tutto un sistema di coda... poi ho dovuto mettere il rendering video su un thread separato, perché l'accesso alla camera rallentava tutto il loop e quindi avrebbe inficiato sulla lettura degli input... ma spostarmi su un thread di sfondo ha introdotto non pochi casi limite strani che ho dovuto sistemare con ancora più codice... Comunque relativamente poco #codice, perché il #Python è simpatico e non è stato creato da gente che vuole vedere gli altri programmatori impiccarsi. 🦍</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Btw, ho continuato a trovare altri problemi in #Pygame... Innanzitutto, un bug strano con lo stack dei joystick (cioè controller da gioco in generale, direi che il nome è scelto malino) che fa si che questi non mandino più eventi dopo essere stati inizializzati se non se ne tiene qualche reference nel codice (come una variabile assegnata che non muore), come se fossero levati dal garbage collector altrimenti... stranissimo. E poi, il fatto che per riprodurre il suono di dispositivi di input audio, tra metodi non wrappati e quindi richiamabili solo con la API grezza di SDL2, stack audio buggato in generale e comandi che letteralmente non sortiscono effetto, altri comandi che invece causano segfault <em>alla chiusura</em> del #programma... mi pare di stare programmando con una tempesta di raggi cosmici addosso. Ciò non lo gradisco. 😾</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-04 10:31:12+00:00">4 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="framionx"><a class="toclink" href="../../2024/05/04/framionx.html">framionx..</a></h2>
-<!-- wp:paragraph -->
-<p>Ieri ho effettivamente provato un po' il #gaming Switch dal 3DS in portatilità, alla fine, e... che dire. 7/10. Certo, ogni tanto la connessione fa scherzetti e il gioco inizia a freezare per un po', ma nel complesso si gioca con un lag accettabile e un video senza strani artefatti, veramente apprezzabile. Devo però capire perché in certi rari momenti il client crasha completamente invece di riuscire a ristabilire la connessione, e temo anche la batteria del 3DS si appiattisca troppo velocemente con questa #applicazione... ma vabbè, a sistema consolidato potrei anche usare il telefono. 🐚</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Visto che voglio provare meglio il setup, mi sono portata avanti e ho fatto un programmino per #PC che legge direttamente gli input del gamepad virtuale e li invia alla #console; quindi, eliminando quegli altri due programmi necessari, sostituendoli con uno solo. La finestra inoltre visualizza il video da dispositivi di cattura standard, e quando lo implementerò riprodurrà anche audio, quindi sostituirà anche il riproduttore multimediale... per ora non ho ancora la scheda di cattura HDMI, quindi devo ancora usare SysDVR, ma almeno mi mostra il video della webcam (che mi serve per navigare nei menu di sistema, il DVR non lo trasmette), quindi già scendo da 4 app e finestre a solo 2. ✨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":5123,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image-1.png" alt="" class="wp-image-5123"/><figcaption class="wp-element-caption">Implementare la lettura degli input del controller, e l'invio al demone sys-botbase tramite socket TCP, è stato un po' intricato, ma alla fine il codice è venuto pulito, i tasti rimappabili tramite file config, e sorprendentemente sembra tutto ben funzionante dal primo momento... Nel senso, i comandi sembrano rispondere bene senza particolari accorgimenti; anzi, anche meglio di NXController, perché io invio direttamente i valori degli stick analogici alla console, mentre lui deve leggere valori rimappati alla tastiera e quindi tutti digitali. In effetti non ci avevo pensato quando mi era venuta questa #idea, ma effettivamente ho migliorato la mia #UX anche in questo modo, ora ho input più precisi. 🤏️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Volevo inizialmente usare Ren'Py, ma ho subito scoperto che non include funzioni per accedere ai dispositivi video, né tantomeno ha la classe camera nella sua implementazione di #Pygame, quindi... ho usato semplicemente Pygame, e in poche righe di codice funziona già tanta roba, anche se <a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$RzQZO8xoMpQxRmLIotMNkNxjHt8wV8M0df3OL3qNMJ0">la UI non è delle migliori</a>. Dovrò investigare se davvero non ci sarebbe stato verso di usare l'altro engine oppure si, perché potrebbe tornare utile in futuro. Ancora versione molto WIP, diversi bug da sistemare, ma almeno <a href="https://octt.itch.io/framenx/download/hgHR3A_n5O9zy9cupbCjL7ZPb4xNQi2z979oWxC2">l'ho già caricata <em>qui</em></a>... poi creerò anche dei pacchetti standalone (che includono già #Python e le librerie) per Windows e Linux. L'ho chiamato #FrameNX comunque, meglio evitare qualunque pretesto di violazione del trademark di #Nintendo per il nome #Switch... 🚨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ma, ovviamente, non era un mio <em>#progetto secondario</em> se non saltava fuori un #problema inaspettato mentre programmavo e testavo... il codice che controlla la versione dell'OS di <code>pygame.camera</code> è rotto su Windows Server, e quindi l'inizializzazione fallisce... evviva. L'ho identificato e sistemato subito, ho anche inviato <a href="https://github.com/pygame/pygame/pull/4221">la PR #4221</a>, quindi non è stato un vero problema, però... che cazzo, non è possibile che tutto quello che finisce in mano a me si rompe... trovare bug in librerie così utilizzate e famose senza fare nulla di particolare non è roba da tutti, eppure ormai siamo ad uno a settimana, e chissà cosa mi riserva il futuro. 💣️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-03 00:59:00+00:00">3 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="renprovine"><a class="toclink" href="../../2024/05/03/renprovine.html">renprovine</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi ho un altro po' sperimentato con #RenPy, e la questione si fa sempre più #interessante... è evidente che questo #engine è così potente e flessibile da essere utilizzabile anche per ben più di semplici visual novel. È quasi un Pygame ma estremamente cross-platform già fuori dalla scatola, con tantissime cose di base già implementate, ed astrazioni comode (tra cui il suo dialetto di #Python) che anche da sole tappano sotto certi aspetti il buco tra stato del programma ed interazioni con gli utenti... devo assolutamente provare a realizzarci qualche esperienza interattiva anche di tipo diverso. 😳️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A parte essere una scusa per provare le varie cose del caso a livello di programmazione, ho fatto un progetto di testing per... testare, appunto. L'ho messo <a href="../../2024/04/30/renpiscatola.html">nella scatolina dell'altro giorno</a> come promesso assieme a tutto il resto, ma ecco anche il link diretto alla versione web: ...<a href="https://html-classic.itch.zone/html/10330339/renpy/MiscellaneaTesting/index.html"><strong>Miscellanea Testing</strong></a>. Il nome è tutto un programma, si, ma mai quanto la musica di sottofondo che parte appena si entra nel menu interno dell'applicazione (aka quando si fa partire la visual novel, che in questo caso non è tale però lol)... per <em>ovvi motivi</em> è la versione strumentale, ma vi sfido a indovinarla solo ascoltando, la conoscete <em>sicuramente</em>. Potete notare già una delle robe che il motore rende estremamente facile, nel modo in cui la canzone viene loopata, se fate attenzione. 💥️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":5097,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image-960x528.png" alt="" class="wp-image-5097"/><figcaption class="wp-element-caption">Comunque a parte l'atmosfera che ho realizzato in giro per le schermate (che suppongo sia una #feature), per ora l'unica cosa che c'è è questo stress #test. Mi serviva un qualche minimo strumento per valutare meglio le prestazioni di Ren'Py in diversi ambienti di esecuzione, e online non ho trovato nulla, quindi ho arrangiato io qualcosa con un po' di codice condiviso da altri utenti, un po' scritto da me (quello che disegna il grafico bianco, che indica il tempo passato da un frame al precedente), e tante tante cose inutili che si muovono a schermo solo per spremere CPU e GPU. E, tra l'altro, proprio per via del setup che avviene dietro le quinte per tutti quei fiocchi di neve (ancora non ho capito però perché e come risolvere), tutto il #programma impiega una significativa quantità di tempo anche solo a partire, specialmente su browser mobile... dovrò sistemare per non sclerare, uff. 💀️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-02 00:04:24+00:00">2 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="chiaro-di-luna"><a class="toclink" href="../../2024/05/02/chiaro-di-luna.html">chiaro di luna</a></h2>
-<!-- wp:paragraph -->
-<p>Aggiornamenti <a href="../../2024/05/01/luna-gaming.html">sulla questione </a><a href="https://octospacc.altervista.org/2024/05/01/luna-gaming/"><em>chiaro di luna</em></a>, anche se sicuramente questo non sarà l'ultimo post a riguardo: a meno che ciò che ho appena ora finito di architettare dovesse saltare per aria, già dopodomani proverò questo setup regolarmente fuori casa, sul campo, e ciò decreterà se effettivamente è una buona #soluzione per il #gaming oppure ho preso l'ennesima cantonata... 👀</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sia ieri sera in cui non l'ho detto bene riguardo il fisso, sia stasera per fare la #configurazione sul portatile (più ideale per questo caso d'uso, consuma meno e il WiFi è forse un po' più stabile), ho dovuto <a href="https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/setup.html#install">copincollare dei comandi dalla documentazione</a> di #Sunshine per far funzionare il gamepad virtuale. Una volta fatto ciò, per giochi come SuperTuxKart non c'è bisogno di fare oltre, ma per altra roba invece ho dovuto usare AntiMicroX per mappare gli input del controller ad input di tastiera. Nel mio caso, mi serve per inviare gli input ad NXController. 🪰</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Quest'ultimo programmino ha qualche difetto, tipo che la sua finestra deve stare in focus per leggere gli input (io la metto nell'angolino in modo che non copra il gioco) e che la mappatura dello stick va cambiata dai tasti freccia ad altri, perché altrimenti per qualche ragione non funziona bene; però il suo lavoro lo fa, e via WiFi invia tutti gli input alla console #Switch sulla LAN. E dall'altro lato, il video della #console è trasmesso al PC tramite USB con SysDVR, ed arriva praticamente perfetto e con zero latenza... roba che importa poco, perché tanto in ogni caso io ci metto lo streaming da sopra. 🐌</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Insomma, è un po' complicato usare Switch come server di #cloudgaming, ma con il PC così correttamente configurato si può fare... e quindi in giro anziché portarmi la console grossa e pesante mi porto il #Nintendo #3DS (o, in realtà, anche solo il telefono, dipende). Da un certo punto di vista è meglio comunque questa configurazione rispetto ad eseguire giochi nativi PC perché, a parte che dovrei usare per forza il fisso in quel caso, i giochi su PC (a meno di non emulare Switch, ma a quel punto perché non usare la reale?) sono un estremo dolore da gestire quando hai sia la sfiga di usare Linux, che quella di non poterli comprare. Quindi vabbè. 🏴‍☠️🏴‍☠️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":5057,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image_editor_output_image-1367100353-17146004253622963068569625719033-960x960.jpg" alt="" class="wp-image-5057"/><figcaption class="wp-element-caption">Sempre ammesso che le prestazioni siano godibili in giro, spero solo che la preparazione da fare ogni volta prima di uscire di casa per #giocare non sia mentalmente troppa... in teoria sul PC posso usare uno script per aprire in automatico tutto, e l'unica cosa che dovrei ricordarmi di fare è accendere lui e collegare #NintendoSwitch, quindi <em>spero</em> non sia eccessivo. (...Ah e poi, anche piazzare la console sotto alla webcam del portatile come in foto, perché altrimenti non riesco a navigare nei menu, SysDVR non mirrora quelli... ma questo è un problema che risolverò con la scheda di cattura da €4.) 🙏</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-01 01:35:45+00:00">1 maggio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="luna-gaming"><a class="toclink" href="../../2024/05/01/luna-gaming.html">luna gaming</a></h2>
-<!-- wp:paragraph -->
-<p>Beh, qualcuno a quanto pare ha portato #Moonlight al (new) #3DS: <a href="https://github.com/zoeyjodon/moonlight-N3DS"><a href="https://github.com/zoeyjodon/moonlight-N3DS">https://github.com/zoeyjodon/moonlight-N3DS</a></a>. Il #porting che avrei sempre voluto fare, ma che non c'è mai stato verso, ora è reale, e alla faccia di chi lo credeva impossibile... perché gira persino infinitamente meglio del client per Switch. È vero che qui la risoluzione è molto inferiore, ma lì anche abbassando al minimo era tutto quasi ingiocabile, tra stutter e artefatti di compressione a non finire. Qui il bitrate è ottimo, e il framerate meh ma comunque più che utilizzabile. Ovviamente, è trasmesso anche l'audio. 🐔</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sarebbe una buona idea per evitare di far ricadere a prendere polvere il mio #new3DSXL, che quando si corrompono i salvataggi mi passa sempre la voglia di giocare, ma usandolo semplicemente come client per lo #streaming dei #giochi in cloud non dovrei più preoccuparmi. È molto più ideale una #console come quella per questo scopo, rispetto ad un telefono, per via dei tasti fisici. Dovrò effettivamente vedere come si comporta su rete mobile quando sono in culandia, o magari in bus in autostrada, tutti questi casi più specifici che però sono quelli che davvero devono funzionare, altrimenti è tutto inutile... sarebbero quelli i momenti in cui mi interesserebbe il #gaming pazzo. 🐙</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:video {"id":5026} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/VID_20240430_2335210.mp4"></video><figcaption class="wp-element-caption">Ora ho potuto provare solo a casa con #SuperTuxKart sul mio PC (server Sunshine), e appunto per i miei gusti riesco a giocare, sul WiFi. Però, l'ho provato con la linea 4G sempre qui, e... beh, con qualsiasi cosa che non sia il mio telefono a fare da hotspot funziona bene (ma in giro non funzionerà così bene), però ho appena scoperto che con lo Ximi stuttera ogni 2 secondi, rendendo l'esperienza non esattamente ingiocabile, ma comunque a dir poco infuriante; ho cambiato varie opzioni della rete mobile, ma niente. Questa è [la volta buona che compro davvero il Kaiosofonino](../../../2024/03/19/adrode-trolling-sempre-peggio.md), cazzarola, se 'sto rottame che mi ritrovo non è buono manco a fare da hotspot... 😩</figcaption></figure>
+<!-- wp:video {"id":5907} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/simplescreenrecorder-2024-05-25_14.27.42.mp4"></video><figcaption class="wp-element-caption">Già a dir poco godurioso, ma qualcosa da sistemare rimane, tant'è che <em>mi sono permessa</em> <a href="https://github.com/MercuryWorkshop/celeste-wasm/issues/1">di aprire la issue #1</a> per consigliare compressione e streaming degli asset. Vi invito a provare direttamente su <a href="https://celeste.r58playz.dev/">https://celeste.r58playz.dev</a>, ma per copyright hanno fatto che gli asset sono criptati e bisogna dare un file da un'installazione di Celeste per decifrarli... se vi serve, non lo linko, ma l'ho caricato sull'homeserver come altre volte, e se ravanate lo trovate. 👾️</figcaption></figure>
 <!-- /wp:video -->
     
   </div>
@@ -10186,113 +9893,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-04-30 19:42:30+00:00">30 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="renpiscatola"><a class="toclink" href="../../2024/04/30/renpiscatola.html">renpiscatola</a></h2>
-<!-- wp:paragraph -->
-<p><s>Non fate caso al nuovo buco nel postaggio</s>, ieri <a href="../../2024/04/28/renpitoniche-traduzioni.html">come avevo promesso</a> ho tradotto <em>The Question</em> di Ren'Py e <a href="https://github.com/renpy/renpy/pull/5489">inviato la pull request</a>, chissà quando pure questa verrà unita all'upstream quindi... a giudicare da come sono state gestite le traduzioni in passato lì, avverrà o a giorni o giusto per la prossima release. Per il <em>Tutorial</em> ora non so quando riuscirò a completare la traduzione, ma comunque, ho fatto caso al fatto che entrambe le novel dimostrative non sono messe online per essere testate senza scaricare l'SDK, e non credo che altri lo abbiano già fatto, quindi... perché no? Possono tornare utili per #reference al volo da qualunque dispositivo. 🌚️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Allora ho deciso di creare una paginetta #collezione per raccogliere queste ultime due cose, anche per sperimentare di più con #RenPy, più altre che avrei già in mente, che sicuramente torneranno utili nel breve futuro. Quattro cose <em>in programma</em> da esplorare sono: il bundling dei giochi in file HTML standalone, la generazione di pacchetti per piattaforme diverse tramite web (e nello specifico, la generazione di pacchetti nativi a partire dal binario HTML), miglioramenti radicali alla schermata di caricamento web, e l'adattamento dello schermo a qualsiasi rapporto d'aspetto. E posso metterle tutte in ordine su: <a href="https://octt.itch.io/a-renpy-demo-box/"><a href="https://octt.itch.io/a-renpy-demo-box/">https://octt.itch.io/a-renpy-demo-box/</a></a>. 🎰️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ho caricato la #pagina su Itch, come avevo accennato, perché so già che per alcune di queste robe dovrò andare oltre il limite di 100 MB per file delle pagine Git, e a parte il mio server in casa (dove ho poco spazio libero) non saprei quindi dove mettere tutto. Ma forse è buono, è capace che più gente la trovi e ne goda, che ne so... E, per evitare di impazzire caricando due volte gli ZIP per permettere il download a chi vuole, ho deciso di usare JSZip per aggiungere un tastino che, beh, scarica lato client tutti i file del server e li zippa per gli utenti; molto lmao in quanto creare cartelle compresse a livello 9 con un linguaggio interpretato non è velocissimo (potrebbero servire da decine di secondi a minuti), ma funziona bene. ✨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":5018,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/04/wp-17144977164792210244852278806705-960x995.jpg" alt="" class="wp-image-5018"/><figcaption class="wp-element-caption">E, come se non avessi già cacciato troppe scuse in questa storia, ne ho approfittato per rendere bellina la pagina provando qualche tecnica per me nuova: il coso si chiama <a href="https://octt.itch.io/a-renpy-demo-box/"><em>A Ren'Py Demo Box</em></a>, quindi mi sembrava più che giusto creare una letterale scatola di cartone, da cui esce un foglio di carta con una lista di link, usando le trasformazioni 3D del #CSS... c'è voluto un pochino. Spero che lo sfondo animato <em>preso in prestito</em> sia sufficientemente strano da creare la giusta atmosfera, soprattutto in aiuto con la scatolina, ma non fate caso al fatto che su mobile la scritta in basso è tagliata... su desktop appare giusta, pezzi. 😤️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-28 20:20:33+00:00">28 aprile 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="renpitoniche-traduzioni"><a class="toclink" href="../../2024/04/28/renpitoniche-traduzioni.html">renpitoniche traduzioni</a></h2>
-<!-- wp:paragraph -->
-<p>Ecco anche oggi un'ennesima, più che mezza, giornata spesa a fare cose non previste, perché "<em>non ci si può mettere a far qualcosa senza che qualcos'altro non vada fatto prima</em>". Avevo accennato vagamente che a 'sto giro avrei un'idea effettivamente cavalcabile per fare una #visualnovel, ma per qualche motivo adesso sono finita ad aggiornare tutte le #traduzioni in italiano di Ren'Py (proprio il motore), sistemando le tantissime stringhe scritte male e aggiungendone alcune mancanti... ho iniziato stamattina, e ho finito un'ora fa. (💀️)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>In pratica, avevo pensato di creare una novel giusto per il gusto, una specie di demo, perché altrimenti le idee buone non mi vengono... e ho detto: anziché fare una roba proprio inutile, sarebbe ganzo farne una che magari fa proprio da tutorial a #RenPy, andando a puntate dalle cose semplici ad altre sempre più complesse, dove la storia non ha da essere mirabolante perché è giusto un contorno grazioso. Ho visto in giro, e praticamente nessuno pare aver fatto questa cosa come la intendo io, quindi ho pure campo libero... 😳️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Però in effetti ho pensato, dopo aver notato che la novella <em>Tutorial</em> ufficiale inclusa proprio con l'SDK Ren'Py non esiste in #italiano, che sarebbe una buona cosa magari prima lavorare a tradurre quella, così ne approfitto anche per imparare alcuni dei tanti dettagli dell'engine che dovrò in ogni caso padroneggiare, se proprio ho voglia di creare il mio personale walkthrough... In realtà però, inizierei prima dall'altro gioco incluso, <em>The Question</em>, perché anche quello non esiste in italica lingua, ma dura una manciata di minuti e quindi è un buon antipasto prima del #lavoro più grosso, anche se cambia poco ai fini della mia #deriva... 🌊️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>La cosa è che, iniziando a tradurre, non essendosi i file di #traduzione della GUI automaticamente riempiti dai sorgenti dell'engine (credo sia normale anche se strambo), ho dovuto guardarli qualche minuto per capire che semplicemente copiarli a mano sarebbe stato sufficiente a non dover riscrivere a manina tutte le stringhe comuni... però a quel punto ho notato quanto <em>erano</em> imperfette in molti punti, quante fossero un pelino inconsistenti, quante tradotte da una macchina e brutte da fare schifo, e anche quante mancassero proprio; nel programma SDK soprattutto, ma anche nelle parti del motore che i giocatori vedono sempre, e quindi... mi sono messa di forza e in queste ore ho fatto il lavorone che qualcuno non faceva bene da anni, per l'italiano, ahimé. 😵️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Non mi capita spesso tanto quanto sento che vorrei di riuscire a contribuire al software #opensource, inteso come progetti più grandi di me (non solo i personali, insomma) che beneficiano tante persone non solo in teoria ma anche in modo evidente nella pratica, quindi quando l'occasione arriva è bene non farmela sfuggire. Ho già inviato la pull request <em>al santissimo Tom</em>, probabilmente il merge <s><em>dimensionale</em></s> dei branch avverrà a breve: <a href="https://github.com/renpy/renpy/pull/5486"><a href="https://github.com/renpy/renpy/pull/5486">https://github.com/renpy/renpy/pull/5486</a></a>. ...E quindi ora potrò finalmente tradurre i due giochini invece, yee, come se non avessi già lavorato abbastanza oggi. 🗿️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-04-27 22:54:27+00:00">27 aprile 2024</time></li>
+          <time datetime="2024-05-24 12:03:49+00:00">24 maggio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10312,22 +9913,374 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="sitocti-momenti"><a class="toclink" href="../../2024/04/27/sitocti-momenti.html">sitocti momenti</a></h2>
+    <h2 id="cant-have-x-in-direct"><a class="toclink" href="../../2024/05/24/cant-have-x-in-direct.html">can&#8217;t have x in direct</a></h2>
 <!-- wp:paragraph -->
-<p>Un po' meh il fatto che <em>anche</em> ieri non ho postato, sta andando tutto <em>alla deriva</em>, ma è che fino ad oggi pomeriggio non ero a casa, e quindi, non solo tra una cosa e l'altra il tempo è passato, ma poi non è successo niente di condivisibile. Però, visto che non avevo granché modo e/o voglia per i miei soliti passatempi pesanti, avendo con me solo il tablet come oggetto in più del solito, ho approfittato dei vari momenti morti per risolvere alcune di quelle più noiose e scoccianti piccole faccende per il mio sitarello #OctoSpaccHub:</p>
+<p>Quei gamer che come me hanno nell'animo il PC masterrace, ma nella pratica odiano il tedio contro cui ci si imbatte appena si vuole effettivamente giocare a qualcosa per PC, staranno con ansia aspettando progressi sulla questione di giochi Windows nel browser. Quindi, che ho fatto ieri? ...Un cazzo di niente! 🥰</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ho perso mezza giornata cercando invano di far funzionare prima alcuni programmi di benchmark, e poi Touhou. Ho dovuto installare DirectX 9 per quei programmi, ma poi comunque questi non partivano, perché a quanto pare DX9 non include rendering via software per Direct3D, e in v86 non c'è alcuna GPU. Pazienza, per quelli me ne farò una ragione, non ho vitale bisogno dei benchmark... però per i giochi è una rogna. Sorprendentemente, Touhou 6 parte in questo ambiente mezzo sfasciato, ma c'è un problema: non so come il gioco gira, riesco anche a muovermi nei menu alla cieca e avviare una partita, ma viene renderizzato solo lo sfondo e letteralmente null'altro, quindi non si può effettivamente giocare. (Dettagli più precisi <a href="https://t.me/CommunityTecnologica/737432">in questa chat qui</a>.) 🤬</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":5888} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/photo_5080513907201780824_x8412736725975051660-320x169.jpg" alt="" class="wp-image-5888"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":5889} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/screenshot_2024-05-24-00-21-42-337_org2221662542601539196-960x418.jpg" alt="" class="wp-image-5889"/></figure>
+<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">Ho provato allora con DirectX 8a, che pare essere l'ultima versione con software rendering prima di DX10 (che lo ha reintrodotto dopo che fu tolto tipo), e <a href="https://es.m.wikipedia.org/wiki/Embodiment_of_Scarlet_Devil">stando a Wikipedia ES</a> dovrebbe essere il minimo richiesto da Touhou 6 (altre fonti specificano semplicemente DX8 generico). E qui il gioco però smette di partire, restituendo un errore non molto chiaro... che ho decifrato <a href="https://old.reddit.com/r/touhou/comments/a9pwx4/eosd_direct3d_error/">con Reddit</a> e Google Traduttore, ma la cosa non mi ha dato alcun aiuto, non so a cosa si riferisca l'errore esattamente, e nessuna opzione disponibile tra configurazione del gioco e impostazioni di Windows ha risolto il problema (chiede di cambiare una roba che online non vedo discutere, probabilmente manco esiste). 🐭</figcaption></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Proprio stamattina ho voluto dare una chance a Boxedwine; pensandoci, posso usarlo in maniera complementare a v86, nei casi in cui questo non va bene. Fare tutto tra telefono e tablet (dato che non sono a casa) è stato un casino, tra lentezza generale, memoria che si satura (per questo devo usare due dispositivi alla volta) e via... e ugualmente non è servito A NULLA. A parte il tempo perso (tanto, maneggiare con gli ZIP sullo Ximi non è veloce) tentando di avviare gli ultimi pacchetti distribuiti dall'autore per Wine 1.7 e 5.0, che evidentemente non funzionano (il primo non so perché, il secondo è colpa di <a href="https://github.com/danoon2/Boxedwine/issues/11">#11</a>), usando il pacchetto di boxedwine.org sono riuscita ad almeno avviare il gioco, ma termina con un errore che credo sia proprio lo stesso di Windows 2000. Nella console di Wine vedo prima del crash una riga <code>fixme:win:EnumDisplayDevicesW ((null),0,0x32f898,0x00000000), stub!</code>, che può confermare i miei sospetti, ma non so se centri o sia una coincidenza. Guardando i file di Boxedwine credo ci sia DirectX dall'8 al 10, quindi non sarà un problema di librerie mancanti. 🐞</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se avete idee, per favore suggerite, perché sono proprio alla frutta, ho finito di giocare ancor prima di iniziare. Il problema è che il gioco non parte con software rendering, anche se in teoria potrebbe usarlo, sospetto che cerchi appunto una GPU e halti se non la trova. (<a href="../../../wp-content/uploads/2024/05.md">Qui ho caricato il log di Wine</a>.) Ieri sera ho fatto anche tardissimo per andare a letto, per via di questa roba, ma vi giuro ci ho messo un secolo a prendere sonno... questa cosa ora mi tormenta e devo risolverla: so che Touhou è abbastanza leggero da poter girare nel browser, se giochi anche molto più pesanti ce la fanno, quindi ora pretendo di averlo nel browser! Voglio giocarci in Sala Museo! Il problema sono ste cazzo di API; possibile che solo sulle console i giochi funzionano e basta? (Dovrò fare un emulatore Switch per il web, a proposito...) 🧱</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-23 10:44:46+00:00">23 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="motori-spacc"><a class="toclink" href="../../2024/05/23/motori-spacc.html">motori spacc</a></h2>
+<!-- wp:paragraph -->
+<p>Qualcosa di <em>estremamente sinistro</em> sta accadendo proprio ora a #Microsoft. Mi sembra più o meno da ieri aver notato sia #DuckDuckGo che #Ecosia impiegare una strana quantità di tempo per rispondere, e stranamente restituire risultati particolarmente irrilevanti, anche su argomenti diversi e in momenti diversi della giornata. Nel frattempo invece Google, nonostante la sua generale <em>enshittification</em>, restituiva i risultati soliti. Già la cosa puzzava, però ho pensato che magari fossi io ad avere il cervello bruciato in quel momento, quindi non ci ho dato troppo peso. 🤥️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":5835,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image-5-960x526.png" alt="" class="wp-image-5835"/><figcaption class="wp-element-caption">Però stamattina i #problemi peggiorano. Addirittura ora i due motori non mostrano proprio più risultati... mentre invece sia #Bing che #Yahoo (che usa Bing come backend, si veda il suo footer) funzionano come al solito. Oddio, quasi: per qualche motivo, provando ad aprire le pagine di Video o Immagini o chissà che altro, su Yahoo qualche volta mostra qualcosa ed altre no; invece su Bing o mostra una versione HTML semplificata dei risultati testuali, o un errore "<em>It's not you, it's us. Bing isn't available right now, but everything should be back to normal very soon.</em>". 👹️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Considerando che anche Bing sta avendo problemi, questo non mi sembra un tentativo di Microsoft di sabotare la "concorrenza" a cui lei stessa offre il servizio, però è un bel casino. Il problema ovviamente non è mio, ma tanti altri utenti si stanno giustamente lamentando; cercando con quei pochi engine ancora rimasti funzionanti ad oggi, leggo "<a href="https://www.the-sun.com/tech/11438830/duckduckgo-down-not-working-updates/">DuckDuckGo down updates — Search engine not working leaving thousands furious as major outage also impacts Bing users</a>" e "<a href="https://old.reddit.com/r/duckduckgo/comments/1cylyuf/is_ddg_down/">Is DDG down?</a>". Ed ecco a tutti noi servito il conto del fatto che saltano fuori motori di #ricerca come funghi ultimamente, ma tutti in qualche modo che fanno da frontend per altri motori, e mai roba che sia effettivamente nuova. Il mercato corrente fa così piangere. E secondo me in questi #disservizi la causa è che qualcuno a MSFT sta modificando il sistema per integrare meglio l'AI al suo interno, o qualche altra schifezza... 💢️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-23 00:58:25+00:00">23 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="finestre-wasmanti"><a class="toclink" href="../../2024/05/23/finestre-wasmanti.html">finestre wasmanti</a></h2>
+<!-- wp:paragraph -->
+<p><a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$afE_yDHjxdaVVyTf7_CKCB_PXkYbk6x81L3j2vLgJk8">Ieri sera su spacctorium</a> è stato sollevato un dubbio su se sarebbe possibile o meno emulare eseguibili Windows sulla #SalaMuseoGames. All'inizio ho detto che in teoria si, ma in pratica no, dopo che tutti i miei tentativi risalenti a pochissimo tempo fa sono sempre falliti in partenza... Però poi ci ho voluto pensare un attimo, e mi sono chiesta: davvero se Boxedwine non esegue qualcosa, tutto il resto gira talmente male che ci dobbiamo accontentare di non avere un cazzo? A quanto pare, la risposta è no. 😜</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.boxedwine.org/">Boxedwine</a> è praticamente un emulatore x86 che include un sistema Linux striminzito e una runtime Wine vecchissima (per qualche motivo non sono riuscita a far partire versioni più nuove lì dentro), e quindi anche con pesanti mancanze di compatibilità, che può girare nel browser. È abbastanza impressivo, ma dai miei test, quelle pochissime volte che qualcosa riesce a girare, lo fa veramente male, per colpa degli strati. Mi chiedevo quindi se magari ci fosse qualcosa di meglio, e cado quindi su <a href="https://github.com/copy/v86">v86</a>, che già conoscevo da tempo ma non avevo realizzato prima quanto fosse basato: usa una tecnica di codegen WASM per sfruttare il JIT del browser come JIT del motore x86 (che è l'unico modo praticamente, il browser può ricompilare JIT il codice che deve eseguire, ma questo codice non può a sua volta ricompilarne altro). 🪨</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In sostanza, questa soluzione è molto più veloce di quanto i miei test superficiali (ad esempio, navigando in Windows Explorer) mi portavano a pensare (per quanto Windows di 20 anni fa riesce ad essere sorprendentemente reattivo lì dentro, persino su browser mobile, dove invece Boxedwine si impalla al suo boot), e credo sia lo stato dell'arte. Fino a poco fa ho dovuto risolvere (o aggirare...) dei problemi (tra cui uno veramente stupido per l'audio su Windows 2000, <a href="https://github.com/copy/v86/issues/1049">ho aperto una issue mezza per niente</a> aiuto sono tremenda), ma poi ho finalmente potuto far partire uno dei giochi vecchi che avevo da parte sul PC, e... 🤫️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":5818} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/simplescreenrecorder-2024-05-23_00.17.18.mp4"></video><figcaption class="wp-element-caption">Boh, giudicate voi dal video! Midtown Madness che gira su Windows 2000 dentro questa roba, sul mio PC fisso, ed a dettagli minimi è sorprendentemente giocabile per il contesto. Gira persino meglio di come gira in DOSBox-Pure sui miei dispositivi Android (dove spesso bisogna addirittura rinunciare al JIT perché Windows 9x sennò è instabile). Per quanto non posso promettere che riuscirò effettivamente a mettere giochi Windows sul mio sito (anche se sarebbe un sogno, un ulteriore passo avanti alla concorrenza for-profit), questa roba è decisamente promettente. 🤯️</figcaption></figure>
+<!-- /wp:video -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I margini di miglioramento comunque ci sono. Innanzitutto, magari 9x gira meglio per alcuni giochi, e quindi nel caso si preferisce quello; poi, per quanto i Windows d'epoca non avessero tutto questo bloat, penso che almeno qualche FPS in più uscirebbe fuori togliendo vari servizi inutili (e uccidendo Explorer); se tutto va male poi possiamo tentare (dato che abbiamo i sorgenti illegali) di ricompilare componenti di Windows con ottimizzazioni o robe, e infine potremmo sempre implementare delle hack in v86, anche specifiche per ogni gioco (praticamente HLE). L'hosting soltanto potrebbe essere rognoso, perché le immagini disco vanno preparate in un modo che non vi sto a spiegare ora, ma ci sarà da impazzire (non tanto per il sistema base, ma coi giochi di mezzo si). 😷</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-21 23:59:39+00:00">21 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="the-wasm-is-amogus"><a class="toclink" href="../../2024/05/21/the-wasm-is-amogus.html">the wasm is amogus</a></h2>
+<!-- wp:paragraph -->
+<p>Ormai ho preso il brutto vizio di aggiungere giochi alla #SalaMuseoGames solo quando ho voglia di fare miglioramenti tecnici, perché a quel punto ragiono "vabbé, ho passato tutti questi quarti d'ora a progettare e programmare, già che ci sono lo metto un giochino nuovo"... però quando lo faccio, mi stupisco sempre di cosa riesco a trovare! 🤭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":5764,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image-3.png" alt="" class="wp-image-5764"/><figcaption class="wp-element-caption">E infatti, un'ultimissima aggiunta è proprio AMOGUS, con una build web trovata su uno dei soliti siti adware. Potete giocarci qui, anche questo è sorprendentemente ben fatto per un clone, e nonostante sia solo offline ha anche tipo la chat con i bot... troppo effort: <a href="https://gamingshitposting.github.io/SalaMuseoGames/2024/05/19/among-us/">https://gamingshitposting.github.io/SalaMuseoGames/2024/05/19/among-us/</a>. È giocabile pure su mobile, anche se la gestione degli input touch è un po' arronzata. 🚀️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":5765,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/image-4.png" alt="" class="wp-image-5765"/><figcaption class="wp-element-caption">All'inizio ho infatti pensato fosse qualche versione demo ufficiale o boh poi ritirata, ma ho scoperto che non è così appena ho provato ad eseguire il gioco dopo averlo caricato sul server, perché faceva stranamente freezare la pagina; e quindi io giustamente apro la console JavaScript per vedere che cazzo succede, ma leggo… "DO NOT STEAL MY GAME!". ...Oooopsie! Non era mia intenzione, giuro, volevo solo creare un mirror per i posteri come al mio solito. Risolvere questo intoppo è stato un bel #grattacapo. 🦧️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Considerando che su <code>localhost</code> il gioco funziona, oltre al sito da dove l'ho tirato, è evidente che <em>da qualche parte</em> controlla il dominio. E ho verificato che non importa l'URL relativo della pagina, ma appunto solo il dominio. Teoria nel complesso poi confermata dal fatto che lo stesso crash avviene se apro la pagina servita dal mio server locale usando un indirizzo diverso, ossia <code>127.0.0.1</code>, che non sarà whitelistato nel codice. Si, ma nel codice dove? Ah non lo so io! Lo vedete anche voi che lo stacktrace dell'errore in foto non è molto utile (non solo perché molte funzioni sono anonime, ma perché non si riesce a decodificare quelle che provengono dal WASM anziché dal JavaScript). 😔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vi risparmio il racconto di tutti i primi tentativi falliti per trovare dove avvenisse il controllo del dominio, per colpa del mio essermi fissata su oggetto <code>location</code> e affini; comunque era chiaro che avviene all'interno del WASM, e non si riescono a trovare stringhe utili da nessuna parte. Mi sono sbloccata in realtà solo quando, vedendo che un altro modo per ottenere l'URL della pagina corrente è leggere <code>document.URL</code>, cercando appunto la parola document nella sezione WASM che lista le funzioni JS importate, ne ho adocchiata una <code>_JS_SystemInfo_GetDocumentURL</code>. Certo abbastanza, la riesco a trovare nel codice colla JS e, al primo tentativo di patcharla per farle restituire sempre <code><a href="http://localhost/">http://localhost/</a></code> anziché il valore vero, ecco che ho aggirato il #DRM minchione. ⛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Un'altra vittoria ottenuta grazie alla relativa facilità del reverse engineering sulla piattaforma web! Eppure, questo mi fa pensare... ma possibile che non ci siano debugger migliori di quelli esistenti? Non mi risulta sia neanche possibile inserire breakpoint quando, per esempio, qualcosa sulla pagina semplicemente accede ad una variabile globale. Per non parlare poi dell'oscurità dei binari WASM, che se cercate di mettere le mani lì dentro avete già sbagliato strada ed è meglio se tornate a leggere il glue code... idk, suggerimenti? 🤥️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-21 18:03:29+00:00">21 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2024/05/21/5754.html"></a></h2>
+<!-- wp:paragraph -->
+<p>Non ho molto da dire a riguardo, però dal niente la sto vedendo un po' condivisa in giro (forse perché le firme sono aperte da pochi giorni), quindi ecco qua: <a href="https://citizens-initiative.europa.eu/initiatives/details/2024/000001_it"><a href="https://citizens-initiative.europa.eu/initiatives/details/2024/000001_it">https://citizens-initiative.europa.eu/initiatives/details/2024/000001_it</a></a>. iniziativa dei cittadini europei per <strong>vietare le cosiddette pratiche di conversione in Unione Europea</strong>, seguendo un vecchio appello delle Nazioni Unite che le ha definite come <strong>tortura</strong> e ne ha auspicato la messa al bando globale.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quella lì è la pagina con il testo completo dell'iniziativa (che, per chi non sa come funzionano queste cose dell'UE, non è la legge in sé, ma solo la richiesta), mi sembra adeguata. E invece questa la <strong>pagina per firmare</strong>, che sarebbe una cosa buona, altrimenti un giorno potreste fare pure voi la fine di Alan Turing (oltre a quella di tanta altra gente non passata alla storia): <a href="https://eci.ec.europa.eu/043/public/?lg=it"><a href="https://eci.ec.europa.eu/043/public/?lg=it">https://eci.ec.europa.eu/043/public/?lg=it</a></a>. Basta essere maggiorenni e, o compilare un modulo, o accedere con SPID/CIE (come per tutte queste robe UE).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Il termine è tra appena un anno, quindi il tempo c'è, però comunque le firme devono arrivare. In generale servono almeno 1 milione di firme, e la raggiunta del tetto minimo per paese con almeno 7 paesi (di nuovo, vale per tutte le iniziative, vedi <a href="https://citizens-initiative.europa.eu/how-it-works_it"><a href="https://citizens-initiative.europa.eu/how-it-works_it">https://citizens-initiative.europa.eu/how-it-works_it</a></a>). Se siete veri europei dovete votare, per fare la vostra parte nel far valere la supremazia del blocco occidentale-ma-non-troppo!</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-20 21:59:38+00:00">20 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="catturscheda-moment"><a class="toclink" href="../../2024/05/20/5728.html">catturscheda moment</a></h2>
+<!-- wp:paragraph -->
+<p>Alla fine <a href="../../2024/05/09/fine-nxfinestra.html">la famigerata catturscheda</a> #HDMI è arrivata, assieme a tutta la roba qualche giorno fa. Lasciamo il resto per le prossime volte, ed ora... #recensione della chiavetta magica del video colorato?! Ci ho giochicchiato un po' in streaming sia dentro casa per vedere, che stamattina per vedere seriamente e semplicemente wow, certe volte non essere tirchia è molto utile. <a href="https://it.aliexpress.com/item/1005006204070137.html"><a href="https://it.aliexpress.com/item/1005006204070137.html">https://it.aliexpress.com/item/1005006204070137.html</a></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":5726,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/202405202025037254787329721785000909-960x1075.jpg" alt="Foto del fronte della chiavetta davanti al 3DS, che con la camera frontale accesa mostra per sfizio il retro, che si vede e non si vede." class="wp-image-5726"/><figcaption class="wp-element-caption">Questa è esteticamente, e a dire il vero non sembra per niente cheap, nonostante il valore di 3,87 euro, col corpo in metallo... ed è proprio essenziale, mi piace. La spina USB è molto lunga e sporge un po' dalle porte, ma forse è un bene ed è fatto apposta per evitare si spezzi se sotto tensione? Esce come dispositivo video standard, niente software proprietario, e, per quel poco che ho provato, a risoluzione standard (il resto non so), non scalda nemmeno. Non ho quantificato l'eventuale lag, ma a occhio va bene, si gode. 👾️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Avrei voluto provarla venerdì mattina, ma potendo ora chiudere il portatile (non mi serve più la webcam puntata al display di Switch) potrei dimenticarmi che questo è acceso, spegnere la ciabatta, e quindi far spegnere il computer dato che lo tengo senza batteria (per evitare di rovinarla)... ed è esattamente ciò che è successo quel giorno, ma a quel punto ero in ritardo. Stamattina è riaccaduto lo stesso incidente, ma 2 minuti di tempo li avevo, quindi ho rimediato... Però cazzarola, mi serve un modo per inserire la password di decifratura del disco che non mi richieda di scriverla a mano. ...Ma <em>io digresso</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nonostante il bilancio positivo, qualcosa mi lascia un po' perplessa... Perché aumentando la risoluzione (a 1080p ci arriva btw) su OBS viene impostato un framerate molto più basso del default di 30, anche se pare si possa poi rimettere su? Perché su VLC non riesco a scegliere risoluzione e framerate? Actually, perché di default va a 640x480@30? E perché, dopo che smanetto un po' coi settaggi, OBS non la riconosce più fino al riavvio del computer? (Non so la risposta, ma spoiler: realisticamente, solo uno di questi problemi è da imputare alla pennetta; tutto il resto è colpa del software che muzunna fa tutto schifo non funziona mai niente, e Linux è rotto, e Windows è rotto, e Android non ne parliamo, e il mio kernel scoppia, e l'userspace si spacca, palleeeeeeeee—</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dicevo, nel frattempo che ho fatto testing di questa scheda, ma non per colpa sua, ho anche scoperto che non ho per niente chiuso con FrameNX, ma devo fare ancora altri bugfix. Innanzitutto, se un dispositivo video viene rimosso mentre è attivo, esce fuori un memory leak grosso quanto l'Africa (e ciò non è ottimale). Poi, sembra esserci qualche problema con la selezione degli input audio; sul fisso non ho ancora ricontrollato, ma sul portatile pare la app non voglia proprio saperne di riprodurre l'audio della scheda di cattura... e infatti per giocare ora ho dovuto usare Audacity per riprodurre live l'audio senza registrare, peccato che quello prende il 30% di CPU da solo, portando il PC in ebollizione e la mia stanza a cottura. C'è poi una cosa che insomma, per me che faccio cloud gaming non è importante (il default come detto prima mi sta bene), ma a pensarci mi sta ugualmente sul culo... dovrebbe starci qualche modo per configurare risoluzione e framerate video, però buona fortuna, perché non sembra che <code>pygame.camera</code> esponga le API necessarie! 😭️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-19 17:33:22+00:00">19 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="volpi-infinite"><a class="toclink" href="../../2024/05/19/volpi-infinite.html">volpi infinite.</a></h2>
+<!-- wp:paragraph -->
+<p>Stamattina tra diverse distrazioni sono finalmente riuscita a creare cloni della app di #Firefox (Fennec, aka v68) per #Android, senza ricompilare da sorgente... cosa che ieri sera stavo per arrendermi a fare, ma ovviamente ho constatato che non funziona nulla, col build system loro e i sorci vecchissimi. Dopo non pochi tentativi con estrattori ed editor di #APK a non finire (mentre che stavo in realtà cercando di crackare un cloner di app molto pay to win, lol) scopro che Lucky Patcher ha una sua funzione di #clonazione. Perché non fare un tentativo allora? 🤥️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Mi sono presa sorprendentemente un po' di tempo (più di 2 ore...) per <em>tentare</em> di disegnare delle icone per 3 (non ancora tutte) delle mie #webapp che sono lì messe a disposizione... fatte partendo da altre icone e non da zero stavolta, e per quanto <a href="https://gitlab.com/octospacc/octospacc.gitlab.io/-/commit/c433bc663543eeddf374bed21bce7006c43cd115">non sono comunque per nulla dei capolavori</a>, forse sono almeno un po' meglio di cosa esce [quando provo a disegnare io qualcosa partendo da zero](../../../2024/03/28/pwgoduriaaaa.md) assoluto. 🥲️</li>
+<li>Sul Rattoppatore apro l'APK, faccio <code>Rebuild</code> &gt; <code>Clone application</code>, e seleziono solo <code>Modify only AndroidManifest.xml</code>, <code>Change sharedUserId</code>, e <code>Change application name</code>, e lo lascio fare. E... l'APK emesso si installa e gira. 🤯️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Era davvero così semplice? Evidentemente si... ma, in primis il nome non è cambiato correttamente, e quindi non appare diverso in alcuni launcher... e poi l'icona rimane uguale, che è un po' un problema quando devi differenziare tra il clone e la app originale. Per sistemare queste rogne servono per forza altri strumenti, quelli che da soli non stavano funzionando, e allora:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Uso <code>apktool d -r -s</code> per estrarre il nuovo APK senza decompilare niente (altrimenti poi la ricompilazione fallirà).</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Ho implementato anche finalmente lo script Service Worker per il #sito, in modo da permettere alle pagine di andare in cache offline, facendo quindi funzionare le app anche senza #Internet, che è un requisito senza il quale non potrei in tutta onestà considerarle veramente complete e meglio delle native... ma ora oh si, avoja. 🗡️<!-- wp:list -->
+<li>Uso <a href="https://github.com/hzw1199/xml2axml">xml2axml</a> per "deoffuscare" il manifest, fare queste modifiche, e poi "rioffuscarlo" (altrimenti l'APK non sarà valido):<!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Cosa in parte correlata e in parte no, che in realtà però <a href="https://gitlab.com/octospacc/octospacc.gitlab.io/-/commit/87757fbcee643ad3f37bce851e0fc25822964183#59bd975b6a8f87e95826adc4fbedf63faa45ad19">ho fatto una settimana fa</a> (lol): il Worker viene registrato solo per il dominio principale (<code>hub.octt.eu.org</code>), mentre non per tutti gli altri (sono vari) da cui lo stesso sito è accessibile. Su quelli (<a href="https://octospacc.gitlab.io">esempio, qui</a>) appare un avviso in cima ad ogni pagina che ricorda di spostarsi, e c'è un link, ma nessun redirect automatico, perché così gli altri domini possono fungere da costante backup, <em>non si sa mai</em>.</li>
+<li>Cambio l'unica proprietà <code>android:label</code> tra le tante nel file che ancora riporta il nome passato della app.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Cancello tutti gli attributi XML che risultano vuoti (<code>coso=""</code>) (3 nel mio caso), e cancello i nodi a cui appartenevano se non hanno altra roba, altrimenti <a href="https://github.com/hzw1199/xml2axml/issues/3">si incappa nel bug #3</a>.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></li>
 <!-- /wp:list-item --></ul>
@@ -10335,18 +10288,126 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Ho aggiunto un (1) nuovo link alla barra scorribile in basso (quello della mia pagina Itch.io, perché <em>forse</em> ho in programma qualcosa di utile, ma questa sarà un'altra storia), che quindi è diventata talmente larga da scrollare anche sul mio desktop e sul tablet in orizzontale, e quindi ho potuto notare quanto è fastidioso il fatto che faccia di continuo avanti e indietro ogni mezzo secondo senza neanche un frame di pausa... per cui l'ho migliorata, facendo ad ogni cambio di direzione scattare un delay (che era già programmato, ma veniva prima usato solo come pausa al passaggio di mouse o dito). Ne ho anche approfittato e allargato il padding, perché su dispositivi touch era un po' difficile trascinare per scorrere a mano. 💈️</li>
+<li>Modifico a mano l'icona PNG più in alta risoluzione che ho trovato già nell'APK, poi la ricopio sovrascrivendo tutte le vecchie (si, anche quelle a più bassa risoluzione, non da problemi): <code>find -name ic_launcher.png -exec cp icona_nuova.png {} \;</code>.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Infine, non meno importante: non so perché, qualche neurone sarà scattato a caso per colpa dei raggi cosmici, ma ieri sera senza motivo mi è tornata in mente una delle musichette che fanno da sottofondo al menu di selezione di alcuni famicloni... e le voci mi hanno detto che ci starebbe benissimo su una pagina web che è praticamente un menu di selezione per le mie cose. Quindi, detto fatto, <a href="https://hub.octt.eu.org/">"Slum" di Mighty Final Fight è stata messa</a>... (Ovviamente, di default è mutata, non ci sono saltispaventi.) ❤️‍🔥️</li>
+<li>Riassemblo con <code>apktool b</code>, poi per firmare e allineare l'APK usando questo <a href="https://github.com/patrickfav/uber-apk-signer">uber-apk-signer</a> (è una manna dal cielo trovata stamattina, funziona e basta evitandomi i tremila cazzi altrimenti necessari).</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>E qualcosa ho fatto anche per la #SalaMuseoGames, actually: oltre ad aver finalmente risolto <a href="https://octospacc.altervista.org/2024/04/26/doki-doki-pazzia-club/"><em>tutti i problemi riguardo DDLC</em></a> (mancava poco e sarebbe diventata una saga), e aver aggiunto altri giochi, ho implementato un tasto per allargare gli embed senza andare a schermo intero, nascondendo la sidebar che si vede sui display larghi. Ma ci sono ancora tante e tante cose da sistemare lì sopra (soprattutto in termini di PWA), voi non avete proprio idea... ☠️</p>
+<p>Onestamente, non capisco perché modificare il nome del pacchetto con le stesse accortezze che per clonare tutte le app semplici vanno bene, in questo caso non basta e porta il browser a crashare... ma ho visto che il Fortunello <a href="../../../paste/5683.md">cambia giusto qualcosina all'interno del codice Dalvik</a>, shiftando lettere di poche parole scelte in base a non so che criterio, portandole semplicemente una lettera avanti come già fa per il nome del pacchetto. 🧮️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":5684,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/202405191657358619051511019612036523-960x1440.jpg" alt="Close-up del Galaxy con le nuove volpi installate." class="wp-image-5684"/><figcaption class="wp-element-caption">A proposito di questo... si, per creare un clone 2 con questo metodo bisogna partire clonando il primo APK clonato, e così dall'APK 2 per creare un clone 3, ecc... tedioso. I wish che Lucky Patcher facesse semplicemente scegliere il package name desiderato, ma purtroppo questa è la cosa. Con queste condizioni, almeno 5 minuti di lavoro per creare ciascun clone ci vogliono, quindi: per non perderli io, e nel caso servissero a voi, metterò i miei vari APK <a href="https://hlb0it.blogspot.com/?path=/Drive/Misc/Fennec%20F-Droid%20Old%20armeabi-v7a%20Latest%20Collection.7z">qui (Fennec F-Droid Old armeabi-v7a Latest Collection.7z)</a>. ♻️</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-18 16:09:52+00:00">18 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="msx-more-like-sex"><a class="toclink" href="../../2024/05/18/msx-more-like-sex.html">msx more like sex</a></h2>
+<!-- wp:paragraph -->
+<p>Questa non è un'ode all'MSX (me la terrò in serbo per una prossima volta), però cazzo se è buono l'MSX. Ora che lo guardo un pochino meglio, per molti versi sembra decisamente più allettante del NES, e mi sa che rischia di diventare la mia piattaforma #retro preferita, dal punto di vista dello #sviluppo #software. (Riguardo il gaming invece, si continua ad andare semplicemente dove stanno i giochi volta per volta, il resto conta meno di zero.) 🥶️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lo stereotipo che i giochi #MSX scrollano di cacca in parte è vero, e certamente il NES sotto quel punto di vista rimane migliore, però per il resto... l'audio è oggettivamente migliore (ha più roba dei 4 canali), il video negli altri ambiti è più potente e flessibile con anche diverse modalità (e con MSX2 diviene tutto ancora meglio), e per il resto... l'MSX è uno standard per home computer, non una console, per cui si gode di più memoria senza bestemmie, supporto di prima classe a dispositivi come mouse e tastiera, o anche espansioni più oscure. 👹️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Volendo quasi quasi programmare per questa piattaforma <a href="../../2024/05/17/azzardo.html">quel recente giochino che ho in mente</a>, perché credo di riuscire a fare qualcosa di artisticamente più valido con le limitazioni d'epoca (ma sento che il NES rischia di essere un mal di testa troppo grosso), ho provato a cercare qualcosa... E inizialmente mi stavo un po' scoraggiando, non riuscendo a trovare materiale soddisfacente, ma continuando a scavare ho trovato <a href="https://github.com/aoineko-fr/MSXgl">MSXgl</a>; sembra una #libreria multimediale eccellente, permette di #programmare in #C con astrazioni comode per quasi ogni cosa. La documentazione non è perfetta, molti dettagli non sono detti quindi un po' ho dovuto guardare i sorgenti dell'engine e degli esempi, e un po' cercare in giro... ma è comunque sorprendentemente ottima. 😻️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":5650} -->
+<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/05/simplescreenrecorder-2024-05-18_15.09.35.mp4"></video><figcaption class="wp-element-caption">Per iniziare a prendere familiarità col tutto, ho fatto giusto questo po' ora: una ROM che mostra due linee di dialogo senza senso all'avvio, e poi cambia scena e inizia a riprodurre una musica. Ovviamente, gli assets sono quelli di #esempio, non ho ancora iniziato a produrre nulla, anche perché devo prima capire quale modalità video è la migliore per questa mia applicazione... 🧐️</figcaption></figure>
+<!-- /wp:video -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-05-17 08:50:27+00:00">17 maggio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="azzardo-biciclett"><a class="toclink" href="../../2024/05/17/azzardo-biciclett.html">azzardo biciclett</a></h2>
+<!-- wp:paragraph -->
+<p>Continuando a parlare di #gioco sia d'azzardo che non, ieri sera su spacctorium siamo arrivati alla conclusione che l'unico mezzo di #trasporto civile palloso è la moto, perché è l'unico sul quale non puoi giocare a carte. A pensarci ora un attimo meglio non so come classificherei i monopattini però, perché dipende... esattamente come dipende per le biciclette, mezzo per cui abbiamo però decretato che si può giocare a carte (almeno, farti un solitario, perché giocare in multiplayer la vedo complicata). Pensateci, anche se è abbastanza pericoloso e un po' scomodo, se hai il cestino portaoggetti, non vai troppo veloce, e non c'è la bufera, a carte ci puoi giocare. E credo che non sia nemmeno illegale, essenzialmente l'unica cosa che faresti è stare lì a riordinare oggetti mentre ti muovi... 🎴</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Da qui però mi viene un ulteriore dubbio: si può giocare a <em>Mario Kart DS</em> (o qualsiasi altro videogioco che richieda azione in tempo reale) stando in bici? Fisicamente è anche più semplice che giocare a carte, soprattutto se fai una bella cosa e integri un gamepad nel manubrio, piazzando dei tasti in modo che questi siano comodamente accessibili tenendo le mani nella stessa posizione che normalmente si usa per muoversi in bici. Poi, ma questa è una cosa che è già comune fare per la navigazione GPS, si piazza davanti un display grande a piacere, magari in un modo che sia facile da vedere anche con la visione periferica (così da <em>vedere</em> lo schermo mentre si <em>guarda</em> la strada, e non il contrario). È giusto che, mentre si usi la bici per allenare il corpo, si usi il #videogame per allenare la mente. 🎮</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I #dubbi grossi però sono due: siamo sicuri che non si finisca a fare confusione tra il movimento nel gioco e quello reale, e poi, che sia legale? Per verificare il primo problema bisognerà testare sul campo, mentre la sola esistenza del secondo mi fa ritenere che non è il caso di provare senza prima avere ulteriori informazioni. Bisognerebbe chiedere ad Angelo Greco, perché sul web non è che ho trovato molte informazioni a proposito, però... il gioco d'azzardo mi piace, e quindi <em>azzarderò</em> una teoria intanto. È legale perché non esiste alcuna legge (qui sto assumendo che il mio non aver trovato sia proprio per l'inesistenza) che vieti in qualche misura di videogiocare con console o computer alla guida (anche se probabilmente se giochi a MKDS in autostrada il culo te lo fanno uguale, just sayin'), ma solo in particolare l'uso dei cellulari e mazzi vari; e, ad ogni modo, credo che quest'ultimo divieto non si applichi alla guida in bici (o almeno, non allo stesso modo). 🦧</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo non ho trovato precedenti in Italia per ora, quindi in ogni caso non si può ragionare in base a quelli, però a Taipei c'è il nonno che gioca a Pokémon Go con ormai 64 cellulari (uno stack!) al punto da avere la vista della strada pesantemente ostruita, e non sembra essere mai stato arrestato. Quindi, perché qualcuno dovrebbe rompere le palle a me se tengo uno schermo discreto e non alzo nemmeno le mani dal manubrio? In effetti tutto ciò avrebbe senso, l'atto di andare in bicicletta (sto supponendo sempre non-elettrica in questo discorso) è molto più comparabile al correre a piedi velocissimo, piuttosto che al condurre un mezzo, non essendoci neppure un motore... e mi risulta che a piedi sia legale muoversi anche tenendo ipoteticamente gli occhi incollati a un cellulare, una console, o persino un libro o un giornale. (E l'attenzione visiva richiesta per leggere qualcosa è molto più alta di quella per videogiocare al titolo Nintendo medio... date retta a me, che al liceo giocavo tenendo un occhio sulla console e uno sulla professoressa...) 🕯️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Al momento non ho ancora proprio una bicicletta, quindi queste restano tecnicamente pippe mentali, ma la bici è molto accessibile e potrei decidere finalmente di prenderla magari, quindi si tratta di pippe con moderazione. Quasi quasi, altra idea di ieri, sarebbe figo comprarla coi soldini di Microsoft Rewards... sembra una battuta, ma con 6 account, calcolatrice alla mano, un centinaio di euro li faccio in sei mesetti (senza contare il fatto che ne ho già tanti di punti accumulati), e con quelli avoja, qualcosa sia su Amazon che da Decathlon (meglio) trovi. Ovviamente, dopo sarebbe appunto da verificare la legalità del gaming, perché farsi arrestare e incarcerare soltanto per il meme non mi sembra una cosa ottima. (E, molto probabilmente, anche se fosse illegale, se lo fai e basta nessuno ti sgama... ma se è per il meme, bisogna anche filmare il video e metterlo online, ma condividere con il mondo la prova di un tuo reato non è una cosa furba e quindi ecco, bisogna fare attenzione... vabbè, nella legge italica i buchi si trovano sempre in ogni caso, il legislatore non ha previsto la perseveranza di noi gaymer...) 💹</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10359,7 +10420,7 @@
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../24/index.html">24</a> <a class="md-pagination__link" href="../25/index.html">25</a> <span class="md-pagination__current">26</span> <a class="md-pagination__link" href="../27/index.html">27</a> <a class="md-pagination__link" href="../28/index.html">28</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../58/index.html">58</a>
+  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../24/index.html">24</a> <a class="md-pagination__link" href="../25/index.html">25</a> <span class="md-pagination__current">26</span> <a class="md-pagination__link" href="../27/index.html">27</a> <a class="md-pagination__link" href="../28/index.html">28</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../60/index.html">60</a>
 </nav>
         
       
@@ -10399,7 +10460,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>

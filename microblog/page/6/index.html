@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -9529,6 +9529,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../archive/2025.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
       <a href="../../archive/2024.html" class="md-nav__link">
         
   
@@ -9824,7 +9847,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-12 01:37:41+00:00">12 novembre 2024</time></li>
+          <time datetime="2024-11-24 20:23:58+00:00">24 novembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9844,23 +9867,283 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="pokemonuing"><a class="toclink" href="../../2024/11/12/pokemonuing.html">pokemonuing</a></h2>
+    <h2 id="serveraggio-mibandico"><a class="toclink" href="../../2024/11/24/serveraggio-mibandico.html">serveraggio mibandico.</a></h2>
 <!-- wp:paragraph -->
-<p>Dopo un po' di giorni che ho provato <strong>la #app di Pokémon #TCGP</strong>... beh dai, giusto fare qualche pensierino generale tipo sul mood e sul #vibe, che stranamente non è banalissimo. Strambo come questo giochino apparentemente così piccino abbia leggermente intrappolato la mia anima, ma tant'è. 😐</p>
+<p>Come previsto, grazie alle mie capacità di pensiero magico era solo questione di avere il tempo di premere tasti su una tastiera, perché io riuscissi finalmente a sideloadare app #Vela JS sulla Mi Band... quindi a breve dovrebbe iniziare il mio china #dev arc. 😈</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Dunque, in realtà, lo sfizio di scrivere così mi viene perché ho visto un video dove viene spiegato come mai la #UX della app fa schifo, e come potrebbe essere migliorata. E... questo in realtà è verissimo. 🥲</p>
+<p>Avrei preferito riuscirci tramite Gadgetbridge, ma non sono riuscita a farlo con il codice evidentemente incompleto <a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/3786">trovato nella issue #3786</a>, che non è mai stata chiusa, e io al momento non ho capito cosa manca. Pazienza, si passa all'artiglieria pesante! 🧨</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Con uno scriptino PHP assemblato al volo (in parte con Chatgipiti, ops), ho messo su un server che fa da proxy con la CDN della <a href="../../2024/11/21/sideloadiband.html">versione moddata di Mi Fitness dell'altra volta</a>, e nel frattempo caching e logging di tutto... creando a tutti gli effetti un server #privato per lo store di watchface e app. 🏗️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stamattina finalmente ho aggiunto codice per restituire non i file statici cachati, ma dati generati con della logica corrispondente a degli endpoint API; per adesso solo quelli delle #app, che era la cosa che a tutti i costi mi serviva, ma poi vedrò di fare il resto e come minimo mettere anche le watchface, così faccio pure io ambo contro Ximi. 🥰</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ovviamente tutto open sorcio (PHP), e anche self-hostabile per chi vuole caricare la propria libreria di dati nella app purtroppo altrimenti blindata:&nbsp;<a href="https://gitlab.com/octospacc/Mi-Fitness-Private-Server"><a href="https://gitlab.com/octospacc/Mi-Fitness-Private-Server">https://gitlab.com/octospacc/Mi-Fitness-Private-Server</a></a> /&nbsp;<a href="https://github.com/octospacc/Mi-Fitness-Private-Server"><a href="https://github.com/octospacc/Mi-Fitness-Private-Server">https://github.com/octospacc/Mi-Fitness-Private-Server</a></a> (!!!) E c'è un #APK bello lì per chi vuole collegarsi al mio server, senza setup. 👻</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Giusto per accertarmi che funzionasse, volevo modificare una app già compilata, ma è una lattina di vermi; quindi ho invece compilato un esempio dell'SDK ufficiale. Peccato che chi l'ha scritta s'è dimenticato il tasto o la gesture di uscita, e quindi come se fosse Vim bisogna premere "Uninstall" dal telefono; ma l'ho messa comunque nella libreria app della mia istanza, chiunque può provare... oltre a varie app non mie (gaming!!). 🗡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Come scritto sul README, inoltre, se non mi secco, sarebbe carino rendere questo progetto un #server privato completo per la app di #MiFitness, perché allo stato attuale è proprio dipendente dal cloud di #Xiaomi e sarebbe buono preservarla. Alla fine le cose da reimplementare sono poche... tecnicamente bisogna solo togliere il login wall, il resto sarebbe solo grasso che cola. 🧊</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=BxvdF3YKNZo","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:image {"id":11752,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_20241124_2020415162448972405461996-960x722.png" alt="Schermata app per la band sul Mi Fitness moddato, poi foto in chat della app Xiaomi Vela Samples che gira sulla band al polso, &quot;I managed to compile and sideload a Vela app to my Band 9 🤯️&quot;" class="wp-image-11752"/><figcaption class="wp-element-caption">(POV: comando io!!!)</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-23 23:57:45+00:00">23 novembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="scammalingo"><a class="toclink" href="../../2024/11/23/scammalingo.html">scammalingo!</a></h2>
+<!-- wp:paragraph -->
+<p>Questa sera, ancora una volta grande #gaming... sono finalmente fuori dalle grinfie del trolling gufo fascista #Duo. Davvero non so cosa dire, ho scoperto un grande trick e quindi da oggi in poi le #lezioni di lingue pazzurde si faranno con meno pensieri e meno pene, e il mondo ne sarebbe assai più bello. (Cioè, ne sarà.) E non è manco pirateria... 🤭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Allora, precisamente, ho scoperto un #metodo per aver <strong>cuori infiniti gratis per sempre su #Duolingo</strong>, senza pagare il premium (Super), senza carta di credito o altre stronzate. Bisogna comunque continuare a fare le lezioni giornaliere eh, altrimenti si perde la streak, io non imparo il giapponese, e <em>he comes</em>... ma almeno ora il rapporto con il #gufo è più sano, non c'è più quell'ansia di fondo di non poter sbagliare. 🙏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stavo un po' pensando di dover fare un server privato di Duolingo, proprio per avere questo ed altri benefici (progetto che comunque non scarterei, sarebbe figo poter aggiungere robe speciali oltre ai cuori illimitati), però prima ho voluto provare una bella procedura consigliata dai redditors™️: <a href="https://old.reddit.com/r/Piracy/comments/18sdz81/just_discovered_how_to_pirate_duolingo_super/"><a href="https://old.reddit.com/r/Piracy/comments/18sdz81/just_discovered_how_to_pirate_duolingo_super/">https://old.reddit.com/r/Piracy/comments/18sdz81/just_discovered_how_to_pirate_duolingo_super/</a></a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":11716,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image-8-960x528.png" alt="Schermata Duolingo for Schools con la &quot;Classe Decima Istituto Luce&quot;, 3 studenti, le mie attività; Schermata Duolingo con il popup cuori &quot;You don't have to worry about making mistakes in a lesson&quot;" class="wp-image-11716"/><figcaption class="wp-element-caption">E cazzarola funziona... why why whyyy solo ora??? Infinite vite, mejo de' gatti. 🙀️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Praticamente c'è questo programma "Duolingo for Schools", dove gli utenti registrati come studenti ad una qualunque #classe ottengono così dal nulla questo privilegio. Che ha molto senso, perché da un lato loro vogliono spingere perché si utilizzi la loro app nelle scuole, ma dall'altro se ci fosse il non poter fare errori gli studenti potrebbero non riuscire a raggiungere gli obiettivi... 😋️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>...Ma è particolare il fatto che chiunque possa creare una classe, senza fornire particolari dati o soldi, ed effettivamente imbrogliare il capitalismo. Io non mi lamento però, e anzi, chi vuole sfruttare il trucco in un solo click può semplicemente unirsi alla mia classe: <a href="https://www.duolingo.com/classroom/wdpxwg"><a href="https://www.duolingo.com/classroom/wdpxwg">https://www.duolingo.com/classroom/wdpxwg</a></a>. 👌️ (O inserite il codice nelle impostazioni.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(Nome di classe un po' troppo nostalgico forse, ma non avevo altre idee sul momento... nel caso si può cambiare. E, nel caso, potete creare una classe vostra anche con soltanto il vostro utente dentro, funzionerà comunque... ma c'è un po' di setup di fare, perché di default vengono spente tutte le varie funzioni di social gaming, cosa antipatica.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Insomma, se lasciate che io diventi la vostra maestra, sarete al sicuro <a href="../../2024/10/17/duolinguacc.html">dai punzecchiamenti di Duo</a>. Non può toccarvi per togliervi cuori, prenderebbe la nota. Ma, attenzione, fatele le lezioni... sennò, al di fuori dell'orario scolastico, io già lo so, quello (<em>he</em>) viene a casa vostra, e poi ve la vedete voi. 🥲️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-23 17:48:59+00:00">23 novembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cinescrivanianza"><a class="toclink" href="../../2024/11/23/cinescrivanianza.html">cinescrivanianza!</a></h2>
+<!-- wp:paragraph -->
+<p>Siamo ormai al momento in cui, purtroppo, qualcuno vuole sabotare <em>il mio girlrotting</em>, e io non ho molta scelta su come rispondere. Allora, stamattina si è andati <strong>al #casalinghi cinese quello grosso</strong>, che ai miei genitori servivano delle robe così, e io ne ho approfittato per vedere tipo una decina di cose... ma torno a casa con solo due. 😪️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In primis, un <strong>tappetino per la scrivania nuovo</strong>, perché quello vecchio... sono a conoscenza da anni del fatto che si stesse sempre più disintegrando sul fondo (lasciando cacca nera sulla #scrivania!!), ma non ho mai pensato dovessi <em>davvero</em> cambiarlo..... anche perché non avevo mai fatto caso a quanti strati di sporco irremovibile ci fossero sulla sua superficie, che teoricamente tocco di continuo. 😨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Da un lato boh, perché non è polvere che vola, è munnizza incollata lì che lì rimane... però, in effetti, <strong>zamn</strong>, è terribile. Allora ok, per 7 euro ho trovato questo di 60x30 centimetri (poco più stretto del mio vecchio, ma non fa nulla, e forse è meglio), la qualità è buona, ci può stare. 😳️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":11690,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/wp-17323769300384427627917566521240-960x720.jpg" alt="Foto tappetino sulla scrivania con mouse e tastiera sopra attorno all'illustrazione principale di qualcuno con degli occhiali oscuranti &quot;runner&quot;, sulla mano e a sinistra il logo della marca. La scatola con i dettagli appoggiata sul suo retro sopra, notare il testo disallineato e leggermente tagliato dall'immagine." class="wp-image-11690"/><figcaption class="wp-element-caption">Illustrazione inusuale, ma originale, avendo pure il logo della marca del tappetino ("<em><a href="https://digitalome.com/">DigitalOme</a></em>", wtf); ci sta. Sicuramente meno plain del mio vecchio, con questo #rosso... ma almeno non è un'illustrazione sfocata o una roba "GAMING" con un teschio come altri in negozio (no joke), quindi ringraziamo a San Gennaro. 👌️</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Devo dire che sono saltata quando ora ho visto come scivola liscio il #mouse sul #tappetino nuovo... da tanto che quello scuro vecchio è ormai assolutamente marcito ed incrostato con essenza di prodotti chimici di scarto del mio animo. Ora staremo a vedere se questo mi durerà letteralmente 10 anni (!) come l'altro, o magicamente arriverà invece a 20, sono così tirchia-core!!! 😽️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Però 1 po' deludenti questi #cinesi, perché non ho trovato altre minchiate che un po' mi servivano e 1️⃣️ po' volevo. Innanzitutto, uno di quei gamepad cagosi orizzontali a molla per il telefono; lì lo avevano, ma costa tipo da 2 a 4 volte tanto il prezzo di AliExpress (27 e 32 euro, mentre online è da 7 a 15). Poi, anche qualche cinturino tarocco per la Mi Band 9, con i design tipo quelli ufficiali premium, non sarebbe male averlo... E, proprio a tal proposito, devo ancora comprare i tarocchi (nel senso, le carte). Palle!!! 😥️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-22 18:08:35+00:00">22 novembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="spaccoglato"><a class="toclink" href="../../2024/11/22/spaccoglato.html">spaccoglato</a></h2>
+<!-- wp:paragraph -->
+<p>Mi arrivano buffamente nello stesso giorno due #notizie su #Google, ed entrambe che la mettono in un brutto stato o in cattiva luce... ma non so se in questo caso siano particolarmente goduriose, di per sé. 🤨</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La prima è che, da qualche settimana, un sacco di siti dei comuni italiani sono stati deindicizzati... non per colpa dei siti, ma per vai a capire che rogna nel motore di ricerca. <a href="https://www.ilpost.it/2024/11/21/siti-comuni-scomparsi-google/"><a href="https://www.ilpost.it/2024/11/21/siti-comuni-scomparsi-google/">https://www.ilpost.it/2024/11/21/siti-comuni-scomparsi-google/</a></a>. 🤯</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questo è un bel problema, perché chi cerca informazioni bla bla bla... Ma io un po' me ne rallegro, perché non è nulla di nuovo: è semplicemente successo su scala più greve un #problema che io ho da sempre, ma di cui nessuno s'è mai fregato. 😳</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(Coi miei siti octt.eu.org ho sempre avuto problemi, che solo negli ultimi mesi ho visto leggermente attenuarsi, con pagine che non potevano essere indicizzate. È chiaro che non sono fatti del mio sito, perché la Google #Search Console riportava sempre di problemi, ma senza specificare la causa e senza dare soluzioni, e insomma pover'amme che mi faccio il culo a scrivere e poi nessuno trova le mie pagine.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Teorizzo che a questo punto Google, appurato che questi sminchiaggi di ricerca non dipendono dal codice dei siti web, ha evidentemente problemi con almeno una di queste cose: domini e indirizzi IP. Spero che questo disastro possa spingerli a sistemare la causa scatenante, che zio caro non è possibile che il mio e tantissimi altri #siti non siano ricercabili... 🤬</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ma... i malfunzionamenti di Goolag non hanno salvato #Alphabet dal venir bastonata dal #DOJ!!! Dopo aver mesi fa decretato che l'azienda ha abusato della sua posizione dominante di #monopolio, ora se ne esce con il fatto che Google dovrà tipo separare i suoi servizi web dal resto dei prodotti software. 🙀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>E quindi, anche se non sto riuscendo a capire se sia solo un'ipotesi questa o se è proprio certo (le varie fonti ne parlano diversamente), CHROME dovrà essere ceduto a terzi!!! <a href="https://www.bbc.com/news/articles/cp81ppr3l9go"><a href="https://www.bbc.com/news/articles/cp81ppr3l9go">https://www.bbc.com/news/articles/cp81ppr3l9go</a></a> ❤️‍🔥</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>#Karma meritatissimo, dopo la loro guerra agli adblocker intrapresa non solo sui loro siti (che sarebbe ok), ma a livello di motore Chromium. Però, non urliamo di gioia troppo presto... perché in realtà non sappiamo a chi potrebbe andare il #browser. Magari lo mantiene la community, ma magari se lo compra un'altra megacorpo... 😨</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Per giunta, qui appunto si parla di #Chrome, ma sinceramente a noi non ce ne frega una mazza di Chrome; bisognerebbe piuttosto vedere come questo fatto impatterà Chromium... almeno Google fin'ora quello lo ha lasciato open-source, pur mantenendolo a culo (deprecando cose utili, eccetera). Boh, è troppo per pensarci stasera!! 🤫</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-21 23:58:40+00:00">21 novembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="nintendisventi"><a class="toclink" href="../../2024/11/21/nintendisventi.html">nintendisventi!!!</a></h2>
+<!-- wp:paragraph -->
+<p>Aspetta 'spetta spè,tta... la giornata sta per finire e la regia mi dice che OGGI, IL #NINTENDO DS FA 20 ANNI??? (Esce in nord America questo giorno del 2004, il 21 novembre.) Mi sento estremamente vecchia. Il DS è vecchio quasi quanto me. 😭️😭️😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=5CX3fJdb3CU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=BxvdF3YKNZo
-</div><figcaption class="wp-element-caption">Ovviamente è di #BRECCIA, che deve sempre mettere le mani ovunque:&nbsp;<a href="https://www.youtube.com/watch?v=BxvdF3YKNZo">La app Pokemon secondo un designer - CHE DISASTRO</a>. 🥰</figcaption></figure>
+https://www.youtube.com/watch?v=5CX3fJdb3CU
+</div><figcaption class="wp-element-caption">(Si prega di leggere il resto del post con il sottofondo musicale "<em><a href="https://www.youtube.com/watch?v=5CX3fJdb3CU">Waluigi Pinball/Wario Stadium - Mario Kart DS Music Extended</a></em>" per l'esperienza più #NDS possible; anche se MKDS è uscito solo un anno dopo, vabbé.)</figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -9868,40 +10151,24 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Pur non avendo la teoria dell'UI #design, un occhio per queste cose personalmente lo ho, e infatti è stato dal primo momento che ho notato questi dettagli orribili... in breve: #schermate e bottoni duplicati, navigazione bizantina, e gerarchie spaccate. 🤢</p>
+<p>Suppongo sia questo il momento del Nintendo DS breve post di #apprezzamento... perché mamma mia questa famiglia di #console quanto è buona. In parte sarà sicuramente anche merito suo se non ho ancora deciso di trascendere il piano dell'esistenza terreno per andare a vivere in cielo o sottoterra appena pochi anni fa, e invece sono quindi ancora qui a spargere la retropropaganda. 🥵️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Purtroppo ho come il presentimento che i suggerimenti non verranno accolti... ed è un peccato, perché per il resto la #UI della app, dal lato puramente artistico tralasciando per un attimo l'usabilità, spacca in modo potente!!! Quindi mi dispiace sia portata in basso dalla scarsa UX. 😵</p>
+<p>Non lo so cosa dire, il DS (<a href="https://sitoctt.octt.eu.org/it/blog/2022-10-31-Storia-antica-del-DSpacc/">Lite, oggi DSpacc</a>) fu la mia prima console da #GAMING in assoluto, e gaming su quell'affare ne feci in abbondanza. Poi sono arrivati i vari 3DS, oltre a console miste Nintendo e non, e ora il mio gamin' è perlopiù su telefono... però menomale che è esistito ed ancora esiste il DS, cavolo. 🙏️ (E menomale che esistono gli emulatori, per chi sa cosa intendo...)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cioè, troppo belli i design minimali ma articolati dei bottoni, i gradienti che ci sono a certe parti, le icone e le grafiche di oggetti e cosine che hanno luccichii e profondità, gli sfondi di certe schermate e le sfocature di altre, nonché le animazioni interattive ben fatte per i vari momenti clou... 🤤</p>
+<p>Quelli erano anche tempi in cui Nintendo era molto meno litigiosa, a proposito; non scema o lasciapassare, ma comunque erano i tempi in cui i reparti software e hardware avevano le giuste risorse economiche per fare bene il loro lavoro, e il 99% del budget non andava al reparto legale. E i #giochi usciti per il DS, nonostante si veda che son vecchi, ancora oggi reggono botta più di quanto avrebbero il diritto logico di farlo. 💖️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>C'è da ribadire quanto è figo <a href="../../2024/11/03/pokecartem.html">quello che l'altra volta ho mostrato ma non descritto</a>, cioè che l'apertura delle carte è veramente resa molto tangibile... acciderbolina, quel carosello di bustine che si possono anche girare e si aprono con una sciabolata, e poi quando escono le carte luminescenti che sono tutte fighe...... FA SALIRE IL GAMBLING. 🎰🃏🎰🎴</p>
+<p>Sul #DS Pokémon diventò quello pseudo-3D particolare fighissimo, Mario Kart per le console portatili diventò 3D vero, Super Mario 64 ed Animal Crossing diventarono portatili, Mario Party era diventato utilizzabile grazie al multiplayer locale, e con Cooking Mama e i vari spin-off si passavano pomeriggi interminabili cercando di ottenere le medaglie d'oro, quando le monete d'oro in New Super Mario Bros. non bastavano. E non parliamo dei miei vecchi cani su Nintendogs, o come fosse un miracolo che tutto questo potesse stare su una singola schedina taroccata. 🤭️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Che più... essendo un #gioco, è tutto molto colorato, però ci sono schermate in particolare che mi piacciono per questo per via di criteri a me ignoti. Ad esempio, la grafichina della schermata delle missioni giornaliere, con quelle robine stilizzate su un cielo chiaro. 🎆</p>
+<p>Anche se i tempi di gioia dell'epoca non torneranno mai più, i #videogiochi NDS restano comunque spassosi, e direi che se tra di voi c'è chi aspettava un momento stranamente propiziatorio per rivisitarli... è esattamente questo. Molto simbolico. Qui alcuni giochi che la critica consiglia di riconsultare: <a href="https://www.videogameschronicle.com/features/the-30-best-nintendo-ds-games-you-need-to-revisit/"><a href="https://www.videogameschronicle.com/features/the-30-best-nintendo-ds-games-you-need-to-revisit/">https://www.videogameschronicle.com/features/the-30-best-nintendo-ds-games-you-need-to-revisit/</a></a>. Qui invece le opinioni di un autore di RetroDodo: <a href="https://retrododo.com/nintendo-ds-20th-anniversary/"><a href="https://retrododo.com/nintendo-ds-20th-anniversary/">https://retrododo.com/nintendo-ds-20th-anniversary/</a></a> (che non è me, quindi non è magico, ma comunque non male). 🌟️</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Poi vabbè, questa non è #interfaccia, ma anche la musica ci va pesante. Se non fosse una battuta sovrausata che non ha mai fatto ridere, direi che non ha proprio il diritto di spaccare così tanto, per un giochino dove apri le bustine o ottieni le cartine facendo banali scambini e peschine. 🎃</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ogni sezione principale della app (cioè, qualsiasi schermata non-overlay) ha la sua musichetta, ma devo dire che mi piacciono molto quella molto rilassante della home, e quella più energica sfumata della pesca misteriosa (in corso, non il menu). Chillin' proprio. 👌</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":11267,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_2024-11-12-01-31-01-501_jp5919963771710069406-665x1440.jpg" alt="" class="wp-image-11267"/><figcaption class="wp-element-caption">Ancora guardo la schermata; zamn e che finess. 😋</figcaption></figure>
-<!-- /wp:image -->
     
   </div>
 </article>
@@ -9912,7 +10179,7 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-11 13:22:26+00:00">11 novembre 2024</time></li>
+          <time datetime="2024-11-21 15:26:43+00:00">21 novembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9923,7 +10190,7 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -9932,29 +10199,33 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="vmdroide"><a class="toclink" href="../../2024/11/11/vmdroide.html">vmdroide?</a></h2>
+    <h2 id="sideloadiband"><a class="toclink" href="../../2024/11/21/sideloadiband.html">sideloadiband..</a></h2>
 <!-- wp:paragraph -->
-<p>Damn... pensavo di avere in tasca l'idea non perfetta, ma almeno funzionante, per eseguire app più nuove su versioni di #Android più vecchie. Ovviamente, quando ci sono di mezzo app cinesi, non si può dare per scontato nemmeno che la cosa funzioni e basta... 😤️</p>
+<p>Non ci credo che oggi torno qui a parlare di Mi' Band, eppure i poteri forti mi hanno finalmente concesso un pochino di tempo. Evviva quindi, altra pubblicità gratuita per #Xiaomi da parte mia!!! 🥳</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ieri qualcuno chiedeva se sarebbe possibile installare Pokemon TGCP, che richiede almeno Android 7, su un tablet più vecchio... e io questo non lo so, ma so che ci sono alcune app di macchine virtuali che richiedono appena Android 5. Quindi, in teoria, l'idea è buona. Io però non ho dispositivi con Lollipop o Marshmallow per testare, quindi, per vedere se la cosa è utile bisognerebbe andare al di sopra. 🥵️</p>
+<p>Ma stavolta la pubblicità è negativa, perché la rogna del momento è il #sideloading. Nel senso, la sua relativa impossibilità, visto che la app ufficiale non c'ha un cazzo di tastino "installa da file", l'orologio non ha server FTP né niente, e la situazione con le app terze è mista. 😩</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Eeee... le infinite prove fatte con il mio vecchio tablet con Android 8, per far avviare qualcosa di più aggiornato come Android 9, non hanno avuto successo. A dir poco allucinante come ho provato una mezza dozzina di diverse versioni di diversi di questi emulatori, con diversi pacchetti di ROM di Android #Pie, ma niente da fare, semplicemente il boot del sistema emulato non completa mai. ☢️</p>
+<p>La prima cosa buona in realtà è che son riuscita a collegare la #band all'ultima release di Gadgetbridge, a differenza di letteralmente altre 3 app che ho provato, che o non prendevano il token di accoppiamento o per chissà che motivo non andavano. E, Gadgetbridge installa le watchface in .BIN (il che è goduria, ma manca il supporto alle .ZIP). 😳</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Giusto per sicurezza, ho provato a far partire Nougat nelle VM... e in effetti è andato, su una delle applicazioni, un #APK strano di #VPhoneGaGa che ho scaricato da chissà che tizio su YouTube. A me non sarebbe utile per questo scopo, ma certamente potrebbe a chi è nella situazione che ho detto sopra; c'è da sperare che parta effettivamente su sistemi più vecchi, però. 😶️</p>
+<p>Ma, nel frattempo ho trovato un tizio (m0tral), che credo sia capo di una community di modding degli ximilogi, che mantiene una serie di tool e <a href="https://t.me/mi_watch_news/199">una versione moddata di Mi Fitness, che non è male</a>... si collega ad un CDN reimplementato, e quindi fa installare watchface pubblicate dalla sua comunità, nonché pare renda più facile lo sviluppo, perché si collega ad un pannello web. 😈</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La community ha un gruppo Telegram semi-privato per gli sviluppatori, quindi nel fine settimana entrai, per chiedere un po' di roba e soprattutto farmi dare i permessi sul pannello di gestione delle watchface del CDN... Quindi, dopo aver compilato un'orolofaccia, pare basti caricarla lì sul server nella sezione #DEV, e comparirebbe direttamente nella app per installarla... 😍</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":11244,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image-5.png" alt="Messaggio &quot;perché questa VM ha questo sfondo?????? cioè, è perché ho scaricato un APK crackato mi sa, ma perché lo youtuber da cui ho preso ha messo questo sfondo????&quot; (È uno sfondo K-pop)" class="wp-image-11244"/><figcaption class="wp-element-caption">...E l'individuo che ha distribuito l'APK con #Nougat 7.1.2 che a me ha funzionato è evidentemente un gamer, perché questo è lo sfondo che ho visto appena il sistema è partito. Boh. 🧐️</figcaption></figure>
+<!-- wp:image {"id":11586,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image-7-960x601.png" alt="Schermata tablet split screen Mi Fitness mod e pannello admin" class="wp-image-11586"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -9962,15 +10233,11 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ma tipo... Solo <a href="https://memos.octt.eu.org/m/26WmXftZZhcDPWKzR2zwRW">di VMOS, si trovano ufficialmente tipo 5 varianti</a>, ma solo la ROM Android 5 mi parte sul tablet (non ricordo se con Pro o normale old). Invece, <a href="https://memos.octt.eu.org/m/dDaMfHawBFAnN8N4zLAix9">per VPhoneOS</a>, pare ci sia una sola variante, ma è un casino con la versione aggiornata ufficiale che non parte, APK in giro alterati che funzionano ma sono vecchi, altri ancora che sono solo per 64 bit (e il mio tablet è 32 bit). Mal 'e capa... 😭️</p>
+<p>Tuttaviiia, questo già non mi basta ora, perché dalla #app moddata ho scoperto che si possono installare app vere e proprie, che non sono watchface, e quindi hanno solo vantaggi nel caso interessi creare app e giochini normali che non fungano da rilogio. Appaiono semplicemente nel menu principale, figo!! Però cazzarola, in questo caso anche il pannello non aiuta, si possono installare solo una quindicina di app cinesi. 😐</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ahinoi, tutte queste app di VM sono proprietarie, e usano librerie native strane su cui non si trovano informazioni manco cercando i nomi sul web, quindi buona fortuna a risolverne i problemi... In passato cercai di capire qualcosa su come funzionassero, ma l'unica che ho capito è che <a href="https://t.me/c/1383332798/16564">non emulano un'intera macchina, ma virtualizzano solo il kernel e il contesto di Android</a> (ecco perché le prestazioni rimangono almeno accettabili). 😱️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Idk, penso che dovrebbe esistere una specie di layer di retrocompatibilità per Android che non ricorra ad una rognosa e kinda shady sketchy #VM, ma stranamente non sembra esistere ad ora...... potessi crearlo io basandomi su del poco codice open-source di virtualizzazione che fortunatamente in giro si trova???..,,.., Idk. 😔️</p>
+<p>Qualche #watchface animata e interattiva proverò a farla, se mi viene l'ispirazione artistica... ma la priorità per ora è riuscire a sideloadare le app maledette, perché con quelle il gaming sarà più potente!!! (E ce ne sono di già fatte che vorrei installare, sui vari forum.) Quindi, ora giù di codice, ho due strade e almeno una fungerà. 💀</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -9982,7 +10249,7 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-10 17:55:00+00:00">10 novembre 2024</time></li>
+          <time datetime="2024-11-20 20:24:31+00:00">20 novembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10002,99 +10269,17 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="dormire-con-la-n"><a class="toclink" href="../../2024/11/10/dormire-con-la-n.html">dormire con la N.</a></h2>
+    <h2 id="luniversisang"><a class="toclink" href="../../2024/11/20/luniversisang.html">l&#8217;universisang</a></h2>
 <!-- wp:paragraph -->
-<p>Successami una cosa #stanotte che... è divertente? Non mi pare, non ho riso; ma so che può succedere, quindi non ho pianto. Comunque sia è content, quindi ecco qui che va! 😳</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ieri sera mi è capitato e ho visto <a href="https://www.youtube.com/watch?v=45pCcx4MbE4">un video sul No Noce Novembre</a>, perché era di uno youtuber che seguo che boh fa ridere ma anche pensare. Lo lascio se interessa, anche se non è niente di particolare, è la solita roba eccessivamente studiata che mi guardo io, non è questo il punto. 🥴</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il curioso è che stanotte, ad minchiam, io abbia inquinato le mutandine di gumma. In modo automatico eh, come succede quando non lo si fa in modo manuale per troppi giorni. Non una, ma ben due volte!!! (A meno che la prima non fosse sudore.) 😰</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Giuro, succede che mi sveglio all'orario della sveglia (però non mi alzo perché è domenica e non freca e poi il ponte dei morti mi ha di nuovo sfanculato gli orari my sleep schedule is slightly fucked fatemi esplodere), e noto che c'è kinda umido lì sotto, ma non ricordo niente. Quindi, mi rimetto a mimir... 😵</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>...eeee stavolta ho sentito perfettamente la cosa, me la ricordo perché stavo sognando. Ma, come mio solito, il sogno era una roba standard-ass senza niente di erotico o eccitante; però lo sappiamo che durante la fase #REM i muscoli vengono tipo bloccati, e quindi magari la contrazione automatica può far si che bla bla bla... 👻</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Vi prego, non fate domande, il mio cervello è davvero così tanto rotto..,,.. per cui ordina al mio corpo di fare cose contro la mia stessa volontà, senza alcuna buona ragione, senza alcun vero stimolo, in momenti che nemmeno posso realisticamente impedirlo!!! 💀💀</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In tutto realismo, è successo ciò probabilmente sicuramente perché era da tipo una settimana che non faccio la dovuta diligenza. Però wtf, di tutte le notti che doveva succedere... proprio quella della sera in cui ho guardato questo video informativo sull'evento cock-related mondiale??? 😤</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>NB: Se l'ultima volta che ho fatto la robaccia di mia sponte è stata una settimana fa, ciò significa che non ho vinto, perché era già iniziato novembre. Tuttavia, della #challenge non freca; l'unico motivo per cui questi giorni ho evitato è che le mie mani sono ostaggio di Android e Java... 😭</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-09 21:43:09+00:00">9 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="il-webdroide-su-sd"><a class="toclink" href="../../2024/11/09/il-webdroide-su-sd.html">il webdroide su sd</a></h2>
-<!-- wp:paragraph -->
-<p>Ed ecco un'altra combo di mattina+pomeriggio passata a sclerare con #Android, con le sue API terrificanti. E dato che voglio esplodere, è bene distrarmi… postando la spiegazione di come ho smesso di sclerare una settimana fa!!! 😇️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ancora una volta <a href="../../2024/11/01/androwebvista.html">per SpaccWebView di SpaccDotWeb</a>, infatti, ci sono degli imbrogli... ma piano piano faccio tutto, ne sono certa, il Java è nelle mie vene visto che a casa abbiamo la moka. E appunto, <a href="../../2024/11/03/androidiessedi.html">l'altra cosa che avevo tecnicamente già detto</a>, poi son riuscita a finirla (e menomale)... 👌️😉️👌️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ora il mio codice riesce a salvare i dati della #WebView sulla memoria esterna. Evviva!!! Ciò è praticamente fondamentale sui <a href="../../2024/10/05/memorroid.html">dispositivi senza adoptable storage (il mio tablet)</a>, perché servirebbe a ben poco poter spostare una app di 100 KB su #SDcard, se poi questa scrive 10, 20 MB sulla memoria interna... 🤨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non ho in realtà sistemato tutti quei TODO dell'archiviazione esterna, ma al momento non freca, visto che il codice per salvare lì i dati funziona comunque as-intended, su Android KitKat o superiori. Su versioni più vecchie funziona comunque, anche se meno intended, perché Android hack rogne API spacc... non fatemi ripetere. 💤️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il tempo mi serviva per implementare cose accessorie, tipo il fatto che l'applicazione ora all'avvio controlla la posizione di installazione, e, nel caso sia cambiata dall'ultima volta (dalle impostazioni di Android), allora obbliga a spostare i dati verso lo stesso posto. Col dialogo bellino così, tutto automatico, senza ricorrere a configurazioni complicate! 🎉️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Forzare i #dati in sync in questo modo non solo migliora la UX, ma evita rogne strane, perché ci pensa il sistema Android a garantire che (per esempio) la app non possa trovarsi senza i suoi dati perché l'utente è stronzo e rimuove la scheda SD. 🤫️ (Devo però gestire il caso in cui l'utente sposta la app, ma toglie la memoria coi dati prima di trasferirli, che palle...)</p>
+<p>Zamn... oggi all'inversità qualcuno ha buttato il sangue!! (Enn jittat 'o sanc!!!) Non lo so, stavo camminando e per terra vedo queste macchierelle (che francamente non so cosa sono, sto solo assumendo fosse sangue, ho preferito non assaggiarlo). 😱</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":11186,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_20241104_1603295409713877359863366.png" alt="" class="wp-image-11186"/><figcaption class="wp-element-caption">In foto qui si vedono entrambi gli scenari: la cartellina coi dati su microSD, e la app che chiede di spostarli dopo esser stata messa su #archiviazione interna. Damn, così elegante, funzionale, incredibile... Android quando funge... 🤤️</figcaption></figure>
+<!-- wp:image {"id":11560,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image_editor_output_image1365879263-1732128029670519797811245584069-960x960.jpg" alt="Macchie piccoline di qualcosa rosso un po' secco sul pavimento" class="wp-image-11560"/><figcaption class="wp-element-caption">Sembrava più sangue appena le ho viste, che erano fresche e di un rosso acceso, ma non ho fatto in tempo a fare la foto... Quando l'ho fatta più tardi sono diventate così. ☹️</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -10102,7 +10287,23 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ovviamente, ho ricompilato la magica app di 2048 che uso come demo con questo miglioramento blessato; l'APK è <a href="https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk">allo stesso posto dell'altra volta, </a><a href="https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk"><strong>qui</strong></a>. E, in questo caso ho omesso gli scleri... dato che sono a tema WebView, ma questo componente di merda non smette di regalare sofferenza. Prima o poi vuoto il sacco... 🙃️🙂️</p>
+<p>Idk, potrebbe anche essere pittura, visto che in questi giorni sto vedendo uno strano viavai di operai, tra questo edificio e il piano di sotto; dove tra l'altro si stanno anche aprendo e chiudendo vani e stanzine... Lo giuro, se la mia vita fosse una visual novel ho il presentimento che avverrà qualcosa di strano a breve. 🥴</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tuttavia, il sangue all'università lo butterò prima o poi pure io di questo passo, coi professori vari... non so da dove ricominciare per dire un'altra volta questa cosa, ma pare veramente che un altro po' non si parlino e non sappiano cosa accade in classe al di fuori della loro specifica ora. 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Oggi, in classe esce fuori che la prova di ieri con patemi oberativi è in media andata così così a tutti, perché il codice da scrivere era una certa roba... Manco troppo difficile di per sé, ma già la API POSIX C è un cancro, poi a laboratorio facciamo relativamente poca roba e il codice viene scritto in modi in cui il professore di teoria non gradisce, e insomma vaffanculo a noi. 😩</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nel mentre, basi di dardi continua con la sua strana organizzazione, facendo sempre quella singolare ora di laboratorio... eccetto per questa settimana, che ha fatto di nuovo la divisone per i due turni in due giorni diversi. Fregandosi il secondo turno del prof. di prostituzione Java, l'unica materia di laboratorio intrigante, per ripetere letteralmente le stesse cose che la professoressa ha detto in classe... 🥱</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Questa vista di oggi mi ha ispirata, un giorno così come metto piede giù dal bus mi conficco un tubicino siringhico nella vena del braccio in modo che faccia il dripping e mi metto banalmente a camminare, del mio #stress rimarrà traccia sulla pavimentazione. 😽</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10114,7 +10315,7 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-09 10:13:40+00:00">9 novembre 2024</time></li>
+          <time datetime="2024-11-20 00:17:07+00:00">20 novembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10134,299 +10335,27 @@ https://www.youtube.com/watch?v=BxvdF3YKNZo
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="scioperoi"><a class="toclink" href="../../2024/11/09/scioperoi.html">scioperoi</a></h2>
+    <h2 id="cattiveria-della-stanchezz"><a class="toclink" href="../../2024/11/20/cattiveria-della-stanchezz.html">cattiveria della stanchezz</a></h2>
 <!-- wp:paragraph -->
-<p>Oggi, che per fortuna è sabato, possiamo osservare le #conseguenze dello sciopero di ieri sul mio sonno... non mi volevo scollare dal letto stamattina, perché ieri mattina ho dovuto farlo un po' prima del solito. Damn. 🥱</p>
+<p><a href="../../2024/11/19/pomericottura.html">Come preannunciatosi ieri, la prova d'esame ha atterratomi</a>. Quindi, nonostante io avessi e abbia da fare tremila ragazza magica tasks, anche la giornata di oggi è già finita prima ancora che io potessi, per esempio, aprire Android Studio per torturarmi con il Java (che, per quanto tortura, lo è molto meno del C...) ☠️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ieri si saprà che c'è stato lo #sciopero assoluto dei #trasporti pubblici, e a 'sto giro la questione è stata veramente nera, perché nemmeno le fasce di garanzia sono state rispettate (ma avevano promesso che le cose sarebbero andate così). 🤒</p>
+<p>Vabbene, allora anche stavolta YouTube viene in clutch, poiché negli interminabili attimi anche oggi spesi (senza che io me ne accorgessi, ma non con rimorso!) sulla piattaforma di datamining è capitato un video-lista intrigante... (E a seconda del risultato della prova di oggi, il mio professore potrebbe finirci dentro, ops.) ☝️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>E infatti, gli #autobus ieri sono praticamente spariti... se non ci fosse stato il papi che è anche il mio tassista preferito, il mio culo sarebbe rimasto a casina!!! Ma le cose assurde di questa storia sono ben altre... 😝</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Diciamo che il caso ha voluto, anche se francamente la cosa mi puzza di qualche complotto, che sull'autostrada venisse piazzato proprio ieri, o forse l'altro ieri, un restringimento, per dei #lavori, che passandoci accanto sembrano letteralmente inesistenti però. 😶</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ieri mio padre è arrivato giusto in tempo a lavoro dopo aver scarrozzato me presto, perché questa roba è uscita fuori così di sorpresa, e facendo una strada alternativa ci avrà messo decine di minuti in più del solito. E, la sera non avete idea... 😨</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>C'era quasi il dubbio che avremmo cenato in #autostrada, perché muzunna il #traffico era anche peggio, e pure le strade alternative erano in questo caso impraticabili... sarà passata almeno mezz'ora in un tratto di autostrada che senza traffico si fa in un briciolo di minuti. 😱</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Al di là del livello di infermità mentale di chi proprio quel giorno ha messo lì quel restringimento, nonostante la strada sia visibilmente non in lavorazione... la malattia dei nostri politici è anche peggio, altro ché. Io non ce la faccio più. Devono saltare tutte le teste. 👿</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ancora una volta, chi sta al governo urla come se stesse all'opposizione, maremma trogolaia, attaccando i #sindacati e "la sinistra", senza nel frattempo fare uno spacchio di niente per risolvere i #disagi che, loro in primis hanno il coraggio di dirlo, vengono causati ai cittadini comuni. 😩</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Per carità, è vero che questa volta lo sciopero è stato molto stronzo, senza nemmeno il rispetto delle fasce garantite, ma... altrimenti a che serve? Cioè, solo questa volta lo sciopero ha creato effettivamente un #disagio, e non un banale fastidio. 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>...Ma io penso, non c'è qualcosa che come popolo possiamo fare per risolvere questo problema una volta e per tutte, dal basso? Se il governo avesse voglia, basterebbe mettere in carcere i padroni che hanno la responsabilità di rinnovare CCNL e tuttecose e non lo fanno, ma loro "<em>oh nooo la dittatura</em>" etc etc... 👹</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-08 19:32:40+00:00">8 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="patemi-operativi"><a class="toclink" href="../../2024/11/08/patemi-operativi.html">patemi operativi.</a></h2>
-<!-- wp:paragraph -->
-<p>A regà... questa volta siamo proprio cotti, qui all'inversità (l'università che va al contrario). E, tra poco, saremo pure mangiati!!! Io non... 😭☠️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Diciamo che, al momento Patemi Operativi sta essendo non eccessivamente funny, e quindi si merita di essere ribattezzato a questo modo. Le mie <a href="../../2024/09/25/universiwhat.html">previsioni sulla personale facilità degli argomenti</a> sono state accurate eh, ma non è così lineare la storia. 😵‍💫</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il programma è letteralmente all over the place (mai quanto altra roba, ma certamente si poteva fare meno a caso), del tipo che avemo passati dal capitolo 1 del libro, al 3, al 6, e ora boh e vorrei dire che ho perso il conto, ma in realtà non l'ho mai avuto!!! Nessuno lo ha mai avuto!!! ⚔️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il libro, a proposito, è un ennesimo mattone di 864 pagine, che ovviamente non dobbiamo fare tutto, ma: come al solito, in questo dipartimento in cui c'è il vizio di adottare libri un po' alla cazzium, appunto ci vuole una laurea in librologia solo per capire come #studiare. 🧮</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Io, inevitabilmente, rimarrò fedele alle beneamate dispense, perché sennò qua finisce male. Non so però se è un bene o no che queste siano semplicemente quelle degli autori del libro, e che il professore non abbia fatto le sue... vabbè va. 👻</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il professore, a proposito: egli ha questa assurda tendenza di yappare a lezione di cose successe 40 anni fa in qualche università, solo perché sono collegate a cose software implementate 40 anni fa e che adesso ancora ci portiamo dietro in UNIX (e poi ci chiediamo perché Linux ha tutte le sue rogne). 🥱</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Don't prendetemi male: lo yapping è una virtù, non un vizio, e finora i professori (sia recenti che lontani) che ricordo con più felicità sono quelli che blateravano di roba a ruota durante le lezioni. Se fosse più giovane forse avrebbe il suo sito fritto misto. Però non si riesce mazonna a stargli al passo... 😱</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ormai siamo a metà corso, con tanto di prova parziale che sta per incombere su di noi a brevissimo, e considerato che lo scenario è questo, l'atmosfera non è molto demure. Pure durante le altre ore, ultimamente, c'è gente che si studia SO. Siamo, inequivocabilmente, cucinati. 🍳</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>(Poi, per quanto riguarda il laboratorio — o meglio, la parte pratica della materia — in realtà la situazione è ancora più tragicomica (ma meno tragica). Volevo in realtà dire quella, ma, come al solito ho yappato... better luck next time!!! 🤭)</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-07 21:47:34+00:00">7 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="nintentablet"><a class="toclink" href="../../2024/11/07/nintentablet.html">nintentablet..</a></h2>
-<!-- wp:paragraph -->
-<p>Chi legge bene tra le righe dei miei scleri saprà perfettamente che sto senza muletti #Android adeguati alle task più recenti dettate dalle esigenze più randomiche... cioè, a parte lo Ximifonino e il tabletsung, ho si varie altre robine, ma tutte poco aggiornate, in hardware ma soprattutto in software (<a href="../../2024/10/31/androvecchiaia.html">sigh</a>). 💹️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Quindi, insomma, non è solo per pura curiosità delle inserzioni cinesi che ho spesso girato AliExpress in cerca de l'androide compatto (smartphone o tablet è indifferente, ma che sia minore di 8 pollici è un requisito) più #pezzotto (meno costoso) ma comunque ragionevolmente aggiornato. Ovviamente non compro nulla, ma, <em>giust in case</em> è buono vedere cosa offre <em>'o mercato</em>. 🤑️🤑️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però ecco che l'altro ieri mi torna in mente a caso un fatto, e cioè che ho la bellissima #Nintendo Swiss sulla scrivania che, se mi scocciassi di spolverare la stanza ogni settimana, questa prenderebbe tantissima polvere, perché non esce mai dalla dock. 😷️ (...Ma certe volte mi scordo di spolverare, quindi la polvere si fa eccome in effetti, ma ecco che digresso come al solito qui.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E allora, sia per esercitare la mia suprema tirchiaggine, che per fare qualcosa di più con questo rottame di fascia bassa che già ho (non fraintendete, ci gioco, ma rispetto al mobile relativamente poco), ho perso un po' di ore, nelle ultime decine di ore, appresso a <a href="https://wiki.switchroot.org/wiki/android">Switchroot Android</a>, come avevo già fatto varie volte in passato e come non mi mancava assolutamente... ma stavolta è diverso. 😵️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Perché stavolta è PEGGIO!!! Con i servizi #Google, che in questo caso mi servono, questo coso è veramente il troiaio supremo (ultimate trojaj)... una roba di una gommosità esagerata, la batteria che cade a picco, il sistema che poco ci manca a crashare. A giudicare dalle recensioni di YouTube dei secondi, credo che l'esperienza Android sull'NVIDIA Tegra X1 brandizzata Nintendo sia anche peggio dei tablet ultracinesi da 50 euro!!! 😱️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Quindi, dai, ho avuto quello che volevo, ma addirittura gratis... dopo un po' di fatica. Cioè, avevo installato prima Android 11, ma via via mi sono accorta di quanto sia spaccata come ROM: dalla rogna più piccola alla più grande, i tasti del volume non fanno il loro lavoro, il #tablet non si collega al WiFi casalingo, e l'accelerometro non funge (si, in questo caso quest'ultima è grave). In genere rido, però così no dai. 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Solo poi ho visto che, sempre grazie al lavoro di Switchroot, esiste una Lineage OS 21 (Android 14) <a href="https://wiki.lineageos.org/devices/nx_tab/">ufficiale per questo merdino</a>, e quindi ho installato quella. Mmm... tecnicamente non ho ancora finito di provarla, però maremma cara, alti medi (fa quello che deve fare) e bassi bassissimi (zio percoca). Ora ci voglio stare solo un altro po', e poi ASAP (as salty as possible) scrivo sempre qui la mia recensione spaccata. 🥱️</p>
+<p>Cioè, tipo, ricordate le persone senza denti che dicono "<em>Mussholini ha fattho anche chose buohne.,..,</em>"? Verrebbe da rispondere "certo nonno, ma ora prendi le medicine e vai a dormire, che stai delirando". Eppure, <a href="https://www.youtube.com/watch?v=B7JJ3pQPn58">stavolta uno youtuber (con i denti) arriva e dice che</a> Kim Jong Il, Mao Zedong, e pure Epstein hanno fatto pure cose buone... 😨️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":11138,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image-3-960x877.png" alt="Messaggio in chat, foto della console coi Joycon attaccati eseguendo Pikmin Bloom, la risposta è stata &quot;Gaming&quot;" class="wp-image-11138"/><figcaption class="wp-element-caption">Solo un dubbio ho: come chiamo questo affare adesso? #Muletto Gaming, o Niantic Delivery Device? #Mannaggia alle dipendenze Google Play!!! 🙏️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-06 23:35:50+00:00">6 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="pikminboom"><a class="toclink" href="../../2024/11/06/pikminboom.html">pikminboom!!</a></h2>
-<!-- wp:paragraph -->
-<p>Stasera sto scazzatina così per via del mondo reale e della realtà fattuale, ma... C'è da dire che <strong>Pikmin Bloom</strong> (<a href="../../2024/10/30/pikminini.html">come premonivo l'altro giorno</a>) sta lentamente aggiungendo sempre più di quel brio necessario a non morire per autocombustione, aumentando la realtà senza sostituirla!!! 🥰️ (Anche se andrebbe sostituita, ormai.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Speriamo questo #spasso così funny duri, perché anche Pokemon GO pareva divertente, all'epoca, ma poi dopo vari mesi feci ciao ciao e addio per sempre. Ma come dissi lì è anche perché cambiarono troppo il #gioco, per motivi economici; invece questo, boh, pare non se lo caghi proprio nessuno nessuno, siamo 4 gatti randagi che lo usano, rimarrà intatto. 😷️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ecco, all'università il giochino è un modo ottimo per spendere quegli interminabili quarti d'ora di nulla che già mi capitava di avere, in cui già mi mettevo ad andare in giro un po' a caso; con la realtà aumentata è per forza di cose solo più intrigante. Ovviamente non ci ho mai visto nessun altro giocare, anche se ho visto #fiori in giro, quindi qualcuno in passato deve averlo fatto... 3 anni fa forse. 😵️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ohhhh quanto è estremo #sublime usare i miei piedini coperti da scarpe per consumare la pavimentazione universitaria, macinando passi al beneficio di nessuno mai al mondo, se non del mio ego che di botto si accresce a vedere centinaia, migliaia di coloratissimi (ma inodori) fiorellini virtuali venir piazzati al ritmo del mio passo, attraverso lo schermo del tablet così grosso da essere un vero e proprio portale per un mondo più laggoso e low-poly, ma con certamente più particelle belle... 🤤️,,.g h.,🤤️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Tra ieri e oggi ho potuto avanzare un po', dopo vari giorni tra passi non registrati (e #mannaggia...) Il gioco, forse per fortuna, non vola via troppo veloce, e sto praticamente ancora al punto che ho pochi #Pikmin che mi seguono (su una quindicina totale, quasi una decina li ho avuti adesso), e giusto ora ho iniziato ad avere abbastanza fiori piantati da completare alcune missioni e prendere i premi dai fiori giganti (!). 😱️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ieri avevo più #tempo per camminare e mettere fiorellini, mentre stamattina c'era un bel traffico e sono arrivata con poco anticipo a lezione... quindi ne ho potuto approfittare almeno in bus, che camminando quasi a passo d'uomo mi ha permesso di piantare. 🙏️ (Il gioco non lo fa fare oltre una certa andatura, credo che sia tipo perché per piantare fiori ti devi abbassare, devi smuovere la terra, devi piazzarli con cura, ecc...)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":11107,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_20241106-105257_pikmin-bloom8140905922533000818-960x1279.png" alt="Schermata del piantaggio stamane, coi Pikmin tutti addosso e la scia di fiori gialli" class="wp-image-11107"/><figcaption class="wp-element-caption">Non lo percepite voi questo INTENSO #GAMING #AR??? Idk, io fossi in voi lo proverei questo pezzo di software... (😭️)</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-06 00:50:08+00:00">6 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="americahia"><a class="toclink" href="../../2024/11/06/americahia.html">americahia</a></h2>
-<!-- wp:paragraph -->
-<p>Prima che la giornata finisca tipo, bisogna riconoscere una verità oggettiva: <strong>siamo cucinatissimi, con queste stramaledette #elezioni</strong> nella stramaledetta nazione delle aquile della libertà, fuck yeah 'mmmmmuricah... 🔫️🦅️🇺🇸️🇺🇸️🦅️🔫️🦅️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ovvio che, in tutto questo, chi vive lì ora stia con la bava alla bocca e la merda al collo, ma anche qui da noi il dolore è palpabile, a quanto pare, mi sa più di quando ci sono elezioni e robe in paesi europei. Ma siamo praticamente schiavi degli #USA, purtroppo, quindi direi che ha senso... e anche io sono personalmente molto a faccia scheletrino ora. 💀️💀️☠️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Cioè, ho la speranza che finirà bene, ma ho come il presentimento che finirà male. Non so se mi sto facendo influenzare da quello che si dice in base ai sondaggi, ma ahia comunque, ho paura. Ovviamente adesso è prestino, ancora non si è finito di votare da tutte le parti; al TG2 post il direttore del Corriere della Sera si preoccupava sul se si saprà qualcosa per le 3 di notte massimo, orario della stampa dei quotidiani. 🌜️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Almeno però io non mi sono messa tutta la giornata a guardare previsioni e mappine, come invece ho intravisto più di qualcuno fare all'università... rido. C'era in particolare uno che, ogni 5 secondi letterali, aggiornava una pagina con le percentuali... e io capisco che la lezione era noiosa, ma i numeri non cambiano di una virgola in soli 5 secondi... 💤️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Intanto, per avere un'idea di quanto i media (almeno da quelle parti) stanno andando pesanti su questa storia, mi è capitato prima un video de "<em>la migliore fonte di notizie d'America</em>", dove <a href="https://www.youtube.com/watch?v=9qI0LTmSr38">con la mappa touchscreen fanno vedere meglio la situazione dei voti decisivi e dei votanti indecisi</a>, guardando letteralmente all'interno di un tizio in questa media qui. 🤯️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9qI0LTmSr38","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=B7JJ3pQPn58","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=9qI0LTmSr38
-</div><figcaption class="wp-element-caption">Sempre sul pezzo, i giornalisti de <em>La Cipolla</em>. Però è lecito chiedersi cosa abbia mai fatto di male questo Nick, gli hanno doxato non solo l'identità ma anche gli organi e l'anima... 📡️</figcaption></figure>
+https://www.youtube.com/watch?v=B7JJ3pQPn58
+</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -10434,7 +10363,19 @@ https://www.youtube.com/watch?v=9qI0LTmSr38
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Agli 'muricani: ricordate che se vince <code>il candidato che non mi piace</code>, non potrete mai più votare (e <a href="https://www.theatlantic.com/politics/archive/2024/07/trump-vote-believers-summit/679273/">lo ha promesso lui eh</a>), l'America (*gli Stati Uniti) sarà rovinata per sempre, probabilmente potrebbe anche crollare in mille pezzi e far tirare un enorme sospiro di sollievo al mondo intero. Ah no, questa sarebbe la good ending. 🤭️</p>
+<p>A parte il #memaggio, damn, è una cosa fattualmente corretta da pensare (perché beh, il video parla di fatti accaduti), però mi lascia con sentimenti di tipo indecifrabile, non so se felici o tristi. Il cattivo perfetto dunque non esiste e i cartoni animati che vedevamo da bambini ci hanno dato false speranze sul fatto che prima o poi sarebbe arrivato uno di loro a distruggere il mondo intero con successo... 😪️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Alcuni di questi fatti li sapevo, tipo che Escobar fece costruire scuole e ospedali, e bonificò le paludi (ah no), oppure che Genghis Khan ha abbassato il riscaldamento globale visto che ha fatto uccidere il 10% della popolazione umana ai tempi, o che Stalin per quanta gente ha fatto morire ne ha comunque risollevata altra (adda proprio venì baffone...). Ma altri... tipo che Hitler era animalista.... cosa???? 🤯️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bin Laden invece un po' così il fatto che sia finito nel video... voglio dire, lui ha fatto SOLO cose buo— <em><em>rumore di io che vengo sparata da migliaia di chilometri di distanza da un cecchino intercontinentale delle agenzie a tre lettere per aver detto questa cosa anche solo per scherzo</em></em>. Però damn, non solo era un apprezzatore dei videogiochi e dei memini (e questo lo sapevamo), ma era PURE ECOLOGISTA??? Se i vari movimenti ambientalisti moderni che sacrificano il tempo e la pazienza di civili a caso sono ridicoli di per sé, in confronto ad uno che ha fatto saltare due torri uccidendo migliaia di persone a caso dovrebbero proprio ritirarsi. 😇️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ironicamente, in questo video proprio zione Benito (mi dissocio mi dissocio!!!) non fa la sua comparsa. Quindi mi sa che i vecchietti nostalgici hanno doppiamente torto... ok si ha fatto le colonie estive per i bimbi, oltre a quelle non stagionali per i soldati, però 'sticazzi 'ndo li piazzi lol??? Sono stanca. 😔️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10446,7 +10387,7 @@ https://www.youtube.com/watch?v=9qI0LTmSr38
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-05 17:09:42+00:00">5 novembre 2024</time></li>
+          <time datetime="2024-11-19 01:42:17+00:00">19 novembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10466,38 +10407,104 @@ https://www.youtube.com/watch?v=9qI0LTmSr38
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="universiscazzz"><a class="toclink" href="../../2024/11/05/universiscazzz.html">universiscazzz</a></h2>
+    <h2 id="pomericottura"><a class="toclink" href="../../2024/11/19/pomericottura.html">pomericottura</a></h2>
 <!-- wp:paragraph -->
-<p>È a dir poco allucinante, irreale, come i giorni passano, ma questa università continua ad essere estremamente cursata, e ogni volta a sorprendermi di come faccia ancora a funzionare!!! Dovrebbe essere già fallita, per logica, smh. 🤮</p>
+<p>Oggi ahimé mi sono basicamente cu-ci-na-ta, perché mi è toccato fare quello che non faccio mai: #studiare!!! 💀 Perché almeno oggi il mio cervello è stato quel minimo decente da capire che è meglio cuocermi a casa, piuttosto che in classe durante il #parziale. ☠️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Oggi pomeriggio è stato bellissimo quando, alla fine della prima #lezione, bell' e buono iniziano ad entrare decine di persone alla volta da fuori, palesemente di altri corsi... e si è scoperto in quel momento che quelli erano lì per fare una prova intermedia. 🤥</p>
+<p>Ovviamente, il libro <strong>non</strong> si apre, perché altrimenti tutte quelle pagine buonanotte, e come farei a rileggermele tutte in un giorno. Però è una cosa buona, perché se passo allora posso in perfetta coscienza spargere ancora una volta la propaganda della cultura delle slide, che secondo me non è abbastanza diffusa (altrimenti, per legge di domanda e offerta, la loro qualità sarebbe superiore). 😝</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Cioè, non so se ci rendiamo conto aooooh!!! In qualche modo i professori di quelli hanno organizzato quella roba da svolgersi nella nostra #aula, in un orario in cui questa sarebbe stata occupata dalla nostra altra lezione, e la cosa esce fuori così!!! 😶</p>
+<p>Ho fatto anche altre delle mie solite cose oggi eh, <em>i progetti di programmazione segreti vari</em> e non solo, perché senza fare lo spasso mentale è praticamente impossibile fare la fatica mentale... Mi preoccupa solo un po' il fatto che in tantissime ore lorde ho fatto poco e niente, ma tecnicamente nulla di nuovo sotto il sole qui (rido, ma piango). Rip attenzione di Octt insegna agli ancieli a distrarsi... 😤</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>A quanto pare qualcuno lo sapeva da almeno un ora prima, perché così avevano scritto sul gruppo, ma non so da dove hanno preso l'informazione. La maggior parte di noi non sapeva e, soprattutto, il nostro professore non lo sapeva! Muzunna....... 😤</p>
+<p>Per questo comunque, il post di oggi molto arrangiato, non avevo esattamente #tempo da dedicare alla scrittura di minchiatine (ma il bisogno di farlo è irrefrenabile, e quindi...). Non l'avrei manco ora a mezzanotte passata eh, dovrei seriamente andare a mimire, però ho visto che le ultime sere sto essendo molto irrequieta e ci metto mezz'ora a pigliare sonno, perché mi metto a letto e la mia mente vorrebbe scrivere. 😩</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Questo batte a mani basse anche il fatto di <a href="../../2024/10/08/prof-casino.html">quando i matematici ci sottrassero il laboratorio</a>. (Che poi francamente, quasi quasi serve più a loro, che almeno lo usano, suppongo; non come noi col nostro prof, che si fa appena un'ora scarsa di lezione...) 👿 (Edit: no, non sono stati loro oggi, ma gente del primo anno del mio corso)</p>
+<p>Quindi, stasera questo popò di masturbazione celebrale lo faccio <em>prima</em> di andare sotto le coperte, sperando che funzioni. Sperando for real, perché nonostante l'esame sia di pomeriggio, non dormire non aiuterà. 🤒</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Quando è arrivato il professore però, nonostante fosse a questo punto stra-confuso pure lui, si è finiti (dato che casualmente era libera) <a href="../../2024/10/23/10648.html">nell'aula minchiona</a> a fare lezione, quindi non è saltata. Per fortuna, molti se ne sono andati appena hanno visto che la nostra aula veniva occupata, quindi oggi si sta larghi. 🎎</p>
+<p>(Così come non aiuta che l'orario di presentarsi in aula sia stato messo immediatamente dopo la lezione mattutina, levandoci pure quella mezz'ora scarsissima per pranzare. Non so ancora come e quando potrò ricavarmi un quarto d'ora per mangiare, ma devo, sennò muoio durante la #prova!!!!!! Addio mondo 🥰)</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-18 18:25:33+00:00">18 novembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="giapponesuomo-macchinette"><a class="toclink" href="../../2024/11/18/giapponesuomo-macchinette.html">giapponesuomo macchinette</a></h2>
+<!-- wp:paragraph -->
+<p>Quando bisogna distrarsi mentre si fa altro e non si ha idea di come, al pomeriggio... ma ahimè anche la sera tardissimo... è bene ricordare che esiste <strong>l'Uomo #giapponese (Askjapan)</strong>, che ci porta sempre <em>un sacco di nuovi contenuti</em> (semicit.) video!!! Non ricordo se lo avevo condiviso qualche altra volta, ma zzzz andiamo avanti. ☝️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tutto sommato non sono per niente salata per una cosa del genere, visto che a me non è cambiato nulla a questo punto (e soprattutto altre cose al momento sono più salatine). Però cazzarola, fa molto molto pensare... 💀</p>
+<p>Parlo del tizio "I’m 50 years old Japanese man" che ogni tanto droppa video assurdi. Tipo questo dell'altro ieri "<a href="https://www.youtube.com/watch?v=a7iYSyfWp7E"><em><strong>My Saturday morning routine is worth watching!</strong></em></a>", che appena ho visto nel feed ho detto tirato un WTF... egli che tiene in mano la figurina di un tizio a casaccio, con la scritta "My $2 Buddy" e questa sua espressione facciale a metà tra la camera e il vuoto... 🥰️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>...Come stracazzo è possibile che questi hanno avuto l'aula lì, nonostante fosse regolarmente occupata da noi? A parte che la cortesia di chiedere al nostro professore non è stata fatta (aridaje), ma il sistema informatico non dovrebbe rendere una cosa del genere proprio impossibile??? AaaaaaAAAA— 😫</p>
+<p></p>
 <!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=a7iYSyfWp7E","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=a7iYSyfWp7E
+</div><figcaption class="wp-element-caption">Filmato di mezz'ora, che per i suoi ultimi standard non è insolito, un po' lunghino... ma, con una premessa così, cioè, questo era impossibile da saltare. 🙏️</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Come qualcuno dice nei commenti, "questo anime è molto chill", ma anche fin troppo bizzarro (cosa buona e giusta) direi io. A parte il fatto che, a quanto mi pare seguendolo da quando aveva forse 1/5 degli iscritti di ora, la sua "routine del sabato mattina" è cambiata parecchio e di continuo (ma meglio così, perché <a href="https://www.youtube.com/watch?v=6ZUerY198R0">mesi fa il sabato faceva gambling convincendosi di vincere</a>)... ma questo è buono, c'è più freschezza. ❤️‍🔥️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non so se sia più assurdo che in giappone ci siano #macchinette #gachapon che dispensano #fototessere di 'sta gente che non si sa chi sia (e finché non lo so io ok, ma non lo sa manco l'Uomo che è giapponese, quindi non penso siano celebrità), o che, tra le tante con cui lui il sabato mattina si va a divertire nel tempo libero a lui riservato, prenda una cosina anche da queste. Però credo che al posto suo non mi comporterei diversamente (se non fossi tirchia, si intende). 😳️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vabbè, fine commento, ogni tanto devo vedermi anche queste cose, che nella loro mancanza di senso sono rilassanti, ma allo stesso tempo non scadono nel brainrot. (Anche se a volte sembra che ripeta sempre le stesse cose questo tizio, non so quanti #video ha fatto dove diceva praticamente una cosa già detta settimane prima, ma va bene così.) Ogni tanto, oltre a queste perle di vita casuali, parla anche di argomenti casuali interessanti!!! 🤭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=GTvG5xGJZXg","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=GTvG5xGJZXg
+</div><figcaption class="wp-element-caption">(Però facendo sempre del suo, ad esempio quando qui si è messo <a href="https://www.youtube.com/watch?v=GTvG5xGJZXg">in costume da samurai per parlare della storia dei samurai</a>.)</figcaption></figure>
+<!-- /wp:embed -->
     
   </div>
 </article>
@@ -10509,7 +10516,7 @@ https://www.youtube.com/watch?v=9qI0LTmSr38
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../4/index.html">4</a> <a class="md-pagination__link" href="../5/index.html">5</a> <span class="md-pagination__current">6</span> <a class="md-pagination__link" href="../7/index.html">7</a> <a class="md-pagination__link" href="../8/index.html">8</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../58/index.html">58</a>
+  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../4/index.html">4</a> <a class="md-pagination__link" href="../5/index.html">5</a> <span class="md-pagination__current">6</span> <a class="md-pagination__link" href="../7/index.html">7</a> <a class="md-pagination__link" href="../8/index.html">8</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../60/index.html">60</a>
 </nav>
         
       
@@ -10549,7 +10556,7 @@ https://www.youtube.com/watch?v=9qI0LTmSr38
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>

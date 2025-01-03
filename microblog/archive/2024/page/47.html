@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../../../category/senza-categoria.html">
+        <link rel="prev" href="../../2025.html">
       
       
         <link rel="next" href="../../2023.html">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -9518,6 +9518,29 @@
   
   
     
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
       
     
   
@@ -9826,7 +9849,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-05 17:26:12+00:00">5 gennaio 2024</time></li>
+          <time datetime="2024-01-12 18:03:06+00:00">12 gennaio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -9846,171 +9869,26 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="piu-fedinauti-su-wordpress"><a class="toclink" href="../../../2024/01/05/piu-fedinauti-su-wordpress.html">Più #fedinauti su WordPress</a></h2>
+    <h2 id="devo-aggregare-i-microblog"><a class="toclink" href="../../../2024/01/12/devo-aggregare-i-microblog.html">devo aggregare i microblog.</a></h2>
 <!-- wp:paragraph -->
-<p>Quello che sta iniziando a succedere proprio in questi giorni è che qualche perzoncina in più sta notando come funziona bene ad oggi la mia trovata del #WordPress #federato (o meglio, come funziona bene ad oggi il #plugin #ActivityPub che non ho scritto io, lmao), e sta installando il plugin sui propri #blog... ❤️‍🔥</p>
+<p>Prima che #Durov commettesse quel gran bel po' di trolling, seguivo alcuni #canali #MicroBlog di varia #gente su #Telegram... 🪵</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Il che è #epico, è un'ottima spinta in più verso il #selfhosting del #Fediverso anche per chi non è #TechSavy e vuole una roba già pronta... però oi, state tutti solo attivando #AP sui vostri blog #longform, ancora nessuno che riprende esattamente la mia #idea e inizia a fare anche #MicroBlogging e #shitposting dal proprio #sitarello... Prenderò la cosa come una conferma del mio primato, allora. 🙉</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-05 00:52:54+00:00">5 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="conto-asincrono-del-tempo-perso-per-js"><a class="toclink" href="../../../2024/01/05/914.html">conto asincrono del tempo perso per JS</a></h2>
-<!-- wp:paragraph -->
-<p>Ho #perso una buona quantità di quarti d'ora (e #maremma...) oggi a cercare di capire come straca far funzionare questo altrimenti orribile #codice dentro un ciclo (che deve prima terminare tutto, o il programma non ha i dati giusti) in #JavaScript... 😵️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>const reader = new FileReader();
-reader.onload = () =&gt; {
-    const img = document.createElement('img');
-    img.onload = () =&gt; {
-        // ... un sacco di stronzate che non centrano
-    }
-    img.src = reader.result;
-}
-reader.readAsDataURL(file);</code></pre>
-<!-- /wp:code -->
-
-<!-- wp:paragraph -->
-<p>Ho cercato #online varie soluzioni, per un motivo o per un altro non le capivo però (#skillissue skillissue skillissue), e ho perso la #pazienza a provare e riprovare, finché non ho chiesto alla <em>divinità dell'autocompletamento</em> #ChatGPT. A 'sto giro, è stato più utile di mezzo #Stackoverflow. 🙏️</p>
+<p>Ora che mi sto ricordando, almeno quelli #pubblici sto potendo importarli nel mio #lettore di #feed, tramite #RSSHub, che mi genera i documenti #RSS per qualunque #canale. 💬</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Unendo il suo aiuto, + un (1) consiglio di utenti umani su quei #forum brutti, è uscita una roba che funziona e non fa venire il mal di testa a leggere...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>const img = new Image();
-img.src = await readFileAsync(file);
-await img.decode();
-// ... le stesse stronzate di prima, ma meglio
-
-function readFileAsync(file) {
-    return new Promise((resolve) =&gt; {
-        const reader = new FileReader();
-        reader.onload = (event) =&gt; {
-            resolve(event.target.result);
-        };
-    reader.readAsDataURL(file);
-    });
-}</code></pre>
-<!-- /wp:code -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-04 23:38:11+00:00">4 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="niente-touchpad"><a class="toclink" href="../../../2024/01/04/niente-touchpad.html">Niente touchpad.</a></h2>
-<!-- wp:paragraph -->
-<p>Stavo pensando: da ora che ho la tastiera più piccolina per il #PC, e mi sa che mi trovo parecchio meglio ad usare lo #smartphone come #touchpad (per certi versi più comodo del #mouse normale per me) rispetto a quando avevo quella grossa, potrei quasi quasi comprarlo un touchpad #USB... 😁️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E però oh, non si trovano a un prezzo decente, né su Amazon né su AliExpress, eccetto per uno micragnoso brutto minuscolo (che comunque per il #prezzo è un insulto eh)... #mannaggia!!! E persino da alcuni cinesi locali non ho trovato; forse dovrei cercare meglio in tutti, ma a questo punto neanche ho la certezza di trovare qualcosa, figuriamoci di bono. 😩️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Altrimenti, questa è forse la volta buona che trovo un utilizzo pratico per il mio vecchio #Huawei distrutto, che sta nel cassetto a marcire (il vetro c'ha lo #spacc, ma il #digitizer funziona, e al tatto non c'è problema perché c'è una pellicola intatta sopra)... perché certamente col telefono primario, che mi serve per altro ed è pure bello cicciotto non posso andare avanti così. Preferirei comunque un vero touchpad però perché #KDEConnect #lagga, a meno di trovare #app alternative (o forse mi basta collegare il #telefono al PC con il #tethering USB?) 🐁️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-04 23:15:11+00:00">4 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/01/04/908.html"></a></h2>
-<!-- wp:paragraph -->
-<p>JavaScript + la vita, VS 🕷️ (io), chi vincerebbe?</p>
+<p>Però... la media di #interfaccia di un #aggregatore non è granché adatta a consumare #post di quel tipo, spesso tanti e corti. E allora toh, in qualche quarto d'ora ho creato dei #tweak per la mia #istanza #FreshRSS, che tagliano di molto i pezzi inutili della #UI quando navigo nella mia cartella fatta apposta (mentre per tutte le altre fonti non c'è alcuna #modifica). 🖌️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":909,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/Screenshot-from-2024-01-04-23-07-32.png" alt="* &quot;In un ipotetico futuro senza silicio che ne sarà di 🕷️?&quot; 
-* &quot;tristezza e disperazione. 
-I mean, detto così potrebbe pure essere il presente a pensarci bene... intendo, più tristezza e più disperazione&quot;" class="wp-image-909"/><figcaption class="wp-element-caption"><a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$gxeOE5-3aZi0cBumJ5BSemNOkh9tC6ZHI3K1Di8H2AA">https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$gxeOE5-3aZi0cBumJ5BSemNOkh9tC6ZHI3K1Di8H2AA</a></figcaption></figure>
-<!-- /wp:image -->
+<!-- wp:video {"id":1019,"muted":true} -->
+<figure class="wp-block-video"><video controls muted src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/screen-20240112-172504.2.mp4"></video><figcaption class="wp-element-caption">Ecco una #dimostrazione (con il profilo #guest) di cosa ho fatto per ora, potete provare su <a href="https://feeds.octt.eu.org/">https://feeds.octt.eu.org/</a> oppure rubare il #codice per il vostro #server (sono tutte modifiche #ClientSide, tramite #JS e #CSS). ✨</figcaption></figure>
+<!-- /wp:video -->
     
   </div>
 </article>
@@ -10021,7 +9899,7 @@ I mean, detto così potrebbe pure essere il presente a pensarci bene... intendo,
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-04 12:24:39+00:00">4 gennaio 2024</time></li>
+          <time datetime="2024-01-12 00:27:52+00:00">12 gennaio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10032,7 +9910,7 @@ I mean, detto così potrebbe pure essere il presente a pensarci bene... intendo,
           
           <li class="md-meta__item">
             
-              1 minuto di lettura
+              3 minuti di lettura
             
           </li>
         
@@ -10041,73 +9919,21 @@ I mean, detto così potrebbe pure essere il presente a pensarci bene... intendo,
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="fine-hackeri-russi"><a class="toclink" href="../../../2024/01/04/fine-hackeri-russi.html">Fine hackeri russi</a></h2>
+    <h2 id="niente-acing-del-famiclone-c-pt-2"><a class="toclink" href="../../../2024/01/12/niente-acing-del-famiclone-c-pt-2.html">Niente acing del famiclone :c (pt. 2)</a></h2>
 <!-- wp:paragraph -->
-<p>[sc name="quote-embed-post"]2024/01/04/li-hacker-russi[/sc]</p>
+<p>[sc name="quote-embed-post"]2024/01/11/acerare-il-famiclone-pt-1[/sc]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>E infatti, è stato un mio #errore mesi fa nel configurare i #permessi per i #forum dedicati agli utenti, credo. Dovrei aver sistemato andando in <code>ACP &gt; Forums &gt; Group forum permissions &gt; Newly registered users &gt; All forums &gt; Forum permissions</code> e settando il ruolo predefinito lì a <code>Newly Registered User Access</code>. 🤓️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Poi, ho controllato la lista utenti... c'erano pochi apparenti #spammer che si sono registrati addirittura mesi fa, abbastanza nelle ultime settimane, e una caterva negli ultimi giorni. In totale ~70, li ho fatti sparire tutti, sperando di non aver cancellato utenti reali nel frattempo (cosa che normalmente non penserei perché <em>aiutoo nessuno si caga il mio forum</em>, ma chissà se dopo il mio casino delle ultime settimane si è registrata gente che non ha mai neanche scritto... dovranno ricreare l'account, e magari io dovrei fare un post di avviso). 💀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Poi, mi è venuta la #curiosità di vedere cosa avessero scritto gli spammer, ma a quanto pare purgando gli #utenti è sparito proprio tutto... fortunatamente, dare a #GoogleLens quella mezza schermata che ho inviato prima ci aiuta ad avere un'idea... #monnezza! 💩️</p>
+<p>Giusto per #trivia, il mio #famiclone è questo, comunque: <a href="https://it.aliexpress.com/item/1005005829526748.html"><a href="https://it.aliexpress.com/item/1005005829526748.html">https://it.aliexpress.com/item/1005005829526748.html</a></a>... in pratica una cover per #smartphone, #quirky ikr? Lo comprai quando usavo ancora il Huawei come #telefono giornaliero, dopo aver bene scommesso che il modello della #cover per iPhone 7 sarebbe calzato decentemente. L'#hardware che ha dentro sembra essere tutto sommato più vicino a quello di altre #console tipo <a href="../../../2024/01/07/arcade-mini-152.html">quel mini arcade dell'altro giorno</a>, che a robe come il #Sup (c'è in comune la memoria più piccola, la mancanza di AV out e del tasto Select, e il fatto che il volume sia regolabile a schifo con soli 3 livelli anziché con una rotellina). Non mi sembra di aver trovato altri #teardown di #famicloni così (devo cercare meglio anche per modelli simili), ma il mini arcade come quello #smontato da #EEVBlog ha una #memoria #Winbond: <a href="https://www.eevblog.com/2019/06/28/mini-arcade-game-console-repair-oopsie/"><a href="https://www.eevblog.com/2019/06/28/mini-arcade-game-console-repair-oopsie/">https://www.eevblog.com/2019/06/28/mini-arcade-game-console-repair-oopsie/</a></a>. 🧭️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":906,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image-3-960x1338.png" alt="Caring for the monastery is caring for well-being. Thermal modernization of facades is not only an elegant look, but also a guarantee of heat preservation in your cozy corner. We, experts in our field, invite you to make your home a wonderful living space.
-Our projects are not just insulation, they are a creative process with every element. We create harmony between form and content so that your home becomes not only warm and stylish, but also charming.
-And most importantly, reasonable costs! We believe that quality services should not [...]" class="wp-image-906"/></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-04 11:26:14+00:00">4 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="li-hacker-russi"><a class="toclink" href="../../../2024/01/04/li-hacker-russi.html">Li hacker russi</a></h2>
-<!-- wp:paragraph -->
-<p>Quale miglior risveglio se non lo scoprire di punto in bianco che sono arrivati gli #spammer russi sulla #SpaccBBS? 😓</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":902,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image_editor_output_image1065278771-17043636438085014885242932382135-704x1440.png" alt="" class="wp-image-902"/></figure>
+<!-- wp:image {"id":1013,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image-5.png" alt="La cover che viene mostrata spaccare una superficie bianca generica, in qualche modo assurdo." class="wp-image-1013"/><figcaption class="wp-element-caption">Certe immagini sulle inserzioni cinesi fanno morire...</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -10115,11 +9941,23 @@ And most importantly, reasonable costs! We believe that quality services should 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tralaltro, tutti solo sotto i post di Ame, che ha la sua area #spam sul mio #forum, non in altre sezioni. Si, avete letto bene, curiosamente gli spammer hanno spammato solo sotto i post spam... 😏</p>
+<p>Stamattina, con un po' di #sofferenza, ho provato a #saldare dei fili sugli 8 #piedini del mio piccolissimo chip #flash, e ce l'ho addirittura fatta (contro le mie aspettative). Fatto questo, non avendo #informazioni precise, ho quindi varie strade da poter percorrere, e per adesso ho provato quella dell'interfaccia #SDcard (anche perché <a href="../../../2024/01/10/1003.html">il fatto dell'ESP di ieri</a> mi rallenterebbe sulle altre vie), ossia: se, puta caso, sto coso dovesse funzionare come altre memorie #flash #SPI, allora dovrebbe poter essere riconosciuto da lettori di #schede. Allora, non senza difficoltà, sacrifico un #adattatore SD-microSD per attaccare dei #fili pure a quello, in modo da poterlo collegare da un lato al PC e dall'altro al #chip. 🕷️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>(Dopo un'occhiata al pannello di controllo #admin, e una ricerca sul #web, credo che sia colpa di un mio errore nell'aver settato i permessi per utenti appena registrati, non saranno stati messi bene sulle aree utente del forum. 😶)</p>
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":1015,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/img_2024-01-11-18-48-45-2722850256951560362496-960x1280.jpg" alt="" class="wp-image-1015"/><figcaption class="wp-element-caption">Se non si capisce nulla, è normale.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ed è proprio qui che per ora temo di dovermi fermare... purtroppo, questa strategia non è sembrata funzionare. Ho controllato varie volte che i #collegamenti funzionassero elettricamente, e che io stessi collegando tutto per bene secondo il #pinout dello standard #SD e le mie supposizioni sul possibile pinout del chip innominato, ma, quando il collegamento del lettore via USB rimaneva stabile, comunque Linux non riusciva ad accedere all'unità, facendo tirare sia a cat che dd un errore "medium not found" (praticamente come quando si collega il lettore senza niente dentro). Quindi non so. A questo punto potrebbe essere possibilmente proficuo fare #debugging tramite #GPIO per vedere cosa si riesce a cavare da questa storia... se mi verrà voglia lo farò, non so quando. 😴️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10131,57 +9969,7 @@ And most importantly, reasonable costs! We believe that quality services should 
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-03 23:13:45+00:00">3 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/01/03/896.html"></a></h2>
-<!-- wp:image {"id":897,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image-1-960x523.png" alt="" class="wp-image-897"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Raga, billion dollar #corporation, ma non sanno manco che cazzo siano le #icone #vettoriali, #maremma di quella maiala... o meglio, certe volte lo sanno (tipo, per il menu hamburger), e altre no (tutte le icone di composizione, oltre che il logo della #app)... ma come fa la gente ad usare sta #merda? Usano tutti #GMail manco fosse il dono del signore, ma è una roba #puzzolente con i bottoni che se metti lo #zoom del #browser a 150% per non ciecarti quando scrivi li vedi tutti sbleurrati. #Google come sempre #imbarazzante. 🤮️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":899,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image-2.png" alt="" class="wp-image-899"/><figcaption class="wp-element-caption">(E si, qualora non riusciste a notarlo ad occhio dalla screenshot #complessiva, qui potete ammirare come il browser dice che i tasti dell'editor sono miseri #PNG 40x40 pixel...)</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-03 22:36:40+00:00">3 gennaio 2024</time></li>
+          <time datetime="2024-01-11 20:54:31+00:00">11 gennaio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10201,29 +9989,25 @@ And most importantly, reasonable costs! We believe that quality services should 
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="matrix-sticker-helper"><a class="toclink" href="../../../2024/01/03/matrix-sticker-helper.html">Matrix Sticker Helper&#8230;</a></h2>
+    <h2 id="acerare-il-famiclone-pt-1"><a class="toclink" href="../../../2024/01/11/acerare-il-famiclone-pt-1.html">Acerare il famiclone? (pt. 1)</a></h2>
 <!-- wp:paragraph -->
-<p>Dopo qualche giornata di lavoro, finalmente rendo disponibile la mia #webapp per gestire gli #sticker su #Matrix, #MatrixStickerHelper. È purtroppo un po' complessa e quindi fino ad ora ho fatto giusto il minimo sindacale che mi permette di rilasciarla, e spero di continuare man mano ad aggiungere le funzioni importanti. 🙏️</p>
+<p>[sc name="quote-embed-post"]2024/01/10/1003[/sc]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per inviare gli sticker in #chat, ho sempre usato il Maunium sticker picker, il cui problema però è che bisogna usare uno strumento CLI scomodissimo per aggiornare i pacchetti, da caricare poi su qualche server #web statico. Veramente una #rottura, quindi ho deciso di creare una #app in cui si fa login semplicemente, si vedono i pacchetti che già si hanno, a cui si possono aggiungere nuovi sticker (soon), o aggiungerne di nuovi, spero prima o poi anche direttamente da LINE o Telegram. 🥳️</p>
+<p>La cosa che volevo #provare ieri in ogni caso era la seguente: #hackerare un #famiclone di quelli con solo #giochi integrati. Io ho un #vecchio famiclone #portatile, mezzo #scassato (lo speaker chissà dove è finito, la scocca è distrutta, e la batteria fu infine cannibalizzata per altri scopi dopo tutto questo casino), ma altrimenti funzionante e #tecnicamente utile. Un po' per lo #sfizio, un po' per potenziali piani futuri, avrei interesse a poter #moddare il #firmware, cambiando i giochi che contiene... 😈</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":891,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/Screenshot-from-2024-01-03-21-26-13-960x493.png" alt="" class="wp-image-891"/><figcaption class="wp-element-caption">Quando le parole non bastano, ci sono gli sticker, tutti che variano tra il #cute e il #cringe. #Applicazione messa su <a href="https://hub.octt.eu.org/MatrixStickerHelper/">https://hub.octt.eu.org/MatrixStickerHelper/</a>, se la testaste un po' mi fareste un favore. 💞️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
+<p>In realtà, l'#idea l'avrei avuta già tanti anni fa, ma all'epoca non avevo saputo trovare moltissimo sul #web, e personalmente non sapevo minimamente dove provare a mettere le mani io direttamente. Negli ultimi giorni, però, mi è capitato di cercare e #trovare delle #informazioni in più sull'argomento, e scoprire addirittura che qualcuno in effetti è riuscito a #dumpare la memoria #flash di una #console Sup, #modificare le #ROM contenute, e praticamente riflashare il firmware così modificato sul dispositivo. Se vi interessa, è su questo #blog che ho trovato molti #link: <a href="https://hackaday.io/project/175322-dissecting-a-hand-held-noac-console"><a href="https://hackaday.io/project/175322-dissecting-a-hand-held-noac-console">https://hackaday.io/project/175322-dissecting-a-hand-held-noac-console</a></a>. 🪆</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per ora, come ho detto, è proprio agli albori, e nemmeno l'importazione da file locale funziona... ma quella da URL JSON si, quindi perlomeno si possono già importare pacchetti creati da altre persone con i mezzi vecchi. Per provare subito, ecco una pagina di link a pacchetti pronti da copincollare nella app: <a href="../../../paste/887.md">https://octospacc.altervista.org/paste/887/?ppt=4434dcaa8646fbf1400fa65308d87f4d01880a113836a338c9227b70a60fb337</a>. 🖇️</p>
+<p>Quel qualcuno a quanto ho visto ha avuto fortuna però, perché il suo famiclone ha una #memoria non solo #marchiata (a differenza della mia, che riporta solo un codice e il nome di Taiwan, sul web non si trova niente), ma addirittura collegata tramite una #PCB intermedia che ha dei comodi punti di #saldatura (la mia è direttamente sulla scheda madre, ringraziando il cielo però è a #piedini). Insomma, non posso seguire la sua strada direttamente, ma mi servono #idee alternative. 🎭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dirò più tardi qual è più precisamente la mia situazione e cosa ho fatto, ma ve lo dico, non aspettatevi chissà che... non ho ottenuto quello che volevo. 🥴</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10235,7 +10019,49 @@ And most importantly, reasonable costs! We believe that quality services should 
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-03 15:33:03+00:00">3 gennaio 2024</time></li>
+          <time datetime="2024-01-10 23:49:04+00:00">10 gennaio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="esp8266-non-gradisce-piu-piton"><a class="toclink" href="../../../2024/01/10/1003.html">esp8266 non gradisce più Piton</a></h2>
+<!-- wp:paragraph -->
+<p>Ecco una cosa assurda che ha trasformato la mia faccia in faccia scheletrino (💀). Dunque, mi servirebbe #testare una cosa (che a questo punto non dico ancora perché beh, si sono messe di mezzo le rogne) tramite interfaccia #SPI; il Raspino non posso usarlo perché non ho l'header per la #breadboard (dovrei comprarlo), e quindi uso il #NodeMCU. 🪨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Boh, copio nel filesystem di #MicroPython i file della libreria che penso mi serva... e non va perché la versione di MP che ho è vecchia rispetto al #codice. Perdo tempo solo per backuppare tutti i file sul PC per poi riformattare la #flash della #board, poi quindi flasho il #firmware... e inizialmente sembra funzioni tutto, ma poi scopro che la #scheda si riavvia a caso quando collegata ad alcune porte #USB del PC. Collegandomi ad altre, invece, è la mia tastiera smette di funzionare (inizia a perdere tantissimi input). Sarà una regressione strana del firmware... penso. Avanti e indietro varie volte di ricopiare sul #MCU i file che avevo prima, nella speranza di continuare sulla mia strada, e invece ho perso solo tempo. E anche ora che ho rimesso (credo fosse quella, a memoria) la versione del firmware che avevo prima, 1.17, stesso casino (anche se i riavvii sono meno frequenti, ma ci sono). Dal portatile invece appare come dispositivo seriale, ma solo per degli istanti e poi non va più. 😶️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Che cavolo è successo? È la #megafine? Ho #flashato con il tool consigliato (anche con diverse modalità), e in ogni caso non ho avuto alcun errore (infatti beh, il #flashing è andato in sè sempre bene). Ormai io non. Quella cosa che dovevo provare dovrò farla con l'SDK C, perdendo un sacco di tempo perché sul #ESP8266 va riflashato l'intero firmware di base ogni volta che si compila uno sketch (~20 secondi a #compilazione?)... #mannaggia. Il #sasso mi ha lasciato metà a piedi. 😭️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-10 19:28:50+00:00">10 gennaio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10255,25 +10081,117 @@ And most importantly, reasonable costs! We believe that quality services should 
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="cinnamon-junscare"><a class="toclink" href="../../../2024/01/03/cinnamon-junscare.html">Cinnamon junscare</a></h2>
+    <h2 id="queste-vacanz"><a class="toclink" href="../../../2024/01/10/%27queste-vacanz-%25f0%259f%25a5%25b6%27.html">queste vacanz 🥶</a></h2>
 <!-- wp:paragraph -->
-<p>#Cinnamon saltospavento, torno al #PC dopo averlo lasciato un attimo e trovo lo sfondo della schermata di blocco corrotto così:</p>
+<p>Le #vacanze invernali / di #Natale di questo #nuovo #anno.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
+<p>Pro:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":877,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image_editor_output_image725455302-17042923081892461434542753892617-960x617.jpg" alt="" class="wp-image-877"/></figure>
-<!-- /wp:image -->
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Sono state effettivamente molto vacanti e ho avuto un po' di #tempo da riempire in un modo che non mi capitava da abbastanza. 🥳</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p></p>
+<p>Contro:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>(I miei genitori evidentemente non se ne sono accorti molto, e quindi non hanno potuto rompere a riguardo di ciò, ma:) Sono tipo letteralmente 10 #giorni che non metto piede fuori casa. Non l'ho fatto apposta, non so come sia successo, sarà che se non devo andare all'università allora non c'è praticamente niente da fare fuori. 🤭</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Se prima già non sapevo studiare (intendo, le cose imposte dall'alto, non necessariamente le mie ricerche delle cose che decido di mia sponte, come ho detto non ho sprecato questi giorni), ora ho praticamente disimparato. 🫣</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-10 00:51:10+00:00">10 gennaio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../../2024/01/10/corruzioni-del-3ds-e-i-thread-forse-a-vuoto-forse-no.html"></a></h2>
+<!-- wp:paragraph -->
+<p>[sc name="quote-embed-post]2024/01/08/micragnosi-smarfonini-non-adatti-per-il-gaming[/sc]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Poi sbloccando e ribloccando non lo ha più fatto, ma ora non posso fare a meno di chiedermi: che caaaaaz è successo? 🥴</p>
+<p>Dunque, l'altro giorno accennavo che usare il telefono per #emulare i #giochi del #DS fa #schifo, perché appena cambio app (visto che il mio smartphone dovrebbe essere il mio PC tascabile, quindi mi serve per tante cose spesso quasi insieme) arriva Android a fare pulizia non autorizzata della RAM (a uccidere il processo)... eh vabbè, diciamo pure che va bene (ma non va bene). 😮‍💨️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>...Però poi pure a usare la consolina #originale ci son le #rogne, #mannaggia!!! Sempre ieri ho accennato che sul #3DS è un continuo di scheda #SD che si #corrompe totalmente a caso, causando #problemi di diversa #gravità... ed è una cosa con cui faccio la #guerra da #anni, e si, ho verificato che a livello #hardware la #scheda è bona. ⚒️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Oggi pomeriggio comunque ho perso un sacco di tempo a ricopiare tutti i #file sul PC, #formattare la scheda, e rimettere a posto i file, per #rimediare ancora una volta al fatto che si fosse tutto spaccato e avvenissero #crash nel menù home e nel loader di giochi #NDS. Però ne ho approfittato per cercare e boh, appunto tutti dicono "la #SDcard è marcia/farlocca/consumata" (no), "il #CustomFirmware è corrotto" (no), "dovresti ripartizionare la scheda" (già fatto)... ma qualche spunto utile nuovo l'ho visto:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><a href="https://gbatemp.net/threads/arm9-error-data-abort.558494/">https://gbatemp.net/threads/arm9-error-data-abort.558494/</a><!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Che la mia #microSD non sia propriamente brutta in uno dei modi descritti sopra (comuni), ma abbia questo problema (mai sentito prima) del controller I/O è lezzo? 🧐️</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://gbatemp.net/threads/new-2ds-xl-microsd-card-error.534480/">https://gbatemp.net/threads/new-2ds-xl-microsd-card-error.534480/</a><!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>La #tecnica della "quadrupla formattazione": in pratica, visto che tutti i #software in circolazione per formattare le #memorie sono ancora progettati attorno agli hard disk, danno sulle #flash un risultato molto peggiore della preformattazione di fabbrica... combinando 4 programmi si riesce ad apparare, a quanto dice il tizio. 🤯️</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Quella tecnica è Windows-centrica però; riguardo #UNIX, un utente (che ingiustamente non è stato cagato) ha scritto dei suoi #esperimenti per replicarne i risultati con #utility libere... c'è molta meno #speculazione e molto più senso; ho potuto ad esempio creare la partizione #FAT32 senza LBA con la misura standard di settori, teste, e cilindri, come dicevano quelle #note (a dire il vero scritte a culo, maremma), ma l'allineamento perfetto dei #settori non l'ho potuto fare, <code>mformat</code> mi da errore coi parametri che ho ottenuto dopo dolorosi quarti d'ora di confusissimi calcoli (sarebbe utile sapere che versione del #tool ha usato). 🥴️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Su #thread misti c'è chi specula che la colpa sia di #TwilightMenu, ma dalla mia esperienza passata e dalla maggior parte delle opinioni #online tenderei ad escludere questa #ipotesi... ma è anche vero che, se mi affidassi alle stesse #opinioni, allora statisticamente le #corruzioni che ho io dovrebbero essere statisticamente impossibili, cosa che evidentemente è falsa. 😩️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Con questa piccola #differenza che ho potuto alla fin dei conti apportare alla #formattazione, vedremo se cambierà o meno qualcosa. Però, ammesso e non concesso che la causa sia #TwilightMenu++ o #nds-bootstrap, ossia i programmi #homebrew che mi permettono di avviare le #ROM NDS senza #schedina dedicata... quale sarebbe l'alternativa? ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>L'ho detto altre volte che, elettricamente, il formato delle #schede [3]DS fa #schifo, a lungo andare il contatto diventa sempre più lasco e addirittura salta in-game (cosa inaccettabile, in quanto risulta sempre in un crash). Questo è un #problema invece ben più conosciuto, ed è il motivo per cui uso praticamente sempre i #dump, anche di quei pochi giochi che possiedo su #cartuccia. Ho pulito tante volte tante schede, e a volte il #casino si #risolve, ma altre volte poi ritorna. 🧽️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tutto questo #discorsone per dire: nella #vita non c'è #divertimento, non c'è #spensieratezza, non esiste #svago, perché potrei accettare che con gli homebrew escano fuori #magagne ma, #ahinoi, anche con hardware tutto originale, non funziona un cazzo bene. (Non) grazie #Nintendo, per aver creato un tipo di collegamento tra #gamecart e #console così #grezzo. 🗑️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10285,7 +10203,7 @@ And most importantly, reasonable costs! We believe that quality services should 
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-03 11:16:22+00:00">3 gennaio 2024</time></li>
+          <time datetime="2024-01-09 20:25:54+00:00">9 gennaio 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10305,11 +10223,19 @@ And most importantly, reasonable costs! We believe that quality services should 
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/01/03/everyone-disappeared-from-his-birthday-in-1996.html"></a></h2>
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=fkg2MOuEgPs","providerNameSlug":"youtube","responsive":true} -->
+    <h2 id="vittorio-lupen"><a class="toclink" href="../../../2024/01/09/vittorio-lupen.html">Vittorio Lupen</a></h2>
+<!-- wp:paragraph -->
+<p>La #realtà è sempre peggio dei film... quindi, si scopre che #Sgarbi è #indagato per #furto di beni culturali. Beh, il vero amore per l'#arte va oltre i limiti imposti dalla #legge... ci può stare, suppongo. Dai dai, facciamogliela passare! 😁</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://m.youtube.com/watch?v=Z5uupELnzlM","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=fkg2MOuEgPs
-</div><figcaption class="wp-element-caption"><a href="https://www.youtube.com/watch?v=fkg2MOuEgPs">https://www.youtube.com/watch?v=fkg2MOuEgPs</a></figcaption></figure>
+https://m.youtube.com/watch?v=Z5uupELnzlM
+</div><figcaption class="wp-element-caption"><a href="https://m.youtube.com/watch?v=Z5uupELnzlM">https://m.youtube.com/watch?v=Z5uupELnzlM</a></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -10317,7 +10243,151 @@ https://www.youtube.com/watch?v=fkg2MOuEgPs
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Brutta storia, è finito nelle #backrooms totalmente a caso, senza #incidenti di #noclip ovvi o roba di quel tipo... ☠️</p>
+<p>Che sia #innocente o #colpevole lo scopriremo a tempo debito, però comunque questo qui è il modo in cui tenta di difendersi, e io non posso fare a meno di #ridere, mi fa morire!!! Nemmeno i #cattivi dei cartoni attaccano #pipponi di livello così #stratosferico, arrampicandosi su specchi rotti e attaccando i propri #avversari su basi totalmente esterne al #discorso, anziché portare in tavola degli #argomenti. "<em>I CARABINIERI LAVORANO PER ME, IL MONDO È SOLO MIO!!! I GIORNALISTI PARLANO DI COSE CHE NON SANNO, I QUADRI CHE LORO NON HANNO MAI VISTO, CHE SOLO IO VEDO E SO, SANNO SOLO DIFFAMARE, MOLESTATORI, 15 #QUERELE!!!</em>" Siamo #rovinati, noi #italiani... 💀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://m.youtube.com/watch?v=pltG6c8iwwM","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://m.youtube.com/watch?v=pltG6c8iwwM
+</div><figcaption class="wp-element-caption"><a href="https://m.youtube.com/watch?v=pltG6c8iwwM">https://m.youtube.com/watch?v=pltG6c8iwwM</a> (sentitelo a 2x se non volete perdervi, fa per 4 minuti lo stesso giro di #lagne)</figcaption></figure>
+<!-- /wp:embed -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-09 19:07:27+00:00">9 gennaio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="test-teamgram"><a class="toclink" href="../../../2024/01/09/test-tegram.html">test Teamgram</a></h2>
+<!-- wp:paragraph -->
+<p>Diversi anni fa testai, con scarsi risultati, <a href="https://nebula.chat"><a href="https://nebula.chat">https://nebula.chat</a></a>, una #reimplementazione #OpenSource del #server di Telegram, perché ne scoprii l'esistenza ed era #intrigante come concetto. A quanto pare ha cambiato nome, ora si chiama #Teamgram, l'ho scoperto qualche ora fa quando mi è tornato in mente questo fatto e ho voluto ritestare il #progetto. 💍</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sembra che lo #sviluppo sia andato parecchio avanti, ora pare che le #chat private e i canali funzionino in modo praticamente perfetto (non ho testato i gruppi), con addirittura le #chiamate vocali (credo, non ho potuto controllare se si sentisse), e anche i bot. Questo l'ho verificato sulla #istanza ufficiale di #test, ma in teoria è #selfhostabile... solo che non capisco come mai sul #Git il #README dica che queste ultime #funzioni succose siano "enterprise" (e di contattare il tizio lì se se ne ha bisogno), e tra le #issue c'è chi dice che non riesce appunto ad usarle, ricevendo errori che dicono proprio che siano cose di un'edizione #enterprise. Cercando nei #sorgenti stringhe come <code>ErrEnterpriseIsBlocked</code> riesco a trovare qualche parte che fa riferimento a "chiave di licenza da <a href="https://teamgram.net/"><a href="https://teamgram.net/">https://teamgram.net/</a></a> richiesta per sbloccare le funzioni enterprise", ma non vedo controlli di licenza nelle molte parti che tirano questo errore, che tralaltro sembrano fare esclusivamente quello. In sostanza, sento puzza di #codice mancante dalle #repo pubbliche, e se ci ho azzeccato è un peccato. 👾</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In ogni caso, non so che tipo di utilità pratica possa avere. Forse giusto se si vogliono creare #comunità #online #sovrane in contesti dove #Telegram sarebbe preferibile (per abitudine, principalmente), ma quello vero per un motivo o un altro non si può usare (visto che ormai è gestito sempre peggio...), o probabilmente in #team collaborativi, perché altrimenti l'assenza di federazione è limitante. Comunque è giusto tenerci su un occhio. <a href="https://github.com/teamgram"><a href="https://github.com/teamgram">https://github.com/teamgram</a></a> ✈️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-08 22:33:29+00:00">8 gennaio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="gli-sticker-da-telegram-a-matrix"><a class="toclink" href="../../../2024/01/08/gli-sticker-da-telegram-a-matrix.html">Gli sticker da Telegram a Matrix</a></h2>
+<!-- wp:paragraph -->
+<p>Da quando abbiamo dovuto spostare la #comunità #Spacc sulla #messaggistica #Matrix necessariamente dopo il ban di #Durov, gli sticker #cringe da usare in #chat sono mancati troppo. Per questo una #settimana fa ho iniziato a #sviluppare #MatrixStickerHelper, una #webapp (tutta #ClientSide) che permette di gestire facilmente e in maniera più automatizzata possibile la propria collezione di pacchetti, per i client della #piattaforma che li supportano tramite le #integrazioni. 🚀️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nei giorni passati ora ci ho lavorato parecchio, e ho avuto sia modo di smussare di più gli spigoli della #UX (che però deve essere ancora parecchio levigata, ahimè), sia, cosa essenziale, aggiungere #features importanti. Ecco quindi che, qualche centinaio di righe di #codice più tardi, stasera la #applicazione supporta l'importazione di pacchetti #sticker da #Telegram, sia quelli statici che quelli #animati (non ancora quelli #video). Eccovi una #demo e, come sempre, aiuti e pareri sullo #sviluppo sono graditi. 🕷️ (Nella #registrazione, la parte dove vengono aggiunti sticker da #URL di Telegram è velocizzata 8x, purtroppo codificare quei #media in buona #qualità è costoso).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p> </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":988} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/MatrixStickerHelperDemo2.mp4"></video><figcaption class="wp-element-caption">L'ultima versione, appena #aggiornata, è sempre disponibile a <a href="https://hub.octt.eu.org/MatrixStickerHelper/">https://hub.octt.eu.org/MatrixStickerHelper/</a>... provatela! 🙃️</figcaption></figure>
+<!-- /wp:video -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-08 02:13:59+00:00">8 gennaio 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../../2024/01/08/micragnosi-smarfonini-non-adatti-per-il-gaming.html"></a></h2>
+<!-- wp:paragraph -->
+<p>Un #pensiero #triste prima di andare nel mio lettino a fare la cosina solita, riguardo una cosa che non avevo mai notato ma che, scoprendo ora, mi fa dire #mannaggia... 🌚️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dopo un po' di bestemmie (perché il terribile #software di quella altrimenti ottima #console non la finisce di corrompermi a piacere il filesystem della scheda SD, e con esso le ROM e gli homebrew che ci tengo sopra), ho passato il mio salvataggio aggiornato di #AnimalCrossingWildWorld sul #new3DSXL, perché mi sa che non ho più voglia di giocarci sullo #smartphone, troppe bestemmie lì (leggi come: #Android è merda e uccide l'emulatore quando passo ad un'altra app per pochi secondi)...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Giocandoci da mesi solo su #telefono, non ricordavo come fosse sul #3DSXL, e dopo qualche minuto mi colpisce come il #gioco mi sembri più #immersivo (anche se meno risoluto, perché l'upscaling del #3DS è matematicamente brutto)... ci penso un attimo e noto che i #display di questa console #portatile sono molto più larghi in un lato (anche se complessivamente più piccoli), essendo 4:3 contro il ~18:9 dei #telefoni. 📐️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Avevo fatto questo pensiero anche quando comprai il mio #Kindle, ora che mi ricordo: il poco #spazio in più su un lato fa sembrare tutto lo #schermo più #grande ed #accogliente. E allora caro #mercato, per piacere, puoi darci #telefonini con schermi non #micragnosi? Il #display del mio #Xiaomi sarebbe da 6.2", ma lo sento molto più piccolo. Il ruolo principale degli smartphone non è guardare film (per cui il 18:9 sarebbe bono, però il tutto è troppo piccino), ed il doomscrolling non è una pratica sana, mentre altri rapporti d'aspetto favoriscono #intrattenimento di #qualità (#lettura, e #videogiochi non eccessivamente casualoni) e #produttività. 🕷️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -10330,7 +10400,7 @@ https://www.youtube.com/watch?v=fkg2MOuEgPs
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="45.html">45</a> <a class="md-pagination__link" href="46.html">46</a> <span class="md-pagination__current">47</span> <a class="md-pagination__link" href="48.html">48</a>
+  <a class="md-pagination__link" href="../../2024.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="45.html">45</a> <a class="md-pagination__link" href="46.html">46</a> <span class="md-pagination__current">47</span> <a class="md-pagination__link" href="48.html">48</a> <a class="md-pagination__link" href="49.html">49</a> <a class="md-pagination__link" href="50.html">50</a>
 </nav>
         
       
@@ -10370,7 +10440,7 @@ https://www.youtube.com/watch?v=fkg2MOuEgPs
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
