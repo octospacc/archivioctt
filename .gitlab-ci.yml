@@ -6,7 +6,7 @@ before_script: |
 pages:
   stage: deploy
   script: |
-    mkdocs build
+    sh ./scripts/make.sh
   artifacts:
     paths:
       - site

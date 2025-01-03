@@ -12,6 +12,14 @@ theme:
 plugins:
   - blog:
       blog_dir: microblog
+  - blog:
+      blog_dir: pattors
+  - blog:
+      blog_dir: pictures
+  - blog:
+      blog_dir: spacccraft
+  - glightbox:
+      auto_caption: true
   - offline
   - search
   - tags
