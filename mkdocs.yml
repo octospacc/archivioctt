@@ -13,11 +13,13 @@ plugins:
   - blog:
       blog_dir: microblog
   - blog:
-      blog_dir: pattors
+      blog_dir: Pattors
   - blog:
       blog_dir: pictures
   - blog:
-      blog_dir: spacccraft
+      blog_dir: SpaccCraft
+  - blog:
+      blog_dir: Spacc-Inc
   - glightbox:
       auto_caption: true
   - offline

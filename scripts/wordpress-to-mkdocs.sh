@@ -13,7 +13,7 @@ fi
 namespace="${1}"
 ensuredir "docs/${namespace}/posts/wordpress.tmp"
 
-xsltproc -o ./wordpress.tmp ~/WordPress-To-Yaml+Html.xslt "${2}"
+xsltproc -o ./wordpress.tmp ~/Documents/Snippets/WordPress-To-Yaml+Html.xslt "${2}"
 csplit -s ./wordpress.tmp '/<!-- wp:item /-->/' '{*}'
 rm -f ./wordpress.tmp ../*.md
 

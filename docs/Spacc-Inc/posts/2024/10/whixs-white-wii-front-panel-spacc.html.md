@@ -1,0 +1,12 @@
+---
+title: "Whix's white wii front panel spacc"
+slug: 2024/10/whixs-white-wii-front-panel-spacc.html
+date: 2021-01-07T15:22:00.002+01:00
+type: post
+author: User
+canonical_url: https://spacc-inc.blogspot.com/2024/10/whixs-white-wii-front-panel-spacc.html
+tags: 
+---
+
+<div class="separator" style="clear: both; text-align: center;"><object class="BLOG_video_class" contentid="73fc0d8002753546" height="266" id="BLOG_video-73fc0d8002753546" width="320"></object></div><p>The sir here wanted to do some fixes to his Nintendo Wii, but didn't have the screwdriver for ninty's proprietary shit screws, so he just spacced part of a screw. And now the front panel just remains like that, flimsy.</p><div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS5IrinEvxqNy8DTrifBzxPYOvCkrHeBbp2XJDCmAg_7TmU0kZH_J9RaroalE3skr3cE5PG_DCTsRwps2A376MdWZspmOvUtOn_cKPEsodOlY5cTOADkfrbqK6m2HoV6jfQFcr2UyLFzzYykwNpbtpIUbmwtaG6ij60uqMYEbalGpJXZGEzL811ilN8_Kq/s4160/IMG_20210107_152602.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="4160" data-original-width="3120" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS5IrinEvxqNy8DTrifBzxPYOvCkrHeBbp2XJDCmAg_7TmU0kZH_J9RaroalE3skr3cE5PG_DCTsRwps2A376MdWZspmOvUtOn_cKPEsodOlY5cTOADkfrbqK6m2HoV6jfQFcr2UyLFzzYykwNpbtpIUbmwtaG6ij60uqMYEbalGpJXZGEzL811ilN8_Kq/s320/IMG_20210107_152602.jpg" width="240" /></a><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNzG_0IgNdpyhVAG30xpesQSWs-PMfSsCjimLS0wntX5RaOfkt9CzEo7wD_fhJ8j6hcIXQVwXwXI1mkDqBKXvpX3CG1VEc8jQxQw5R-Ia7fClsyMXEqqG9ndQrggtJn519-Et-wpRaRxQ7NVtrwaX6XI4OdHWSy5ppMmDuOS6bjXCFCcJUb8HzUZGxYipv/s4160/IMG_20210107_152546.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="4160" data-original-width="3120" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNzG_0IgNdpyhVAG30xpesQSWs-PMfSsCjimLS0wntX5RaOfkt9CzEo7wD_fhJ8j6hcIXQVwXwXI1mkDqBKXvpX3CG1VEc8jQxQw5R-Ia7fClsyMXEqqG9ndQrggtJn519-Et-wpRaRxQ7NVtrwaX6XI4OdHWSy5ppMmDuOS6bjXCFCcJUb8HzUZGxYipv/s320/IMG_20210107_152546.jpg" width="240" /></a></div><p><span style="font-family: courier;">Source:&nbsp;<a href="https://t.me/SpaccInc/19">https://t.me/SpaccInc/19</a></span></p><script async="" data-telegram-post="SpaccInc/19" data-width="100%" src="https://telegram.org/js/telegram-widget.js?22"></script>
+

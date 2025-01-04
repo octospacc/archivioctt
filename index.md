@@ -10,6 +10,9 @@ Data Sources:
 * https://octospacc.altervista.org/microblog/
 * https://liminalgici.spacc.eu.org/the_octt
 * https://memos.octt.eu.org/u/octt
+* https://pattors.wordpress.com
+* https://spacc-inc.blogspot.com
+* https://spacccraft.altervista.org/blog/
 
 References:
 
