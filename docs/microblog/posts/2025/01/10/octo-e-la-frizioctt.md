@@ -1,0 +1,51 @@
+---
+ID: 13412
+post_title: octo e la frizioctt
+post_name: octo-e-la-frizioctt
+author: minioctt
+post_date: 2025-01-10 23:56:37
+layout: post
+link: >
+  https://octospacc.altervista.org/2025/01/10/octo-e-la-frizioctt/
+published: true
+tags: [ ]
+categories:
+  - Senza categoria
+title: octo e la frizioctt
+slug: "octo-e-la-frizioctt"
+date: 2025-01-10 23:56:37
+canonical_url:   https://octospacc.altervista.org/2025/01/10/octo-e-la-frizioctt/
+---
+<!-- wp:paragraph -->
+<p markdown="1"><a href="https://octomediajournal.wordpress.com/2025/01/10/15-minuti-prima-dellesame-15-minutes-before-the-exam/">Oggi mi sono inevitabilmente stancata</a>, quindi non è successo molto di spassoso... E inoltre, anche oggi sento che <strong>è un po' la fine</strong>. Riprendendo ancora una volta [le riflessioni della sera prima](../../../2025/01/09/la-fine-della-fine-delloctotestuale.md), è proprio ora il momento di aggiungere qualcosa che non avevo fatto in tempo, prima che io me ne scordi definitivamente rischiando di mandare tutto al secchio... 😀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p markdown="1">Riguardo <strong>il creare contenuti magicissimi</strong>, una cosa a cui ho pensato e che noto sempre di più è che... <strong>oooooodio, ODIO l'informatica</strong>. Più ho <em>frizione</em> per fare qualcosa delle mie, e meno ho voglia di farla, pur parlando di quelle che mi piacerebbero. Ed è così quindi che si verificano situazioni sconvenienti; facendo alcuni esempi, ecco come mai...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Riesco sempre a scrivere i miei post giornalieri da WordPress, dove i click che non corrispondono a lettere sono pochissimi, ma sul sitoctt non esce mai niente di nuovo, perché nel sito statico la manutenzione è una maledizione. (Non l'unico fattore, come detto ieri, ma comunque uno tosto.) 🕳️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Se becco cose che voglio e posso fotografare (in giro, tecnicamente), puntualmente scatto, bello, mi piace, appagante e divertente, ma poi... Vorrei farle vedere in giro, e quindi dovrei caricarle, ma mi secco ampiamente di stare lì tra i menu a selezionare e fare, per poi caricare su addirittura più di un sito. Mi faccio inoltre rogne su sceglierne più di una alla volta, volendole caricare in album e mai singolarmente, perché sennò nella UI mi da fastidio, ma lasciamo stare. 🖼️</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Non parliamo di quanto è per forza di cose seccante programmare, se questo comporta ogni volta stare a girare per cartelle, aprire IDE grossi con trecento pulsanti, gestire questo e quel coso che non funziona (a livello di strumenti, non di codice rotto che si scrive), e tutto il prima e il dopo di un progetto... 🥴</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p markdown="1">O. Io voglio pure fare belle cose, però sembra come se, nell'anno del Signore 2025, ancora il problema della UI/UX non sia stato davvero risolto, e ancora i computer siano una scocciatura da usare... Sto diventando vecchia, molto molto vecchia, me ne rendo conto, però non penso di star dicendo qualcosa di incondivisibile. Di questo passo ho paura davvero succederà che <a href="https://octomediajournal.wordpress.com/2025/01/09/google-e-meta-vorrebbero-assumerti-google-and-meta-would-like-to-hire-you/">mollo tutto e vado a lavorare in fattoria</a>! 💀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p markdown="1">Scherzi a parte, dovrei probabilmente trovare i modi per ridurre <strong>queste maledette frizioni</strong> ogni qualvolta è possibile... Forse devo dire fuck it e scrivere pure i miei post lunghi enormi qui da WordPress, evitare di fare considerazioni troppo autistiche su come fare l'upload di foto, mentre boh programmare è mentally deranged, non ci pensiamo per il momento. 😾</p>
+<!-- /wp:paragraph -->
