@@ -68,6 +68,6 @@ canonical_url:   https://octospacc.altervista.org/2024/11/01/androwebvista/
 <p markdown="1"></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":10886} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/VID_20241101_1657310.mp4"></video><figcaption class="wp-element-caption">Per verificare le mia teorie e controllare che il codice fosse halal, ho infatti semplicemente pacchettizzato offline #2048... giochino dell'epoca Android KitKat, ma che come previsto gira su Gingerbread (testato in emulatore) e Jelly Bean (testato sul Lagsung), messo così. Un #APK venuto appena ~250 KB, wow... lo lascio qui: <a href="https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk">https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk</a>! 🤯️</figcaption></figure>
+<!-- wp:video {"id":10886,"loop":true} -->
+<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/VID_20241101_1657310.mp4"></video><figcaption class="wp-element-caption">Per verificare le mia teorie e controllare che il codice fosse halal, ho infatti semplicemente pacchettizzato offline #2048... giochino dell'epoca Android KitKat, ma che come previsto gira su Gingerbread (testato in emulatore) e Jelly Bean (testato sul Lagsung), messo così. Un #APK venuto appena ~250 KB, wow... lo lascio qui: <a href="https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk">https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk</a>! 🤯️</figcaption></figure>
 <!-- /wp:video -->
