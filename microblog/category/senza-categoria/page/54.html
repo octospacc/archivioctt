@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -10921,7 +10921,54 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-08 02:13:59+00:00">8 gennaio 2024</time></li>
+          <time datetime="2024-03-21 11:55:15+00:00">21 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../rant.html" class="md-meta__link">Rant</a>, 
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ricopie-megafin"><a class="toclink" href="../../../2024/03/21/3430.html">ricopie megafin</a></h2>
+<!-- wp:paragraph -->
+<p>Questa cosa è successa ieri sera e volevo scriverla prima di mimir, ma ero talmente seccata che ho detto #fanculo...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Volevo provare un po' ad usare il lettore musicale predefinito di Xiaomi, ma non legge i file con estensione <code>.opus</code>; i flussi audio Opus in sé li legge però (presumibilmente perché usa i codec integrati in Android), quindi la soluzione è rinominare tutto in <code>.ogg</code>, senza fare ricodifiche o altro. Problemino: per rinominare ogni cosa ho usato (direttamente da shell ADB) un comando <code>find -type f -name "*.opus" -exec mv "{}" "{}.ogg" \;</code>... che, sul momento, credevo sarebbe stato corretto, ma a quanto pare questo programma di #merda che è <code>find</code> (che normalmente non userei, ma in questo caso avevo a che fare con sottocartelle quindi non avevo scelta migliore) non piazza il nome del file in tutte le occorrenze di <code>{}</code> nel comando, il che significa che tutte le mie canzoni sono state spostate su un unico file chiamato proprio "<code>{}</code>" una dopo l'altra, e quindi le ho perse tutte, e quindi proprio ora sto risubendo la lenta tortura di ricodificarle e ricopiarle dal mio HDD... almeno ora ho l'adattatore microSD bono e veloce, però comunque aiutoooooo 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La cosa strana, ho notato dopo l'incidente, è che non si è liberato spazio sulla scheda; si è invece riempita una cartella "<code>FOUND.000</code>" con più di 2000 file, ma avevano tutti dimensioni un po' rotte nonché nomi ordinati ma non descrittivi (ed estensione <code>.CHK</code>)... forse potevo recuperare da lì qualcosa (ma mi chiedo perché si sia formata roba lì?), ma chissà quanto e con che fatica, quindi non ne vale la pena ed è meglio che metto semplicemente il PC a riconvertire le canzoni, che è vero che impiega mezza giornata, ma almeno fa tutto da solo. 😤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nel frattempo devo anche finire di #ricopiare sulla #memoria interna del #telefono tutti i #dati vari backupati sul PC (principalmente foto e video), è la terza volta che ci riprovo e stavolta vado una cartella grossa alla volta perché, durante i precedenti tentativi di copie totali, il collegamento USB è saltato, perché pure la scheda madre del mio PC è cacca e gestisce male la corrente data alle porte frontali... non ne uscirò mai. 💀️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-20 23:28:14+00:00">20 marzo 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -10941,73 +10988,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/01/08/micragnosi-smarfonini-non-adatti-per-il-gaming.html"></a></h2>
+    <h2 id="ximiui"><a class="toclink" href="../../../2024/03/20/%27ximiui%25f0%259f%2599%258f%27.html">ximiui🙏</a></h2>
 <!-- wp:paragraph -->
-<p>Un #pensiero #triste prima di andare nel mio lettino a fare la cosina solita, riguardo una cosa che non avevo mai notato ma che, scoprendo ora, mi fa dire #mannaggia... 🌚️</p>
+<p>Come previsto (ops), oggi sono esplosa con #Android e ho deciso, non potendo fare acquisti d'impulso di svariate decine di euro, quantomeno di fare un #reflash d'impulso e rimettere la #MIUI sul mio #Xiaomi. Un po' di tira e molla stamattina, "<em>conviene tornare alla #stock che con pur tutti i suoi problemi aveva una #UX decente?</em>", "<a href="https://matrix.to/#/!vwmDGYVJvlMFABfAUc:matrix.org/$n5tMIs3KnT0eJcuNAVEHVGCBPHwvtJMBjV-sGzyf33I"><em>metto la versione cinese o la non-ufficiale Xiaomi.eu?</em></a>", "<em><a href="https://t.me/OTIdroid/628892">meglio MIUI 12, 13, o 14?</a></em>" ma intanto mentre tornavo a casa oggi pomeriggio ho fatto i backup delle app, a casa ho copiato tutti i file sul PC, ho scaricato la #ROM, ed ecco tutto pronto per il <em>mattonamento</em>. 🧱️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Dopo un po' di bestemmie (perché il terribile #software di quella altrimenti ottima #console non la finisce di corrompermi a piacere il filesystem della scheda SD, e con esso le ROM e gli homebrew che ci tengo sopra), ho passato il mio salvataggio aggiornato di #AnimalCrossingWildWorld sul #new3DSXL, perché mi sa che non ho più voglia di giocarci sullo #smartphone, troppe bestemmie lì (leggi come: #Android è merda e uccide l'emulatore quando passo ad un'altra app per pochi secondi)...</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Giocandoci da mesi solo su #telefono, non ricordavo come fosse sul #3DSXL, e dopo qualche minuto mi colpisce come il #gioco mi sembri più #immersivo (anche se meno risoluto, perché l'upscaling del #3DS è matematicamente brutto)... ci penso un attimo e noto che i #display di questa console #portatile sono molto più larghi in un lato (anche se complessivamente più piccoli), essendo 4:3 contro il ~18:9 dei #telefoni. 📐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Avevo fatto questo pensiero anche quando comprai il mio #Kindle, ora che mi ricordo: il poco #spazio in più su un lato fa sembrare tutto lo #schermo più #grande ed #accogliente. E allora caro #mercato, per piacere, puoi darci #telefonini con schermi non #micragnosi? Il #display del mio #Xiaomi sarebbe da 6.2", ma lo sento molto più piccolo. Il ruolo principale degli smartphone non è guardare film (per cui il 18:9 sarebbe bono, però il tutto è troppo piccino), ed il doomscrolling non è una pratica sana, mentre altri rapporti d'aspetto favoriscono #intrattenimento di #qualità (#lettura, e #videogiochi non eccessivamente casualoni) e #produttività. 🕷️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-08 01:00:31+00:00">8 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="florida-man-and-the-exploding-toilet"><a class="toclink" href="../../../2024/01/08/florida-man-and-the-exploding-toilet.html">Florida Man and the exploding toilet</a></h2>
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=NA6TC7E_hqE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=NA6TC7E_hqE
-</div><figcaption class="wp-element-caption"><a href="https://www.youtube.com/watch?v=NA6TC7E_hqE">https://www.youtube.com/watch?v=NA6TC7E_hqE</a></figcaption></figure>
-<!-- /wp:embed -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>#FloridaMan #sues for #exploding #toilet. Ed ecco che, magicamente, l'idea di "lasciare una #bomba in #bagno" assume tutto un altro sapore. Questa storia mi ricorda una #notizia più vecchia che diventò un #meme al suo tempo, xd... 💩️</p>
+<p>Son serviti un paio di scleri, perché non può andare mai bene nulla col #modding moderno di 'sti #telefoni: ho provato a #flashare (via <code>fastboot</code>) la ROM CN, ma falliva da subito... allora stavo per arrendermi ad installare la .EU, ma anche quella dava errori, però era comunque arrivato alla fine... e quindi, dopo aver installato quella ma avendo il telefono in uno stato suppongo incompleto, ho riprovato la #CN, ed è andato tutto liscio. Eccetto che la recovery TWRP ora non ne vuole sapere nulla di funzionare, quindi per reinstallare Magisk ho dovuto fare il giro in largo di patchare la partizione boot. Per il resto, sto ricopiando su la roba, dovrebbe funzionare tutto. 🤫️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":979,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/image-4.png" alt="&quot;Man says his threat to blow up a bathroom had nothing to do with a bomb&quot;" class="wp-image-979"/><figcaption class="wp-element-caption"><a href="https://www.facebook.com/JonathanMartinFox26/videos/man-plans-to-blow-up-the-bathroom/2209309105978893/">https://www.facebook.com/JonathanMartinFox26/videos/man-plans-to-blow-up-the-bathroom/2209309105978893/</a></figcaption></figure>
+<!-- wp:image {"id":3424,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-11.png" alt="" class="wp-image-3424"/><figcaption class="wp-element-caption">Vabbé, ora ho di nuovo la #memeui, si spera dovrebbe girare meglio e ridurre la #frustrazione. Sto intanto notando che nella 14 #cinese ci sono tante robe fighe (rispetto alla 12 globale, che usavo anni fa), alcune sarebbero da raccontare forse... Btw, <a href="https://t.me/OTIdroid/628982">Gloria Eterna alla Repubblica Popolare Cinese 🙏🙏🙏</a></figcaption></figure>
 <!-- /wp:image -->
     
   </div>
@@ -11019,13 +11014,12 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-07 20:15:59+00:00">7 gennaio 2024</time></li>
+          <time datetime="2024-03-19 21:33:12+00:00">19 marzo 2024</time></li>
         
           <li class="md-meta__item">
             in
             
-              <a href="../../gaming.html" class="md-meta__link">Gaming</a>, 
-              <a href="../../recensioni.html" class="md-meta__link">Recensioni</a>, 
+              <a href="../../rant.html" class="md-meta__link">Rant</a>, 
               <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
         
         
@@ -11041,122 +11035,29 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="arcade-mini-152"><a class="toclink" href="../../../2024/01/07/arcade-mini-152.html">arcade mini 152</a></h2>
+    <h2 id="adrode-trolling-sempre-peggio"><a class="toclink" href="../../../2024/03/19/adrode-trolling-sempre-peggio.html">adrode trolling sempre peggio!!</a></h2>
 <!-- wp:paragraph -->
-<p>Altro #oggettino della #befana, questo #ArcadeMini (sempre #Legami, lol), che sarebbe una #consolina con giochi stile #arcade. Curiosità, anche se questo ha un #branding specifico, online si trovano da distributori generici cercando roba come "mini arcade 152", con esattamente gli stessi #giochi. Ahimè, sono sempre giochi generici originali (né su licenza né rubati, quindi la qualità è bassina), e moltissimi del totale sono semplicemente reskin messe sotto un nome diverso per gonfiare il conto dei titoli. Ma qualcosa di decente c'è. 🙏</p>
+<p>Raga ma porca troia, ho scoperto uno dei motivi per cui mi pare che su #Android una buona parte della mia #archiviazione interna sia bruciata senza motivo: a quanto pare, le app <em>occupano più di quanto dovrebbero occupare</em>, sprecando un sacco di spazio, in certi casi fino a 7-8 volte tanto la dimensione dell'APK più eventuali librerie e cose. In altri termini, la sezione di informazioni su una #app in Impostazioni mi dice che alcune (non tutte manifestano questa #rogna, stranamente) occupano un peso che è 3-4 volte tanto la dimensione della cartella della stessa app in <code>/data/app</code> (che include librerie estratte e bytecode convertito in ODEX/OAT, cosa che già di suo occupa più #spazio e non mi sto dimenticando di contare, ma in questo caso andiamo anche oltre). 😭️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ovviamente, non so la causa di tutto ciò, e cercando sul web non credo di trovare granché, e quindi intanto non trovo nemmeno il posto sul file system dove questo tantissimo spazio in più è occupato, e non so nemmeno se è una roba di #Android13 o c'è da ben prima. Il fatto è che... disinstallando completamente e poi reinstallando una delle app incriminate (ho provato con solo una ora, ma probabilmente sarà così con tutte quelle che manifestano il problema), il peso riportato ritorna normale. Aprire e usare un po' la app subito dopo non fa aumentare le sue dimensioni (a parte quelle dei dati, che dipendono e comunque non riguardano questa situazione), quindi sospetto che queste si gonfino nel corso di mesi... indipendentemente dalla frequenza d'uso, temo, perché io AIDA64 in questo esempio (in foto vedete il prima e dopo la reinstallazione) lo apro una volta ogni mai, eppure ha mostrato il #problema. 🤐️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":973,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/img_2024-01-07-12-22-37-7498732872133422981222-960x1280.jpg" alt="" class="wp-image-973"/></figure>
+<!-- wp:image {"id":3377,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-10-960x856.png" alt="" class="wp-image-3377"/><figcaption class="wp-element-caption">La app che ho casualmente scelto per la dimostrazione occupa sempre circa 18-19 MB nella sua cartella sia prima che dopo, ma prima è riportata come ~70 MB dal sistema, mentre dopo con un corretto ~18 MB.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Voto #praticità: 7,9. Per essere una #distrazione da #scrivania, ci sta eccome. Un po' furbata e un po' rogna il fatto che usi #batterie stilo, chi lo ha fabbricato ha voluto evidentemente risparmiare, ma con la retroilluminazione del #display, anche se #piccolo, questo le pile temo se le mangi. Forse sotto questo punto di vista è un pro che questo non sia il classico famiclone, i #videogiochi NES non sono piacevoli su uno #schermo così piccino, ma questi non ti fanno ciecare. 🙈</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Voto #estetica: 8,5. Tutto sommato è un bel #soprammobile, non è nemmeno un plasticone terribile, a differenza di altri prodotti di questo tenore; i tasti hanno persino un buon #feeling. Ci starà bene sull'area di lavoro della mia caverna, per essere preso in mano nei momenti in cui mi rompo le. 📦</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-07 18:35:34+00:00">7 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../recensioni.html" class="md-meta__link">Recensioni</a>, 
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="lampada-arcobaleno-da-scrivania"><a class="toclink" href="../../../2024/01/07/lampada-arcobaleno-da-scrivania.html">lampada arcobaleno da scrivania</a></h2>
 <!-- wp:paragraph -->
-<p>Ieri a caso è arrivata questa #lampada come #regalo di #epifania, così si aggiungono altre #luci #RGB alla mia caverna: "#Legami Home Sweet Home n°55". (Posto oggi per colpa dei demoni o boh.) 💡</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":969,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/img_2024-01-07-18-20-15-3873233387938610502325-960x1280.jpg" alt="" class="wp-image-969"/><figcaption class="wp-element-caption">La sistemazione è temporanea, dovrò con calma trovare uno spazio migliore. 🦧</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Voto #estetica: 8,5. Fa certamente la sua figura epica con i #colori #arcobaleno; tuttavia, mi da un po' fastidio il fatto che fronte e retro siano visibilmente diversi (da un lato è tutta #plastica semiopaca rigida, dall'altra c'è un diffusore di gomma), cosa che tralaltro comporta una diffusione della #luce diversa in base ai lati (il retro relativo alla #foto è molto più #luminoso del fronte, a tratti troppo da molto vicino). ✨</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Voto praticità: 7,5. Ovviamente è un #prodotto che di per sé punta più allo #sfizio che all'esigenza, quindi non ha senso aspettarsi chissà che, e certamente non sarebbe comodo avere questa come luce di lavoro al posto di una bianca; però, sorprendentemente, non è nemmeno tanto male, crea un'#atmosfera tendente al #viola ma comunque abbastanza bilanciata. 🎎</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-07 16:36:02+00:00">7 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="roulette-delladblock-video"><a class="toclink" href="../../../2024/01/07/roulette-dellablock-video.html">roulette dell&#8217;#adblock video</a></h2>
-<!-- wp:paragraph -->
-<p>Un #mistero dei tempi moderni è che, almeno su #Firefox desktop (non so altri #browser), una roba come 1 volta su ~100-150, #uBlockOrigin fallisce su #YouTube aprendo una nuova scheda, e il sito riesce a caricare la #pubblicità prima del video... ricaricando la pagina subito si risolve, però boh, è strano, fa pensare. Il #software di oggi non funziona mai in modo stabile.</p>
+<p>Insomma, sempre peggio con sto androide monco, la tentazione di comprare un KaiOSofonino o un Windowsfonino (Nokia Lumia sostanzialmente; lo so che son deceduti, mi accontento), giusto per provare qualcosa di diverso, è sempre più forte. Ho più speranze per la prima opzione però, perché non posso spendere tanto "per lo sfizio" o "per provare" quando tra l'altro il mio attuale #fonino è <em>tecnicamente</em> funzionante... anche se la seconda sarebbe molto più ganza... vabbè. 💀️</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11168,121 +11069,7 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-06 17:51:45+00:00">6 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="aiuto-i-questionari-di-trivellazione"><a class="toclink" href="../../../2024/01/06/aiuto-i-questionari-di-trivellazione.html">aiuto i questionari di trivellazione</a></h2>
-<!-- wp:paragraph -->
-<p>Questi dell'#università sono pazzi in culo, per poter prenotare gli #esami bisogna prima completare i "#questionari di valutazione della #didattica"... capisco il senso, ma allo stesso tempo sono tipo "???" Cioè, io già vi pago centinaia e centinaia di euro, e voi mi obbligate a fare i lavori cinesi? La merda è diventata reale. ☠️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Meme a parte, la cosa assurda è che li hanno organizzati a culo: per ogni materia hanno diviso il questionario separando lezioni da esercitazioni/laboratori, anche se all'interno vengono poste le stesse identiche domande (tra cui alcune che si applicano nello specifico al primo caso o al secondo), quindi questa divisione è stata inutile; poi, hanno diviso per docente (per le materie in cui ce ne sono multipli), ma potevano semplicemente utilizzare delle tabelle all'interno di un solo questionario. Quindi, un questionario che poteva essere 1 questionario, è diventato 4 questionari esattamente identici (o anche, potevano essere 1 invece di infiniti, visto che il contenuto è sempre generico e allora è identico per ogni materia, di nuovo, esistono le tabelle). Cazzo se vi #odio a morte, #mannaggia!!! a voi. 🔪️🔫️💣️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":961,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/questionari-maledetti.jpg" alt="i wish all persone che hanno instaurato questo regime dei questionari di valutazione a very unpleasant evening" class="wp-image-961"/><figcaption class="wp-element-caption">Spero che i colpevoli passino una serata con la diarrea or smth</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-06 14:42:28+00:00">6 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="chromium-ha-la-gui-di-merda"><a class="toclink" href="../../../2024/01/06/chromium-ha-la-gui-di-merda.html">Chromium ha la GUI di merda</a></h2>
-<!-- wp:list {"className":"greentext"} -->
-<ul class="greentext"><!-- wp:list-item -->
-<li>Sii me</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Apri #Chromium per fare una cosa</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Devi tornare ad una scheda di ieri</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>A differenza di Firefox, il browser chimico non ha una barra dei menù, ed Alt+S non fa nulla</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>"Aspetta, ma come è possibile che non ci sia una barra dei menù?"</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sprechi tempo a cercare sul web come attivare questa funzione e trovi solo articoli inutili che puntano ad estensioni inutili che fanno schifo</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Ti incazzi e chiudi tutto</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Dopo un'ora ti ricordi che dovevi fare quella cosa.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Perché mi distraggo così facilmente? Ma soprattutto, come fa Chromium a non avere una #BarraDeiMenu? Io ricordo che questa appare su ambienti #desktop che hanno una barra menu globale (KDE, o XFCE con un add-on), perché non c'è modo nella #GUI del programma di aprirla? 😫</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-06 12:40:29+00:00">6 gennaio 2024</time></li>
+          <time datetime="2024-03-19 18:32:18+00:00">19 marzo 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -11302,26 +11089,143 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../../2024/01/06/926.html"></a></h2>
+    <h2 id="me-when-emezon-moment"><a class="toclink" href="../../../2024/03/19/me-when-emezon-moment.html">me when emezon moment</a></h2>
 <!-- wp:paragraph -->
-<p>A regà #mannaggia, io per quanto detesti i #miliardari scemi come #Musk, in genere riconosco i meriti delle persone, e fino ad ora mi ero bevuta la narrativa del "si ok, #Elon ha sbannato individui con ideologie problematiche, limitato pesantemente #Twitter a livello tecnico, e prima o poi verrà calciato in culo perché non paga l'affitto degli uffici, ma <em>ha fatto anche cose buone</em>, ha ripulito la #piattaforma di tutta quella #spazzatura che c'era"... ah si? 🤬️</p>
+<p>La legge di #Murphy ha colpito fortissimo oggi col pacco #Amazon: dovevo andare a casa di mia nonna, e ho pensato di approfittarne per passare al locker a ritirare il mio #pacco... ma per la via all'andata ancora non risultava consegnato. Sulla via del ritorno controllo di nuovo varie volte... ma niente. Appena salgo a casa, ricontrollo ancora, ed ecco stavolta che risulta consegnato, ovviamente. Vado a pescare la mail con il codice, e vedo che era arrivata esattamente 1 minuto prima. Se avessi deciso di controllare proprio di fronte al portone mi sarei risparmiata di salire, avrei direttamente invertito la marcia e via... e invece son dovuta riscendere e andare a prendere sto coso. (E ho pure sudato, perché ho pensato "boh si c'è fin troppo sole, ma c'è anche vento, meglio se la porto anche ora la giacca... e perciò il vento era sparito e ho avuto solo caldo.) 😓️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Stavo cercando tutti i #tweet contenenti "<code>@telegram</code>" sul sito, perché volevo vedere se altra gente si lamentava come me per i #ban (spoiler: si), e se quelle scimmie che lavorano al supporto avessero cagato qualcuno. E qualcosa si trova, ma è tutto pieno di:</p>
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3368,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-9-960x960.png" alt="" class="wp-image-3368"/><figcaption class="wp-element-caption">Cosa figa che ho visto: nel credito Amazon ho di nuovo tutti gli ~11 euro di [quell'articolo che ho cancellato ieri](../../../2024/03/19/amazon-tricc.md), il che vuol dire che... la #spedizione non mi è stata accreditata, anche se alla fin dei conti il mio #ordine elaborato è finito per essere sotto la soglia minima per la spedizione gratuita. Quindi, alla fine, dopo aver perso 1 volta ho vinto ben 2 volte. E credo proprio che terrò a mente questa informazione per il futuro... (anche se francamente dubito che con un ordine normale, non buggato, questo #metodo possa funzionare e farmi non pagare le #spedizioni, ma chissà...) Comunque l'ultimo articolo per qualche ragione arriva domani; lo prenderò approfittandone al ritorno dall'università, e a quel punto se mi gira faccio il post recensione di tutti gli #acquisti. 🙃️</figcaption></figure>
+<!-- /wp:image -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-19 00:30:30+00:00">19 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="amazon-tricc"><a class="toclink" href="../../../2024/03/19/amazon-tricc.html">amazon tricc</a></h2>
+<!-- wp:paragraph -->
+<p>Dovevo inviare questo post qualche ora fa, ma <em>per scaramanzia</em> ho preferito aspettare un attimo; ora credo di poter parlare. Sembra proprio che io sia riuscita a sbloccare <a href="../../../2024/03/16/odio-emezon.html">il mio ordine dell'altro giorno</a> di #Amazon, dopo un po' di panico e con un po' di culo, fuck around and find out insomma. 🤗</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Le cose non si erano risolte da sole neanche oggi, quindi ho contattato l'assistenza via chat e, dopo un #casino avanti e indietro chiedi e rispondi scrivi e riscrivi con l'agente, mi era stato detto che avrei dovuto aggiungere una carta di credito all'account per sbloccare l'ordine... e già stavo per scrivere uno sclero qui sopra con anche potenziali teorie d'azione, ma per fortuna non è servito. 🙏</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Visto che un articolo dei tanti nell'ordine era mediamente urgente, l'ho comprato in un #negozio fisico oggi, e quindi l'ho rimosso dal mio #ordine. Immediatamente, tutti gli altri articoli si sbloccano e inizialmente stimano la data di consegna (ma non danno ancora altre informazioni nella UI del sito), poi via via in queste ore il documento di riepilogo degli #ordini si aggiorna con la dicitura che cambia (ben 3 articoli ora sono "in spedizione"), ed è anche apparso il documento di ricevuta che conferma l'ordine come gestito oggi 18 marzo (non il 16 in cui ho effettivamente ordinato). 👀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vabbè, tutto è bene quel che finisce bene? Boh... aspetterei che appaiano le informazioni di tracking prima di #esultare, però qui volevo dire comunque questa cosa ora. E in ogni caso temo di aver speso 4 euro per la spedizione ora, perché, ammesso che mi rimborsano quei 10 euro dell'articolo che ho rimosso, finirei sotto i 35 euro, e quindi non avrei tecnicamente diritto alla spedizione gratuita... staremo a vedere. 👄</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Probabilmente comunque questa cosa si è verificata perché l'ordine si era banalmente buggato, o qualcosa del genere, e modificarlo anche in questo modo lo ha rinfrescato. A me però piace pensare che Bezos si sia cagato nei pantaloni quando ho messo come motivazione della cancellazione dell'oggetto dalla consegna "Trovati articoli meno costosi altrove"... come a dire, l'algoritmo ha pensato "cazzo, se obblighiamo quest'utente a usare metodi di pagamento brutti che non possiede, questa comprerà da altre parti e noi non faremo mai più nemmeno un (1) soldino". Con la mia testardaggine, ma non sprovvedutezza, sono più forte delle corporation, le regole le faccio io... (lettori, mettetevi pure in fila per glorificarmi, 1 alla volta prego). 🕷️</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-18 14:15:05+00:00">18 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../rant.html" class="md-meta__link">Rant</a>, 
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="odiofonino"><a class="toclink" href="../../../2024/03/18/odiofonino.html">odiofonino</a></h2>
+<!-- wp:paragraph -->
+<p>È #incredibile ma più passano i giorni e più ho l' #impressione che la #tecnologia non faccia altro che prendermi sempre più per il culo... ed avrei talmente tante #lamentele che è meglio se per ora mi limito solo allo #smartphone: 🤢</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>💩️ Un sacco di post apparentemente duplicati, prevalentemente dei <em>cryptotelebros</em>, e addirittura risalenti a 5 anni fa... ma che cazzo me ne frega a me dei post di questi chissà chi di mezza decade fa? Assieme a post a caso di gente che per #spammare i suoi canali o gruppi tagga Telegram, invece che usare gli #hashtag, comportamento che secondo me dovrebbe essere bannabile, perché rompe la #ricerca. In generale, un sacco di spam se non usi i filtri.<!-- wp:list -->
+<li>Lo Ximi (con Paranoid #Android da mesi, ma quando aveva MIUI non era meglio) sembra sempre più #instabile e decisamente #imprevedibile: 😵‍💫<!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>Alcuni dei risultati #spam erano pure porno... per qualche motivo escono a volte si ed altre no, ma quando escono sono senza né sfocature, né la classica pillola che avvisa di "contenuti sensibili" e richiede un click per aprire.</li>
+<li>Capita molto più frequentemente che a caso partano lunghe laggate scrollando nel browser, e non solo su Pinterest che è pesantino, ma anche su boh, Wikipedia... e (raramente, per fortuna) ormai tira dei grossi #lag pure nella app di WordPress quando scrivo 🐌<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Certe volte mi si è piantato tutto così forte che ho dovuto scegliere tra fare un hard reboot, o aspettare chissà quanto nella vana speranza di una ripresa autonoma delle #prestazioni</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>🎣️ Il top, sotto un sacco dei messaggi che mi interesserebbero, della gente che si lamenta con #Telegram perché è bannata, se ci sono risposte, allora la totalità sono di #bot che dicono "nooo sir quelli del supporto non ti rispondono non se ne fregano, contatta @[username assolutamente affidabile] su Instagram (????) he is good hacker sir lui ti recupera l'account" (palesi tentativi di #truffa). Perché invece di mettere quei ratelimit terribili per risparmiare sui server, il Muschio magari non leva di mezzo 'sti botti? Tralaltro, segnalarli non serve assolutamente a nulla... al contrario delle segnalazioni per altri tipi di violazioni, queste finiscono direttamente in <code>/dev/null</code>, considerando che non esce nemmeno la notifica "Abbiamo ricevuto la segnalazione".</li>
+<li>Negli ultimi giorni ho disinstallato qualche applicazione nativa, e non ne ho installata nessuna di nuova, così come non ho scaricato grossi file o fatto chissà che, ma per qualche motivo mi sembra di avere qualche centinaio di MB di spazio disponibile <em>in meno</em> ora</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Proprio poco fa stavo scrivendo un messaggio lungo su Telegram Web, e la tastiera virtuale (OpenBoard, fork della tastiera AOSP; ha sempre funzionato correttamente prima) ha iniziato a correggere le parole sbagliate solo la metà delle volte; i suggerimenti apparivano sempre, ma qualche volta si attivavano da soli (normale), qualche altra volta no e dovevo io cliccarli per usarli (rotto) 👃</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Ancora prima, stavo semplicemente ascoltando musica col telefono in tasca, e a un certo punto questo salta de botto al prossimo brano; ho controllato il file ed è integro, quindi o si è cringiato il player, o il sistema ha erroneamente rilevato la pressione del tasto "next" a causa del filo che si è mosso troppo (in ogni caso, non è accettabile) 😠<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Poco dopo è riaccaduta una roba simile, nelle stesse identiche condizioni (eccetto per la tasca, che era diversa), con la musica che invece questa volta si è totalmente fermata e la notifica widget è anche sparita; mi chiedo se la causa sia la stessa di prima, o è un bug strano, ma questo specifico inconveniente è già capitato in passato</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Altro bug del player musicale (Fossify Player, nonostante tutto è il <em>meno buggato</em> che ho mai usato su #Android13), ben 2 volte solo oggi: dopo aver messo in pausa dalla notifica di sistema, rimettere in play da lì non fa nulla, appare una rotellina di caricamento senza senso; devo aprire la app e premere play lì 👹</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Ho notato che la barra di scorrimento nel widget notifica dei media (indipendentemente dalla app che riproduce) è rotta, e non è un problema nuovo ma mi da sempre più noia, sono così vicina a sbottare; quando si scorre, bisogna farlo precisamente sull'asse verticale senza muovere quasi per nulla il dito su o giù, altrimenti al rilascio non succederà niente 🥶</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Qui lo ammetto, parliamo di #skillissues, ma non vuol dire che io abbia torto: in un certo momento prima mi trovavo in #difficoltà a fare screenshot sia con il gesto a 3 dita che con i tasti laterali, e ho provato a cercare il quick toggle apposito per aggiungerlo ai miei, ma non l'ho trovato... eppure ricordavo ci fosse... <s>prossima volta compro un Samsung (lì so che c'è), perché MIUI è indecente ma la soluzione a quanto pare ad oggi non è più #AOSP, è OneUI</s> edit: non è vero, non c'è, mi sento presa in giro dalla mia memoria... c'è solo su EMUI e credo MIUI... almeno però ora noto di poter attivare un menu di accessibilità, che ha anche la funzione screenshot 🫥</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -11329,9 +11233,9 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":939} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/01/simplescreenrecorder-2024-01-06_12.35.13.mp4"></video><figcaption class="wp-element-caption">#X dot com more like MERDA</figcaption></figure>
-<!-- /wp:video -->
+<!-- wp:image {"id":3332,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/it-seems-so-satisfying-to-hang-up-by-flipping-ur-phone-shut5103919401870167214-320x450.jpg" alt="the nostalgic urge to use a flip phone" class="wp-image-3332"/><figcaption class="wp-element-caption">Considerato tutto, <a href="https://www.pinterest.it/pin/37225134413401072/">la #tentazione di comprare un flipofono</a> con sopra KaiOS è sempre più alta... se dovessi beccarne uno a non più di 30 euro onestamente non ci penserei nemmeno 2 volte a prenderlo; sicuramente mi farebbe schifo come unico daily driver, ma posso usare in modo complementare sia lui che il mio #telefono attuale... e nel caso peggiore me lo tengo per esperimenti e sviluppo software (le app native lì sopra sono praticamente webapp e girano sul motore di Firefox, il che è fighissimo) 😻</figcaption></figure>
+<!-- /wp:image -->
     
   </div>
 </article>
@@ -11342,12 +11246,11 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-01-06 02:02:08+00:00">6 gennaio 2024</time></li>
+          <time datetime="2024-03-17 19:49:05+00:00">17 marzo 2024</time></li>
         
           <li class="md-meta__item">
             in
             
-              <a href="../../gaming.html" class="md-meta__link">Gaming</a>, 
               <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
         
         
@@ -11363,62 +11266,137 @@ https://www.youtube.com/watch?v=NA6TC7E_hqE
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="news-anchor-mocks-kid-for-beating-tetris"><a class="toclink" href="../../../2024/01/06/news-anchor-mocks-kid-for-beating-tetris.html">News Anchor Mocks Kid For Beating Tetris</a></h2>
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=-WuEd3diKjo","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=-WuEd3diKjo
-</div><figcaption class="wp-element-caption"><a href="https://www.youtube.com/watch?v=-WuEd3diKjo">https://www.youtube.com/watch?v=-WuEd3diKjo</a></figcaption></figure>
-<!-- /wp:embed -->
+    <h2 id="falsunghie"><a class="toclink" href="../../../2024/03/17/falsunghie.html">falsunghie</a></h2>
+<!-- wp:image {"id":3315,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/wp-17106997301955732365993069663341-scaled.jpg" alt="" class="wp-image-3315"/><figcaption class="wp-element-caption">Giusto per, ho comprato queste al casalinghi l'altro giorno, e ora ho avuto il tempo di metterle… #unghie finte di un color rosa-magenta leggero (idk, le altre sfumature mi sembravano indecenti), con poi questi #glitter piazzati in modo sfumato dal centro fino alla punta (danno tra l'altro l'impressione che la superficie sotto abbia un gradiente dal chiaro allo scuro). 💅</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>#Kek o cringe? Idk, come #estetica secondo me sono kek, voglio dì. E sono si lunghe ma non estreme, quindi comunque non sono rognose per l'uso quotidiano in quel senso (eccetto per l'uso del telefono, ogni volta che cambio la lunghezza delle unghie di molto in qualunque verso è sempre un dramma), però forse riguardo i glitter reali, ora che ci penso, not sure... la sensazione che inducono strisciando anche per sbaglio sui vestiti è terrificante... (mentre sulle altre cose sono molto ASMR tbh). Vedremo quanto dureranno. 😤</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-16 21:49:08+00:00">16 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../rant.html" class="md-meta__link">Rant</a>, 
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="odio-emezon"><a class="toclink" href="../../../2024/03/16/odio-emezon.html">odio emezon</a></h2>
+<!-- wp:paragraph -->
+<p>Ieri #Amazon mi ha dato una #rogna che non avevo mai visto prima: praticamente ha detto che per motivi di #antiriciclaggio o qualche altra #stronzata devo verificare la mia identità se voglio usare i buoni regalo per comprare da venditori "Marketplace" (immagino tutti quelli che non sono Amazon stesso). Ho messo i dati che chiedeva nel form (nome completo e residenza), perché altrimenti non potevo nemmeno continuare il mio ordine, e boh, pareva aver funzionato. 🧐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Stamattina per curiosità apro il sito e vedo "Il tuo #ordine è in sospeso!", #MANNAGGIA! Prima diceva che devo aspettare che verifichino la correttezza dei miei dati (quanto ci mettono???), e se necessario dovrò fornire un documento (siamo pazzi???), adesso non mi da manco più quell'avviso e pare resti solo l'opzione di aggiungere un metodo di pagamento per sbloccare subito l'ordine (e non possiedo nessuno dei supportati). Ora spero che entro lunedì le cose magari si sistemino da sole, altrimenti ogni sera prima di dormire farò una anti-preghiera contro #Bezos, per maledire lui e la sua piattaforma di #merda. 🤮</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In ogni caso credo proprio che i pacchi non arriveranno mai nella vita di martedì come inizialmente promesso, se questa è la #situazione... e ciò è particolarmente merdoso perché erano almeno 10 giorni che procrastinavo il mio ordine, perché stavo aspettando di far uscire fuori altra roba che mi serviva, per fare un ordine grosso e quindi non pagare la spedizione. Doppia #fregatura. 💣</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-16 15:56:58+00:00">16 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ancora-risveglio"><a class="toclink" href="../../../2024/03/16/ancora-risveglio.html">ancora (R)isveglio</a></h2>
+<!-- wp:image {"id":3282,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/horrible-_-𝘮𝘪𝘯𝘦-🤍-13688330803888815525-320x480.jpg" alt="i HATE waking up" class="wp-image-3282"/><figcaption class="wp-element-caption">#Stamattina i miei #problemi di skill si sono prepotentemente manifestati col fatto <a href="https://www.pinterest.it/pin/900931100447928069/">che mi sono svegliata</a> quasi 2 ore dopo le #sveglie (messe su entrambi i telefoni come sempre), che non ricordo di aver neanche sentito. E in realtà, mi sa sarei rimasta nel #lettino ancora di più se non fosse passato un veicolo col megafono per strada a reclamare non so cosa, che mi ha dato un po' una scossa, facendomi realizzare di essere ancora nel #letto e che probabilmente era #tardi, e infatti… Ormai credo di aver la certezza che la causa della mia sordità è proprio il modo in cui qualche volta (tra cui stanotte, perché avevo #freddo) mi metto sotto le coperte con letteralmente tutta la testa… non è più una speculazione. 🥱</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>E ieri sera ho iniziato a prendere l'antistaminico, quindi niente mal di gola al #risveglio, però ero incredibilmente sballata anche dopo la colazione (senza cofi perché tardi)... ora dopo il pranzo (con cofi) sto più normale probabilmente ma comunque sento che la testa non testa proprio nel modo in cui dovrebbe testare. 😫</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-03-15 15:10:33+00:00">15 marzo 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="paginetta-userscritti"><a class="toclink" href="../../../2024/03/15/paginetta-userscritti.html">paginetta userscritti</a></h2>
+<!-- wp:paragraph -->
+<p>Ecco stavolta un <em>vero</em> #progetto secondario, iniziato stamattina e finito minuti fa: una paginetta sul mio #sito che elenca i miei #userscript. Infatti boh, avendone già creati ben 2 diversi nel giro di qualche giorno, e chissà se e quando ne farò uscire degli altri, è buona cosa non lasciarli sparsi per l'Internet, ma tenerli con lo stesso principio di #organizzazione che uso per le mie piccole webapp, e a cui posso puntare chiunque. <a href="https://hub.octt.eu.org/Userscripts/"><a href="https://hub.octt.eu.org/Userscripts/">https://hub.octt.eu.org/Userscripts/</a></a> 🫣</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Se nel #2024 i #gamer sono ancora la categoria più perseguitata, perché gli attivisti per i diritti civili non fanno nulla a riguardo? #Checkmate #liberals!!!!</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Comunque #TIL che #Tetris per #NES può #crashare... o magari semplicemente è stato un raggio cosmico a colpire il #computer di quel ragazzino, non lo so. Sono d'accordo con chi ha commentato il video dicendo che "la strega di Londra è gelosa di non essere stata lei a realizzare questa impresa", comunque.</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-05 17:26:12+00:00">5 gennaio 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 minuto di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="piu-fedinauti-su-wordpress"><a class="toclink" href="../../../2024/01/05/piu-fedinauti-su-wordpress.html">Più #fedinauti su WordPress</a></h2>
-<!-- wp:paragraph -->
-<p>Quello che sta iniziando a succedere proprio in questi giorni è che qualche perzoncina in più sta notando come funziona bene ad oggi la mia trovata del #WordPress #federato (o meglio, come funziona bene ad oggi il #plugin #ActivityPub che non ho scritto io, lmao), e sta installando il plugin sui propri #blog... ❤️‍🔥</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il che è #epico, è un'ottima spinta in più verso il #selfhosting del #Fediverso anche per chi non è #TechSavy e vuole una roba già pronta... però oi, state tutti solo attivando #AP sui vostri blog #longform, ancora nessuno che riprende esattamente la mia #idea e inizia a fare anche #MicroBlogging e #shitposting dal proprio #sitarello... Prenderò la cosa come una conferma del mio primato, allora. 🙉</p>
-<!-- /wp:paragraph -->
+<!-- wp:image {"id":3247,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/03/image-8-960x515.png" alt="" class="wp-image-3247"/><figcaption class="wp-element-caption">In realtà la #pagina per ora usa semplicemente #JavaScript per pescare i dati da siti esterni (tra cui #GreasyFork), che non sono direttamente hostati da me, infatti dovrò poi valutare le opzioni possibili per preservarli ma senza impazzire... pare che su questi siti di raccolta di #script si possano settare webhook per aggiornare quantomeno il codice tramite Git (peccato non il README), quella sarebbe una #soluzione.</figcaption></figure>
+<!-- /wp:image -->
     
   </div>
 </article>
@@ -11430,7 +11408,7 @@ https://www.youtube.com/watch?v=-WuEd3diKjo
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../senza-categoria.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="52.html">52</a> <a class="md-pagination__link" href="53.html">53</a> <span class="md-pagination__current">54</span> <a class="md-pagination__link" href="55.html">55</a> <a class="md-pagination__link" href="56.html">56</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="67.html">67</a>
+  <a class="md-pagination__link" href="../../senza-categoria.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="52.html">52</a> <a class="md-pagination__link" href="53.html">53</a> <span class="md-pagination__current">54</span> <a class="md-pagination__link" href="55.html">55</a> <a class="md-pagination__link" href="56.html">56</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="81.html">81</a>
 </nav>
         
       
@@ -11470,7 +11448,7 @@ https://www.youtube.com/watch?v=-WuEd3diKjo
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

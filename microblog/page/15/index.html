@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -10919,7 +10919,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-03 23:45:58+00:00">3 novembre 2024</time></li>
+          <time datetime="2025-02-10 12:18:11+00:00">10 febbraio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -10930,7 +10930,7 @@
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              1 minuto di lettura
             
           </li>
         
@@ -10939,57 +10939,13 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="androidiessedi"><a class="toclink" href="../../2024/11/03/androidiessedi.html">androidiessedi</a></h2>
-<!-- wp:paragraph -->
-<p>Ho realizzato tipo oggi una cosa che tecnicamente già sapevo di #Android, ma boh, non ci ho mai riflettutto. <strong>La memoria di archiviazione</strong> normale per i file <strong>è tutta una gigantesca hack!!!</strong> E programmando applicazioni si deve pagare le conseguenze di ciò... ooooooODIO ANDROID, <strong>diamine</strong>. 😩️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Anche me di 8 anni rimaneva un po' puzzled dal fatto che, sui dispositivi che avevo all'epoca, il percorso <code>/sdcard</code> non era la schedina microSD, ma la memoria interna del coso. Però, cosa doveva frecarmi? Voglio dire, a funzionare funzionava comunque tutto... E idem quando poi iniziai a vedere <code>/storage/emulated/0</code>: emulazione di non si sa che sfaccimm, ma vabbé. 😴️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A quanto pare, storicamente gli androidi non avevano alcuna #archiviazione di file utente interna (!) standardizzata. Quindi, c'erano i dispositivi con relativamente tanta flash, che montavano una parte di questa su <code>/sdcard</code> (o simili) come succede oggi... e poi c'erano quelli sfigati con solo la partizione interna privata (<code>/data</code>), e che senza microSD fisica non facevano fare nulla, manco scattare foto (cacca). 😳️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>A leggere oggi i metodi #Java per l'ottenimento dei percorsi usciti fuori da quei tempi — che ancora non sono stati deprecati eh, e quindi ancora devono essere usati per fare determinate cose — si impazzisce per davvero. Perché si ha in sostanza roba <code>getExternal...Dir()</code> e <code>getExternalStorage...()</code> che, su qualunque dispositivo degli ultimi 10 anni (forse 15), in realtà puntano all'archiviazione interna. 😔️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il disastro in retrospettiva non si capisce esattamente quando si è fermato, ma credo con l'arrivo di KitKat... che ha rotto un sacco le scatole all'epoca, per chi si ricorda, con i suoi permessi nuovi (quando Google rompe qualcosa, non è mai la prima volta), però intanto credo sia stata la versione che ha standardizzato la memoria fisicamente esterna come "memoria secondaria". 🤧️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E quindi da quel momento c'è la #API <code>getExternalFilesDirs()</code> (plurale), che da in lista tutte le "memorie esterne", con la prima che è quella in realtà interna (e si chiama "primaria"), e le altre che sono in genere esterne per davvero, però si chiamano "esterne secondarie". Troppo confusionario? <strong>Immaginate di dover programmare</strong>. 😉️🗡️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La cosa bella è che tutto questo non tiene neanche conto in primis dell'archiviazione adottabile aggiunta tempo dopo (Marshmallow), che è talmente un casino da essere buggata su molti dispositivi e infatti disattivata da molti vendor, e poi dell'archiviazione scoped introdotta ancora dopo (10-11) che come sapete da utente amo tantissimo (sarcasmo). Ma, <em>io digresso</em>. 💀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In realtà, a parte i lati negativi, lo scoped #storage ha un suo vantaggio, cioè che genericizza ancora di più l'accesso a memorie esterne e non solo (anche a percorsi della memoria interna privata di app programmate per condividerli, ad esempio Termux!). Lo dico semplicemente per riconoscere che, prima di lui, la API era veramente terribile, e lo sto sperimentando sulla mia pelle adesso. 🥶️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":11001,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image-1.png" alt="" class="wp-image-11001"/><figcaption class="wp-element-caption">Il mood è letteralmente: #TODO implementare le #hack per supportare TUTTI gli Androidz sulla terra, dai dinosauri con API level 1 e mount stranissimi per colpa di OEM scassatutto, fino ai dispositivi correnti e futuri!!! 💣️💣️</figcaption></figure>
+    <h2 id="this-hour-im-doing-a-challenge-called-this-hour-its-where-i-try-to-make-it-through-this-hour"><a class="toclink" href="../../2025/02/10/this-hour-im-doing-a-challenge-called-this-hour-its-where-i-try-to-make-it-through-this-hour.html">&#8220;this hour I&#8217;m doing a challenge called this hour, it&#8217;s where I try to make it through this hour&#8221;</a></h2>
+<!-- wp:image {"id":16709,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-32.png" alt="&quot;[this hour] I'm doing a challenge called [this hour] it's where I try to make it though [this hour]&quot;" class="wp-image-16709"/><figcaption class="wp-element-caption"><a href="https://t.me/HDatabase/55517">https://t.me/HDatabase/55517</a></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ho a malapena iniziato a scrivere quello che serve per supportare tutte le minchiate della memoria nella #SpaccWebView Android, e già è lollissimo, nonostante tutti i TODO ancora da sostituire. E tutto ciò serve... per via di OEM tipo Samsung (ma non solo): <a href="https://stackoverflow.com/questions/5524105/how-could-i-get-the%20%20-correct-external-storage-on-samsung-and-all-other-devices">su Stackoverflow leggo</a> che i developer dell'epoca non erano felici del fatto che la microSD fosse montata in <code>/sdcard/external_sd</code> (o simili)... 🤭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Per chi vuole approfondire oltre: <a href="https://medium.com/@emilynguyen1212/demystifying-internal-vs-external-storage-in-modern-android-54df92bbc563"><a href="https://medium.com/@emilynguyen1212/demystifying-internal-vs-external-storage-in-modern-android-54df92bbc563">https://medium.com/@emilynguyen1212/demystifying-internal-vs-external-storage-in-modern-android-54df92bbc563</a></a>, <a href="https://blog.wislon.io/posts/2014/11/20/xamarin-and-android-kitkat-and-your-external-sd-card"><a href="https://blog.wislon.io/posts/2014/11/20/xamarin-and-android-kitkat-and-your-external-sd-card">https://blog.wislon.io/posts/2014/11/20/xamarin-and-android-kitkat-and-your-external-sd-card</a></a> (, e altro non so). Io ora <strong>basta</strong>. 🥴️</p>
+<p>Forse non è troppo difficile in questo momento, visto che sto semplicemente a casina a girlrottare, e non in un momento tipo esami o altre cose torturanti, quindi vado relativamente di lusso... ma è pur sempre lunedì, quindi non è nemmeno <em>così tanto</em> facile. Allora dai, faccio partire anche io la sfida "<strong>quest'ora</strong>"; se <em>quest'ora</em> passa e continuo a pubblicare roba o comunque a farmi sentire, allora vuol dire che ce l'ho fatta a superare <em>quest'ora</em> indenne... altrimenti pazienza. (C'è un motivo se è una challenge: non è un qualcosa che si riesce a fare alla leggera.)</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11001,7 +10957,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-03 10:56:40+00:00">3 novembre 2024</time></li>
+          <time datetime="2025-02-10 11:07:14+00:00">10 febbraio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11012,7 +10968,7 @@
           
           <li class="md-meta__item">
             
-              2 minuti di lettura
+              1 minuto di lettura
             
           </li>
         
@@ -11021,50 +10977,72 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="pokecartem"><a class="toclink" href="../../2024/11/03/pokecartem.html">pokecartem</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi un altro giochin' di cui parlare, visto che, letteralmente dal nulla, nel corso di pochi giorni, è finito per qualche motivo in mano a tutti; e allora, giusto per, lo volevo almeno provare: <a href="https://play.google.com/store/apps/details?id=jp.pokemon.pokemontcgp"><strong>Pokémon TCG Pocket</strong></a>, per li smarfonini e i tabletti!!! 🤯️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In effetti esiste da credo un po', senza contare che prima di questo c'erano anche altri videogiochi #TCG ufficiali, eppure nessuno mai se lo è frecato troppo, mi pare. E invece, nell'arco di pochi giorni adesso, ho visto gente a caso in giro giocarci, e le persone che vivono nel mio computer consigliarlo. La curiosità è stata molta. 🤭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Beh, a quanto pare, semplicemente gli youtuber hanno ricevuto soldini, pecunia, valuta fiscale, per sponsorizzare il pezzo di software. Mi è capitato di vedere un video dove il segmento sponsorizzato fosse appunto per questo #gioco, ma chissà quanti altri influencer lo stanno pubblicizzando... damn, soldi. 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E a proposito di soldi... non so se il gioco sia pay to win o altre cose di quel tipo; penso di no, ma certamente coi soldi cambia il numero di sbusti che puoi fare. Si ha 1 bustina gratis ogni 12 ore, che volendo si può accelerare con delle clessidre, che si ottengono facendo missioni, oppure... usando la zio peppe's carta gialla. 🤑️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E qualcuno dirà: <em>miiinchia, 2 buste gratis al giorno, fantastico, incredibile, voglio subito!!!</em> Fremerei così anche io, se le buste fossero reali e non virtuali, nell'ennesima incarnazione del moderno turbocapitalismo sotto forma di scarsità artificiale che spinge i giocatori ad offrire vero tempo e denaro in cambio di oggetti inesistenti... 😩️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>...MA, se non pensassi che sia comunque divertente, la app sarebbe sparita immediatamente dal cellulare; quindi ribadisco che può essere un gioco da provare, non mentirò. 😉️ (In stile Nintendo, sullo Ximi ho dovuto nascondere il root con Zygisk, ma il gioco non ha dipendenze Google della malora, evviva.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Big vittoria per chi ha lo spacc poi, perché il gioco gira anche su Android Nougat 7.0, stando a Google Play!!! E non mi pare sia troppo pesante, visto che sullo Snapdragon 662 non mi scalda molto (...eccetto <a href="../../2024/11/02/ximihimihimi.html">ieri nella fase di download</a>), e non tira strane laggate, pur da impostato a 60 FPS. Ma ancora non ho sbloccato le partite a #carte, quindi chissà... 😨️</p>
-<!-- /wp:paragraph -->
+    <h2 id="attenzione-fica-a-colazione"><a class="toclink" href="../../2025/02/10/attenzione-fica-a-colazione.html">&#8220;Attenzione: Fica a colazione&#8221;</a></h2>
+<!-- wp:image {"id":16659,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-31.png" alt="u/JuanBertoldo r/paperearmate: &quot;Io vi ho avvertito&quot;" class="wp-image-16659"/><figcaption class="wp-element-caption"><a href="https://old.reddit.com/r/paperearmate/comments/1iees4b/io_vi_ho_avvertito/">https://old.reddit.com/r/paperearmate/comments/1iees4b/io_vi_ho_avvertito/</a></figcaption></figure>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":10985,"loop":true} -->
-<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/Screenrecorder-2024-11-03-10-18-22-965.mp4"></video><figcaption class="wp-element-caption">Mi ritrovavo ad aprirlo adesso per copiare il codice amico, e allora ne ho approfittato per fare l'ora dello #sbusto. Zio pera però, a me manco mi pagano, che cazzo. Dai #Nintendo, facci un pensierino... 🥺️</figcaption></figure>
+<!-- wp:paragraph -->
+<p>Ieri sera non ho avuto nulla di anti-sesso da postare (anche se catturare insetti ha probabilmente le stesse conseguenze), quindi <strong>stamattina do un avvertimento</strong>... Ora è tardi, quindi mi dispiace per chi si sveglia adesso <strong>sperando di fare colazione</strong> in pace, perché purtroppo no: la roba commestibile è finita, <strong>è rimasta solo la fica</strong> adesso. E non fatemi la solita risposta da italiani medi... è acida, fa schifo, sa di pesce ammuffito, non ve la vorreste davvero mangiare al posto di caffè e cornetto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mi chiedo dove mai possa esser stato installato un cartello stradale del genere... per la strada verso un hotel, forse? È chiaro che non fosse così inizialmente, ma ci sarà un motivo se qualcuno ha deciso di oscurare delle lettere per trasformare il messaggio in questo. Si vede che qualcuno stava per lasciarci le penne con quella robaccia, ops.</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-10 01:41:55+00:00">10 febbraio 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2025/02/10/16651.html"></a></h2>
+<!-- wp:video {"id":16650} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/20250210_011621-1.mp4"></video></figure>
 <!-- /wp:video -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":10981,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/image.png" alt="Schermata profilo e codice amico" class="wp-image-10981"/><figcaption class="wp-element-caption">E qui lascio il mio codice amico appunto, pls aggiungetemi o ditemi il vostro: <code>6724449829662772</code>. Non so se si possono fare lotte, o scambiare carte, o che wtf a parte la cosa inutile del wonder pick, ma non importa dai, si vedrà via via!!! 😚️</figcaption></figure>
-<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>Minchiazza, stasera ce l'ho fatta a catturare questo insettaccio bastardo che fa rotolare le palle (di neve e non solo...), che in testa mia chiamavo "<strong>di merda</strong>" perché mi stava antipatico per la sua evanescenza... ma non ricordavo fosse letteralmente lo <strong>scarabeo stercorario</strong>. E dire che l'ebbi già preso in passato, in altri <strong>Animal Crossing</strong>, se non ricordo male, boh... (Sviluppo sintomi di demenza senile ad appena 20 anni con questo gioco.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La ripresa è anch'essa di merda, grezza, fatta col tablet appoggiato e toh. Sennò non c'era versi, finiva come le altre volte che, per sistemare la cinepresa, o l'insetto si suicidava nei laghetti, o io sbagliavo a cliccare. Però guardate come era intento a cazzeggiare (palleggiare?), prima che io lo prendessi per darlo al gufo del museo, <s>che se lo mangerà</s>...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(Ho dimenticato di fare una schermata dove si vedeva bene in mano comunque, ops. Il fatto che ci sia quasi la luna piena mi ha dato la forza di catturare l'insetto, ma non di ragionare prima di saltare i dialoghi!!)</p>
+<!-- /wp:paragraph -->
     
   </div>
 </article>
@@ -11075,7 +11053,101 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-02 19:10:42+00:00">2 novembre 2024</time></li>
+          <time datetime="2025-02-10 01:04:26+00:00">10 febbraio 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2025/02/10/16646.html"></a></h2>
+<!-- wp:paragraph -->
+<p>Gli animali non hanno idea (o meglio, lo immagineranno, perché non mi vedono in giro e sentono il bordello che la cassetta fa di continuo) del fatto che <strong>il mio culo</strong>, totalmente disoccupato ma così intento ad essere ente del mio girl rotting nullafacente degenerato, <strong>non si cura nemmeno di ritirare le lettere</strong> dalla posta di casa <strong>su Animal Crossing New Leaf...</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":16645,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/20250210_0042477643480333326104875-960x720.jpg" alt="&quot;Non ci stanno più lettere! Liberati di quelle che non ti servono per fare un po' di spazio!&quot;
+Foto a sinistra di oggi, a destra schermata del 16 gennaio." class="wp-image-16645"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cioè, è assurdo, l'altra volta venne pure il gabbiano a lamentarsi... e non la voglio la posta, va, vaffanculo! Oh, ma chi te lo ha chiesto di appostarti davanti casa mia non per consegnarmi il resto, ma per farmi la ramanzina? Non è colpa mia, bensì degli spiriti che mi controllano, se <strong>già letteralmente 3 settimane fa</strong> mi sono ritrovata la buca piena, ma ho avuto l'indecenza di svuotarla solo in parte... E, più che altro, mi sorprende che oggi non si sia di nuovo riempita al 100%; Cos'è, tra gennaio e febbraio la gente non scrive?? Non manda regali???</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-09 23:34:43+00:00">9 febbraio 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="suicidelotmachine"><a class="toclink" href="../../2025/02/09/suicide-lotmachine.html">S:uicide/lotmachine</a></h2>
+<!-- wp:image {"id":16641,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-30.png" alt="S:
+uicide | lot machine" class="wp-image-16641"/><figcaption class="wp-element-caption"><a href="https://t.me/MeALittleDumbDumb/97021">https://t.me/MeALittleDumbDumb/97021</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Ecco, questo memino è il perfetto da dedicare a coloro che continuamente ripensano e ovviamente mi rinfacciano il <em>loro</em> pensiero sui <em>MIEI</em> sbusti, cioè che io sarei ludopatica, che io devo chiedere aiuto, che sarebbe il caso che io la smettessi con queste aperture pazzoidi... e mai loro!!! L'ignoranza è proprio dilagante...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Non solo con quelle santissime bustine io ripeto il giapponese alla faccia del verde gufoide ma, secondo questa teoria, a cui prima onestamente non avevo proprio pensato, ma di cui ora mi approprierò alla faccia dei moralisti, ho almeno potuto mettere in atto la filosofia del "<em>mai uccidere tuo selfo</em>". Perché so che, qualunque cosa storta succeda, <strong>ci saranno sempre le bustelle, la via diametralmente opposta al suicidio</strong>, a darmi la speranza per un giorno più felice e una vita migliore. Tanto, non spendo una lira per aprirle, sono digitali...</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-09 23:14:03+00:00">9 febbraio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11095,54 +11167,51 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="ximihimihimi"><a class="toclink" href="../../2024/11/02/ximihimihimi.html">ximihimihimi</a></h2>
+    <h2 id="pokemon-tcgp-08022025"><a class="toclink" href="../../2025/02/09/pokemon-tcgp-08-02-2025.html">Pokémon TCGP 08/02/2025</a></h2>
 <!-- wp:paragraph -->
-<p>Oggi <strong>lo #Xiaomi ha deciso</strong> di comportarsi in modo un po' funny... cioè, no. Tra la batteria che lentamente si avvia per una strada sua, e il SoC che o non vuole lavorare o lavora troppo, e il firmware che fa le bizzette... 🥴️</p>
+<p>Devo tuttora distrarmi dagli orrori, e magari riempire un po' di più il server di immagini, per scaramanzia contro l'entropia... Quindi, ecco lo sbustamento di ieri, che spolvero prima di produrre il nuovo... ed è la solita porcheria, ma ormai sono condannata. Prima 'sto <em>Zu gai no kaseki</em>, che sembrava una noce pure stasera e invece è un altro fossile, poi <em>Zugaidosu</em> (Cranidos) di cui nulla so se non che potrebbe avere a che fare col fossile di prima, poi <em>Furosutorotomu</em> (Rotom frigorifero, ma con le ali o qualcos'altro di spaventoso che non capisco), e poi...</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>A dire il vero sta dando qualche rogna da qualche settimana, perché pare tirare più #laggate del solito... senza alcun motivo comprensibile? Credo di aver installato qualche app nuova, ma nulla che rimane attivo in background, ho controllato. Quindi <strong>Anzhuo #issue</strong>, devo prendere l'abitudine di riavviarlo più spesso. 😩️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stamattina però voleva esplodermi in mano: stavo configurando il nuovo gioco di Pokémon, e già tra il fare login all'account Nintendo aveva iniziato a rallentarsi di brutto, così, passando tra le varie schede del browser. Nel frattempo era in carica in auto, con WiGLE attivo e la musica in cuffia. Durante il download dei dati di gioco... è uscito almeno 3 volte l'avviso di #surriscaldamento!!! 🌋️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":10961,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_2024-11-02-18-35-39-204_us8887895125917436282.jpg" alt="Messaggio con la schermata di download dei dati, e il popup &quot;Your device is overheating...&quot;. Didascalia: &quot;sta esplodendo ximiii&quot;" class="wp-image-10961"/><figcaption class="wp-element-caption">Ce l'ha fatta poi, perché comunque lo Ximi è una potenza, però non è stato piacevole e la batteria si è pure scaricata di vari punti. Mentre era in carica. E pensare che questo avviso mi capitava solo d'estate. 💀️</figcaption></figure>
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":16628,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image_editor_output_image-1884145245-17391377673466354545060789301711-960x1279.jpg" alt="Sbusto 1: ずがいの化石, ズガイドス" class="wp-image-16628"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il bello è che poi, con l'uso misto nel corso delle ore fuori casa, a luminosità pure alta, a parte continuare a scaricarsi... credo si sia #buggato malamente, perché l'uso #batteria è riportato decisamente all over the place. In parte sarà colpa dell'uso mentre in carica, ma non è stato in quella condizione il 100% del tempo... 🧨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Cioè, va bene che la misurazione non può essere perfetta, però mi ha contato #WiGLE con lo 0% di consumo nel corso di svariate ore. Non ha alcun senso, e di solito infatti non succede, anche perché WiGLE consuma non poco, ma il firmware evidentemente è rotto, e/o si sta spontaneamente rompendo (che sorpresa, è MIUI). 👺️</p>
-<!-- /wp:paragraph -->
+<!-- wp:image {"id":16629,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image_editor_output_image1913375969-17391377477388816974824717076216-960x1279.jpg" alt="Sbusto 2: フロストロトム, ギラティナ" class="wp-image-16629"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":10964,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/wp-17305695595204422825070390640816.jpg" alt="Messaggio con la schermata del consumo di WiGLE che non torna: &quot;qualquadra non cosa... com'è possibile che questa app che sto usando da stamattina, che a regola dovrebbe consumare abbastanza visto che usa il GPS e fa scansioni continue di WiFi e Bluetooth... viene segnata come aver consumato 0%???&quot;. Poi una risposta OT &quot;passami il codice amico di TCGP&quot;" class="wp-image-10964"/><figcaption class="wp-element-caption">In realtà credo di star scoprendo solo in questo momento che #MIUI può raggruppare il #consumo batteria in modo strano, mettendo sotto una categoria aggregata "altro" altre app che sarebbe rilevante sapere quanto consumano, e non solo roba di sistema minore come credevo io... ma questo non è il caso, per questa app il sistema è proprio convinto non ci sia stato consumo. 😤️</figcaption></figure>
+<!-- wp:paragraph -->
+<p>Poi, però, bellino fiero questo <em>Giratina</em>... anche se sempre molto dei poveri (strano, visto che dovrebbe essere leggendario, ma non li metto io i punti). Ha la mossa <em>Horoushotto</em>, quindi... spara a vuoto? Che cagata! Ma la sua carta mi ha sbloccato "<em>Pokemon tachi no tasaina tokusei</em>", che vuol dire tipo "diverse caratteristiche dei Pokémon", e include Lucario e i regi, ma significa non saprei cosa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":16626,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/wp-17391366746334316675786822346548.jpg" alt="ギラティナ:
+* ホロウショット" class="wp-image-16626"/></figure>
 <!-- /wp:image -->
 
+<!-- wp:image {"id":16622,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/wp-17391328214376251512761535254934.jpg" alt="ポケモンたちの多彩な特性" class="wp-image-16622"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per riassumere: questo mio Redmiao mi trolla un pochettino... Speriamo non inizi a comportarsi come la Mi Band, perché quella mi sta bene cambiarla, ma lo smarfonino proprio no... deve durare altri 3 anni minimo!!!!! 😾️</p>
+<p>Infine, non so perché, ma apprezzo questa carticella "<em>Ginga-dan no shitappa</em>" avuta dalla Pesca Misteriosa: ci sono ben 2 reclute del Team Galassia, entrambe con i loro classici capelli blu ma, ahimè, i tempi erano diversi, niente pronomi. E nemmeno un valore apprezzabile ovviamente, ma questo l'ho già detto. (Addendum: anche stavolta ho ottenuto un mazzo a nolo per questa carta… in ritardo… boh!)</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:image {"id":16620,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/wp-17391328211637951236299153532605.jpg" alt="ギンガ団のしたっぱ" class="wp-image-16620"/></figure>
+<!-- /wp:image -->
     
   </div>
 </article>
@@ -11153,7 +11222,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-11-01 22:04:11+00:00">1 novembre 2024</time></li>
+          <time datetime="2025-02-09 20:56:32+00:00">9 febbraio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11173,123 +11242,166 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="androwebvista"><a class="toclink" href="../../2024/11/01/androwebvista.html">androwebvista</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi, prima che calasse il sole (come se dopo non potessi? non so perché lo sto dicendo così lol), ho fatto un progettino Android Studio da usare come semplice <strong>template per pacchettizzare #webapp in APK</strong>... Che per ora è estremamente banale, e decisamente non finito, ma aver fatto la base con in mente certe cosine è già utile: 🤓️☝️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Si possono pacchettizzare robe #web in modo da renderle totalmente funzionanti #offline, liberamente distribuibili su vari store, e installabili per sempre contro l'usura del tempo (...eccetto quando Google rompe l'userspace) 🌋️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>È un'ottima soluzione quando un qualcosa che funge da #PWA non può essere usata bene come tale: magari si è su #Android TV, magari si ha da usare Chromium per motivi prestazionali e quindi non si possono usare estensioni per apparare alla mancanza di caching offline di certi siti, o si è su dispositivi di merda dove caricare tutto il browser fa troppo overhead 💣️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>È forse buono per creare in generale app mobile-first dove si vogliono supportare anche dispositivi Android preistorici, lottando contro la ben più sopportabile piattaforma web, anziché gli SDK ufficiali di Android (che, nonostante [tutto il marcio](../../../2024/10/31/androvecchiaia.md), ancora fanno targettare API 1), o varie opzioni di terze parti (che rompono proprio le versioni vecchie e non funziona una mazza) 🧱️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Anche quando una PWA si può usare bene ed offline (che sia perché implementa di suo il caching, o perché si usa [la mia estensione Firefox apposita](../../../2024/03/28/pwgoduriaaaa.md)), ci possono essere altre complicanze che un pacchetto Android può risolvere (tipo, non occupare memoria interna limitata sui sistemi dove [gli APK si possono invece installare su scheda SD](../../../2024/10/05/memorroid.md)) 💥️</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+    <h2 id="se-spiano-me-me-ne-fotto-scopriranno-solo-che-mi-piace-la-figa-capirai-che-novita"><a class="toclink" href="../../2025/02/09/se-spiano-me-me-ne-fotto-scopriranno-solo-che-mi-piace-la-figa-capirai-che-novita.html">&#8220;…Se spiano me me ne fotto, scopriranno solo che mi piace la figa, capirai che novità.&#8221;</a></h2>
+<!-- wp:image {"id":16608,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-29.png" alt="Vittorio Feltri:
+Si discute a livello politico sui giornalisti spiati. Se spiano me me ne fotto, scopriranno solo che mi piace la figa, capirai che novità." class="wp-image-16608"/><figcaption class="wp-element-caption"><a href="https://www.facebook.com/vfeltri/posts/pfbid0Sx6ZfjGjtWJWVearaQVd6fvSVGNNafe6kQUtpckjjmbCXhT2FZcieXHBNwGnxjF8l">https://www.facebook.com/vfeltri/posts/pfbid0Sx6ZfjGjtWJWVearaQVd6fvSVGNNafe6kQUtpckjjmbCXhT2FZcieXHBNwGnxjF8l</a></figcaption></figure>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>L'ho già messo <a href="https://gitlab.com/SpaccInc/SpaccDotWeb/-/tree/main/SpaccDotWeb.Android"><strong>sotto l'ombrello di SpaccDotWeb</strong></a>, visto che la monorepo non era già abbastanza grande, però alla fine è una stronzatina per ora. Praticamente quello che già sta in qualunque altro template per app #WebView semplice che si trova in giro, ma il codice è strutturato un po' meglio per permettere la riconfigurazione, <code>AndroidManifest</code> ha già un sacco di proprietà giuste presettate, e così via. 😇️</p>
+<p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Come sempre, ho scritto troppo, quindi i dettagli più tecnici li taglio via per un'altra volta, e magari per allora avrò fatto anche qualcosina in più, come pacchettizzare le mie webapp esistenti (che mi richiede di implementare altre cose)... però volevo comunque segnarmi l'idea compiuta qui. Nel frattempo, <strong>goditi popolo la mia piccola #demo!!!</strong> 😳️👌️</p>
+<p>Per quanto un'affermazione del genere ignori il fatto che — in un paese sulla carta democratico e libero, dove in teoria vige il diritto alla #privacy personale e alla riservatezza della corrispondenza — se ciò che si pensa sia successo fosse davvero successo, la situazione sarebbe grave oltre ogni limite possibilmente rappresentabile con delle mere parole, e il popolo tutto dovrebbe organizzarsi per cambiare completamente il governo in carica... a livello personale, si può forse dare torto al signore?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A parte i miei login (greve), <strong>cosa otterrebbe l'ipotetico hackerino di turno stabilendosi all'interno del mio smarfonino</strong>, anziché nelle mie pareti? Beh... a parte le solite fotine che scatto ma non pubblico, data <a href="../../2025/01/10/octo-e-la-frizioctt.html">l'annosa questione per cui potrei ma non voglio e vorrei ma non posto</a>... nulla, tipo. Le bozze dei miei post? I messaggi con le altre persone che vivono nel mio computer? I miei 100 GB di musica scaricata? Tanto, pur avendo un tale vantaggio su di me, non riuscirebbero comunque a farmi concorrenza...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Certo però è che sarebbe un problemino se — come pare sia il caso per lo spyware di #Paragon, e per questo è da incoscienti e/o criminali banalizzare a questo modo — mi spiassero attraverso il microfono e la fotocamera, finendo quindi per scoprire le mie attività offline oltre che quelle online... ma tanto quello lo fanno già gli spiriti delle mie pareti, per cui, onestamente, anche qui, per me non cambierebbe una mazza. Per le persone normali invece, #giornalisti o no, sarebbe <strong>gravissimo</strong>.</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-09 19:38:30+00:00">9 febbraio 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="megaspaccocto-di-fotine-desfritte"><a class="toclink" href="../../2025/02/09/megaspaccocto-di-fotine-desfritte.html">megaspaccocto di fotine desfritte</a></h2>
+<!-- wp:paragraph -->
+<p>E ti pareva che pure oggi non poteva essere sufficiente lottare "soltanto" con i miei soliti problemi ed inconvenienti non-magici, che già sono tanti e grevi ed ostacolano continuamente le mie aspirazioni ascetiche... Ovviamente no, ed ovviamente è anche stavolta <strong>colpa del software</strong>, che di solito mi fa "semplicemente" incazzare ma stavolta mi ha fatto persino prendere <strong>un bel colpo al cuoricino</strong> che davvero, non penso di meritarmi affatto, vista la mia condizione... 😩</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://octospacc.altervista.org/2025/02/08/importocto-pazzocto-con-frittura-dei-post-in-olio-vecchio/">L'<strong>importazione di ieri</strong> dell'altro WordPress</a> <em>sembrava</em> essere andata tutta a buon fine, dal mio controllo lievemente superficiale, ma tra ieri sera e oggi ho visto delle <strong>cose che mi puzzavano, riguardo i media</strong>... Del tipo che alcuni sembravano proprio mancare, ma penso che semplicemente per qualche motivo non li abbia copiati tutti; niente di che, ricaricherò io i mancanti. Ma anche del tipo che, su alcuni post, <strong>apparivano le immagini di post completamente diversi...</strong> e da qui il problema si è fatto quasi gigantesco. 🤢</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ieri sera allora ho iniziato a vedere un po' riguardo questi ultimi, perché <strong>mi stavo cagando</strong>, ma ho notato che il problema pareva essere la cache del browser, e che le immagini si aggiustavano invalidandola, quindi non ci ho dato troppo peso. E quindi il peso me lo sono ritrovato addosso oggi pomeriggio, quando ho visto che <strong>ora erano post non importati</strong>, fatti direttamente sul #sito qui nei giorni passati, ad aver ottenuto la maledizione dello sminchiaggio: <strong>mostravano le immagini che avrebbero dovuto avere quegli altri post!!!</strong> 🧲</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":10886,"loop":true} -->
-<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/VID_20241101_1657310.mp4"></video><figcaption class="wp-element-caption">Per verificare le mia teorie e controllare che il codice fosse halal, ho infatti semplicemente pacchettizzato offline #2048... giochino dell'epoca Android KitKat, ma che come previsto gira su Gingerbread (testato in emulatore) e Jelly Bean (testato sul Lagsung), messo così. Un #APK venuto appena ~250 KB, wow... lo lascio qui: <a href="https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk">https://hlb0.octt.eu.org/Drive/Misc/SpaccWebView-2048.apk</a>! 🤯️</figcaption></figure>
+<!-- wp:image {"id":16591,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-28.png" alt="&gt; madonna l'import dei vecchi post ha spaccato tutto [13:33]
+&gt; 200 post fixare i media a mano mo, e vediamo [13:35]
+&gt; io spero non mi abbia sovrascritto media perché non so come cazzo è che mi esce che per i media settati bene comunque mi esce uno vecchio dalla cache del browser, per giunta [13:37]
+&gt; porca pukkiakkia ha sovrascritto. ma in un modo strano. [13:40]
+&gt; avrei dovuto fare pure il backup dei media. ora devo riprenderli non so come dalla pagina che ancora si carica nel browser oppure da telegram (compressi merda) [13:41]
+&gt; porca puttana ma li doveva rinominare [13:42]
+&gt; menomale che solo alcuni [13:44]
+&gt; ma poi mo non si capisce un cazzo perche c'è un casino tra cache del server e cache del browser [13:45]
+&gt;&gt; [...]
+&gt; [***] SI SONO SOVRASCRITTI I MEDIA SUL SITO FORSE NON CAPISCI [14:02]
+&gt; E NON È NÉ CHIARO QUALI, NÉ È FACILE RISOLVERE ORA [14:02]" class="wp-image-16591"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dopo un po' di parolacce, alla fine ho capito che lo stronzo (che in questo caso non so se sia la piattaforma WP di Altervista, o il core di WordPress) ha ben deciso di <strong>sovrascrivere le immagini già presenti su disco</strong> nell'importare i contenuti dall'altro sito, nel caso di <strong>file con lo stesso nome</strong>. Nonostante, con qualsiasi altra azione in #WordPress questa merda non succede mai (incluso l'importare post con ID uguale, e incluso il caricare file normalmente); e per questo ho dato per scontato che non sarebbe successo in questo caso (<strong>peggior errore della mia vita</strong>). 😳</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":16589,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-26.png" alt="Galleria WordPress, 3 file diversi con uguale miniatura evidenziati." class="wp-image-16589"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":16590,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/image-27.png" alt="WP File Manager, immagini base sovrascritte evidenziate e risoluzioni alternative originali. Sinistra febbraio, destra gennaio." class="wp-image-16590"/></figure>
+<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">La cosa minchiosa è che <strong>non è stato immediato capire</strong> fosse questo il problema, perché da un lato la cache di Firefox merdosa insisteva nonostante tutti i bypass, dall'altro il sito è lento a caricare pagine su pagine di continuo, e per giunta <strong>solo le versioni base delle immagini sono state sovrascritte</strong>; non le copie a bassa risoluzione che spesso il sito mostra invece delle originali, quindi in un punto magari vedevo l'immagine giusta e in un altro no. Nel file manager, invece, questo si nota facilmente... 😤</figcaption></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Per fortuna <strong>non avevo molte immagini</strong> con nomi uguali, solo 7 per gennaio e 3 per febbraio, perché l'unico caso in cui normalmente mi capita è incollando dagli appunti su PC, dove l'immagine è chiamata sempre <code>image.png</code> (non so se per colpa di Firefox o WordPress), a cui WordPress aggiunge un numero se necessario; le altre volte in genere capita i file abbiano un nome univoco. Però... <strong>la megapaura</strong> che mi è venuta e rimasta per tutto il tempo, prima di accertarmi che fosse "banalmente" questa la situazione... 🌋</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Alla fine <strong>ho recuperato e ricaricato tutto</strong>: molte immagini dall'ultimo backup dei #media, un'altra facendo screenshot al mio browser che l'aveva in cache, un'altra dalla cache di Mastodon, e un'altra da Telegram (pazienz per compression JPG). Quindi dai, tutto sommato mi <strong>è andata comunque OK</strong> per stavolta: il problema l'ho risolto circa facilmente, quindi non devo nemmeno <em>ricorrere al suicidio</em>. Però che cazzo, questi programmi malefici... era meglio postare su un quaderno di carta. 📎💣</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-09 13:14:23+00:00">9 febbraio 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 minuto di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="../../2025/02/09/dichiarazione-di-guerra-del-duce-dei-villici-di-minecraft.html"></a></h2>
+<!-- wp:video {"id":16327,"loop":true} -->
+<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/video_2025-02-09_12-56-36.mp4"></video><figcaption class="wp-element-caption"><a href="https://t.me/c/1866205904/1343">https://t.me/c/1866205904/1343</a></figcaption></figure>
 <!-- /wp:video -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-01 09:49:12+00:00">1 novembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="nintenmusik"><a class="toclink" href="../../2024/11/01/nintenmusik.html">nintenmusik</a></h2>
-<!-- wp:paragraph -->
-<p>Nintendo ha deciso di chiudere lo spooky mese non facendo spaventare e pisciocagare nelle pandalogne, <a href="../../2024/10/02/ryujisnt.html">come ha invece fatto all'inizio</a>, ma... facendo un pochino ridere. Nel senso che hanno cacciato fuori <strong>un'ennesima idea ridicola</strong>. 🥁</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":10847,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/11/screenshot_2024-11-01-09-11-58-246_us1648629822678432716-848x1440.jpg" alt="" class="wp-image-10847"/><figcaption class="wp-element-caption">Semplicemente, se ne sono usciti con <a href="https://play.google.com/store/apps/details?id=com.nintendo.znba"><strong>la app mobile Nintendo Music</strong></a>... o in altri termini, hanno finalmente deciso di iniziare a distribuire ufficialmente una certa porzione figa delle loro librerie musicali, ma in questo modo molto stramboide. Riservato agli abbonati Switch Online eh, paaaagah. (E a chi ha minimo 9.0 Pie, su Android.) 🗿</figcaption></figure>
-<!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Immaginiamo per un secondo se esistesse la #app della musica pop, o quella per la musica rap, o quella per la neomelodica, oppure addirittura per uno specifico artista! Sarebbe assolutamente la morte!!! Ma questo è il livello di questa impresa. 🧪</p>
+<p>Ohhh... questo era il fascismo quello vero, quello fiero, che oggi si spera non possa tornare in auge, date le moderne istituzioni e disposizioni democratiche... e dato anche il fatto che, dai, diciamocelo francamente, è un po' ridicolo. La parlata da #Duce ad oggi farebbe sganasciare pure il più stolto credulone degli esseri umani (e infatti quello che registra il video se ne va proprio)... e però invece <strong>i villici di Minecraft si fanno incredibilmente sedurre da questo fascismo retrò.</strong> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Tu bbi onestt, l'ho provata così al volo (attivando la prova gratuita di #NSO su una mail temporanea, ops), e non pare malissimo... la UI è carina (anche se ha una navigazione a schede che si mischiano un po' confusionaria come troppe app moderne), supporta l'ascolto offline, e ha anche le versioni estese delle #OST. 🎈</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però, ovviamente, è finita disinstallata subito. Stranamente, ci mette sempre interi secondi a partire, e ancora di più da #offline, perché deve caricare non so cosa... Nulla a che vedere non solo con lettori musicali offline (my beloved), ma manco con applicazioni più normali come YouTube. 🎃</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Una cosa #strana: ha l'anti-root, come altre app #Nintendo, che causa la app di crashare sul colpo al login, senza alcun errore o che. Lo avevo bypassato inizialmente usando Zygisk, però poi, stranamente, dopo aver disinstallato e reinstallato la app per altri motivi, non ha più funzionato... mo vai a capire se è un bug di Magisk, o cosa. 😩</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La app streamma e scarica offline in formato ExoPlayer, che è una libreria open-source, ma non mi risulta sia un formato gestibile da ffmpeg o VLC o amici... o forse i segmenti sono semplicemente criptati? Non lo so, ma non vale la pena cercare di mettersi ad estrarre la #musica da questa app, tantovale davvero dumparsela dalle ROM usando i vari tool, come si è sempre fatto. 👿</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La cosa ancora più strana è che, spostando in avanti la data del cellulare per simulare il passaggio di un anno di tempo, e riaprendo la app senza Internet, per vedere come si comporta in termini di controllo dell'abbonamento (che nel mio caso, prova gratuita, scade dopo 7 giorni)... ho visto che anche qui, non da alcun errore, ma semplicemente è tutto molto buggato: alcune immagini cachate non caricano, e la musica non parte. 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Insomma, tutti volevano Switch 2 (...ma veramente ancora volete dare soldi a Nintendo dopo il terrorismo che hanno abbracciato?), e loro rispondono con <a href="../../2024/10/21/nintencock.html">una sveglia pazza</a> e un clone di Spotify or smth. E ok, va bene tutto, però forse dovrebbero smettere di spendere il budget sul reinventaggio della ruota e, non so, creare un nuovo F-Zero magari??? 😓</p>
+<p>Considerato quanto normalmente si fanno abusare dai giocatori senza mai accorgersi di nulla o reagire, la scena non mi stupisce, però fa comunque impressione. Abbiamo questo <strong>villico Duce</strong>, di cui purtroppo non sappiamo i tre nomi e il cognome, ma lo vediamo comunque in piena azione. Maremma cara, non sono passati manco 100 anni da quel momento, e già copia il suo simile umano ripetendo pari pari <strong>la dichiarazione di guerra a questa piazza gremita</strong> (si fa per dire, c'è mezza dozzina di gente)... e poveri a loro.</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11301,7 +11413,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-10-31 16:19:07+00:00">31 ottobre 2024</time></li>
+          <time datetime="2025-02-09 12:38:22+00:00">9 febbraio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11312,7 +11424,7 @@
           
           <li class="md-meta__item">
             
-              2 minuti di lettura
+              1 minuto di lettura
             
           </li>
         
@@ -11321,311 +11433,21 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="androvecchiaia"><a class="toclink" href="../../2024/10/31/androvecchiaia.html">androvecchiaia</a></h2>
-<!-- wp:paragraph -->
-<p>È forse da un po' troppo tempo che non mi lamento seriamente di #Android... e quindi perché mai non rimediare??? In questi giorni in particolare sto essendo salatissima del fatto che, zio pera, con ogni anno che passa, sempre meno app funzionano su versioni precedenti del sistema operativo. 😷</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La colpa in questo è condivisa tra Android come piattaforma, e gli sviluppatori di #applicazioni; le due parti messe insieme sgravano così tanto e fanno si che i #dispositivi più vecchi, prima o poi, diventino funzionalmente inutili, anche se sarebbero altrimenti perfettamente capaci di fare robe. 👿</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Man mano che escono nuove versioni di Android, chiaramente quelle vecchie perdono marketshare, e a un certo punto Google dice "<em>eeeh, affanculo</em>"; e finché questo significa che non rilasciano più #aggiornamenti di sicurezza, va benissimo, ma diventa merda quando droppano supporto proprio ai vecchi livelli API nell'SDK! 🪦</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Giustamente di conseguenza seguono gli sviluppatori, perché la #piattaforma non solo non li aiuta adeguatamente con il supportare versioni vecchie, non fornendo la documentazione migliore possibile e delle API direttamente retrocompatibili... ma attivamente li incoraggia a non farlo, deprecando via roba dalle librerie ufficiali che automaticamente vengono aggiunte... 🚽</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Io in realtà ci potrei anche stare, se il nonfrecamento per le versioni vecchie del sistema avvenisse solo per le app che nascono nuove, oppure per i videogiochi. Ma succede anche per app di uso comune, essenziali sia per molti che per pochi a seconda dei casi, che esistono da magari pure un decennio e vengono aggiornate. 💀</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>E a quel punto, le versioni vecchie smettono puntualmente di funzionare, perché dipendono da servizi di rete che vengono cambiati, e le nuove richiedono versioni di Android francamente troppo nuove. E quindi si deve cambiare anche dispositivi che lato hardware reggono il tempo, ma hanno vecchio software, causando e-waste. 🚮</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In realtà questo è un problema del #software più in generale... e la cosa mi fa incazzare pure di più. Cioè, Android sotto questo punto di vista non è messo tanto male, rispetto a quanto so di iOS, visto che le versioni più vecchie del sistema operativo vengono deprecate ancora prima da Apple e dagli sviluppatori (e no, il fatto che gli iPhone vengono aggiornati per più anni è una giustificazione di merda, visto che con ogni nuova major puntualmente il telefono si rallenta). 📵</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Poi non diciamo che, se proprio serve, ci sono le webapp... Ho un androide che è fermo a KitKat 4.4.4, e dato quello che ho detto molte app native non si installano, ma sorpresa: non si riescono ad usare nemmeno le equivalenti web, perché richiedono standard troppo nuovi, che su questa versione di Android non puoi avere, perché sia Chromium che Firefox hanno smesso di supportarla nel 2018-2019!!! 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Al momento, girando sugli store, vedo che molte app comuni pretendono in media #Nougat 7.0 o superiori, ed altra roba meno essenziale anche peggio. Tra qualche anno non basterà manco quello. Se il mio Ximi si rompesse sarei nella cacca, perché la mia riserva più nuova è il Huawei con Nougat; e quello ha il vetro rotto, quindi probabilmente preferirei usare il Samsung con KitKat, però non potrei. ⏳</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-10-30 21:48:00+00:00">30 ottobre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="pikminini"><a class="toclink" href="../../2024/10/30/pikminini.html">pikminini</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi sono di nuovo qui a parlare di giochin' per cui <em>non</em> mi pagano. Diamine... praticamente, <a href="https://t.me/Creeperiano99Channel/3480">il Creeperotto sul suo canalotto</a>, in occasione del Lucca Comics dove lui andrà e io no (zio toscano...) ha consigliato di unirsi al suo gruppo di questo coso che esiste da ben 3 anni, ma nessuno conosceva prima: <strong>Pikmin Bloom</strong> (di #Niantic). 🌷️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Maremma bona però, è kinda vergognoso dal lato tecnico!!! C'è voluto un bordello per configurarlo. Ovviamente richiede Google Play Services e, anche se realisticamente potevano e dovevano farlo funzionare anche senza, almeno qui ha un motivo di esistere: si collega a Google Fit, così da leggere i passi fatti anche senza il #gioco attivo; senza il proprio dispositivo addirittura, visto che tranquillamente si collega con le #fitness band. Però caspita. 😔️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non sto a spiegare le rogne che ho vissuto per installarlo, che sono più in generale di Android e quindi le lascio per un'altra volta. Sul fonino era impossibile con la MIUI CN, però per fortuna sul #tablet si è messo e funziona benone... ogni tanto tira la laggata immancabile, ma comunque non ci sono glitch grafici, e le prestazioni si mantengono in piedi. 😳️ (A differenza di altra gente, che invece si lamenta di come giri tremendo, ops.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il concept di gioco mi piace a primo impatto, e penso che sia più buono di Pokemon Go. Nel senso, non è azzeccone (forse anche per questo non lo conosce nessuno) e non dovrebbe finire per distorcere tremendamente l'idea originale di andare in giro (per cui anziché farti il giro, pensi solo al giochino), l'anima del gameplay è praticamente tutta esplorativa e non è stata corrotta per motivi di convenienza, e i #Pikmin sono ora all'interno delle mie pareti. 🥵️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Questo thread, coi commenti, un po' illustra meglio l'idea, se vi freca: <a href="https://old.reddit.com/r/PikminBloomApp/comments/qnbm9u/pikmin_bloom_is_a_much_better_niantic_game_for/"><a href="https://old.reddit.com/r/PikminBloomApp/comments/qnbm9u/pikmin_bloom_is_a_much_better_niantic_game_for/">https://old.reddit.com/r/PikminBloomApp/comments/qnbm9u/pikmin_bloom_is_a_much_better_niantic_game_for/</a></a>. Ma in breve si, funny semplicemente andare a giro sapendo che si stanno piantando fiorellini invisibili, persino in background come assicura la notifica persistente!!! 😉️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Dovrò però vedere come sarà per me la storia, considerando che l'ho messo sul tablet, che in giro mi porto solo quando vado all'università e non anche altre parti. Finché la Mi Band (a fatica) funziona ancora, mi sincronizza tutti i #passi, ma: a parte che non avrebbe quindi il #GPS, e quindi mi chiedo anche se possa spargere i fiori, devo capire se posso togliere Zepp Life dal tablet, dove mi è servito per associare Google ma ovviamente non voglio tenere, perché la band deve stare connessa al fonino... 🥴️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":10788,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-15-388x1440.png" alt="Schermata commento al post di Creeperiano, io &quot;Nessuno si sta cagando il giochino 💀️&quot; con la schermata del join nel gruppo" class="wp-image-10788"/><figcaption class="wp-element-caption">Dolore. Non condivido codice amico, perché ancora devo capire se il gioco è buono per la privacy o leakka dati a tutti... credo di no, ma meglio la prudenza. Still, procuratevelo (<a href="https://www.pikminbloom.com">https://www.pikminbloom.com</a>), e magari unitevi al party nostro (sopra), che così comandiamo (i pikmin). 🥳️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-10-29 23:47:18+00:00">29 ottobre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="lucism"><a class="toclink" href="../../2024/10/29/lucism.html">lucism</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi #notizia del tutto inaspettata, ma forse non imprevedibile, direttamente dal #Vaticano!!! Eh già, dopo aver scoperto che dire "<em>fro͟c͐i̶͌aͯg͇g̳̼i̟͟n̴̷͞e</em>" nell'anno del Signore (lui) 2024 non fa ridere i gggiovani come nel 2014, hanno deciso per una strategia nuova: FUMO!!! 🥰️🥰️🥰️ (Debuttato oggi.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>No, non intendo che promuovono il consumo di Maria, ma che si sono inventati un #fumofumo. Ok, non è manco quello, ma diciamo che visivamente ci si avvicina parecchio. Non so se dire che è bllxm, ma comunque è molto bll... <strong>la nuova #mascotte fatta per il #Giubileo</strong> da #tokidoki. 🤯️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Cioè, onestamente non è male affatto... <strong>Si chiama #Luce</strong> perché <em>aaaaa il Signore</em>, sarebbe una pellegrina che viaggia così, con questo outfit d'avventura che richiama i colori della bandiera vaticana, la croce al collo e il bastone in mano, MA, ma: ha anche i capelli blu e i pronomi. Che sia l'inizio di un redemption arc????? 🙏️ (Ovviamente no, è una semplice trovata pubblicitaria, fine.)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Le critiche si possono fare secondo me solo in base alla sua natura, perché per il resto non è male. Alcuni stanno criticando sulla base del fatto che la #Chiesa prima sarebbe quella che <em>aaaaa no l'idolatria non va bene</em>, e poi fa il pupazzetto... Ma regà, non lo so, è un simbolo in cui i fedeli dovrebbero identificarsi, mica la rappresentazione di un'entità sacra... non ci vedo questa ipocrisia, bo. 👌️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":10763,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-14-960x483.png" alt="Schermata della notizia da Repubblica con dietro un muro di rule34 per il personaggio (censurato con pixel)." class="wp-image-10763"/><figcaption class="wp-element-caption">Ovviamente, te pareva che certi artisti dalle mani gocciolanti di cumma potevano non cogliere al volo l'occasione... ma in questo caso forse approvo, perché ribilancia il potere, cardinali vs masturbatori, santità contro corruzione morale. Ovviamente schifo comunque e non vi consiglio di guardare, però dettagli. 🤥️</figcaption></figure>
-<!-- /wp:image -->
+    <h2 id="attuale-governo-quando-deve-fare-finta-di-non-essere-fascio-mentre-compie-azioni-palesemente-da-fascio-tipo-installare-software-israeliani-per-spiare-via-whatsapp-giornalisti-al-posto-dei-criminali"><a class="toclink" href="../../2025/02/09/attuale-governo-quando-deve-fare-finta-di-non-essere-fascio-mentre-compie-azioni-palesemente-da-fascio-tipo-installare-software-israeliani-per-spiare-via-whatsapp-giornalisti-al-posto-dei-criminali.html">&#8220;Attuale governo quando deve fare finta di non essere fascio mentre compie azioni palesemente da fascio (tipo installare software israeliani per spiare via whatsapp giornalisti al posto dei criminali)&#8221;</a></h2>
+<!-- wp:video {"id":16320,"loop":true} -->
+<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/02/video_2025-02-09_12-23-21.mp4"></video><figcaption class="wp-element-caption"><a href="https://t.me/Davidesbulletinboard/21937">https://t.me/Davidesbulletinboard/21937</a></figcaption></figure>
+<!-- /wp:video -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ho letto così che in realtà non è nuovo per la #Chiesa commissionare questi lavori di marketing strambo pseudo-pop: avrebbero già fatto robe manga per spingersi in Giappone, ma non riesco a trovare informazioni effettive, quindi tenetevelo come fatterello. Però caspita, sapere che il Vaticano ha tecnicamente partecipato al #LuccaComics quest'anno... <a href="https://www.animeclick.it/news/105106-luce-la-mascotte-del-giubileo-per-il-vaticano-da-tokidoki"><a href="https://www.animeclick.it/news/105106-luce-la-mascotte-del-giubileo-per-il-vaticano-da-tokidoki">https://www.animeclick.it/news/105106-luce-la-mascotte-del-giubileo-per-il-vaticano-da-tokidoki</a></a> 😵‍💫️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-10-29 01:43:03+00:00">29 ottobre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="casiorologin"><a class="toclink" href="../../2024/10/29/casiorologin.html">casiorologin&#8230;</a></h2>
-<!-- wp:paragraph -->
-<p>Per quanto l'altro ieri ho detto che, al di là di #orologi in generale, l'acquisto di una nuova fitness band in particolare urge, <a href="../../2024/10/26/spaccbandt.html">visto che la Mi Band ormai è come è</a>... non ho ancora ordinato niente, soprattutto perché per la compatibilità dei bracciali mi rode, e quindi non so. 😪️</p>
+<p>Questa situazione che giorni fa è stato scovato lo <strong>spyware dell'azienda israeliana</strong> (e te pareva) Paragon Solutions sugli <strong>smarfonini di giornalisti italiani</strong> particolarmente <strong>critici contro il governo</strong>, e nel mentre quest'ultimo non dice praticamente una parola, è <strong>allucinante</strong> al punto tale che ne, per quanto ne volevo parlare, mi passa proprio pure la voglia... Ma in questo caso un memotto vale forse di più delle mie solite 1000 parole.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ma, in un momento di crisi come questo, il memaggio si intensifica, e quindi non andrò a mentire se dico che <strong>voglio kinda comprare un CASIO</strong>, e vivere la #CASIO ghiaccio sul polso vita... o meglio, <strong>farmi la collezione di CASIO</strong>, rovinando così per sempre le mie finanze ma avendo in cambio uno 𝓼𝓽𝓲𝓵𝓮 𝓲𝓷𝓬𝓸𝓷𝓽𝓻𝓪𝓼𝓽𝓪𝓫𝓲𝓵𝓮. 😍️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:embed {"url":"https://www.youtube.com/shorts/fUHbwtS3Xbg","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/shorts/fUHbwtS3Xbg
-</div><figcaption class="wp-element-caption">Beh, si, perché essi non sono fatti né per avere i cinturini intercambiabili, non si collegano al fonino per cambiare watchface, e quindi se si vuole andare in giro con qualcosa di diverso bisogna avere qualcosa di diverso: arrivare a <a href="https://www.youtube.com/shorts/fUHbwtS3Xbg">possederne decine come questo signore qui</a>...</figcaption></figure>
-<!-- /wp:embed -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non lo so, cioè, proprio li vedi sui negozi online tutti ordinati in griglia coi colori fighi e la finitura bellina, e costano relativamente poco, quindi proprio mmm... si è sempre vissuto senza ma, stranamente, da questo preciso momento non si può assolutamente più... aiuto. 🤐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Il problema che più mi tormenta è che quelli più belli costano anche più soldini, si sale sempre di più, nonostante si parli sempre solo di CASIO!!! E non lo sapevo davvero fino a qualche quarto d'ora fa, ma si, ci sono certi modelli in edizione limitata prodotti oggi, così come in generale linee con roba extra magica. ✨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Del tipo: DOMANI, 30 ottobre, esce <strong>il G-SHOCK anniversario di Hello Kitty</strong>; e ok, non sarà la cosa più epica che io abbia mai visto, ma caspita quanto è figo. Questo nero con accenti dorati, il logo sul cinturino, il simbolo del fiocco dentro la retroilluminazione... come fa ad essere reale tutto ciò?!?! <a href="https://www.siliconera.com/casio-hello-kitty-g-shock-watch-features-her-bow/"><a href="https://www.siliconera.com/casio-hello-kitty-g-shock-watch-features-her-bow/">https://www.siliconera.com/casio-hello-kitty-g-shock-watch-features-her-bow/</a></a> 😻️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ma questo è a quanto pare il secondo, perché all'inizio di quest'anno è uscito prima un modello anniversario nella linea BABY-G: <a href="https://www.casio.com/us/watches/babyg/products/collection/special/bgd-565kt-7/"><a href="https://www.casio.com/us/watches/babyg/products/collection/special/bgd-565kt-7/">https://www.casio.com/us/watches/babyg/products/collection/special/bgd-565kt-7/</a></a>. Questo sarebbe decisamente più nelle mie corde come design, bianco con gli accenti multicolore e piccoli dettagli grigi... ma, nonostante costasse mediamente un fottio, è sold out per sempre, non lo avrò mai... 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>La serie BABY-G è da approfondire, a proposito: è semplicemente G-SHOCK ma per le ragazze magiche, come ben illustrato da questa pagina promozionale: <a href="https://www.casio.com/us/watches/babyg/about/"><a href="https://www.casio.com/us/watches/babyg/about/">https://www.casio.com/us/watches/babyg/about/</a></a>. Guardando lo shop, approvo un casino, ci sono anche modelli che si staccano dal cinturino e si mettono in un appendino, alla Tamagotchi! 🤯️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":10735,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/10/image-13.png" alt="Schermata di https://www.casio.com/us/watches/best-sellers/" class="wp-image-10735"/><figcaption class="wp-element-caption">Per fortuna non possiedo carte di credito, altrimenti davvero sperpererei i soldini. Invece devo ogni volta perdere 10 minuti a generare un buono da Microsoft, oppure andare al tabacchi a far la ricarica, 30 euro a botta. Ma, certamente un orologio da 120 spirollini non lo posso comprare così, manco se è di Sanrio. 😔️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-10-28 18:52:13+00:00">28 ottobre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="blogriccanza"><a class="toclink" href="../../2024/10/28/blogriccanza.html">blogriccanza</a></h2>
-<!-- wp:paragraph -->
-<p>Tra #pensieri un po' a caso mi chiedevo se forse potremmo avere a breve una rinascita dei piccoli #blog personali, magari a formato canale, ma comunque in generale posti dove la gente invii roba un po' più a caso giusto così... 😳️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sembra io stia yappando a random, ma è perché ho visto che ultimamente i canali dei capi di Telegram si sono un po' allargati, e mi auguro questo possa essere un piccolo catalizzatore. Per iniziare, da mesetti <em><a href="https://t.me/durov">Paolo Del Rovo</a></em> sta postando in generale più cose, e nella totalità meno sono spam di "<em>wow non avete idea questo aggiornamento di Telegram [bla bla bla]!!!</em>". 🤯️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però, non finisce qui... Ho scoperto ancora più a caso, rispettivamente perché Du Rove ha linkato un post e perché ho guardato la lista di canali correlati (che principalmente purtroppo è piena di cryptomerda, ahinoi), che anche la ragazza e il fratello di Durov hanno dei #canali propri. 🧐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non ne avevo la minima idea prima, perché pare che solo di recente gli ultimi due abbiano deciso di valorizzare un po' di più i loro canalini, dove prima addirittura pubblicavano solo in russo, e quindi una buona parte della gente non se li cagava. Si saranno mica messi d'accordo, sotto sotto, di cambiare modus operandi per guadagnare pubblico? 😏️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Decisamente io sono una postatrice più professionale di tutt'e tre, perché scrivo almeno una cosa al giorno, se va bene due, su diverse robe, e faccio anche il crossposting a ruota... invece, loro non si sa mai cosa fanno e quando invieranno. È quasi come se i ricchi siano troppo spesso impegnati a fare cose da ricchi, e quindi non scrivono granché. 😔️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sui contenuti... beh, alti e bassi. Diciamo che sto <em>quasi</em> rivalutando Durov perché, delle cose che ha pubblicato recentemente, alcune sono interessanti e lo fanno percepire più come persona che come entità fumosa, e qualche messaggio è anche basato; però overall boh. <a href="https://t.me/roxman">Il fratello <em>Roxman</em></a> ignoravo che fosse un cryptobro (ignoravo fosse colui che lavora alle criptostronzate di Telegram)... e onestamente i post non frecano, parla solo di quello. 🚮️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>C'è poi <a href="https://t.me/julivavilovaa">la ragazza </a><a href="https://t.me/julivavilovaa"><em>Vavia('s)</em></a>, e mi pare sia quella che meno si monta la testa, di tutti e tre. Non solo ha multiple reazioni abilitate sul canale, stock per giunta, ma ha persino la sezione commenti, e addirittura risponde ad alcuni! Certo, lei non ha da preoccuparsi che arrivino sinistri individui stalkeriferi a causare zizzania lì, perché dall'alto del suo privilegio possiede dei moderatori... credo 2 o 3; comunque un lusso. 💀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Magari sono io quindi, ma mi sembra strano che #Roxman abbia un numero di seguaci similissimo a #Durov, perché i post a confronto sono meh. Invece, Vavia... non lo so, da un lato mette post listini (di film, roba strana, ecc...) che mi paiono decisamente poco ispirati (qualcuno dice fatti con ChatGPT), ma dall'altro spara fotine così a casissimo da sembrarmi cosa faccio anche io, quindi... approvo. 😸️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Durov lo si amerebbe, se non si comportasse da Dio che fa le promesse e poi le rompe ed ha un ego troppo alto da sopportare la clown reaction. E pure #Vavia, la si amerebbe, se non fosse ricca e famosa per il solo merito di stare assieme a un tizio ricco e famoso (però, a questo punto, si merita più di solo 1/200 dei follower del ragazzo). Il fratello... nah, è colpa sua se #Telegram usa un protocollo crittografico non standard con diversi buchi, non lo si ama. 👿️</p>
+<p>Comunque, il #meme ooovviamente parla di una situazione ipotetica... Voglio dire, il governo attuale non è fascista, semplicemente perché i fascisti con la F maiuscola sono fieri, sfrontati, coerenti nel loro violento menefreghismo, e boh ho finito le descrizioni... Ma al governo oggi abbiamo semplicemente dei <strong>codardi irragionevoli</strong> che falliscono anche solo nel tentare di farsi la voce grossa; figurarsi passare ai fatti, alla politica vera, intesa come l'arte del risolvere i problemi pratici...</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11638,7 +11460,7 @@ https://www.youtube.com/shorts/fUHbwtS3Xbg
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../13/index.html">13</a> <a class="md-pagination__link" href="../14/index.html">14</a> <span class="md-pagination__current">15</span> <a class="md-pagination__link" href="../16/index.html">16</a> <a class="md-pagination__link" href="../17/index.html">17</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../67/index.html">67</a>
+  <a class="md-pagination__link" href="../../index.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../13/index.html">13</a> <a class="md-pagination__link" href="../14/index.html">14</a> <span class="md-pagination__current">15</span> <a class="md-pagination__link" href="../16/index.html">16</a> <a class="md-pagination__link" href="../17/index.html">17</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="../81/index.html">81</a>
 </nav>
         
       
@@ -11678,7 +11500,7 @@ https://www.youtube.com/shorts/fUHbwtS3Xbg
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

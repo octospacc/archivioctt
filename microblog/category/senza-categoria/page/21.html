@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
@@ -10921,7 +10921,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-18 19:11:53+00:00">18 settembre 2024</time></li>
+          <time datetime="2025-01-03 22:24:17+00:00">3 gennaio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -10932,7 +10932,7 @@
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -10941,192 +10941,42 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="retrowhy"><a class="toclink" href="../../../2024/09/18/retrowhy.html">retrowhy</a></h2>
+    <h2 id="wordpress-pressato-in-markdown"><a class="toclink" href="../../../2025/01/03/wordpress-pressato-in-markdown.html">wordpress pressato in markdown</a></h2>
 <!-- wp:paragraph -->
-<p>Ops, ho per sbaglio iniziato un'altra saga con 'sta roba del #gaming... peccato. Ecco, <a href="../../../2024/09/17/librottro.html">ieri fare il rantolo</a> è stato così importante da aver distolto la mia attenzione dal provare se con il #Raspberry ora sia effettivamente tutto apposto. Diciamo che... piccoli passi, ecco. Ieri sera ho sclerato, stamattina ho goduto, ma adesso sto sclerando, e non si sa se la corsa contro i #problemi del software finirà mai. <strong>💥️</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Un'idea importante sarebbe stata quella di collegare come gamepad, per fare il gamin' anche senza stare alla scrivania con la tastiera, un WiiMote in particolare... perché è un controller Bluetooth (i cavi sono un problema sulla TV in una casa non giapponese) molto semplice (no tasti inutili, perfetto per i #retrogame) alquanto comodo e di buon feeling (riposa alquanto naturalmente in mano, pesa poco, e la qualità costruttiva è quella Nintendo di 15 anni fa anziché la merda di oggi). Un problema: gli input di quel coso vanno in conflitto con quelli da tastiera. 👹️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Praticamente, la croce direzionale del telecomando agisce come le freccette direzionali della tastiera... ma in verticale. Dato che devo tenerlo in orizzontale per giocare realisticamente, e non c'è un modo (che sia ovvio?) di girarlo in software... l'unica soluzione sarebbe tenere le frecce della tastiera non mappate, ma poi non potrei più usare quest'ultima per giocare senza rimapparla ogni volta... è un disastro. 💀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Giù di #scleri appresso a pagine di documentazione e forum varie, che spiegavano come fare questo e quell'altro di robe inutili... ma nessuno che dicesse come far riconoscere il d-pad del #WiiMote come quello di un gamepad vero, al posto di 'sta monnezza ibrida. E, da nessuna parte si riusciva a capire <em>cosa</em> esattamente nel sistema gestisce 'sti telecomandi, e se eventualmente c'è una configurazione. 🙄️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Stamattina, andando a tentoni, scopro (o mi ricordo?) che i telecomandi Wii sono gestiti da <code>hid-wiimote</code>, un driver incluso nel kernel Linux ufficiale a partire dalla versione 3.? (!). Ecco, in quel momento mi ricordo che fa schifo alla merda per tutta una serie di motivi, al punto che non mi capacito di come sia finito nel kernel messo così male, ma comunque... trovo <a href="https://github.com/dkosmari/hid-wiimote-plus">hid-wiimote-plus</a>, un fork che apparentemente sistema questo ed altre bizantinate del design. Fortunatamente, è davvero un rimpiazzo drop-in... è bastato scaricare il codice ed eseguire paro paro i comandi del README, per installarlo facendogli sostituire il driver pezzotto. E ora in quanto a gamepad dovrei aver effettivamente finito!!! 🙏️</p>
+<p>Stasera ho in mano l'ennesimo caso di "skill issue a posteriori", cioè di una roba che viene da chiedermi come ho fatto a non pensarci prima... vabbè va. <strong>Convertire siti #WordPress in file pseudo-Markdown per i generatori statici non è mai stato semplice quanto 30 righe scarsissime di #XSLT.</strong> 🔥</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"id":9368} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/lv_0_20240918154751.mp4"></video><figcaption class="wp-element-caption">Quindi, dopo tutto sto #casino per i WiiMote, tra cui almeno una ventina di tentativi di remap fatti ieri sera dentro RetroArch... ecco un video gameplay con la #tastiera che non ha mai dato problemi, lol. Durato anche troppo, perché con la tastiera sono troppo OP ai giochi stile arcade e non muoio facilmente... e venuto anche male, perché le freccette direzionali non sono in frame. Ops. (Però sentite il clic clac!!!) 🤗️</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Quindi, dai, bello di nuovo ma... <em>non finisce qui</em>. In primis, per quanto non veri problemi, ci sono <em>minuzie</em> riguardo l'audio... che conservo per un'altra volta, altrimenti è dolore. Però poi, devo decidere se tenere EmulationStation come frontend, considerando che, ogni volta che deve far partire un gioco, va ad avviare da zero RetroArch, che poi si chiude del tutto all'uscita... e tutto questo mi spreca tempo inutilmente (nel video non si nota, perché ho tagliato, ma sono circa 10 secondi).</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Su quest'ultima cosa converrebbe quasi far si che "la console" si avvii direttamente in RetroArch, e uso i suoi menù... ma dall'altro la gestione dei metadati e la selezione dei giochi dovrebbe funzionare meglio in EmulationStation, quindi non so proprio. Al di là del fatto che poi ci sono emulatori non-libretro (almeno Drastic, e la versione consigliata di mupen64plus), quindi non avviabili da RetroArch! Bonanotte... 😴️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-17 20:17:32+00:00">17 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="librotto"><a class="toclink" href="../../../2024/09/17/librottro.html">libROTTO</a></h2>
-<!-- wp:paragraph -->
-<p><a href="../../../2024/09/17/ristation-mortable.html">Nel post che ho inviato ieri sera tardissimo quando sarei dovuta stare a letto da un pezzo</a>, sperando il mio stato di delirio non abbia reso il tutto incomprensibile... ho accennato come ho buttato mezza giornata appresso a #RetroArch, che sul PC non mi funziona, considerata una rogna (e forse di più che semplicemente non ho scoperto) su cui non posso soprassedere. 🧪</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Bene, se non altro sono felice del fatto che oggi, ricordandomi di come un tempo lo usavo e funzionava bene, ho (re)installato RetroPie sul Raspberry Pi 3, e... Dai, ma com'è possibile che qui non solo effettivamente funziona tutto, ma allo stesso tempo ho i vantaggi del PC (giocare con la mia orgasmatica tastiera meccanica cinese, su un display grosso), e il collegamento di diversi controller funziona senza sofferenze; e, per giunta, essendo un computerino, posso spostarlo dalla scrivania a qualunque TV di casa al volo...? 😾️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Dovevo farlo da subito, fanculo il PC desktop, considerando che la sua potenza non mi serve per emulare console del millennio scorso... ma mi resta comunque l'amaro in bocca. Perché comunque il Raspino è underpowered al punto che il menu XMB di RetroArch va a scatti, ma anche dato che devo domandarmi: perché sul PC c'è la rogna? Nello specifico, come mai i core libretro (che è il "backend" su cui si basa RetroArch e non solo) compilati per PC x86_64 sono assolutamente rotti? Ancora più precisamente, #QuickNES è rotto: non funziona il caricamento di stati. 🤮️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>QuickNES è un core di #emulazione NES (no shit sherlock) che mi serve, sono praticamente costretta a preferirlo quando possibile perché, per <a href="https://t.me/c/1383332798/20513">la mia strategia di gaming in RetroArch sincronizzato</a>, è l'unico che può girare su tutte le console dove mi serve... perché sul PocketGo (consolina portatile che uso oltre al 3DS) gli unici 2 altri core sono troppo lenti per girare al 100% NTSC/60Hz (e sappiamo che le ROM PAL per console casalinghe vecchie fanno spesso schifo, quindi non ho proprio scelta). 🪨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>I #savestate, al contrario dei salvataggi "normali" (SRAM), sono specifici ad ogni emulatore, quindi vanno creati e caricati solo con quello... viene da se che, se voglio sincronizzarli tra sistemi, devo usare lo stesso #emulatore su tutti. E, non solo per me in generale i savestate sono d'obbligo (soprattutto quelli salvati e caricati automaticamente, rispettivamente alla chiusura e all'apertura del gioco), ma quasi nessun gioco NES ha i salvataggi, e pochi hanno le password, quindi per il resto sono necessari a salvare i progressi. 🥴️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Quindi, com'è che sul PC questo core, e a quanto pare solo questo, riesce a creare savestate, ma poi caricandoli non succede niente (o forse, in un caso, dava un errore inutile, non ricordo)? Com'è che, oltre alla versione Flatpak (e Snap, che non ho), si può scegliere solo tra quella AppImage che fa segfault all'apertura del selettore di file, o quella di Debian per cui sono compilati solo 7 core in croce (tra cui manca QuickNES)? Ah, e com'è che non ha risolto il #bug nemmeno provare l'ultima build Windows x86_64 di RetroArch (in Wine, che sorprendentemente, per il resto, al di là di glitch con la finestra quando non massimizzata, funziona normalmente)? 😶‍🌫️️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ma ancora, com'è che nessuno, e dico nessuno, pare aver segnalato questo #problema online, nonostante se mi succede con build del core sia nuove che vecchie di anni, significa che esiste da anni? Capita solo a me, perché ho un BIOS UEFI strano, o perché ho un pin della CPU rotto, o perché il microcode di AMD è buggato? O è capitato anche ad altra gente che, ritenendo come me che questo problema fosse individuale, ha esattamente come me evitato di segnalarlo? (È tutto così rotto.) 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Sono ipotesi strane queste? Certo, ma abbiamo già verificato che il sistema operativo non c'entra, e che l'unica cosa che finora ho osservato cambiare il comportamento di questo emulatore è l'architettura CPU per cui è compilato! Questi problemi, assurdo ma vero, succedono sempre e solo su x86_64... è un'architettura proprio da buttare. O, magari, va buttato via il compilatore C per #x86_64 usato dal buildbot di #libretro... potrebbe essere qualsiasi cosa, a questo punto; il dato di fatto è che su ARM funziona e basta, viva ARM. 🙏️</p>
-<!-- /wp:paragraph -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-17 02:55:58+00:00">17 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ristation-mortable"><a class="toclink" href="../../../2024/09/17/ristation-mortable.html">ristation mortable.</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi pomeriggio <a href="https://www.youtube.com/watch?v=zB_q1I0leoI"><em>ha iniziato ad andare tutto male</em></a>, e poco dopo anche peggio... Ecco, volevo semplicemente far funzionare RetroArch sul PC, per usarlo nel <a href="https://t.me/c/1383332798/20513">mio setup cross-device che feci mesi fa</a>, usando proprio il PC con la pezzotta ma soddisfacente tastiera meccanica per tutti gli stessi giochi, e i salvataggi, tutto sincronizzato, ecc... Peccato che sia più la roba rotta, che quella che funziona. 🥲</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Meglio parlare domani di questo fatto però, che adesso volevo impuntarmi su qualcosa di (ri)scoperto strada facendo, che oh no, non è bello... la #PSP, che doveva essere la potenziale salvezza a questo inferno dell'emulazione (seppur io non possa usarla per giocare con la tastiera, ma si può collegare alla TV e staccare, cosa che il mio telefono non può), è sempre e solo peggio. 😭</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>È assurdo. Non importano tutte le riparazioni che ho fatto in casa... è sempre più difficile ad accendersi (l'interruttore si consuma sempre di più), non è affatto stabile (prima, con la batteria molto scarica ma l'alimentatore collegato, ho avviato una app e si era spento tutto di colpo), e ora pare anche che la porta A/V out stia per cedere (quindi, collegare alla TV un corno). 😩</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:video {"id":9330} -->
-<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/Sony-PlayStation-MORTABLE-PSP.mp4"></video><figcaption class="wp-element-caption">In video si nota questo #problema pezzissimo... non si riesce a tenere la PSP collegata alla TV: il collegamento dentro è messo male, salta appena il cavo si muove un po'; e qualche volta non salta tutto, ma salta il colore. Virtualmente funzione ormai inutilizzabile... e io ci puntavo. 😐</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ci sono poi pure degli altri #problemi che, diversamente da questo del video, sono spariti (quasi?) appena la batteria si è del tutto caricata, e non riesco più a ricrearli. Forse proprio questi mi faranno porre fine ad ogni cosa:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Col caricabatterie collegato, il funzionamento interno della retroilluminazione va a quel paese. Collegando e scollegando si nota una differenza nel grado di luce a qualsiasi livello; addirittura, il livello minimo, che a batteria è semplicemente molto basso, ad alimentatore mi era apparso del tutto spento.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Prima, la #console si è messa a fare rumori elettrici strani, un po' variabili, ma comunque tutti che sembrassero statico. Era stranamente molto udibile, considerato che veniva emesso anche con la console totalmente isolata (alimentata a batteria, non connessa né a muro, né alla TV, né ad un computer). Alzare o abbassare il volume non influiva.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Infine... sembra anche questo dipendere dall'alimentazione, ma ora mi è successo anche dopo che la batteria si è caricata, lasciando la console collegata, semplicemente in modo meno frequente e meno evidente: lo schermo va in standby e poi si risveglia da solo...? PSP sulla scrivania, e a un certo punto con la visione periferica noto che la luminosità dello schermo si alza, come se avessi premuto un tasto (ma non l'ho fatto).</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Mi dispiace, perché la pspspspsp ha un che di,.,. non voglio dire magico, (ormai ciò sta diventando un cliché, non va bene), però ecco, è una console che ho usato molto e vorrei ancora usare, ma questa unità nello specifico vuole proprio morire (e di nuove io non ne compro). Dovrei lasciarla? Non posso lasciarla alla #morte, però... dovevo morire anche io anni fa, e invece sto ancora qui a soffrire a causa della #tecnologia; quindi non vedo perché ora io, di tutta risposta, dovrei invece avere pietà della tecnologia. 😿</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":6367,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/06/wp-17178835479082153765356243861753-960x960.jpg" alt="Bordo della PSP 2000 richiuso a forza con la colla a caldo, che sborda pure fuori." class="wp-image-6367"/><figcaption class="wp-element-caption">Già che ci siamo, per ridere e perché ancora non lo avevo fatto vedere, e a questo punto l'occasione non uscirà fuori altre volte, ecco qua che #schifo combinai con la colla a caldo, [quando dovetti sistemare lo stick analogico 3 mesi fa](../../../2024/06/10/playstation-mortable.md), e non si chiudeva più la scocca. E da allora, purtroppo, lo stick non è migliorato, ma per fortuna non è peggiorato... a differenza evidentemente della porta A/V, che qualcosa centrerà con questo, perché prima il suo #malfunzionamento non c'era. 💩</figcaption></figure>
+<!-- wp:image {"id":16384,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2025/01/image-1-1-960x542.png" alt="Schermata del foglio XSLT davanti, sullo sfondo di nascosto lo script sh e uno dei file Markdown generati" class="wp-image-16384"/><figcaption class="wp-element-caption">Ovvio, a posteriori è tutto banale — corollario di Murphy — però, se mi fosse venuta in mente prima questa come soluzione, mi sarei risparmiata [qualche mal di capa quasi un anno fa fino ad ora](../../../2024/02/14/finalmente-backup-veri.md)... e <a href="https://sitoctt.octt.eu.org/it/blog/2022-12-13-%EF%B8%8F-Il-blogging-rapido-con-Standard-Notes/#unesigenza-veloce">qualche scelta forse un po' scomodina ancora più tempo prima</a>. 🥴</figcaption></figure>
 <!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A differenza di anche solo 2 anni fa, in realtà, negli ultimi mesi sono usciti su GitHub ancora nuovi programmini e script, per convertire file di esportazione #XRSS di WordPress in file Markdown — giusto per reference, li ho raccolti su <a href="https://memos.octt.eu.org/m/X6v7w4FccbBon6J6jxCYoJ"><a href="https://memos.octt.eu.org/m/X6v7w4FccbBon6J6jxCYoJ">https://memos.octt.eu.org/m/X6v7w4FccbBon6J6jxCYoJ</a></a> — però, oggi che ne cercavo uno ideale, comunque ho visto che <strong>fanno tutti cahà</strong>. ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gli autori di questi programmi pensano di essere culi intelligenti, e quindi non solo leggono l'XML di esportazione per convertire i metadati in YAML e salvare su multipli file con il nome giusto...... ma convertono tutto il corpo #HTML in #Markdown, cosa che non so come altro descrivere se non come la mossa più stupida dell'universo, perché è una procedura lossy che letteralmente rompe il contenuto, se non vengono considerati tutti i casi limite. 😵</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tutta questa scienza però evidentemente non serve, se un foglio di trasformazione XML tirato su in 10 minuti è sufficiente... yikes. L'ho caricato per i consumatori (inclusa me di qualche ora dopo) sulla mia repo di monnezza: <strong><a href="https://gitlab.com/octospacc/Snippets/-/blob/main/WordPress-To-Yaml+Html.xslt"><a href="https://gitlab.com/octospacc/Snippets/-/blob/main/WordPress-To-Yaml+Html.xslt">https://gitlab.com/octospacc/Snippets/-/blob/main/WordPress-To-Yaml+Html.xslt</a></a></strong>. Per usarlo, basta darlo come primo argomento al programma <code>xsltproc</code> (che è nelle repo di Debian, quindi presumo ovunque), e come secondo argomento specificare il file <code>.xml</code> esportato da WordPress... 🥰</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Chiaramente, troppa #magia con così poco codice non è possibile, quindi questo metodo da in output un enorme flusso di testo con tutte le pagine "esportate" concatenate... e si dovrà usare uno #script aggiuntivo per separare il file singolo in tanti dal nome giusto; appena una manciata di righe in qualsiasi linguaggio, ma questo è come lo faccio io in sh (per l'archivioctt): <a href="https://gitlab.com/octospacc/archivioctt/-/blob/mkdocs/scripts/wordpress-to-mkdocs.sh"><a href="https://gitlab.com/octospacc/archivioctt/-/blob/mkdocs/scripts/wordpress-to-mkdocs.sh">https://gitlab.com/octospacc/archivioctt/-/blob/mkdocs/scripts/wordpress-to-mkdocs.sh</a></a> 😽</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(Per chi non sa leggere: viene usato "<code>&lt;!-- wp:item /--&gt;</code>" come separadore, quindi quello deve essere usato per splittare. Opzionalmente si possono aggiungere e modificare i filtri XPath usati nel <code>xsl:for-each</code> per includere ed escludere tipi di robe, ad esempio includere solo i post, o solo le pagine pubbliche, nonché aggiungere e togliere proprietà ai metadati YAML... però di base è già alla massima goduria!!!)</p>
+<!-- /wp:paragraph -->
     
   </div>
 </article>
@@ -11137,7 +10987,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-16 21:17:46+00:00">16 settembre 2024</time></li>
+          <time datetime="2025-01-03 00:22:40+00:00">3 gennaio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11148,7 +10998,7 @@
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -11157,46 +11007,42 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="non-dormotto-se-io-non-fo-"><a class="toclink" href="../../../2024/09/16/non-dormotto-se-io-non-fo.html">non dormotto se io non fo-</a></h2>
+    <h2 id="la-scrittumancanza"><a class="toclink" href="../../../2025/01/03/la-scrittumancanza.html">la scrittumancanza</a></h2>
 <!-- wp:paragraph -->
-<p>Un raccontino divertente (o forse no? mah) che avrei dovuto dire ieri sera, ma alla fine mi seccai, ma che però forse è meglio che scrivo oggi, dato che ha (mio malgrado) avuto modo di allargarsi... è il fatto che nella #notte appena passata, e quella di due giorni prima, sono uscite fuori difficoltà ingiustificate per addormentarmi. What gives? 🤥️</p>
+<p><strong>Sono purtroppo, decisamente un pochino, cotta con lo #scrivere post ed affini...</strong> del livello che rischio di perdere la mia autorità di assemblatrice di parole magica in forma umana se non faccio qualcosa. Ecco ordunque i punticini della tarda serata!!! 🥰 (Un altro metapost non richiesto, sigh.)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>L'altra notte vado a dire il vero tardino a letto, forse 3 quarti d'ora più tardi del normale, avendo [quelle cose di mezzo](../../../2024/09/14/framionavigator-per-le-fotonze.md)... e un po' non mi viene sonno (strano non fossi superstanc), un po' esce fuori un mal di pancia, ma in bagno a quell'ora proprio no. Quindi, non si dorme.</li>
-<!-- /wp:list-item -->
+<li>Vi ricordate quando uscivano post lunghi sul sitoctt? Ah-HA, neanche io, ormai è passato troppo tempo. [Ci ho sperato, esattamente 2 settimane fa](../../../2024/12/19/nomagiocto.md), ma quelle bozze lì da parte non le ho completate, e roba nuova non l'ho iniziata. Se fosse il mio lavoro, direi che "per i prossimi 2 mesi non si mangia suppongo, LOL". (Non si mangerebbe comunque, non sono mai arrivate donazioni.) 👻</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
-<!-- wp:list-item -->
-<li>Ieri notte vado a dormire ad un'ora... sempre terribile, ma non tanto inaspettata. Stavolta senza dolori, ma il sonno non viene, che sto un po' irrequieta per via delle [rivelazioni serali](../../../2024/09/15/il-tempocto-che-si-perde.md); niente di grave o pesante, ma certamente insolito, e, quindi, non si dorme.</li>
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Qui sul sito/canale fritto misto, penso personalmente, e mi viene suggerito ciclicamente, che dovrei fare post non troppo lunghi... e negli ultimi mesi ho in realtà abbassato la conta di parole media, ad una quantità che ad occhio ad oggi è ~350 parole a post... bene, ma non benissimo? Non so, il punto è che poi piagnucolo quando non mi esce un secondo post nello stesso giorno, nonostante la brevità del primo. 💔</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Per l'appunto, non penso di poter davvero trasmettere quanto mi rompe far finire una giornata avendo scritto meno di, boh, 700-900 parole in totale (anche facendo la somma di tutti i miei contesti, volendo)... ma forse posso invece lamentarmi con successo di come ODIO che qualche sera fa ho postato leggermente più tardi, e ora il postaggio si è tutto shiftato poco più tardi della mezzanotte, facendomi perdere 1 giorno (1 post). Lasciamo stare. 💩</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Per (non) diversificare, sulla Spacc BBS creo nuovi thread importantissimi sempre troppo col cucchiaino, e [altre idee passate per scrivere a casaccio](../../../2024/10/15/la-scritazzocto.md) non sono andate finora molto avanti (ideas issue, skills missing). 🥴</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Fortunatamente, stando alla mia importantissima esperienza personale, oltre che al consenso scientifico (che è sempre importante, ma di meno), sappiamo bene che <em>il fappaggio</em> cura temporaneamente l'insonnia. Caso vuole poi che il <em>femmifappaggio</em> sia, contemporaneamente, anche un'attività gradevole, forse specialmente nel lettino, al buio, in orari così poco consoni a qualsivoglia altra attività che non sia mimire (cosa che, abbiamo già detto, non mi era concessa). Vabbé, è semplice, con <em>ditine braccine cuscini e fin troppa pazienza</em> alla fine il sonno arriva... subito dopo lo sprigionamento di magia! 💖️</p>
+<p>Verissimo che nel mentre faccio pure altre cose (fatto provato, oltre ogni ragionevole dubbio, dalla perfetta mescolanza di postaggio giornaliero alla sua leggera vacuità ed inconsistenza, qui sul frittomistocto), però mi secca che non ho mai la scintilla quella grossa per scrivere un BOTTO. 🦄 (Nonostante io faccia il gran zzz infinito la notte, e la mattina mi sveglio bene.)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Per l'altra sera, questo sarebbe stato il punto in cui avrei dovuto dire che "oltre all'insonnia, la #masturbazione cura, temporaneamente, anche il mal di pancia". Peccato che, dopo averci pensato due secondi, ho realizzato potrebbe essere solo correlazione, e non causazione. Ha più senso che l'orgasmo abbia magicamente ammutolito il mal di pancia, ma per soltanto 1 ora, così a caso... o che semplicemente mi ha mandata KO e, mentre che stavo nel sonno a farmi i fatti miei, lo stomaco ha iniziato banalmente a rompere ancora più forte, facendomi quindi risvegliare? 🙀️</p>
+<p><a href="../../../2025/01/02/scrittura-a-mano-armata.html">Sul quadernino il quale ormai è sempre più un meme</a>, poi, le pagine si riempiono di idee sfuse e TODO misti, ma chissà quand'è che verranno cassati... per ora è solo un accumulo. Mi piace cumulare... 😋 (Ironia della sorte però, ciò che ho fatto adesso è venuto fuori talmente a caso che non c'è manco passato, su quella carta.)</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Peccato eh, perché riuscire a togliere i mali "finti" (ossia, quelli stupidi, dovuti al corpo che manda segnali corrotti al cervello per fare un dispetto, come il dover cacare un pochettino alle 3 di notte, anziché lasciarmi dormire come ogni altra santa nottata), semplicemente muovendo un po' le manine così in giro lo vedo come un potere alquanto magico. Però, prossima volta che ho un mal di pancia strano o un mal di testa, ma in pieno giorno, mi ricorderò di verificare questa teoria... che sarebbe meglio, anche perché di giorno non impiego mezz'ora buona a fare queste robe. 🥀️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:gallery {"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":9311,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/screenshot_2024-09-16-19-45-14-513_com1386134809911403215-893x1440.jpg" alt="" class="wp-image-9311"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":9310,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/screenshot_2024-09-16-19-45-24-015_com370424024162434396-893x1440.jpg" alt="" class="wp-image-9310"/></figure>
-<!-- /wp:image --><figcaption class="blocks-gallery-caption wp-element-caption">Ecco anche i grafici della Mi Band; ovviamente indicativi, li presento giusto per la sofferenza. Sono sempre circa accurati, ma mi stupisce come, con quello che ho combinato nel letto, ritiene comunque stessi dormendo verso le 3 e mezza del 14. Vabbé, il punto è che il tutto ha fatto si che io dormissi anche poco queste volte... la vita sò rogne. Dopo tutto il casino, ho dovuto farla comunque la cacca, alle 4 e mezza, che palle. 🌩️</figcaption></figure>
-<!-- /wp:gallery -->
     
   </div>
 </article>
@@ -11207,7 +11053,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-15 23:59:00+00:00">15 settembre 2024</time></li>
+          <time datetime="2025-01-02 00:34:17+00:00">2 gennaio 2025</time></li>
         
           <li class="md-meta__item">
             in
@@ -11218,7 +11064,7 @@
           
           <li class="md-meta__item">
             
-              4 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -11227,53 +11073,23 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="il-tempocto-che-si-perde"><a class="toclink" href="../../../2024/09/15/il-tempocto-che-si-perde.html">il tempocto che si perde</a></h2>
+    <h2 id="scrittura-a-mano-armata"><a class="toclink" href="../../../2025/01/02/scrittura-a-mano-armata.html">scrittura a mano armata</a></h2>
 <!-- wp:paragraph -->
-<p>Come si fa ad individuare il momento in cui sono alla frutta? Semplice, è precisamente quello in cui mi pongo il problema del #monitorare il tempo che passo a fare... qualunque cosa (la gente fancy dice "<em>fare #time tracking</em>", avete capito). Negli ultimi giorni ho riflettuto su questo, perché già da qualche settimana fa ho iniziato a notare che sono decisamente troppo tendente alle distrazioni inutili e, quando ciò prende il sopravvento, finisco la giornata sentendo sempre di essere riuscita a fare meno di ciò che avrei voluto... 😢️</p>
+<p>Benissimo: l'anno è nuovo (caspita, <a href="../../../2024/12/31/il-mondo-esplode.html">non è finito il mondo???</a>), ma i problemi dello scorso ci sono ancora tutti. Sempre assurdo a pensarci... ceh, è passato un anno e non cambia nulla? "<em>L'anno prossimo</em>" famigerato, alla fine è purtroppo arrivato? Brazy. 😩</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Non so, pare che ogni qualvolta io debba fare delle cose, che mi piacciano o meno, se non riesco ad entrare nello stato di flusso (fancy lang: "<em>flow</em>") — perché l'attività mi sta sul culo, o è troppo corta, o perché in quel momento io non sono in condizione — mi metto a distrarmi con... Boh, mi alzo dalla sedia, vado in giro per la stanza o la casa senza meta, clicco a caso alcune delle schede fissate nel browser, cerco oggetti che in quel momento non mi servono, scorro senza motivo la home del telefono (principalmente fuori casa questo), o faccio altre cose per procrastinare. 🥴️</p>
+<p>Capitandomi <a href="https://www.youtube.com/watch?v=ccBM46X-Fr0">questo video qui (riguardo lo scrivere a manina)</a>, mi veniva da pensare il seguente: <strong>perché mai mi escono fuori così tante rogne per semplicemente annotarmi cose così al volo???</strong> (Poi lo youtuber lì fa un discorso più ampio, riguardo l'attenzione umana distrutta dall'informatica, che lo sappiamo già e in questo caso non ci interessa, e le differenze tra <em>digitazione</em> e <em>#scrittura</em> intesa a mano... con calma guardatevelo.) 🤥</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Dunque, senza fare come molti luminari, che alla realizzazione di questo disagio si buttano nella pianificazione di intere giornate non solo di lavoro, ma anche di svago, cosa che concettualmente mi è sempre sembrata estremamente (auto)dittatoriale e per nulla adatta a come funziona il mio cervello... Ho pensato sarebbe una buona #idea almeno considerare il lato opposto della medaglia: non la pianificazione preventiva, ma l'analisi successiva, almeno per ora (poi non so cos'altro gli spiriti potrebbero indurmi a fare...). 🤨️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Allora, è da tipo l'altro giorno che sto pensando a come potrei tracciare il tempo man mano che questo scorre... e ho provato a pensare qualcosa seguendo il flusso dei miei pensieri interni, ma le #idee che mi venivano, in termini di formato e modalità, erano in parte troppo assurde. Stasera, non si sa come, un po' avendo cercato qualche video, un po' essendomi venuta una strana illuminazione, ho trovato un #sistema che... sicuramente non è perfetto, ma quantomeno è buono abbastanza da farmi cominciare:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list {"className":"wp-block-list"} -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Divisione del giorno in blocchi da pochi minuti ciascuno: Ho fatto due (2), perché sto cercando di controllare quelle #distrazioni che davvero fanno perdere non più di pochi attimi alla volta, e per questo particolarmente insidiose.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>No digitale, uso la carta: Per via della divisione microscopica, devo poter segnare dettagli entro meri minuti (prima che me li dimentico), e dato che devo farlo di frequente devo essere più veloce possibile; nel solo tempo che sblocco il telefono ed apro la app di turno, sulla carta ho già concluso (&lt; 10s).</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Per ora non compro agende strane da decine di euro, quindi uso carta che ho già in casa e, dovendo dividere a blocchi, userò semplicemente dei quaderni a quadretti semi-usati... ma la loro forma è rognosa e, dovendo poter tagliare striscioline "portatili" da poter usare fuori casa, ometterò un numero bene o male fisso di ore al giorno, 4 o 5... voglio dire, a parte eccezioni, non dormirò meno di quel tempo, quindi non ho da segnarci nulla.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Mero dettaglio implementativo ma, considerando la gestione della carta, e che altrimenti esco fuori di testa: il giorno, e conseguentemente una nuova tabella, inizia quando ufficialmente mi sveglio, e non alla mezzanotte.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>In sostanza: ho una tabella di quadrati (5mm<sup>2</sup> ciascuno), larga 30 (minuti diviso 2) e alta 19-20 (ore), al cui interno... userò degli ideogrammi, che mi verranno in mente strada facendo, per scrivere le attività e gli sprechi attivi di tempo in uno spazio così micragnoso; notare che uso una linea continua per indicare che una casella contiene l'ultima attività scritta, senza ripetere ogni volta l'ideogramma. Minuti da sinistra a destra, ore dall'alto verso il basso (guarda un po' che casualità, è lo stesso ordine in cui piazzo le lettere quando scrivo del normale testo).</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=kgzx047m-gY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://m.youtube.com/watch?v=ccBM46X-Fr0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=kgzx047m-gY
-</div><figcaption class="wp-element-caption">Ecco questo video interessante, <a href="https://www.youtube.com/watch?v=kgzx047m-gY">A Simple Time Tracker for the Minimalist Bullet Journal</a>. Non mi ha dato chissà che idee nuove, ma ha validato quelle che mi sono venute spontaneamente, seppur l'autore di questo usi blocchi da 15 minuti e scriva come un cristiano, anziché come una maghetta che vive nelle tue pareti... 🥰️</figcaption></figure>
+https://m.youtube.com/watch?v=ccBM46X-Fr0
+</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -11281,15 +11097,91 @@ https://www.youtube.com/watch?v=kgzx047m-gY
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>L'idea venuta a me intuitivamente, ma a quanto pare confermata da tizi su YouTube, è che: dovendo pensare di continuo al tempo trascorso poco prima per segnarlo, cosa che si riflette sul tempo presente, dovrebbe essere più immediato rendersi conto di comportamenti a cui inconsciamente si tende, ma che si vogliono evitare, e quindi evitare di buttarci troppo tempo. Inoltre, accumulando #dati per intere settimane, se non mesi, si può analizzare cos'è che esattamente va storto (la sensazione immediata non è sempre accurata), e se si riscontrano miglioramenti <em>automagicamente</em>... Oppure, i più pazzi possono usare i dati per pianificare il tempo. 😩️</p>
+<p><a href="https://octospacc.altervista.org/2024/11/30/il-protodernino/"><strong>Il mio protodernino</strong></a> alla fine lo sto usando per segnarmi varie cose (da fare, da comprare, idee a caso che non vanno messe in ordine o spiegate, eccetera; e nonostante sia piccolino non sono neanche vicina a riempirlo, perché scrivo sempre microscopico ihihihi), però in certi momenti penso sia scomodo. Non tantissimi, ma comunque boh, non godo... 🤨</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Principalmente, mi scoccia il non poterci scrivere al buio (non penso di dover spiegare perché ciò è impossibile), cosa che quindi mi limita la sera tardi fuori o tardissimo a casa; e poi, che in certi casi sulla scrivania mi richiede di tenerlo con una mano, mentre scrivo con l'altra, altrimenti scivola via (ma più grande e pesante di così non lo voglio, deve essere una sottiletta). Quindi bo... 😤</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo soluzioni a queste rogne non riesco a trovarne. Mi andrebbe bene anche solo risolvere il fatto della luce, ma penne con inchiostro che si illumina al buio, senza alcuna fonte di luce esterna, non esistono sul mercato (e col cavolo che uso torce e altre schifezze). E, se non volessi usare per forza la #carta, le cose peggiorano: 👅</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Sul telefono non posso scrivere decentemente a mano (eccetto, forse, con una penna capacitiva attiva?), e il software non è gioioso (con varie app aperte, se va bene è la fiera del lag, se va male si chiude qualcosa di importante)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Il tablet con la penna è il migliore di tutti i tempi, ma lo ho solo a casa e all'università, essendo molto grosso e non troppo economico</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Ho quasi l'idea marcissima di usare <a href="https://memos.octt.eu.org/m/ngkhtqvTjmYE7fwzy6bTEy">Flipnote Studio 3D</a> sul 3DS come blocco appunti, assumendo che la console la ho sempre con me... e non sarebbe male, ma dovrei assicurarmi non esca fuori il caso limite in cui ho un gioco aperto E devo segnarmi qualcosa sul momento</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Onestamente cerco una soluzione che non tiri in ballo la tecnologia, perché quella ha sempre i suoi problemi... lo dico senza alcuna ironia, voglio davvero qualcosa che funzioni grazie alla magia, in questo momento. Datemi una cavolo di penna autoluminescente (radioattiva?), e magari anche un incantesimo per scrivere con una mano sola (tenendo il quaderno in mano con il mignolino della stessa). PLEASE!!! 😭</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-31 23:57:14+00:00">31 dicembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="il-mondo-esplode"><a class="toclink" href="../../../2024/12/31/il-mondo-esplode.html">il mondo esplode</a></h2>
+<!-- wp:paragraph -->
+<p><a href="../../../2024/12/31/la-fine-del-mondo.html">Come detto esattamente ieri, sta per finire il mondo...</a> Ma sta per farlo in modo forse godurioso: Stasera sono fuori a Salerno, che i miei genitori si erano organizzati con dei loro amici, e allora ecco. <strong>Però la #mezzanotte incombe e io non sono pronta.</strong> 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Come scrivo ora sono fuori, c'era (è appena finito?) il concerto di Giorgia... francamente non mi freca, e sono stata fuori, anche perché per entrare nella zona interna mi hanno fatto questioni per la borraccia. (Se lo sapevo la lasciavo sopra, ma non sapevo.) 😤</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>C'è tutto guardie, c'è pure <a href="https://www.comune.salerno.it/novita/divieto-utilizzo-fuochi-dartificio-e-vendita-e-consumo-bevande-e-chiusura-anticipata-villa-comunale">l'ordinanza del comune di #Salerno contro qualsiasi tipo di botto esplosivo e altre cose</a> (bevande e sesso?!)... ma ogni 30 secondi scoppia ugualmente qualcosa, e ogni 5 minuti cipolle (damn). E ci sono vetri rotti e bicchieri lasciati a giro. Questa è La Italia. 👻</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Io ho comprato al volo i bastoncini magici che fanno scintille (sono legali stasera, mi sono informata), da un venditore ambulante sul lungomare, ma... mancano pochi attimi e io non ho un accendino. Porca di quella miseria, dovrò accenderli sopra, volevo farlo per strada... 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La giornata in realtà stava per iniziare per il piede storto, la mattinata me la sono quasi intossicata... Non devo più perdere tempo a chattare al posto di programmare o fare altre cose più #magiche e piacevoli. Questa #foto dunque la dedico ai miei haters!!! FUCK YOU IN #2025!!! 😈</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":9285,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/img_20240915_2344126324367526527092665-960x720.jpg" alt="" class="wp-image-9285"/><figcaption class="wp-element-caption">Vabbò waju, ch' v'aggia ric'r... ecco appena iniziato per la sera presente, l'attimo che fugge, con questa prima versione molto #sperimentale in foto. (Le ore ancora a venire, idealmente, non erano già da scrivere, ma adesso per iniziare dovevo prendere le misure.) Se servirà a qualcosa, ci godrò un minimo; altrimenti, avrò almeno fatto ridere... E insomma, scopriremo se davvero "non ho il tempo per fare niente!", oppure è che lo brucio!!! ❤️‍🔥️</figcaption></figure>
+<!-- wp:image {"id":12981,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/12/8bab881a-d9bb-491c-ad3b-3cf0a0d8ff35-2-320x160.jpg" alt="Selfie dal 3DS con la busta dei bastoncini scintillini in mano, con gli effetti di sticker e scritto &quot;FUCK YOU!!! To: you, From: Me&quot;" class="wp-image-12981"/></figure>
 <!-- /wp:image -->
     
   </div>
@@ -11301,7 +11193,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-14 23:43:38+00:00">14 settembre 2024</time></li>
+          <time datetime="2024-12-31 02:11:01+00:00">31 dicembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -11312,7 +11204,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -11321,21 +11213,79 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="framiovelocitore"><a class="toclink" href="../../../2024/09/14/framiovelocitore.html">framiovelocitore</a></h2>
+    <h2 id="la-fine-del-mondo"><a class="toclink" href="../../../2024/12/31/la-fine-del-mondo.html">la fine del mondo</a></h2>
 <!-- wp:paragraph -->
-<p>Oggi avrei dovuto fare altro (...almeno, così sento, ma non saprei proprio dire che cosa di altro), e invece ho continuato a sistemare i guai combinati ieri su #FramesBrowser... Poco importa però, visto che, indipendentemente da cosa faccio, una costante resta tale: nessuno mi paga. 👁️</p>
+<p>Allora regà. Mancano all'incirca 24 ore alla definitiva fine del mondo... oh no pazzurdo e ora come faremo??? E boh. Non è un mio problema, essendo io una semidivinità. Se voglio vivere, il modo lo trovo indipendentemente da questo pianeta e questo universo, e se no... evidentemente Dio ha deciso che il mio lavoro qui è compiuto. 😇</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Una delle cose proprio brutte che avevo causato è il caricamento lentissimo della #webapp, perché caricavo le dipendenze (una sola, in quel momento) in un modo brutto: i file JavaScript di libreria erano codificati in stringhe JSON, messi a loro volta in file JavaScript, tutto ficcato nell'HTML passato agli iFrame come URL <code>data:</code>, che al caricamento fa <code>eval()</code>, ed ecco che la magia di serie B si avvera. 🤪</p>
+<p>Leggo di molti che, per la fine dell'anno e come proposito per il prossimo, in questi giorni si prospettano di usare meno i propri <strong>#dispositivi smart per cazzate sciupatempo</strong>, oppure si rallegrano nell'aver già raggiunto questo stato... E, questo in me con l'anno nuovo non c'entra direttamente, però per casualità di circostanza devo dire "damn, corretto", ed è bene parlarne. 🤭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A me è già successo di dire "basta a tutto il #tempo perso per nulla!!!", quindi in parte me ne sono già fatta una ragione nei mesi già passati, e ho quasi definitivamente mandato a quel paese tutti quegli usi di tempo non necessari su cui ho il controllo e che hanno un'efficienza bassissima (cioè, che trasformano solo una piccola frazione del tempo in input in un tempo passato con qualità; tipo, i social scrausi). Ma c'è un ma. ☠️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Schiava delle piattaforme turbocapitalistiche non lo sono in ogni caso (per fortuna, ma anche perché funzionano di merda), ma continuo ogni tanto a percepire quelle perdite minime di tempo che però ogni giorno si sommano... e i tentativi di arginarle rigidamente non funzionano (<a href="../../../2024/09/15/il-tempocto-che-si-perde.html">quel sistema di schema astruso che provai a fare mesi fa</a> durò meno di 3 giorni), forse anche perché la tecnologia funge male. Eccetto che... 🤯</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>È dunque intrigante che, proprio in questo scenario, io stia ri-ri-ri-scoprendo il 3DS. Caricato di vari giochi e pseudo-giochi, è perfetto per <strong>spendere senza sprecare</strong> quei tempi mortissimi che accadono ogni giorno in vari luoghi... Sarà da parlarne in modo più specifico, ma è buono che quando ho qualche minuto da gettare, e non è un momento del giorno in cui mi va Duolingo, allora sul 3DS posso aprire giochi non-arcade (cioè, con una certa progressione) che però mi danno qualcosa da fare per 5 minuti, ma che sia più complicato di scrollare col ditino. 😝</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Oggi siamo molto felici, domani chissà, quindi assicuriamoci di fare abbastanza gaming ORA: il tempo vola!!! (Ma più in generale, se volete usare con qualità il tempo morto in digitale, forse è il caso o di leggere romanzi e fumetti sui telefonini, o portarsi sempre in borsa la consolina, o usare gli emulatori per giocare a roba spumeggiante non laggante, o anche voi scrivere diarietti.) 🤥</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-29 23:56:20+00:00">29 dicembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cameracciaxxa"><a class="toclink" href="../../../2024/12/29/cameracciaxxa.html">cameracciaxxa</a></h2>
+<!-- wp:paragraph -->
+<p>I fatti stanno sempre più dimostrando che, se un giorno i potery fortissimy dovessero farmi sparire da questo mondo in modo improvviso e al di fuori dal mio controllo, facendomi così diventare uno spirito sofferente costretto a girare a vuoto per i posti della mia vita in preda ai rimpianti... uno di questi avrà qualcosa a che fare con <strong>le fotocamere digitali buffe mezze gaming effetti divertimento</strong>. 👻</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Assurdo come ritorno ciclicamente sul fatto delle fotocamere di Nintendo, mi ricordo di quanto sono fantasmagoriche, mi scoccio del fatto che non abbiano il massimo potenziale possibile, e rispunta il fatto che, essendo queste closed-source, l'unico modo per avere funzioni in più è ricreare il baracchino da zero; ovviamente come app mobile a questo punto, perché è la cosa più sensata. 🤐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Eee... questa qui come idea in teoria l'avevo cacciata secoli fa, <a href="../../../2024/03/14/altri-progetti-senza-fine.html">nella pratica invece circa un anno fa</a>, ma in ogni caso non se ne è mai fatto nulla, per motivi tecnici pallosi, e forse <em>problemi di skill</em>. Però, ecco, essendomi venuta nuovamente l'ispirazione adesso, ed avendo deciso di dire vaffanculo a fare una roba cross-platform, concentrandomi piuttosto su una app #Android super-ottimizzata, ed essendo le API di #CameraX migliorate un botto negli ultimi tempi... 🔮</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":9256,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/image-4.png" alt="Schermata chat lamentele crash e uso RAM, con il grafico di uso RAM e CPU che mostra i picchi." class="wp-image-9256"/><figcaption class="wp-element-caption">Il fatto è che, in questo modo, avevo URL lunghi 200 KB o più (!), cosa a quanto pare inconcepibile anche per il browser, che non solo rallenta, ma... nel mentre che stavo facendo altri esperimenti stamattina (aka, questo problema non c'è in produzione, non sparatemi), ha anche preso di continuo a crashare, perché l'uso di RAM saliva in quei momenti a picchi di svariati GB (non è dato sapere il perché, però, e nemmeno il perché il picco sia doppio). Un sacco di tempo perso stamattina, coi riavvii tra browser e intero PC... 🤕</figcaption></figure>
+<!-- wp:image {"id":12923,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/12/image-7-960x526.png" alt="" class="wp-image-12923"/><figcaption class="wp-element-caption">...Forse questa è la volta buona che qualcosa esce. Forse. Ho creato la app con <a href="https://developer.android.com/codelabs/camerax-getting-started">il tutorial esempio di CameraX</a>, e ora sto testando le varie cose, dal cambiare obiettivo (minchia professionale) ad usare <a href="https://github.com/android/camera-samples/issues/571">la nuova api OverlayEffect</a> per disegnare cose sopra il feed della camera, con un'astrazione Canvas goduriosa che si applica a preview, foto, e video. Il dito si vede bene!!! 🥰</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -11343,19 +11293,133 @@ https://www.youtube.com/watch?v=kgzx047m-gY
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>...Perché non caricare direttamente tutto con <code>&lt;script src="..."&gt;</code>? Perché, mentre non ci sono problemi a caricare una risorsa così da <code>http:</code> o <code>https:</code> all'interno di un contesto data:, ci sono eccome se la risorsa è su <code>file:</code> (caccole cross-origin)... e io voglio che la app continui a funzionare senza un webserver, dal filesystem locale, oltre che deployata sul sito. Quindi... ho fatto che l'iFrame carica invece un file HTML wrapper, e il codice dentro quello visualizza i contenuti HTML effettivi (presi dall'URL hash) piazzandoli nel nuovo DOM. 🤯</p>
+<p>Vabbé, ma se vi dicessi invece che, anche stavolta, in realtà è tutta una scusa per spammare??? Eee, ops, non posso farci nulla: con <a href="../../../2024/12/28/nincamera-silenzio.html">la patch che fa stare zitto il 3DS quando scatto</a>, ieri in giro ho potuto fare qualche fotina così, senza ricevere occhiatacce (ho controllato, non mi sono arrivate). Ma, qui il motivo è che volevo tornare nel 2012, non ho usato effettini; quelli mi rode solo che io non possa usarli per registrare vlog, perciò sto sviluppando. 🥴</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ho pure sistemato la UI su mobile, che ora non è più tagliata in basso per via del chrome del #browser, e il dialogo modale del Canvas di screenshot, che ora ha persino testo e tasti. Poi c'è ancora qualche altra cosina che posso sistemare, ma nulla che stia <em>guidando me insana</em>, quindi probabilmente per stasera chiudo, e di aggiornare ancora 'sto coso se ne parlerà nei prossimi 6 mesi... unless... 😈</p>
+<p>[sc name=pixelfed-embed]<a href="https://liminalgici.spacc.eu.org/p/the_octt/779109725004324840[/sc">https://liminalgici.spacc.eu.org/p/the_octt/779109725004324840[/sc</a>]</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-29 00:07:08+00:00">29 dicembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="fujoshi-potenza"><a class="toclink" href="../../../2024/12/29/fujoshi-potenza.html">fujoshi potenza</a></h2>
+<!-- wp:paragraph -->
+<p>Non ci posso credere... Un'altra gioia microscopica!!! Ringraziando il capitalismo, cioè l'algoritmo di #YouTube, ho trovato la mia nuova idola indiscussa, quasi mia madre, davvero qualcosa di spaziale... una #fujoshi schizofrenica con qualche storia intrigante da raccontare!!! E in più, mi piace come è arredata la sua stanzetta, ha qualche poster da invidiare. 😡</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La scopro per questo video qui, dove <strong>soffre e piange perché la madre le ha trovato gli #yaoi,</strong> e li ha fatti sparire, non si capisce se li ha dati via o buttati o mamma mia non posso immaginare... E non solo, tra quelli c'erano pure gli yuri, che lei ugualmente aveva da parte (perché è giusto bilanciare il genere di lettura se davvero si crede nella parità di genere; riconoscete l'enorme integrità per favore!!!) <a href="https://youtube.com/watch?v=9f95CwLVbck"><a href="https://youtube.com/watch?v=9f95CwLVbck">https://youtube.com/watch?v=9f95CwLVbck</a></a> 🤯</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:video {"autoplay":true,"id":9259,"loop":true} -->
-<figure class="wp-block-video"><video autoplay controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/simplescreenrecorder-2024-09-14_23.39.51.mp4"></video><figcaption class="wp-element-caption">Direi che infine si fa usare non male. Ricordiamo: 2 giornatine di lavoro solo per fare screenshot con dimensioni replicabili, certe volte non so se sono furbyssyma. (E su mobile non appare 'sto cazzo de menu contestuale.) C'è però una parte di me che, guardando la finestra ridimensionabile che lascia spazio vuoto, dice "scusa ma perché non implementi finestre simultanee con tiling?"... a cui rispondo che è perché va risistemato mezzo codice, e stasera, a quest'ora, non è cosa.</figcaption></figure>
+<!-- wp:embed {"url":"https://youtube.com/watch?v=9f95CwLVbck","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtube.com/watch?v=9f95CwLVbck
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Da un lato soffro anche io per lei, come i commentatori, a vedere questa lagna di 5 minuti, e mi dispiace che ora non abbia più le sue letture perché assurdo, cioè, il #video parla da solo, è una ragazza completamente distrutta... Ma, c'è da dire che ci percepisco una potenza quasi superiore alla mia. Nel caso non la abbia effettivamente superiore, credo lei la usi molto meglio. La voce soprattutto ha un che di filtri Nintendo DSi pazzia. 💀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ad ogni modo, iscrittami immediatamente e ora andrò a recuperare gli altri video. Vi direi di fare lo stesso, dopo aver visto questo, che per qualche motivo ha ben 374K visualizzazioni... (e il canale 16K iscritti)... se non diventate come me potete almeno diventare lei, che è un'alternativa che approvo. Poveraccia, costavano un botto di soldi quei fumetti, ed è tutto successo perché la madre le ha pulito la stanza al posto suo in modo coatto. 😭</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(Comunque, devo forse fare attenzione a condividere questa eccitazione, perché l'ultima volta, <a href="../../../2024/11/18/giapponesuomo-macchinette.html">quando postai riguardo il tizio giapponese</a> che pure era un bel personaggio... dopo pochi giorni ha privatizzato tutti i vecchi video, praticamente ripulendo il canale e pubblicando da quel punto in poi solo filmati indossando una maschera. Questo è quello che succede a godere, ma allo stesso tempo non scaricare offline i video... 😾)</p>
+<!-- /wp:paragraph -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-28 02:28:45+00:00">28 dicembre 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 minuti di lettura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="nincamera-silenzio"><a class="toclink" href="../../../2024/12/28/nincamera-silenzio.html">nincamera silenzio!!!</a></h2>
+<!-- wp:paragraph -->
+<p>Ok, ora questa è divertente: Non pensavo che avrei potuto dire "<em>questa sera grande gaming</em>" esattamente poche ore dopo essermi insofferabilmente lamentata di come <a href="https://octospacc.altervista.org/2024/12/27/lo-spicytendo/"><em>ohh me misera me tapina stiamo a enormi problemi col gaming ormai...</em></a> ma, evidentemente, ogni tanto il karma ricompensa anche me. 🙃</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cercando sul web se esistessero app molto particolari per il 3DS di cui a nessun freca, per via di risultati poco pertinenti ho scoperto che ora (da un annetto!) <strong>esiste una #patch che toglie i rumori "di sicurezza"</strong> (di scatto e inizio/fine registrazione) <strong>della #camera Nintendo 3DS</strong>. EVVIVA, finalmente!!! 🤯</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Disclaimer obbligatorio: cara polizia giapponese, NON si preoccupi; togliere il #rumore non mi serve per fare foto sotto le gonne delle persone in metro senza farmi sentire, ma per altri motivi... anche perché, nel 2024, puntare un #3DS come fotocamera in giro non mi farebbe passare certo inosservata, e francamente gli smartphone fanno comunque foto migliori. 🥱</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Purtroppo (ma a ragion veduta) lì in Asia c'è questa legge... ma, #Nintendo merda come sempre, non ha mai reso disattivabile quei suoni fastidiosi sulle console in Europa e America (dove le fotocamere dei dispositivi smart possono legalmente essere silenziose), che si sentono sempre a volume massimo dagli speaker (!), anche a cuffie inserite. 🤮</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Provai forse 2 o 3 anni fa a risolvere io il problema, e ci andai molto vicina... avevo capito che avrei potuto nullare i byte del suono dello scatto con il #CFW per renderlo silente... ma, non riuscii a capire dove questo stava (non nella app #fotocamera purtroppo, ma in un componente condiviso del firmware). Quindi ciccia (prima d'ora). 🥲</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":12858} -->
+<figure class="wp-block-video"><video controls src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/12/lv_0_20241228015007.mp4"></video><figcaption class="wp-element-caption">Ma, tutto è bene quel che non finisce male. Procuratevi anche voi la patch e filmate finalmente a notte fonda col vostro Nintendo allora, su su: <a href="https://memos.octt.eu.org/m/4fXYoGs7KQukB5WcVXsttt">https://memos.octt.eu.org/m/4fXYoGs7KQukB5WcVXsttt</a> (<em>ShutTheCamUp</em>)</figcaption></figure>
 <!-- /wp:video -->
 
 <!-- wp:paragraph -->
@@ -11363,7 +11427,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Questo forse è uno dei miei progetti meno utili, ma allo stesso tempo uno dei più fighi, mi sa. Anche solo con questo riuscii a sperimentare dettagli della piattaforma web che forse sarebbe meglio ignorare e non fare pazzie del genere... bene così. <a href="https://hub.octt.eu.org/FramesBrowser/">Il browser dentro il browser</a> ha questo #gusto proprio indescrivibile... peccato solo che la me del passato ha arronzato la lista delle schede, e ora me attuale (io) non c'è voglia di renderla meno spartana. 🥱</p>
+<p>P.S. per i miei hater: Se non vi basta leggere i ringraziamenti della gente sul thread di T3hFridg3 per credere che non sono l'unica persona a parte lui a cui interessa qualcosa di far stare ZITTA questa fotocamera, sappiate che c'è anche un video tutorial di 4 anni fa per ottenere lo stesso risultato... togliendo via gli speaker dalla console (damn). <a href="https://youtube.com/watch?v=8voUL8Kzkp4"><a href="https://youtube.com/watch?v=8voUL8Kzkp4">https://youtube.com/watch?v=8voUL8Kzkp4</a></a>. 🤗</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11375,7 +11439,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-14 02:38:06+00:00">14 settembre 2024</time></li>
+          <time datetime="2024-12-27 21:11:54+00:00">27 dicembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -11386,7 +11450,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -11395,38 +11459,46 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="framionavigator-per-le-fotonze"><a class="toclink" href="../../../2024/09/14/framionavigator-per-le-fotonze.html">framionavigator per le fotonze</a></h2>
+    <h2 id="lo-spicytendo"><a class="toclink" href="../../../2024/12/27/lo-spicytendo.html">lo spicytendo</a></h2>
 <!-- wp:paragraph -->
-<p>Qualcuno avrebbe sperato niente post stavolta? E invece no; semplicemente, c'era di mezzo la programmatio. Mi trovo così ancora una volta (altre volte in cui è successo, è successo, ma non ho scritto qui...) ad aggiornare #FramesBrowser, #webapp che manco a farlo apposta tocco precisamente ogni 6 mesi. Lavoro raro!!! 🤫️</p>
+<p>Devo fare bene attenzione, perché pare io sia ancora una volta al centro di un ennesimo piano di #sabotaggio dall'universo contro di me per quanto riguarda il gamin'... nel senso che sono un'altra volta aumentate tutte de botto le situazioni strane (ne uscirà forse una nuova a settimana). 💀</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Stavolta il problema era: devo catturare screenshot di certe pagine #web, per inviarli a parti (tradotto: <a href="../../../2024/09/11/pixelfoto-io-non-vodo.html">i post che pubblico su Pixelfed</a>, per fare lo spam bene, coff coff), ma... Se non le facessi ogni volta precise (voglio la larghezza uguale al letterale pixel) starei male dentro; peccato che, per fare ciò, devo impazzire col ridimensionare la finestra del browser <em>precisimamentissimamente</em>, su desktop. 🙄️</p>
+<p>Quella dell'ultimissima settimana, proprio per finire bene l'anno, è che la batteria del mio <em>nintendissimo new 3DS XL</em> si è bella e degradata, totalmente a caso e a sfregio. (Anche la chimica è contro di me, anche se questo già si sapeva, altrimenti non avrei gli ormoni sbagliati.) L'ultima volta prima di ora che ho fatto Il Gran #Gaming non c'erano rogne, e invece ora che ho ricominciato a giocarci giornalmente esce fuori lo ｓｕｐａｋｋｕ. ⛏️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Risolverei facendo direttamente da mobile? Forse si, dato che lo schermo del telefono non si allarga o restringe da un giorno all'altro, però è palloso... e non ci ho comunque pensato prima di scriverlo adesso. Quindi, è molto meglio spendere delle ore per aggiungere al mio programma il ridimensionamento (a occhio e a numero) degli iFrame mostrati, e conseguentemente il tastino per fare #screenshot degli stessi. 😩️</p>
+<p>Ora una ricarica completa mi dura all'incirca 2 ore di gioco, che non è normale... ma impiega il tempo di sempre per completarsi, che è borderline assurdo. Assumendo che la batteria assorba in input sempre lo stesso amperaggio (¡si dice corrente!), allora dove <strong>straminchia</strong> finisce il 50% dell'energia??? Ci sarà qualche spirito ladro di joule, bah. 🗡️</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ovviamente, nella sua estrema saggezza, il Web non offre API per fare schermate di parti del DOM, ma, per fortuna conoscevo una libreria chiamata <a href="https://memos.octt.eu.org/m/FMqK2VcQWoDz9atLL2a2az">html2canvas</a>, che usa della palese magia nera per aggirare questa mancanza. È figa, fa non so come il rendering "a mano" di tutte le cose, e le piazza appunto in un elemento Canvas, che invece i #browser permettono direttamente di trasformare in immagine raster. 🤓️</p>
+<p>Ci mette allora già poco tempo a raggiungere la lucina rossa e, quando ci arriva, in genere dopo appena altri 5 minuti è morto. Resetti non approva, e io nemmeno, ma questo è. Anche se dipende molto dall'assorbimento in quel momento, ho visto: se mando in modalità riposo il #3DS (si spengono gli schermi e il gioco non procede) in quello stato, allora la lucina potrebbe ritornare blu. 🚨</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Nella mia estrema fortuna però, questa libreria non gestisce autonomamente gli #iFrame, quindi via ad implementare codice per iniettarla ed azionaria! Lo farei proprio tutti i giorni!!! 🥰️ (Estremamente divertente soprattutto la parte dove non posso iniettare codice arbitrario dentro la pagina caricata da un dominio, quindi la app si deve a mano scaricare l'HTML per patcharlo e caricarlo come data URL ed è un casino che non funzionerà mai col 100% dei siti mamma mia aiuto.)</p>
+<p>Mi chiedo a questo punto se possa centrare il fatto che, fino a pochi mesi fa, ci andavo in giro quasi ogni giorno, tenendolo chiuso col WiFi attivo, in cerca di StreetPass totalmente invano, e non giocandoci puntualmente me lo dimenticavo, quindi dopo giorni si era scaricato completamente... e alla fine sarà stato poco più di 1 mesetto a casina con la batteria totalmente appiattita. BAD!!! Però mi rifiuto di credere questo sia la causa. 😤</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Altre magagne? Avoja! Innanzitutto, o gli faccio in qualche modo caricare tutte le immagini della pagina con CORS (che vuol dire, in qualche modo, forzare l'uso del proxy in un punto di codice non mio), o altrimenti il #Canvas risulta <em>tainted</em>, e non può essere scaricato in automatico con <code>.toDataURL()</code>... ma non è la fine del mondo, perché posso banalmente piazzarlo a schermo, e a quel punto c'è sempre il menu contestuale del browser per salvare un PNG. E... grande cacca: con questa dipendenza da 200KB, non solo tutta la app è più lenta a caricare, ma anche le pagine nei frame (per via di tutta la codifica URL che #mannaggia). 🦧️</p>
+<p>Ho notato poi che la #batteria, in tutto questo, è ora un po' gonfia; abbastanza da non far stare la cover posteriore perfettamente a livello, e non far toccare uno dei piedini antiscivolo sulla mia scrivania... Però tutto sommato si nota appena, quindi non saprei manco dire se si è formato solo ora il gas dentro, o era così già da prima. 🥱</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":9229,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/Screenshot-from-2024-09-14-02-08-29.png" alt="Schermata di un frame che mostra example.com ridimensionato nella app, e l'immagine screenshot scaricata aperta fuori dalla app." class="wp-image-9229"/><figcaption class="wp-element-caption">Bene o male, però, già funziona; posso usufruire! Ne ho approfittato anche per aggiungere un tasto in più, per richiamare il dialogo di stampa del browser (per PDF e carta), che tanto ormai l'inject #JavaScript è fatto... Dai, che se non sapevate io avessi anche questo tra la mia immondizia, sarebbe giunta proprio l'ora di provarlo, con questi aggiornamenti, su su: <a href="https://hub.octt.eu.org/FramesBrowser/">https://hub.octt.eu.org/FramesBrowser/</a>.</figcaption></figure>
+<!-- wp:image {"id":12853,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/12/img_20241227_2103583474766346696467935-960x960.jpg" alt="Foto 3DS di profilo e di lato che mostrano l'ingrandimento della batteria di pochi micrometri, frecce per enfasi." class="wp-image-12853"/></figure>
 <!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vabbè insomma sapete come si dice? Finché si accende e gioca e non mi scoppia in mano provocandomi ustioni va ancora bene... EHM, volevo dire, finché dura fa verdura. Semplicemente ora dovrò attaccarlo spesso a casa, ma mi va bene (credo). Che PALLE!!! 😾</p>
+<!-- /wp:paragraph -->
     
   </div>
 </article>
@@ -11437,7 +11509,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-09-12 23:27:49+00:00">12 settembre 2024</time></li>
+          <time datetime="2024-12-26 23:46:59+00:00">26 dicembre 2024</time></li>
         
           <li class="md-meta__item">
             in
@@ -11448,7 +11520,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
           
           <li class="md-meta__item">
             
-              3 minuti di lettura
+              2 minuti di lettura
             
           </li>
         
@@ -11457,181 +11529,21 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="mibanda-coi-colori"><a class="toclink" href="../../../2024/09/12/mibanda-coi-colori.html">mibanda coi colori</a></h2>
+    <h2 id="sonno-uaisonnyo"><a class="toclink" href="../../../2024/12/26/sonno-uaisonnyo.html">sonno uaisonnyo</a></h2>
 <!-- wp:paragraph -->
-<p>Stasera, <strong>consigli per gli #acquisti</strong>. È l'altro dei due <a href="../../../2024/09/10/adattamorte.html">prodotti ordinati la settimana scorsa</a>, e si, stavolta non sono pisciata off, genuinamente non ho roba da lamentarmi, perché non essendo un acquisto tech c'è poca roba che può andare storta... ma solo per ora perché, trattandosi di <strong>braccialetti per la #MiBand</strong> (3, ma detti compatibili con anche altri modelli), da #Amazon per giunta, l'allegria non può durare all'infinito!!! 😻️</p>
+<p>Uffe regà... tengo lu sonno, ma non mi andrebbe proprio di andare a dormire ora, che è prestino e avrei <code>undefined</code> cose migliori da fare. Il #problema è che, al di là di tutto... dai Octt, sotto sotto lo sai che non ha senso, tanto comunque qui seduta in questo stato non puoi fare nulla che sia neanche 0.1% produttivo, e quindi se devi buttare il tempo tanto vale farlo nel lettino che è pure più caldo. 😩</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:video {"id":9197,"loop":true} -->
-<figure class="wp-block-video"><video controls loop src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/2024-09-12-2201382100.mp4"></video><figcaption class="wp-element-caption">Sono 6 in totale, nei #colori: nero, turchese/acquamarina, viola medio-scuro, bianco+grigio, bianco+arcobaleno, rosso+arcobaleno. Questa grande varietà è una gran #goduria... anche per questo non ho comprato su AliExpress; avrei risparmiato non più di 2 euro, su un ordine di circa 9 euro, ammazzandomi per trovare colori belli da comprare separati. 🥴️ (L'inserzione dovrebbe essere: <a href="https://www.amazon.it/Cinturino-Cinturini-Traspirante-Intrecciato-Regolabile/dp/B0B7X4R11P">https://www.amazon.it/Cinturino-Cinturini-Traspirante-Intrecciato-Regolabile/dp/B0B7X4R11P</a>.)</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:paragraph -->
-<p></p>
+<p>Ehh, ma un po' mi dispiace tutto, perché si, bello mimir... però è fin troppo zzzzz. Cioè, pensate che io dovrei stare tutte quelle ORE a marcire ferma incastrata tra dei muri di lana e cotone, senza poter esercitare i miei poteri magici nella realtà, e per giunta ogni 5 ore mi dovrei pure svegliare per cambiare posizione, perché dormo in modo estremamente bent (e credo che le ossa non siano contente di ciò), per poi morire quando suona la sveglia??? ZZZZZ, meglio non dormire proprio. 👿</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Il motivo per cui ho comprato questi di tessuto (di #nylon, ma non so come capire se è una bugia) è semplice: i #cinturini di gomma che comprai anni e anni fa (dopo che si ruppe quello stock!), si sono via via distrutti, tutti a gradi diversi, al punto che me ne rimangono due paia scarse di ancora utilizzabili (su 20 totali?). E, anche stavolta, credevo di aver postato, ma pare di no, da nessuna parte... 😩️ (Evidentemente l'ho sempre creduto, perché ricordo vagamente di aver più di qualche volta pensato di postare a riguardo, per poi fermarmi pensando che "ah l'ho già fatto"... il dottor <em>Alzheimer</em> ve lo presento un'altra volta, per adesso pensiamo ai bracciali.)</p>
+<p>Che poi stranissimo, perché stamattina ho dormito ben oltre le 11, quindi ho fatto quasi 10 ore di #sonno (qualcosa che non accade da spaventosamente troppo tempo), e poi il resto della giornata non è che ho fatto questo grande sport. Eppure. Colazione tardi, pranzo, doccia, poi a teatro coi miei a vedere uno spettacolo che si è rivelato estremamente mid, poi la camminata interminabile verso il parcheggio, gamin' negli intermezzi di tempo, e poi a casa cena, e ora questo. Come? 🤨</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ecco, ho preso questi, e non altri di gomma, perché con questo materiale parevano un po' più <em>premium</em> (beh, e il prezzo per singolo oggetto in effetti è più alto)... e mi sa che sono più premium in generale: non solo l'aggancio per la #smartband (che è comunque in gomma) sembra più robusto e resistente, ma 'sta stoffa è abbastanza comprimibile, quindi al polso è molto più comodo appoggiandomi, per esempio, sulla scrivania, riesco a tenerlo meglio. E ora, per quanto 6 non siano tantissimi, posso comunque sfiziarmi a cambiare colore ogni tot giorni. 🙊️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Non ho fatto esperienza di svantaggi, e anche la chiusura a velcro mi piace, è bella comoda... ma ho paura che, a furia di aprire, inevitabilmente si consumerà. Se non fossi una ragazza magica, direi che a quel punto dovrei comprarne di nuovi... e invece, avendo notato che il #tessuto è uguale da entrambi i lati, so già che il brutto giorno lo taglierò al contrario per poi ricucirlo, raddoppiandone la vita! Certamente, un aspetto negativo è che questi se si bagnano si inzuppano, ma... sorprendentemente poco, stando al mio test sotto al rubinetto (non ho ancora testato a mare o sotto la doccia, che pessima #recensione che sto facendo). 👿️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":9199,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/wp-17261752676828357646904783991417-960x1280.jpg" alt="Foto delle 6 band in confezione di cartone anonima, mischiate così, con le pellicole omaggio nella loro protezione spostate fuori." class="wp-image-9199"/><figcaption class="wp-element-caption">Il video stupido ci doveva essere (non unboxing, skill issue), ma la fotina della scatola appena aperta eccola comunque (anche perché, sennò, WordPress non genera l'anteprima bene). In confezione ci sono anche 3 pellicole di plastica omaggio... che sulla mia #band non applicherò, perché rendono lo schermo abbastanza più scuro, pensa te che gentili. Altra cosa che mi piace di questa stoffa, qui si nota un po': le cuciture danno più profondità al colore, per come riflettono la luce. ✨️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-11 23:52:48+00:00">11 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="pixelfoto-io-non-vodo"><a class="toclink" href="../../../2024/09/11/pixelfoto-io-non-vodo.html">pixelfoto io non vodo</a></h2>
-<!-- wp:paragraph -->
-<p>Nonostante avvengano in modo ciclico ed abituale, la mia psiche è estremamente danneggiata dai segni di nonfrecanza dell'universo, della casualità, dell'RNG delle connessioni sui social media, nei miei confronti... e ogni tanto torno a farmi più crucci di vita di quanti se ne facevano l'unione di tutti gli abitanti di un comune medievale medio. 😑️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":9172,"width":"640px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/image-3.png" alt="Porzione di messaggi vari nella chat di servizio con parola chiave &quot;Pixelfed&quot;" class="wp-image-9172" style="width:640px;height:auto"/><figcaption class="wp-element-caption">Infatti stavolta torna la questione #liminalgici, di cui credevo di essermi già lamentata qui, ma mi sa che i forgor. Vabbé, le mie paure di un tempo si sono avverate: non solo l'istanza non se la caca nessuno, ma i miei post è come se non girassero... nonostante la federazione funziona; e anzi, funziona meglio da me che su Pixelfed.uno (lì le foto profilo sono rotte). Quindi sono proprio in #crisi sul senso di sta cosa... 💀️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>[sc name=pixelfed-embed]<a href="https://liminalgici.spacc.eu.org/p/the_octt/739253539183497655[/sc">https://liminalgici.spacc.eu.org/p/the_octt/739253539183497655[/sc</a>]</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Ho fatto questo paio di post così da ieri, sia per sfogarmi nella didascalia, che per provare a far girare il profilo... e, finora, nulla è servito, nemmeno interagire con utenti esterni per attirarli sul mio account. Tra ieri e oggi quindi è stato anche un continuo agitarmi tra "<em>chiudo l'istanza</em>" e "<em>no dai provo a vedere meglio</em>", perché... se tanto non si registra nessuno, e magari avere questa ennesima piattaforma distoglie anche dall'avere nuovi utenti sulla più importante Spacc BBS (certamente non dedicata alle foto, ma secondo me workabile per lo scopo), allora è non solo inutile, ma dannoso averla. ...Ma alla fine ho deciso che non levo niente, perché può essere utile anche solo a me per avere un backup cloud ordinato, ma fisicamente in mio possesso, delle foto; anche magari certe che non voglio condividere, posso salvarle private. 🤐️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Però... così non va. Allora oggi il lampo di genio: "<em>facciamo un #esperimento</em>". Ho quindi deciso che, per un mese o chissà quanto, pubblicherò lo stesso post, identico, spiccicato, ogni giorno, su 3 piattaforme su cui ho già un account (dal poco morto, al decesso e sepolto): la mia istanza #Pixelfed, Pixelfed.uno (la più grande #istanza italiana, molto grande anche nel mondo) e Instagram (gli dei del software libero hanno sparato un fulmine contro di me in questo istante). Onestamente, le aspettative sono tutte sulla seconda opzione, perché lì una volta i numeri c'erano; bassi ma giusti, vuol dire che comunque la mia roba piaceva un attimino... mentre invece, sulla piattaforma proprietaria non ricordo 'sti grandi risultati, se non facendo hashtag spam e pubblicando roba che... aiuto, non è quello il senso di una #galleria personale. 🤥️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":9170,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/image-2-960x581.png" alt="Profili su rispettivament Pixelfed ed Instagram aperti in scheda anonima; il primo si vede, il secondo fa &quot;Something went wrong&quot;" class="wp-image-9170"/><figcaption class="wp-element-caption">Se confermerò di avere più occhi ed interazioni sulle mie mie #foto per il solo fatto di pubblicarle su un'istanza più grande... vuol dire che il #Fediverso ha fallito nel suo obiettivo per la decentralizzazione, e onestamente non so come la storia continuerà. Se invece dovessi avere più seguito su Instagram... beh, in quanto piattaforma Meta, quella fa schifo — per almeno 20 motivi pratici, ma il peggiore sono i ratelimit stronzi per le visite al profilo anonime — quindi dovrò pubblicarle comunque anche sul sito mio, per averle ben disponibili. 🙏️</figcaption></figure>
-<!-- /wp:image -->
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-10 21:10:28+00:00">10 settembre 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../senza-categoria.html" class="md-meta__link">Senza categoria</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              4 minuti di lettura
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="adattamorte"><a class="toclink" href="../../../2024/09/10/adattamorte.html">adattamorte</a></h2>
-<!-- wp:paragraph -->
-<p>Oggi non avrei nulla di meglio da postare, per cui... prendiamoci un momento per gli <strong>sconsigli per gli #acquisti</strong>. Si, allora, mi spiace per il cinismo, però più passa il tempo e più la #tecnologia mi fa sentire le fregature, che pare non funziona mai niente come dovrebbe e devo sempre rassegnarmi a tutte le piccole magagne... ed è come se anche le cose che un tempo funzionavano, stiano sempre più a perdere colpi. Argomento per un'altra volta, vah. 😭️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":9141,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/img_20240906_2044446980252041394196892-960x1280.jpg" alt="Foto adattatore con corpo metallico argentato e cavo di collegamento corto appoggiato sulla sua bustina mezzo storto" class="wp-image-9141"/><figcaption class="wp-element-caption">L'acquisto sarebbe un #adattatore USB-C con una porta pass-through (cioè un'altra USB-C, per ovviare al fatto che questo te ne occupa una), una porta USB-A, ed una porta HDMI, preso da #Amazon. Molto generico ed economico (non costava molto di meno su AliExpress), tant'è che non ho un link da dare, perché quello che vidi inizialmente salì di prezzo e quindi ne cercai un altro, mentre l'altro non lo riesco più a trovare. E diciamo che mi bastava questo... no porta Ethernet, perché tanto quando minchia mi servirà, no millemila porte USB-A, perché se proprio me ne servono di più attacco un hub a cascata... fine. 😑️</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In questo caso il prodotto è buono, in realtà, era come me lo aspettavo, e nonostante le mancanze mi sarà comunque utile; non me ne pento, e non lo rimando indietro. Il problema è in realtà il tablet per cui l'ho preso (solito #Samsung Galaxy Tab S6 Lite 2022) a cui manca una cosa che, muzunna cara... non ha l'output video su USB-C. La cosa bella è che su Internet non si capisce, Samsung ufficialmente non dice nulla, però intanto la modalità #Dex integrata non si può attivare su wireless mirroring, quindi è lecito assumere che è perché funziona solo con mirroring cablato... invece no, non funziona in mirroring PUNTO. Guardate quanti thread del cazzo ho raccolto a proposito: <a href="https://memos.octt.eu.org/m/DMfkwZsuxqjVsrRhbkwxzX"><a href="https://memos.octt.eu.org/m/DMfkwZsuxqjVsrRhbkwxzX">https://memos.octt.eu.org/m/DMfkwZsuxqjVsrRhbkwxzX</a></a>. ODIO SAMSUNG. 😫️ 🤬️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>In quanto ad altri dispositivi... su Nintendo Switch funziona bene tanto quanto sul tablet, mentre sullo Xiaomi Redmi 9T è una cagata protonica. Ovviamente l'uscita video non va, ma lì me lo aspettavo, però il punto è che sullo Ximi non funziona bene manco la parte USB. Con varie combinazioni di orientamento dei cavi C nelle porte C: o non funziona nulla, o va solo in carica il telefono, o viene solo riconosciuto il dispositivo slave collegato nella porta A dell'hub. Divago a questo punto, ma questo è un ennesimo esempio pratico di come la caratteristica di USB-C paventata come la più grande feature, è in realtà una causa smisurata di #rogne; questi problemi non sono mai successi su A e B, che si collegavano in un verso solo. Chiamatemi boomer quanto cazzo volete, ma ai miei tempi l'USB funzionava. 🥱️</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:video {"autoplay":true,"id":9142,"loop":true,"muted":true} -->
-<figure class="wp-block-video"><video autoplay controls loop muted src="https://octospacc.github.io/microblog-mirror/assets/uploads/2024/09/lv_0_202409101930521.mp4"></video><figcaption class="wp-element-caption">Il lieto fine è che appunto l'altra caratteristica per cui volevo questo affare funziona: poter collegare dispositivi USB mentre il tablet è in carica, quindi magari pennette, [la scheda di cattura](../../../2024/05/20/5728.md), oppure... la pezzottissima tastiera meccanica, per fare gamin' in pace (dato che, mamma mia, quanto fa schifo quella Bluetooth di Nintendo, che lagga e si scollega in continuazione; viva viva e viva il cablato). La tastiera fisica funziona mediamente bene su #SamsungDex, ci sono anche scorciatoie per affiancare e ridimensionare finestre, così come aprire alcune app... ma non è perfetto, in quanto non c'è modo di interagire con toggle rapidi e notifiche, quindi come al solito noi utenti mouse-less ce lo prendiamo in cù. Video #dimostrazione d'obbligo... ✨️</figcaption></figure>
-<!-- /wp:video -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Per finire: nel mentre che cercavo di verificare se, grazie a questo affare, lo stack USB del tablet potesse funzionare contemporaneamente sia come master (collegare dispositivi al tablet) che come slave (collegare il tablet al PC, così da usare <code>scrcpy</code> per proiettare lo schermo su un monitor grosso)... con mia enorme RABBIA ho scoperto di no, ma in compenso ho scoperto che la porta pass-through funziona anche "al contrario". Se collego l'hub al PC (che ha solo porte USB-A), con un cavo A-C maschio-maschio, mi appare come <code>343c:0000 xxxxxxxx USB Type-C Digital AV Adapter</code>... ma per il resto non può fare assolutamente nulla, a quanto pare, peccato. Ah e, a dirla tutta esce così solo usando un cavo dati USB 2.0 (come quello di ricarica dello Ximi), mentre con un 3.0 non appare proprio... #wtf. E, no, la porta non funge anche da USB OTG a cascata. 💩️</p>
+<p>Il motivo per il quale noi ragazze semi-umane abbiamo questa sensazione del sonno e il desiderio di dormire, ma allo stesso tempo non riusciamo a scollarci dal PC con installato Linuc e andare semplicemente a letto, ahinoi i poteri forty non cielo dicono, la scienza è misteriosamente silenziosa a riguardo... Allora facciamo una bella cosa: anziché andare a letto ora installo Windows, visto che, tra parentesi, LMDE qui sta dando sempre più crash e problemi. Vediamo se la noia della schermata di installazione mi farà alzare 1 minuto per mettere il pigiamino. 🧨</p>
 <!-- /wp:paragraph -->
     
   </div>
@@ -11644,7 +11556,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
 
 
 <nav class="md-pagination">
-  <a class="md-pagination__link" href="../../senza-categoria.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="19.html">19</a> <a class="md-pagination__link" href="20.html">20</a> <span class="md-pagination__current">21</span> <a class="md-pagination__link" href="22.html">22</a> <a class="md-pagination__link" href="23.html">23</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="67.html">67</a>
+  <a class="md-pagination__link" href="../../senza-categoria.html">1</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="19.html">19</a> <a class="md-pagination__link" href="20.html">20</a> <span class="md-pagination__current">21</span> <a class="md-pagination__link" href="22.html">22</a> <a class="md-pagination__link" href="23.html">23</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="81.html">81</a>
 </nav>
         
       
@@ -11684,7 +11596,7 @@ https://www.youtube.com/watch?v=kgzx047m-gY
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
